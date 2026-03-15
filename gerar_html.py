@@ -5,7 +5,7 @@ Uso:
     python gerar_html.py
 
 Saída:
-    outputs/dashboard.html   ← abre direto no browser
+    docs/dashboard.html   ← abre direto no browser
 """
 
 import json
@@ -29,7 +29,7 @@ from config import (  # noqa: E402 # type: ignore
 
 JSON_SIMULACAO = DATA_PROCESSED_DIR / "simulacao_grupos.json"
 
-OUTPUT_DADOS = ROOT / "outputs" / "dados.js"
+OUTPUT_DADOS = ROOT / "docs" / "dados.js"
 
 # Mapa Club → código ISO 3166-1 alpha-2 (para bandeiras via flagcdn.com)
 # Adicione/corrija conforme necessário
@@ -174,7 +174,7 @@ def montar_selecoes(selecoes_df, ranking_df, info_df):
     merged["iso2"] = merged["Club"].map(ISO2_MAP)
 
     # Resolve paths dos assets locais (tenta .svg primeiro, depois .png)
-    assets_dir = ROOT / "outputs" / "assets"
+    assets_dir = ROOT / "docs" / "assets"
 
     def resolver_asset(arquivo, sufixo):
         """Retorna o path relativo 'assets/{arquivo}_{sufixo}.ext' se existir, senão None."""
@@ -270,7 +270,7 @@ def gerar_dados_js(dados_json: str):
     OUTPUT_DADOS.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_DADOS.write_text(conteudo, encoding="utf-8")
     print(f"✅ Dados gerados: {OUTPUT_DADOS}")
-    print("   Abra no browser: outputs/dashboard.html")
+    print("   Abra no browser: docs/dashboard.html")
 
 
 def main():

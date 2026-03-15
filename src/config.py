@@ -12,7 +12,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 
 DATA_RAW_DIR = ROOT_DIR / "data" / "raw"
 DATA_PROCESSED_DIR = ROOT_DIR / "data" / "processed"
-OUTPUTS_DIR = ROOT_DIR / "outputs"
+OUTPUTS_DIR = ROOT_DIR / "docs"
 FIGURES_DIR = OUTPUTS_DIR / "figures"
 
 EXCEL_INPUT = DATA_RAW_DIR / "Dados_Selecoes.xlsx"
