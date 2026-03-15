@@ -1,0 +1,506 @@
+[
+  {
+    "grupo": "C",
+    "times": [
+      "Haiti",
+      "Marrocos",
+      "Brasil",
+      "Escócia"
+    ],
+    "n_sim": 500000,
+    "stats_times": {
+      "Haiti": {
+        "P1": 14.03,
+        "P2": 19.52,
+        "P3": 27.33,
+        "P4": 39.11,
+        "Pts_Medio": 3.62,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 33.55
+      },
+      "Marrocos": {
+        "P1": 33.37,
+        "P2": 29.6,
+        "P3": 21.39,
+        "P4": 15.64,
+        "Pts_Medio": 4.68,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 62.97
+      },
+      "Brasil": {
+        "P1": 35.09,
+        "P2": 27.17,
+        "P3": 21.35,
+        "P4": 16.38,
+        "Pts_Medio": 4.36,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 62.27
+      },
+      "Escócia": {
+        "P1": 17.5,
+        "P2": 23.71,
+        "P3": 29.92,
+        "P4": 28.86,
+        "Pts_Medio": 3.79,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 41.21
+      }
+    },
+    "stats_jogos": {
+      "Brasil x Marrocos": {
+        "V_pct": 34.01,
+        "E_pct": 26.86,
+        "D_pct": 39.12
+      },
+      "Haiti x Escócia": {
+        "V_pct": 34.84,
+        "E_pct": 27.45,
+        "D_pct": 37.71
+      },
+      "Escócia x Marrocos": {
+        "V_pct": 30.33,
+        "E_pct": 24.86,
+        "D_pct": 44.8
+      },
+      "Brasil x Haiti": {
+        "V_pct": 43.64,
+        "E_pct": 25.3,
+        "D_pct": 31.06
+      },
+      "Marrocos x Haiti": {
+        "V_pct": 46.81,
+        "E_pct": 24.22,
+        "D_pct": 28.96
+      },
+      "Escócia x Brasil": {
+        "V_pct": 32.27,
+        "E_pct": 25.93,
+        "D_pct": 41.8
+      }
+    }
+  },
+  {
+    "grupo": "E",
+    "times": [
+      "Curaçao",
+      "Costa do Marfim",
+      "Equador",
+      "Alemanha"
+    ],
+    "n_sim": 500000,
+    "stats_times": {
+      "Curaçao": {
+        "P1": 13.44,
+        "P2": 18.95,
+        "P3": 26.99,
+        "P4": 40.61,
+        "Pts_Medio": 3.54,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 32.4
+      },
+      "Costa do Marfim": {
+        "P1": 25.19,
+        "P2": 26.78,
+        "P3": 26.91,
+        "P4": 21.12,
+        "Pts_Medio": 4.4,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 51.97
+      },
+      "Equador": {
+        "P1": 24.2,
+        "P2": 27.42,
+        "P3": 25.62,
+        "P4": 22.76,
+        "Pts_Medio": 4.02,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 51.62
+      },
+      "Alemanha": {
+        "P1": 37.16,
+        "P2": 26.85,
+        "P3": 20.48,
+        "P4": 15.51,
+        "Pts_Medio": 4.47,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 64.01
+      }
+    },
+    "stats_jogos": {
+      "Alemanha x Curaçao": {
+        "V_pct": 45.57,
+        "E_pct": 24.64,
+        "D_pct": 29.79
+      },
+      "Costa do Marfim x Equador": {
+        "V_pct": 39.85,
+        "E_pct": 26.64,
+        "D_pct": 33.51
+      },
+      "Alemanha x Costa do Marfim": {
+        "V_pct": 36.77,
+        "E_pct": 27.74,
+        "D_pct": 35.49
+      },
+      "Equador x Curaçao": {
+        "V_pct": 41.06,
+        "E_pct": 26.2,
+        "D_pct": 32.74
+      },
+      "Equador x Alemanha": {
+        "V_pct": 33.12,
+        "E_pct": 26.44,
+        "D_pct": 40.44
+      },
+      "Curaçao x Costa do Marfim": {
+        "V_pct": 30.17,
+        "E_pct": 24.83,
+        "D_pct": 44.99
+      }
+    }
+  },
+  {
+    "grupo": "G",
+    "times": [
+      "Nova Zelândia",
+      "Irã",
+      "Egito",
+      "Bélgica"
+    ],
+    "n_sim": 500000,
+    "stats_times": {
+      "Nova Zelândia": {
+        "P1": 12.35,
+        "P2": 18.01,
+        "P3": 26.76,
+        "P4": 42.89,
+        "Pts_Medio": 3.42,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 30.35
+      },
+      "Irã": {
+        "P1": 31.24,
+        "P2": 28.97,
+        "P3": 22.7,
+        "P4": 17.09,
+        "Pts_Medio": 4.52,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 60.2
+      },
+      "Egito": {
+        "P1": 22.44,
+        "P2": 26.12,
+        "P3": 28.59,
+        "P4": 22.84,
+        "Pts_Medio": 4.22,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 48.56
+      },
+      "Bélgica": {
+        "P1": 33.97,
+        "P2": 26.9,
+        "P3": 21.95,
+        "P4": 17.17,
+        "Pts_Medio": 4.29,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 60.88
+      }
+    },
+    "stats_jogos": {
+      "Bélgica x Egito": {
+        "V_pct": 36.59,
+        "E_pct": 27.74,
+        "D_pct": 35.66
+      },
+      "Irã x Nova Zelândia": {
+        "V_pct": 47.45,
+        "E_pct": 23.99,
+        "D_pct": 28.56
+      },
+      "Bélgica x Irã": {
+        "V_pct": 34.55,
+        "E_pct": 27.14,
+        "D_pct": 38.31
+      },
+      "Nova Zelândia x Egito": {
+        "V_pct": 30.61,
+        "E_pct": 25.09,
+        "D_pct": 44.3
+      },
+      "Egito x Irã": {
+        "V_pct": 34.12,
+        "E_pct": 26.97,
+        "D_pct": 38.91
+      },
+      "Nova Zelândia x Bélgica": {
+        "V_pct": 30.07,
+        "E_pct": 24.77,
+        "D_pct": 45.16
+      }
+    }
+  },
+  {
+    "grupo": "H",
+    "times": [
+      "Espanha",
+      "Cabo Verde",
+      "Arábia Saudita",
+      "Uruguai"
+    ],
+    "n_sim": 500000,
+    "stats_times": {
+      "Espanha": {
+        "P1": 42.68,
+        "P2": 26.25,
+        "P3": 18.37,
+        "P4": 12.7,
+        "Pts_Medio": 4.8,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 68.93
+      },
+      "Cabo Verde": {
+        "P1": 15.35,
+        "P2": 20.72,
+        "P3": 27.61,
+        "P4": 36.32,
+        "Pts_Medio": 3.76,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 36.07
+      },
+      "Arábia Saudita": {
+        "P1": 16.45,
+        "P2": 22.83,
+        "P3": 29.68,
+        "P4": 31.04,
+        "Pts_Medio": 3.67,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 39.28
+      },
+      "Uruguai": {
+        "P1": 25.53,
+        "P2": 30.19,
+        "P3": 24.34,
+        "P4": 19.94,
+        "Pts_Medio": 4.22,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 55.72
+      }
+    },
+    "stats_jogos": {
+      "Espanha x Cabo Verde": {
+        "V_pct": 46.23,
+        "E_pct": 24.42,
+        "D_pct": 29.35
+      },
+      "Arábia Saudita x Uruguai": {
+        "V_pct": 32.46,
+        "E_pct": 26.15,
+        "D_pct": 41.4
+      },
+      "Espanha x Arábia Saudita": {
+        "V_pct": 47.26,
+        "E_pct": 24.04,
+        "D_pct": 28.7
+      },
+      "Uruguai x Cabo Verde": {
+        "V_pct": 40.64,
+        "E_pct": 26.35,
+        "D_pct": 33.01
+      },
+      "Cabo Verde x Arábia Saudita": {
+        "V_pct": 36.96,
+        "E_pct": 27.72,
+        "D_pct": 35.32
+      },
+      "Uruguai x Espanha": {
+        "V_pct": 32.32,
+        "E_pct": 25.96,
+        "D_pct": 41.72
+      }
+    }
+  },
+  {
+    "grupo": "J",
+    "times": [
+      "Argélia",
+      "Argentina",
+      "Áustria",
+      "Jordânia"
+    ],
+    "n_sim": 500000,
+    "stats_times": {
+      "Argélia": {
+        "P1": 22.65,
+        "P2": 26.25,
+        "P3": 27.76,
+        "P4": 23.33,
+        "Pts_Medio": 4.22,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 48.9
+      },
+      "Argentina": {
+        "P1": 40.54,
+        "P2": 26.56,
+        "P3": 19.08,
+        "P4": 13.83,
+        "Pts_Medio": 4.67,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 67.09
+      },
+      "Áustria": {
+        "P1": 22.93,
+        "P2": 27.82,
+        "P3": 25.98,
+        "P4": 23.27,
+        "Pts_Medio": 3.96,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 50.75
+      },
+      "Jordânia": {
+        "P1": 13.89,
+        "P2": 19.36,
+        "P3": 27.18,
+        "P4": 39.57,
+        "Pts_Medio": 3.6,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 33.26
+      }
+    },
+    "stats_jogos": {
+      "Argentina x Argélia": {
+        "V_pct": 40.34,
+        "E_pct": 26.41,
+        "D_pct": 33.24
+      },
+      "Áustria x Jordânia": {
+        "V_pct": 39.84,
+        "E_pct": 26.65,
+        "D_pct": 33.52
+      },
+      "Argentina x Áustria": {
+        "V_pct": 43.08,
+        "E_pct": 25.51,
+        "D_pct": 31.42
+      },
+      "Jordânia x Argélia": {
+        "V_pct": 31.85,
+        "E_pct": 25.74,
+        "D_pct": 42.41
+      },
+      "Jordânia x Argentina": {
+        "V_pct": 28.89,
+        "E_pct": 24.36,
+        "D_pct": 46.75
+      },
+      "Argélia x Áustria": {
+        "V_pct": 38.54,
+        "E_pct": 27.12,
+        "D_pct": 34.34
+      }
+    }
+  },
+  {
+    "grupo": "L",
+    "times": [
+      "Panamá",
+      "Inglaterra",
+      "Gana",
+      "Croácia"
+    ],
+    "n_sim": 500000,
+    "stats_times": {
+      "Panamá": {
+        "P1": 19.77,
+        "P2": 25.33,
+        "P3": 30.28,
+        "P4": 24.63,
+        "Pts_Medio": 4.05,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 45.09
+      },
+      "Inglaterra": {
+        "P1": 40.12,
+        "P2": 26.89,
+        "P3": 19.49,
+        "P4": 13.49,
+        "Pts_Medio": 4.67,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 67.02
+      },
+      "Gana": {
+        "P1": 11.41,
+        "P2": 17.29,
+        "P3": 26.66,
+        "P4": 44.64,
+        "Pts_Medio": 3.32,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 28.7
+      },
+      "Croácia": {
+        "P1": 28.7,
+        "P2": 30.49,
+        "P3": 23.56,
+        "P4": 17.24,
+        "Pts_Medio": 4.44,
+        "Pts_Min": 0,
+        "Pts_Max": 9,
+        "Classifica": 59.19
+      }
+    },
+    "stats_jogos": {
+      "Inglaterra x Croácia": {
+        "V_pct": 38.21,
+        "E_pct": 27.15,
+        "D_pct": 34.64
+      },
+      "Gana x Panamá": {
+        "V_pct": 31.07,
+        "E_pct": 25.39,
+        "D_pct": 43.53
+      },
+      "Inglaterra x Gana": {
+        "V_pct": 49.9,
+        "E_pct": 23.18,
+        "D_pct": 26.91
+      },
+      "Panamá x Croácia": {
+        "V_pct": 33.5,
+        "E_pct": 26.67,
+        "D_pct": 39.83
+      },
+      "Croácia x Gana": {
+        "V_pct": 47.74,
+        "E_pct": 23.91,
+        "D_pct": 28.36
+      },
+      "Panamá x Inglaterra": {
+        "V_pct": 31.96,
+        "E_pct": 25.75,
+        "D_pct": 42.29
+      }
+    }
+  }
+]

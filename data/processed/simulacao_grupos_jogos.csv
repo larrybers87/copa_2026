@@ -1,0 +1,37 @@
+Grupo,Time1,Time2,V_Time1_%,Empate_%,V_Time2_%
+C,Brasil,Marrocos,34.01,26.86,39.12
+C,Haiti,Escócia,34.84,27.45,37.71
+C,Escócia,Marrocos,30.33,24.86,44.8
+C,Brasil,Haiti,43.64,25.3,31.06
+C,Marrocos,Haiti,46.81,24.22,28.96
+C,Escócia,Brasil,32.27,25.93,41.8
+E,Alemanha,Curaçao,45.57,24.64,29.79
+E,Costa do Marfim,Equador,39.85,26.64,33.51
+E,Alemanha,Costa do Marfim,36.77,27.74,35.49
+E,Equador,Curaçao,41.06,26.2,32.74
+E,Equador,Alemanha,33.12,26.44,40.44
+E,Curaçao,Costa do Marfim,30.17,24.83,44.99
+G,Bélgica,Egito,36.59,27.74,35.66
+G,Irã,Nova Zelândia,47.45,23.99,28.56
+G,Bélgica,Irã,34.55,27.14,38.31
+G,Nova Zelândia,Egito,30.61,25.09,44.3
+G,Egito,Irã,34.12,26.97,38.91
+G,Nova Zelândia,Bélgica,30.07,24.77,45.16
+H,Espanha,Cabo Verde,46.23,24.42,29.35
+H,Arábia Saudita,Uruguai,32.46,26.15,41.4
+H,Espanha,Arábia Saudita,47.26,24.04,28.7
+H,Uruguai,Cabo Verde,40.64,26.35,33.01
+H,Cabo Verde,Arábia Saudita,36.96,27.72,35.32
+H,Uruguai,Espanha,32.32,25.96,41.72
+J,Argentina,Argélia,40.34,26.41,33.24
+J,Áustria,Jordânia,39.84,26.65,33.52
+J,Argentina,Áustria,43.08,25.51,31.42
+J,Jordânia,Argélia,31.85,25.74,42.41
+J,Jordânia,Argentina,28.89,24.36,46.75
+J,Argélia,Áustria,38.54,27.12,34.34
+L,Inglaterra,Croácia,38.21,27.15,34.64
+L,Gana,Panamá,31.07,25.39,43.53
+L,Inglaterra,Gana,49.9,23.18,26.91
+L,Panamá,Croácia,33.5,26.67,39.83
+L,Croácia,Gana,47.74,23.91,28.36
+L,Panamá,Inglaterra,31.96,25.75,42.29

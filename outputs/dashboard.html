@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa do Mundo 2026 — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-brand">
+      <div class="header-title">⚽ Copa do Mundo 2026</div>
+      <div class="header-sub">Dashboard de Seleções</div>
+    </div>
+
+    <!-- Navegação de abas -->
+    <nav class="main-nav">
+      <button class="nav-btn active" data-tab="selecao">Seleções</button>
+      <button class="nav-btn" data-tab="h2h">Head to Head</button>
+      <button class="nav-btn" data-tab="calendario">Calendário</button>
+      <button class="nav-btn" data-tab="simulacao">Simulação</button>
+      <button class="nav-btn" data-tab="ranking">Ranking FIFA</button>
+    </nav>
+
+    <div class="header-sep"></div>
+
+    <!-- Selector — só visível na aba Seleções e H2H -->
+    <div class="selector-wrap" id="selectorWrap">
+      <span class="selector-label">Seleção</span>
+      <select id="selecaoSelect"></select>
+    </div>
+  </header>
+
+  <!-- ── Aba: Seleções ── -->
+  <div class="tab-content active" id="tab-selecao">
+    <div class="main">
+      <div class="panel-selecao" id="panelSelecao"></div>
+      <div class="right-col">
+        <div class="card" id="cardJogos">
+          <div class="card-header">
+            <span class="card-title">🗓 Jogos na Fase de Grupos</span>
+          </div>
+          <div class="card-body" id="bodyJogos"></div>
+        </div>
+        <div class="bottom-row">
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">📅 Histórico Anual</span>
+            </div>
+            <div class="card-body" id="bodyHistorico"></div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">⚔️ Head to Head</span>
+            </div>
+            <div class="card-body" id="bodyH2H"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Aba: H2H Ampliado ── -->
+  <div class="tab-content" id="tab-h2h">
+    <div class="h2h-full-wrap">
+      <div class="h2h-full-header">
+        <div id="h2hFullIdentidade"></div>
+        <div class="h2h-full-stats-bar" id="h2hFullStats"></div>
+      </div>
+      <div class="h2h-full-search-wrap">
+        <input type="text" id="h2hSearch" class="h2h-search-input"
+               placeholder="Filtrar oponente..." autocomplete="off">
+      </div>
+      <div class="h2h-cards-grid" id="h2hCards"></div>
+    </div>
+  </div>
+
+  <!-- ── Aba: Calendário ── -->
+  <div class="tab-content" id="tab-calendario">
+    <div class="calendario-wrap">
+
+      <div class="calendario-toolbar">
+        <!-- Filtro por grupo -->
+        <div class="cal-filter-group">
+          <span class="selector-label">Grupo</span>
+          <div class="cal-btn-group" id="calFiltroGrupo">
+            <button class="cal-btn active" data-grupo="">Todos</button>
+          </div>
+        </div>
+
+        <!-- Filtro por cidade -->
+        <div class="cal-filter-group">
+          <span class="selector-label">Cidade</span>
+          <div class="cal-btn-group" id="calFiltroCidade">
+            <button class="cal-btn active" data-cidade="">Todas</button>
+          </div>
+        </div>
+
+        <!-- Busca por seleção -->
+        <div class="cal-filter-group" style="margin-left:auto">
+          <span class="selector-label">Seleção</span>
+          <input type="text" id="calBuscaSelecao" class="h2h-search-input"
+                 placeholder="Filtrar seleção..." autocomplete="off">
+        </div>
+      </div>
+
+      <div class="cal-resumo" id="calResumo"></div>
+      <div class="cal-lista" id="calLista"></div>
+    </div>
+  </div>
+
+  <!-- ── Aba: Simulação ── -->
+  <div class="tab-content" id="tab-simulacao">
+    <div class="sim-wrap">
+      <div class="sim-toolbar">
+        <div class="sim-info" id="simInfo">
+          <span style="color:var(--muted);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-family:var(--font-head)">
+            Carregando simulação...
+          </span>
+        </div>
+        <div class="cal-btn-group" id="simFiltroGrupo"></div>
+      </div>
+      <div id="simLista"></div>
+    </div>
+  </div>
+
+  <!-- ── Aba: Ranking FIFA ── -->
+  <div class="tab-content" id="tab-ranking">
+    <div class="ranking-wrap-full">
+      <div class="ranking-toolbar">
+        <input type="text" id="rankingSearch" class="h2h-search-input"
+               placeholder="Buscar seleção..." autocomplete="off">
+        <div class="ranking-filter-group" id="rankingFiltroConf">
+          <button class="conf-btn active" data-conf="">Todas</button>
+        </div>
+      </div>
+      <div class="ranking-table-wrap">
+        <table class="ranking-table" id="rankingTable">
+          <thead>
+            <tr>
+              <th class="sortable active-sort" data-col="Ranking_FIFA">#</th>
+              <th class="sortable" data-col="Selecao">Seleção</th>
+              <th class="sortable" data-col="Total_Pontos">Pontos</th>
+              <th>Conf.</th>
+              <th class="sortable" data-col="Copas_Participacoes">Part.</th>
+              <th class="sortable" data-col="Copas_Titulos">🏆</th>
+              <th class="sortable" data-col="Segundo_Lugar">🥈</th>
+              <th class="sortable" data-col="Terceiro_Lugar">🥉</th>
+            </tr>
+          </thead>
+          <tbody id="rankingBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

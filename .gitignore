@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# Arquivos gerados automaticamente (recriar com gerar_html.py)
+outputs/dados.js
+
+# Jupyter
+.ipynb_checkpoints/

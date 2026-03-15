@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa do Mundo 2026 — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0a0c10;
+    --surface:   #111318;
+    --card:      #161920;
+    --border:    #1e2330;
+    --accent:    #c8a84b;
+    --accent2:   #4b7fc8;
+    --green:     #3ecf6e;
+    --red:       #e05252;
+    --text:      #e8eaf0;
+    --muted:     #6b7280;
+    --label:     #9ca3af;
+    --font-head: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 14px;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-title {
+    font-family: var(--font-head);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .header-sub {
+    font-family: var(--font-head);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .header-sep { flex: 1; }
+
+  /* ── Selector ── */
+  .selector-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .selector-label {
+    font-family: var(--font-head);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  select {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 7px 32px 7px 12px;
+    font-family: var(--font-head);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7280' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    min-width: 200px;
+    transition: border-color .2s;
+  }
+  select:focus { outline: none; border-color: var(--accent); }
+
+  /* ── Layout principal ── */
+  .main {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    padding: 20px 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* ── Card base ── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .card-header {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-title {
+    font-family: var(--font-head);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .card-body { padding: 16px; }
+
+  /* ── Painel da seleção (coluna esquerda) ── */
+  .panel-selecao {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Identidade */
+  .identity-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 16px 20px;
+  }
+  .flag-logo-wrap {
+    position: relative;
+    width: 88px;
+    height: 88px;
+  }
+  .flag-img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+  }
+  .flag-fallback {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .selecao-nome {
+    font-family: var(--font-head);
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1;
+  }
+  .selecao-conf {
+    font-family: var(--font-head);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .grupo-badge {
+    background: var(--accent);
+    color: #000;
+    font-family: var(--font-head);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Stats grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .stat-item {
+    background: var(--surface);
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .stat-value {
+    font-family: var(--font-head);
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1;
+  }
+  .stat-value.gold { color: var(--accent); }
+  .stat-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* Ranking bar */
+  .ranking-wrap { width: 100%; }
+  .ranking-bar-bg {
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  .ranking-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width .6s ease;
+  }
+
+  /* ── Coluna direita ── */
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Jogos do grupo */
+  .jogos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .jogo-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: var(--surface);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    transition: border-color .2s;
+  }
+  .jogo-row.destaque { border-color: var(--accent); }
+  .jogo-row:hover { border-color: var(--accent2); }
+  .jogo-time {
+    font-family: var(--font-head);
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .jogo-time.right { text-align: right; }
+  .jogo-time.destaque-time { color: var(--accent); }
+  .jogo-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .jogo-vs {
+    font-family: var(--font-head);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+  .jogo-data {
+    font-size: 10px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .jogo-local {
+    font-size: 10px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  /* Seção inferior: histórico + head2head lado a lado */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* Histórico anual */
+  .historico-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .historico-table th {
+    font-family: var(--font-head);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: right;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .historico-table th:first-child { text-align: left; }
+  .historico-table td {
+    font-family: var(--font-head);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border);
+    color: var(--label);
+  }
+  .historico-table td:first-child {
+    text-align: left;
+    color: var(--text);
+    font-size: 15px;
+  }
+  .historico-table tr:last-child td { border-bottom: none; }
+  .td-win  { color: var(--green) !important; }
+  .td-loss { color: var(--red)   !important; }
+
+  /* Win rate bar inline */
+  .wr-wrap { display: flex; align-items: center; gap: 6px; }
+  .wr-bar-bg {
+    flex: 1; height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .wr-bar { height: 100%; background: var(--green); border-radius: 2px; }
+
+  /* Head to head */
+  .h2h-selector {
+    margin-bottom: 12px;
+  }
+  .h2h-selector select {
+    width: 100%;
+    font-size: 14px;
+  }
+  .h2h-placar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 12px 0;
+    gap: 8px;
+  }
+  .h2h-time-nome {
+    font-family: var(--font-head);
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .h2h-num {
+    font-family: var(--font-head);
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .h2h-num.win  { color: var(--green); }
+  .h2h-num.lose { color: var(--red); }
+  .h2h-num.draw { color: var(--muted); }
+  .h2h-sep {
+    font-family: var(--font-head);
+    font-size: 20px;
+    color: var(--muted);
+  }
+  .h2h-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  .h2h-stat {
+    background: var(--surface);
+    padding: 10px;
+    text-align: center;
+  }
+  .h2h-stat-val {
+    font-family: var(--font-head);
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .h2h-stat-lbl {
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .h2h-no-data {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* ── Animação de entrada ── */
+  .fade-in {
+    animation: fadeIn .3s ease forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Responsive básico ── */
+  @media (max-width: 900px) {
+    .main { grid-template-columns: 1fr; }
+    .panel-selecao { grid-row: auto; }
+    .bottom-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="header-title">⚽ Copa do Mundo 2026</div>
+    <div class="header-sub">Dashboard de Seleções</div>
+  </div>
+  <div class="header-sep"></div>
+  <div class="selector-wrap">
+    <span class="selector-label">Seleção</span>
+    <select id="selecaoSelect" onchange="renderSelecao(this.value)"></select>
+  </div>
+</header>
+
+<div class="main">
+
+  <!-- Coluna esquerda: identidade -->
+  <div class="panel-selecao" id="panelSelecao"></div>
+
+  <!-- Coluna direita -->
+  <div class="right-col">
+    <div class="card" id="cardJogos">
+      <div class="card-header">
+        <span class="card-title">🗓 Jogos na Fase de Grupos</span>
+      </div>
+      <div class="card-body" id="bodyJogos"></div>
+    </div>
+
+    <div class="bottom-row">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">📅 Histórico Anual (últimos anos)</span>
+        </div>
+        <div class="card-body" id="bodyHistorico"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">⚔️ Head to Head</span>
+        </div>
+        <div class="card-body" id="bodyH2H"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// DADOS — gerados pelo script Python (gerar_json.py)
+// Para atualizar: python gerar_json.py > dados.js
+// ═══════════════════════════════════════════════════════
+const DADOS = __DADOS_JSON__;
+</script>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// Helpers
+// ═══════════════════════════════════════════════════════
+
+const fmtData = iso => {
+  const d = new Date(iso);
+  return d.toLocaleDateString('pt-BR', { day:'2-digit', month:'short' });
+};
+
+const confMap = {
+  'UEFA':'UEFA','CONMEBOL':'CONMEBOL','CAF':'CAF',
+  'AFC':'AFC','CONCACAF':'CONCACAF','OFC':'OFC'
+};
+
+// Mapa de emojis de bandeira por código ISO 3166-1 alpha-2
+const flagEmoji = code => {
+  if (!code) return '🏳';
+  return [...code.toUpperCase()].map(c =>
+    String.fromCodePoint(c.charCodeAt(0) + 127397)
+  ).join('');
+};
+
+// URL de bandeira via flagcdn (fallback para emoji)
+const flagUrl = code =>
+  code ? `https://flagcdn.com/w80/${code.toLowerCase()}.png` : null;
+
+// ═══════════════════════════════════════════════════════
+// Popula o <select>
+// ═══════════════════════════════════════════════════════
+function popularSelect() {
+  const sel = document.getElementById('selecaoSelect');
+  const grupos = {};
+  DADOS.selecoes
+    .sort((a,b) => a.Selecao.localeCompare(b.Selecao))
+    .forEach(s => {
+      if (!grupos[s.Grupo]) grupos[s.Grupo] = [];
+      grupos[s.Grupo].push(s);
+    });
+
+  Object.keys(grupos).sort().forEach(g => {
+    const og = document.createElement('optgroup');
+    og.label = `Grupo ${g}`;
+    grupos[g].sort((a,b) => a.Selecao.localeCompare(b.Selecao)).forEach(s => {
+      const o = document.createElement('option');
+      o.value = s.Club;
+      o.textContent = `${s.Selecao}`;
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+// Render principal
+// ═══════════════════════════════════════════════════════
+function renderSelecao(club) {
+  const s = DADOS.selecoes.find(x => x.Club === club);
+  if (!s) return;
+
+  renderIdentidade(s);
+  renderJogos(s);
+  renderHistorico(s);
+  renderH2H(s, null);
+}
+
+// ── Identidade ───────────────────────────────────────
+function renderIdentidade(s) {
+  const rankPct = Math.max(5, 100 - (s.Ranking_FIFA / 210 * 100));
+  const titulosStr = s.Copas_Titulos > 0
+    ? '🏆'.repeat(Math.min(s.Copas_Titulos, 5)) + (s.Copas_Titulos > 5 ? ` ×${s.Copas_Titulos}` : '')
+    : '—';
+
+  const flagSrc = flagUrl(s.iso2);
+  const flagHtml = flagSrc
+    ? `<img class="flag-img" src="${flagSrc}" alt="${s.Selecao}"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+    : '';
+  const emojiHtml = `<div class="flag-fallback" ${flagSrc ? 'style="display:none"' : ''}>
+    ${flagEmoji(s.iso2)}
+  </div>`;
+
+  document.getElementById('panelSelecao').innerHTML = `
+    <div class="card identity-card fade-in">
+      <div class="card-body">
+        <div class="flag-logo-wrap">
+          ${flagHtml}
+          ${emojiHtml}
+        </div>
+        <div class="selecao-nome">${s.Selecao}</div>
+        <div class="selecao-conf">${s.Confederacao}</div>
+        <div class="grupo-badge">Grupo ${s.Grupo}</div>
+
+        <div class="stats-grid" style="margin-top:8px">
+          <div class="stat-item">
+            <span class="stat-value gold">#${s.Ranking_FIFA}</span>
+            <span class="stat-label">Ranking FIFA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">${s.Copas_Participacoes}</span>
+            <span class="stat-label">Participações</span>
+          </div>
+          <div class="stat-item" style="grid-column:1/-1">
+            <span class="stat-value gold">${s.Copas_Titulos}</span>
+            <span class="stat-label">Títulos Mundiais</span>
+          </div>
+        </div>
+
+        <div class="ranking-wrap" style="width:100%;margin-top:4px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)">Força Ranking</span>
+            <span style="font-family:var(--font-head);font-size:12px;color:var(--accent)">${s.Total_Pontos ? s.Total_Pontos.toFixed(1)+' pts' : ''}</span>
+          </div>
+          <div class="ranking-bar-bg">
+            <div class="ranking-bar-fill" style="width:${rankPct}%"></div>
+          </div>
+        </div>
+
+        ${s.is_repescagem ? `<div style="margin-top:8px;padding:6px 12px;background:#1a1200;border:1px solid #c8a84b44;border-radius:4px;font-size:11px;color:var(--accent);letter-spacing:1px;text-transform:uppercase">⚠ Vaga via Repescagem</div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+// ── Jogos do grupo ───────────────────────────────────
+function renderJogos(s) {
+  const jogos = DADOS.jogos_grupos.filter(j =>
+    j.Grupo === s.Grupo
+  );
+
+  if (!jogos.length) {
+    document.getElementById('bodyJogos').innerHTML =
+      `<p style="color:var(--muted)">Sem jogos encontrados para o Grupo ${s.Grupo}.</p>`;
+    return;
+  }
+
+  const rows = jogos.map(j => {
+    const isHome = j.Time1 === s.Club;
+    const isAway = j.Time2 === s.Club;
+    const dest = isHome || isAway ? 'destaque' : '';
+    const t1class = isHome ? 'jogo-time destaque-time' : 'jogo-time';
+    const t2class = isAway ? 'jogo-time right destaque-time' : 'jogo-time right';
+
+    // Traduz nome do clube para nome PT se disponível
+    const nome1 = DADOS.selecoes.find(x => x.Club === j.Time1)?.Selecao || j.Time1;
+    const nome2 = DADOS.selecoes.find(x => x.Club === j.Time2)?.Selecao || j.Time2;
+
+    return `
+      <div class="jogo-row ${dest}">
+        <span class="${t1class}">${nome1}</span>
+        <div class="jogo-center">
+          <span class="jogo-vs">VS</span>
+          <span class="jogo-data">${fmtData(j.DataHora)}</span>
+          <span class="jogo-local">${j.Local}</span>
+        </div>
+        <span class="${t2class}">${nome2}</span>
+      </div>`;
+  }).join('');
+
+  document.getElementById('bodyJogos').innerHTML =
+    `<div class="jogos-grid fade-in">${rows}</div>`;
+}
+
+// ── Histórico anual ──────────────────────────────────
+function renderHistorico(s) {
+  const hist = (DADOS.annual_balance || [])
+    .filter(r => r.Team === s.Club)
+    .sort((a,b) => b.Year - a.Year)
+    .slice(0, 6);
+
+  if (!hist.length) {
+    document.getElementById('bodyHistorico').innerHTML =
+      `<p style="color:var(--muted);font-size:13px">Sem dados históricos.</p>`;
+    return;
+  }
+
+  const rows = hist.map(r => {
+    const wr = r.Matches > 0 ? (r.Wins / r.Matches * 100) : 0;
+    return `
+      <tr>
+        <td>${r.Year}</td>
+        <td>${r.Matches}</td>
+        <td class="td-win">${r.Wins}</td>
+        <td>${r.Draws}</td>
+        <td class="td-loss">${r.Losses}</td>
+        <td>
+          <div class="wr-wrap">
+            <span style="font-family:var(--font-head);font-size:13px;color:var(--green)">${wr.toFixed(0)}%</span>
+            <div class="wr-bar-bg"><div class="wr-bar" style="width:${wr}%"></div></div>
+          </div>
+        </td>
+      </tr>`;
+  }).join('');
+
+  document.getElementById('bodyHistorico').innerHTML = `
+    <div class="fade-in">
+      <table class="historico-table">
+        <thead>
+          <tr>
+            <th>Ano</th><th>J</th><th>V</th><th>E</th><th>D</th><th>%V</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+// ── Head to Head ─────────────────────────────────────
+function renderH2H(s, oponente) {
+  // Monta select de oponentes
+  const outros = DADOS.selecoes
+    .filter(x => x.Club !== s.Club)
+    .sort((a,b) => a.Selecao.localeCompare(b.Selecao));
+
+  const opts = outros.map(o =>
+    `<option value="${o.Club}" ${o.Club === oponente ? 'selected' : ''}>${o.Selecao}</option>`
+  ).join('');
+
+  const alvo = oponente || outros[0]?.Club;
+
+  // Busca no record_against
+  const rec = (DADOS.record_against || []).find(
+    r => r.Team === s.Club && r.Opponent === alvo
+  );
+
+  // Também tenta a perspectiva inversa
+  const recInv = (DADOS.record_against || []).find(
+    r => r.Team === alvo && r.Opponent === s.Club
+  );
+
+  let h2hHtml = '';
+  if (rec) {
+    const total = rec.Matches || 0;
+    const v = rec.Wins || 0;
+    const e = rec.Draws || 0;
+    const d = rec.Losses || 0;
+    const nomeOp = DADOS.selecoes.find(x => x.Club === alvo)?.Selecao || alvo;
+    h2hHtml = `
+      <div class="h2h-placar">
+        <div>
+          <div class="h2h-time-nome">${s.Selecao}</div>
+          <div class="h2h-num win">${v}</div>
+          <div style="font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase">vitórias</div>
+        </div>
+        <div>
+          <div class="h2h-num draw" style="font-size:28px">${e}</div>
+          <div style="font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase">empates</div>
+        </div>
+        <div>
+          <div class="h2h-time-nome">${nomeOp}</div>
+          <div class="h2h-num lose">${d}</div>
+          <div style="font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase">vitórias</div>
+        </div>
+      </div>
+      <div class="h2h-stats">
+        <div class="h2h-stat">
+          <div class="h2h-stat-val">${total}</div>
+          <div class="h2h-stat-lbl">Jogos</div>
+        </div>
+        <div class="h2h-stat">
+          <div class="h2h-stat-val" style="color:var(--green)">${total > 0 ? (v/total*100).toFixed(0) : 0}%</div>
+          <div class="h2h-stat-lbl">% Vitórias</div>
+        </div>
+        <div class="h2h-stat">
+          <div class="h2h-stat-val" style="color:var(--muted)">${total > 0 ? (e/total*100).toFixed(0) : 0}%</div>
+          <div class="h2h-stat-lbl">% Empates</div>
+        </div>
+      </div>`;
+  } else {
+    h2hHtml = `<div class="h2h-no-data">Sem dados de confronto direto.</div>`;
+  }
+
+  document.getElementById('bodyH2H').innerHTML = `
+    <div class="fade-in">
+      <div class="h2h-selector">
+        <select onchange="renderH2H(
+          DADOS.selecoes.find(x=>x.Club==='${s.Club}'),
+          this.value
+        )" style="width:100%">${opts}</select>
+      </div>
+      ${h2hHtml}
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════════
+// Init
+// ═══════════════════════════════════════════════════════
+popularSelect();
+const primeiro = DADOS.selecoes
+  .sort((a,b) => a.Ranking_FIFA - b.Ranking_FIFA)[0];
+if (primeiro) {
+  document.getElementById('selecaoSelect').value = primeiro.Club;
+  renderSelecao(primeiro.Club);
+}
+</script>
+</body>
+</html>
