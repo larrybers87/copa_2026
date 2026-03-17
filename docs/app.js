@@ -1523,27 +1523,17 @@ function renderClassificados() {
     });
   });
 
-  // ── Top 8 terceiros ────────────────────────────────────────────────────────
-  // Para cada grupo, pega o time mais provável de terminar em 3º (maior P3)
-  // Depois ordena por PtsMed (critério FIFA), tiebreaker % P3
-  const terceirosProvaveis = [];
-  sim.forEach(r => {
-    // Time com maior P3 em cada grupo
-    const melhor3 = Object.entries(r.stats_times)
-      .sort((a, b) => b[1].P3 - a[1].P3)[0];
-    if (melhor3) {
-      terceirosProvaveis.push({
-        grupo:  r.grupo,
-        time:   melhor3[0],
-        stats:  melhor3[1],
-        pct3:   melhor3[1].P3,
-        ptsMed: melhor3[1].Pts_Medio,
-      });
-    }
-  });
+  // ── Top 8 terceiros — 3º de cada grupo por PtsMed, top 8 por PtsMed
+  const terceirosProvaveisTop = sim.map(r => {
+    const sorted = Object.entries(r.stats_times)
+      .sort((a, b) => b[1].Pts_Medio - a[1].Pts_Medio);
+    const p3 = sorted[2];
+    if (!p3) return null;
+    return { grupo: r.grupo, time: p3[0], stats: p3[1], pct3: p3[1].P3, ptsMed: p3[1].Pts_Medio };
+  }).filter(Boolean);
 
-  const top8Terceiros = terceirosProvaveis
-    .sort((a, b) => b.ptsMed - a.ptsMed || b.pct3 - a.pct3)
+  const top8Terceiros = terceirosProvaveisTop
+    .sort((a, b) => b.ptsMed - a.ptsMed)
     .slice(0, 8);
 
   // ── Renderiza ──────────────────────────────────────────────────────────────
@@ -1695,26 +1685,24 @@ function alocarTerceiros(terceirosOrdenados) {
 // ══════════════════════════════════════════════════════════════════════════════
 
 function renderSegundaFase(sim) {
-  // Lookup: grupo → { 1, 2, 3 } com time mais provável de cada posição
+  // Lookup: ordena por PtsMed → posição 0=1º, 1=2º, 2=3º
   const lookup = {};
   sim.forEach(r => {
-    lookup[r.grupo] = {
-      1: Object.entries(r.stats_times).sort((a,b) => b[1].P1 - a[1].P1)[0],
-      2: Object.entries(r.stats_times).sort((a,b) => b[1].P2 - a[1].P2)[0],
-      3: Object.entries(r.stats_times).sort((a,b) => b[1].P3 - a[1].P3)[0],
-    };
+    const sorted = Object.entries(r.stats_times)
+      .sort((a, b) => b[1].Pts_Medio - a[1].Pts_Medio);
+    lookup[r.grupo] = { 1: sorted[0], 2: sorted[1], 3: sorted[2] };
   });
 
-  // Terceiros prováveis de cada grupo (maior P3), ordenados por PtsMed
+  // Terceiros prováveis: 3º de cada grupo por PtsMed
   const todosOsTerceiros = [];
   sim.forEach(r => {
-    const melhor3 = Object.entries(r.stats_times).sort((a,b) => b[1].P3 - a[1].P3)[0];
-    if (melhor3) todosOsTerceiros.push({
-      grupo: r.grupo, time: melhor3[0], stats: melhor3[1],
-      ptsMed: melhor3[1].Pts_Medio, pct3: melhor3[1].P3,
+    const pos3 = lookup[r.grupo][3];
+    if (pos3) todosOsTerceiros.push({
+      grupo: r.grupo, time: pos3[0], stats: pos3[1],
+      ptsMed: pos3[1].Pts_Medio, pct3: pos3[1].P3,
     });
   });
-  todosOsTerceiros.sort((a,b) => b.ptsMed - a.ptsMed || b.pct3 - a.pct3);
+  todosOsTerceiros.sort((a, b) => b.ptsMed - a.ptsMed);
 
   // Aloca os top 8 terceiros nos jogos corretos via regra FIFA
   const top8 = todosOsTerceiros.slice(0, 8);
