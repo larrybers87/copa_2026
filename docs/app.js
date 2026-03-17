@@ -1175,7 +1175,10 @@ function _renderSimLista(sim) {
 function _htmlGrupoSim(r) {
   return `
     <div class="sim-grupo fade-in">
-      <div class="sim-grupo-title">Grupo ${r.grupo}</div>
+      <div class="sim-grupo-title">
+        <span>Grupo ${r.grupo}</span>
+        <span class="sim-grupo-nsim">${r.n_sim.toLocaleString('pt-BR')} simulações</span>
+      </div>
       <div class="sim-grupo-body">
         ${_htmlTabelaClassif(r)}
         ${_htmlTabelaJogos(r)}
@@ -1188,7 +1191,11 @@ function _htmlGrupoSim(r) {
 
 function _htmlTabelaClassif(r) {
   const times = Object.entries(r.stats_times)
-    .sort((a, b) => b[1].Pts_Medio - a[1].Pts_Medio);
+    .sort((a, b) => {
+      const medA = a[1].Pts_Medio, medB = b[1].Pts_Medio;
+      if (Math.abs(medB - medA) > 0.05) return medB - medA;  // ordena por média
+      return b[1].P1 - a[1].P1;                               // tiebreaker: % 1º lugar
+    });
 
   const rows = times.map(([time, s], i) => {
     const s2  = _getSel(time);
@@ -1212,7 +1219,9 @@ function _htmlTabelaClassif(r) {
         <td class="sim-td-num">${s.P2.toFixed(1)}%</td>
         <td class="sim-td-num">${s.P3.toFixed(1)}%</td>
         <td class="sim-td-num">${s.P4.toFixed(1)}%</td>
-        <td class="sim-td-pts">${s.Pts_Medio.toFixed(1)}</td>
+        <td class="sim-td-pts" title="Média">${s.Pts_Medio.toFixed(1)}</td>
+        <td class="sim-td-num" title="Mediana" style="color:var(--accent2)">${s.Pts_Mediana != null ? s.Pts_Mediana.toFixed(1) : '—'}</td>
+        <td class="sim-td-num" title="Desvio Padrão" style="color:var(--muted)">${s.Pts_DP != null ? '±'+s.Pts_DP.toFixed(2) : '—'}</td>
         <td class="sim-td-classif">
           <div class="sim-classif-wrap">
             <span style="color:${classColor};font-weight:800;min-width:42px">
@@ -1235,7 +1244,9 @@ function _htmlTabelaClassif(r) {
             <th>#</th>
             <th>Seleção</th>
             <th>1º%</th><th>2º%</th><th>3º%</th><th>4º%</th>
-            <th>PtsMed</th>
+            <th title="Média">Med</th>
+            <th title="Mediana">Mdn</th>
+            <th title="Desvio Padrão">DP</th>
             <th>Classif%</th>
           </tr>
         </thead>
@@ -1302,7 +1313,11 @@ function _htmlTabelaJogos(r) {
 
 function _svgHeatmap(r) {
   const times = Object.keys(r.stats_times)
-    .sort((a, b) => r.stats_times[b].Pts_Medio - r.stats_times[a].Pts_Medio);
+    .sort((a, b) => {
+      const medA = r.stats_times[a].Pts_Medio, medB = r.stats_times[b].Pts_Medio;
+      if (Math.abs(medB - medA) > 0.05) return medB - medA;
+      return r.stats_times[b].P1 - r.stats_times[a].P1;
+    });
 
   const posCols   = ['P1', 'P2', 'P3', 'P4'];
   const posLabels = ['1º Lugar', '2º Lugar', '3º Lugar', '4º Lugar'];

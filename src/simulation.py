@@ -104,34 +104,35 @@ def calcular_forcas(selecoes_df, ranking_df, annual_df):
         max_rank - 1
     )
 
-    # Win rate dos últimos anos
+    # Pontos por jogo recentes — ponderado por ano (mais recente = maior peso)
+    # Usamos pts/jogo (3*V + E) / jogos em vez de winrate puro,
+    # o que é mais justo entre confederações (premia vitórias mas não ignora empates)
     if not annual_df.empty:
-        for col in ["Matches", "Wins"]:
+        for col in ["Matches", "Wins", "Draws", "Year"]:
             annual_df[col] = pd.to_numeric(annual_df[col], errors="coerce")
-        wr = (
-            annual_df.groupby("Team")
-            .apply(
-                lambda g: (
-                    g["Wins"].sum() / g["Matches"].sum()
-                    if g["Matches"].sum() > 0
-                    else 0.5
-                )
-            )
-            .reset_index()
-        )
-        wr.columns = ["Club", "winrate"]
-        merged = merged.merge(wr, on="Club", how="left")
-    else:
-        merged["winrate"] = 0.5
 
-    merged["winrate"] = merged["winrate"].fillna(0.5)
+        ano_max = annual_df["Year"].max()
 
-    # Normaliza winrate para [0, 1]
-    wr_min, wr_max = merged["winrate"].min(), merged["winrate"].max()
-    if wr_max > wr_min:
-        merged["winrate_norm"] = (merged["winrate"] - wr_min) / (wr_max - wr_min)
+        def pts_por_jogo_pond(g):
+            g = g.copy()
+            g["peso"] = np.exp(-0.5 * (ano_max - g["Year"]))
+            g["pts"] = g["Wins"] * 3 + g["Draws"].fillna(0)
+            total_jogos = (g["Matches"] * g["peso"]).sum()
+            total_pts = (g["pts"] * g["peso"]).sum()
+            return (
+                total_pts / total_jogos if total_jogos > 0 else 1.5
+            )  # 1.5 = média neutra
+
+        ppj = annual_df.groupby("Team").apply(pts_por_jogo_pond).reset_index()
+        ppj.columns = ["Club", "ppj"]
+        merged = merged.merge(ppj, on="Club", how="left")
     else:
-        merged["winrate_norm"] = 0.5
+        merged["ppj"] = 1.5
+
+    merged["ppj"] = merged["ppj"].fillna(1.5)
+
+    # Normaliza ppj: escala linear entre 0 e 3 (máx teórico de pts/jogo)
+    merged["winrate_norm"] = (merged["ppj"] / 3.0).clip(0.0, 1.0)
 
     # Força combinada
     merged["forca"] = (
@@ -148,28 +149,38 @@ def calcular_forcas(selecoes_df, ranking_df, annual_df):
 
 # ─── Probabilidades do jogo ───────────────────────────────────────────────────
 
+# Expoente aplicado às forças antes de calcular probabilidades.
+# Amplifica diferenças: força 0.93 vira 0.804 (exp=3), força 0.60 vira 0.216
+# Isso torna jogos desequilibrados muito mais decididos.
+FORCA_EXP = 3.0
+
 
 def prob_jogo(forca_a, forca_b):
     """
     Retorna (p_vitoria_a, p_empate, p_vitoria_b).
 
-    Calibrado para refletir distribuição real de Copas do Mundo:
-    - Média histórica: ~45% vitória, ~27% empate, ~28% derrota
-    - Times iguais (diff=0)  → empate ~28%
-    - Times muito desiguais  → empate cai até ~12%
+    Aplica FORCA_EXP antes do cálculo para amplificar diferenças de nível.
+    Depois usa decaimento exponencial no empate.
 
-    1. ratio = forca_a / (forca_a + forca_b)
-    2. p_empate decresce linearmente com a diferença de força
-    3. Restante dividido proporcionalmente entre V e D
+    Exemplos com exp=3:
+    - Argentina x Jordânia:  69% / 8% / 23%
+    - Espanha x Cabo Verde:  69% / 8% / 23%
+    - Brasil x Marrocos:     35% / 18% / 47%
+    - Times iguais:          36% / 27% / 36%
     """
-    total = forca_a + forca_b
-    ratio = forca_a / total  # [0,1], >0.5 favorece A
+    import math
+
+    # Amplifica diferenças de força
+    fa = forca_a**FORCA_EXP
+    fb = forca_b**FORCA_EXP
+
+    total = fa + fb
+    ratio = fa / total  # [0,1], >0.5 favorece A
     diff = abs(ratio - 0.5) * 2  # 0 = iguais, 1 = máximo desequilíbrio
 
-    # Empate: 28% quando iguais, cai até 12% no máximo desequilíbrio
-    p_e = 0.28 - 0.16 * diff
+    # Decaimento exponencial do empate
+    p_e = max(0.27 * math.exp(-2.5 * diff), 0.04)
 
-    # Restante dividido proporcionalmente à força relativa
     restante = 1.0 - p_e
     p_v = restante * ratio
     p_d = restante * (1.0 - ratio)
@@ -284,6 +295,8 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim):
             "P3": round(posicoes[t][3] / n_sim * 100, 2),
             "P4": round(posicoes[t][4] / n_sim * 100, 2),
             "Pts_Medio": round(float(pts_arr.mean()), 2),
+            "Pts_Mediana": round(float(np.median(pts_arr)), 2),
+            "Pts_DP": round(float(pts_arr.std()), 2),
             "Pts_Min": int(pts_arr.min()),
             "Pts_Max": int(pts_arr.max()),
             "Classifica": round((posicoes[t][1] + posicoes[t][2]) / n_sim * 100, 2),
@@ -328,6 +341,8 @@ def resultado_para_df(resultado):
                 "P_4lugar_%": s["P4"],
                 "P_Classifica_%": s["Classifica"],
                 "Pts_Medio": s["Pts_Medio"],
+                "Pts_Mediana": s["Pts_Mediana"],
+                "Pts_DP": s["Pts_DP"],
                 "Pts_Min": s["Pts_Min"],
                 "Pts_Max": s["Pts_Max"],
             }
@@ -369,14 +384,17 @@ def imprimir_grupo(resultado):
     times_ord = sorted(resultado["stats_times"].items(), key=lambda x: -x[1]["P1"])
 
     print(
-        f"  {'Time':<25} {'1º%':>6} {'2º%':>6} {'3º%':>6} {'4º%':>6}  {'PtsMed':>6}  {'Classif%':>8}"
+        f"  {'Time':<25} {'1º%':>6} {'2º%':>6} {'3º%':>6} {'4º%':>6}  {'Med':>5}  {'Mdn':>5}  {'DP':>5}  {'Classif%':>8}"
     )
-    print(f"  {'-' * 25} {'-' * 6} {'-' * 6} {'-' * 6} {'-' * 6}  {'-' * 6}  {'-' * 8}")
+    print(
+        f"  {'-' * 25} {'-' * 6} {'-' * 6} {'-' * 6} {'-' * 6}  {'-' * 5}  {'-' * 5}  {'-' * 5}  {'-' * 8}"
+    )
     for time, s in times_ord:
         print(
             f"  {time:<25} {s['P1']:>5.1f}% {s['P2']:>5.1f}% "
             f"{s['P3']:>5.1f}% {s['P4']:>5.1f}%  "
-            f"{s['Pts_Medio']:>5.1f}  {s['Classifica']:>7.1f}%"
+            f"{s['Pts_Medio']:>4.1f}  {s['Pts_Mediana']:>4.1f}  {s['Pts_DP']:>4.2f}  "
+            f"{s['Classifica']:>7.1f}%"
         )
 
     print("\n  Resultados dos jogos:")
