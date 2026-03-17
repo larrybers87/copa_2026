@@ -115,15 +115,31 @@
   <!-- ── Aba: Simulação ── -->
   <div class="tab-content" id="tab-simulacao">
     <div class="sim-wrap">
-      <div class="sim-toolbar">
-        <div class="sim-info" id="simInfo">
-          <span style="color:var(--muted);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-family:var(--font-head)">
-            Carregando simulação...
-          </span>
-        </div>
-        <div class="cal-btn-group" id="simFiltroGrupo"></div>
+
+      <!-- Sub-abas -->
+      <div class="sim-subnav">
+        <button class="sim-subbtn active" data-subtab="grupos" onclick="mudarSubAba('grupos',this)">Por Grupo</button>
+        <button class="sim-subbtn" data-subtab="classificados" onclick="mudarSubAba('classificados',this)">Classificados Prováveis</button>
       </div>
-      <div id="simLista"></div>
+
+      <!-- Sub-aba: Por Grupo -->
+      <div class="sim-subtab active" id="subtab-grupos">
+        <div class="sim-toolbar">
+          <div class="sim-info" id="simInfo">
+            <span style="color:var(--muted);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-family:var(--font-head)">
+              Carregando simulação...
+            </span>
+          </div>
+          <div class="cal-btn-group" id="simFiltroGrupo"></div>
+        </div>
+        <div id="simLista"></div>
+      </div>
+
+      <!-- Sub-aba: Classificados Prováveis -->
+      <div class="sim-subtab" id="subtab-classificados">
+        <div id="simClassificados"></div>
+      </div>
+
     </div>
   </div>
 

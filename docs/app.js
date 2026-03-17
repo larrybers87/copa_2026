@@ -1439,3 +1439,375 @@ function _svgHeatmap(r) {
       </div>
     </div>`;
 }
+
+// ══════════════════════════════════════════════════════════════════════════════
+// SUB-ABAS DA SIMULAÇÃO
+// ══════════════════════════════════════════════════════════════════════════════
+
+function mudarSubAba(subtab, btn) {
+  document.querySelectorAll('.sim-subbtn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.sim-subtab').forEach(el => el.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(`subtab-${subtab}`).classList.add('active');
+  if (subtab === 'classificados') renderClassificados();
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// CLASSIFICADOS PROVÁVEIS
+// ══════════════════════════════════════════════════════════════════════════════
+
+// Mapa de vagas de terceiro: qual vaga aceita quais grupos
+const VAGAS_TERCEIROS = {
+  'SF1':  'ABCDF',
+  'SF2':  'CDFGH',
+  'SF7':  'BEFIJ',
+  'SF8':  'AEHIJ',
+  'SF11': 'CEFHI',
+  'SF12': 'EHIJK',
+  'SF15': 'EFGIJ',
+  'SF16': 'DEIJL',
+};
+
+function renderClassificados() {
+  const sim = DADOS.simulacao;
+  const el  = document.getElementById('simClassificados');
+
+  if (!sim || !sim.length) {
+    el.innerHTML = `<div style="color:var(--muted);padding:40px;text-align:center">
+      Nenhuma simulação disponível.</div>`;
+    return;
+  }
+
+  // Monta mapa grupo → stats dos times
+  const porGrupo = {};
+  sim.forEach(r => { porGrupo[r.grupo] = r.stats_times; });
+
+  // ── 1ºs e 2ºs colocados ───────────────────────────────────────────────────
+  const primeiros = [];
+  const segundos  = [];
+  const terceiros = []; // todos os 3ºs com probabilidade
+
+  sim.forEach(r => {
+    const times = Object.entries(r.stats_times)
+      .sort((a, b) => {
+        const ma = a[1].Pts_Medio, mb = b[1].Pts_Medio;
+        if (Math.abs(mb - ma) > 0.05) return mb - ma;
+        return b[1].P1 - a[1].P1;
+      });
+
+    // Mais provável 1º
+    primeiros.push({
+      grupo:    r.grupo,
+      time:     times[0][0],
+      stats:    times[0][1],
+      pct:      times[0][1].P1,
+    });
+
+    // Mais provável 2º
+    segundos.push({
+      grupo:    r.grupo,
+      time:     times[1][0],
+      stats:    times[1][1],
+      pct:      times[1][1].P2,
+    });
+
+    // Todos os 3ºs (para ranking)
+    times.forEach(([time, stats]) => {
+      terceiros.push({
+        grupo:   r.grupo,
+        time,
+        stats,
+        pct3:    stats.P3,
+        ptsMed:  stats.Pts_Medio,
+      });
+    });
+  });
+
+  // ── Top 8 terceiros ────────────────────────────────────────────────────────
+  // Para cada grupo, pega o time mais provável de terminar em 3º (maior P3)
+  // Depois ordena por PtsMed (critério FIFA), tiebreaker % P3
+  const terceirosProvaveis = [];
+  sim.forEach(r => {
+    // Time com maior P3 em cada grupo
+    const melhor3 = Object.entries(r.stats_times)
+      .sort((a, b) => b[1].P3 - a[1].P3)[0];
+    if (melhor3) {
+      terceirosProvaveis.push({
+        grupo:  r.grupo,
+        time:   melhor3[0],
+        stats:  melhor3[1],
+        pct3:   melhor3[1].P3,
+        ptsMed: melhor3[1].Pts_Medio,
+      });
+    }
+  });
+
+  const top8Terceiros = terceirosProvaveis
+    .sort((a, b) => b.ptsMed - a.ptsMed || b.pct3 - a.pct3)
+    .slice(0, 8);
+
+  // ── Renderiza ──────────────────────────────────────────────────────────────
+  el.innerHTML = `
+    <div class="classif-wrap">
+
+      <div class="classif-section">
+        <div class="classif-title">🥇 Prováveis Primeiros Colocados</div>
+        <div class="classif-grid">
+          ${primeiros.map(c => _htmlClassifCard(c, '1º', c.pct)).join('')}
+        </div>
+      </div>
+
+      <div class="classif-section">
+        <div class="classif-title">🥈 Prováveis Segundos Colocados</div>
+        <div class="classif-grid">
+          ${segundos.map(c => _htmlClassifCard(c, '2º', c.pct)).join('')}
+        </div>
+      </div>
+
+      <div class="classif-section">
+        <div class="classif-title">
+          🥉 Top 8 Prováveis Terceiros Colocados
+          <span class="classif-sub">dos grupos simulados — ordenado por pontos médios (critério FIFA)</span>
+        </div>
+        <div class="classif-grid classif-grid-3">
+          ${top8Terceiros.map((c, i) => _htmlClassifCard3(c, i + 1)).join('')}
+        </div>
+        <div class="classif-aviso">
+          ⚠️ Grupos com repescagem pendente (A, B, D, F, I, K) não estão incluídos.
+          Os 8 melhores são calculados entre os ${sim.length} grupos já simulados.
+        </div>
+      </div>
+
+      ${renderSegundaFase(sim)}
+
+    </div>`;
+}
+
+function _htmlClassifCard(c, posLabel, pct) {
+  const s    = _getSel(c.time);
+  const nome = s?.Selecao || c.time;
+  const src  = s?.asset_bandeira || flagUrl(s?.iso2);
+  const flag = src
+    ? `<img class="classif-flag" src="${src}" alt="${nome}" onerror="this.style.display='none'">`
+    : `<span style="font-size:28px">${flagEmoji(s?.iso2)}</span>`;
+
+  const cor = pct >= 50 ? 'var(--green)' : pct >= 35 ? 'var(--accent)' : 'var(--label)';
+
+  return `
+    <div class="classif-card">
+      <div class="classif-card-grupo">Grupo ${c.grupo}</div>
+      <div class="classif-card-flag">${flag}</div>
+      <div class="classif-card-nome">${nome}</div>
+      <div class="classif-card-pct" style="color:${cor}">${pct.toFixed(1)}%</div>
+      <div class="classif-card-label">chance de ${posLabel}</div>
+      <div class="classif-card-pts">${c.stats.Pts_Medio.toFixed(1)} pts médios</div>
+    </div>`;
+}
+
+function _htmlClassifCard3(c, rank) {
+  const s    = _getSel(c.time);
+  const nome = s?.Selecao || c.time;
+  const src  = s?.asset_bandeira || flagUrl(s?.iso2);
+  const flag = src
+    ? `<img class="classif-flag" src="${src}" alt="${nome}" onerror="this.style.display='none'">`
+    : `<span style="font-size:28px">${flagEmoji(s?.iso2)}</span>`;
+
+  // Quais vagas este grupo pode preencher
+  const vagasCompativeis = Object.entries(VAGAS_TERCEIROS)
+    .filter(([vaga, grupos]) => grupos.includes(c.grupo))
+    .map(([vaga]) => vaga);
+
+  const cor = rank <= 3 ? 'var(--green)' : rank <= 6 ? 'var(--accent)' : 'var(--label)';
+
+  return `
+    <div class="classif-card classif-card-3">
+      <div class="classif-card-rank" style="color:${cor}">#${rank}</div>
+      <div class="classif-card-grupo">Grupo ${c.grupo}</div>
+      <div class="classif-card-flag">${flag}</div>
+      <div class="classif-card-nome">${nome}</div>
+      <div class="classif-card-pct" style="color:${cor}">${c.pct3.toFixed(1)}%</div>
+      <div class="classif-card-label">chance de 3º lugar</div>
+      <div class="classif-card-pts">${c.ptsMed.toFixed(1)} pts médios</div>
+      <div class="classif-vagas">
+        ${vagasCompativeis.map(v => `<span class="classif-vaga-badge">${v}</span>`).join('')}
+      </div>
+    </div>`;
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// ── Tabela FIFA: alocação dos 3ºs colocados ──────────────────────────────────
+// Fonte: Annex C do regulamento FIFA 2026 (via Wikipedia)
+// Cada jogo com 3º tem uma lista de grupos elegíveis.
+// A alocação é feita atribuindo cada 3º ao jogo compatível,
+// priorizando o jogo com menor número de candidatos (evita conflito).
+//
+// Mapa: fase do jogo → grupos elegíveis (da planilha Jogos_MataMata)
+const ELEGIBILIDADE_3 = {
+  'SF1':  'ABCDF',   // 1E vs 3(A/B/C/D/F)
+  'SF2':  'CDFGH',   // 1I vs 3(C/D/F/G/H)
+  'SF7':  'BEFIJ',   // 1D vs 3(B/E/F/I/J)
+  'SF8':  'AEHIJ',   // 1G vs 3(A/E/H/I/J)
+  'SF11': 'CEFHI',   // 1A vs 3(C/E/F/H/I)
+  'SF12': 'EHIJK',   // 1L vs 3(E/H/I/J/K)
+  'SF15': 'EFGIJ',   // 1B vs 3(E/F/G/I/J)
+  'SF16': 'DEIJL',   // 1K vs 3(D/E/I/J/L)
+};
+
+function alocarTerceiros(terceirosOrdenados) {
+  // terceirosOrdenados: array de { grupo, time, ... } já ordenado por força (PtsMed)
+  // Retorna: Map { 'SF1' → { grupo, time, stats }, ... }
+
+  const jogosSF3 = Object.keys(ELEGIBILIDADE_3);
+  const resultado = {};
+  const usados = new Set();
+
+  // Algoritmo greedy: ordena jogos por nº de candidatos disponíveis (mais restrito primeiro)
+  // Repete até alocar todos ou não haver mais candidatos
+  let mudou = true;
+  while (mudou) {
+    mudou = false;
+    const jogosOrdenados = jogosSF3
+      .filter(sf => !resultado[sf])
+      .map(sf => ({
+        sf,
+        candidatos: terceirosOrdenados.filter(
+          t => ELEGIBILIDADE_3[sf].includes(t.grupo) && !usados.has(t.grupo)
+        )
+      }))
+      .sort((a, b) => a.candidatos.length - b.candidatos.length);
+
+    for (const { sf, candidatos } of jogosOrdenados) {
+      if (candidatos.length === 0) continue;
+      // Pega o mais forte disponível (primeiro da lista já ordenada por PtsMed)
+      const escolhido = candidatos[0];
+      resultado[sf] = escolhido;
+      usados.add(escolhido.grupo);
+      mudou = true;
+      break; // reinicia o loop para recalcular candidatos
+    }
+  }
+
+  return resultado;
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// SEGUNDA FASE — CONFRONTOS PROVÁVEIS
+// ══════════════════════════════════════════════════════════════════════════════
+
+function renderSegundaFase(sim) {
+  // Lookup: grupo → { 1, 2, 3 } com time mais provável de cada posição
+  const lookup = {};
+  sim.forEach(r => {
+    lookup[r.grupo] = {
+      1: Object.entries(r.stats_times).sort((a,b) => b[1].P1 - a[1].P1)[0],
+      2: Object.entries(r.stats_times).sort((a,b) => b[1].P2 - a[1].P2)[0],
+      3: Object.entries(r.stats_times).sort((a,b) => b[1].P3 - a[1].P3)[0],
+    };
+  });
+
+  // Terceiros prováveis de cada grupo (maior P3), ordenados por PtsMed
+  const todosOsTerceiros = [];
+  sim.forEach(r => {
+    const melhor3 = Object.entries(r.stats_times).sort((a,b) => b[1].P3 - a[1].P3)[0];
+    if (melhor3) todosOsTerceiros.push({
+      grupo: r.grupo, time: melhor3[0], stats: melhor3[1],
+      ptsMed: melhor3[1].Pts_Medio, pct3: melhor3[1].P3,
+    });
+  });
+  todosOsTerceiros.sort((a,b) => b.ptsMed - a.ptsMed || b.pct3 - a.pct3);
+
+  // Aloca os top 8 terceiros nos jogos corretos via regra FIFA
+  const top8 = todosOsTerceiros.slice(0, 8);
+  const alocacao = alocarTerceiros(top8); // { 'SF1': {grupo,time,stats}, ... }
+
+  // Resolve código: "1C" → 1º do Grupo C, "2F" → 2º do F, "3ABCDF" → 3º alocado
+  function resolverCodigo(codigo, fase) {
+    if (!codigo) return null;
+    const pos   = parseInt(codigo[0]);
+    const resto = codigo.slice(1);
+
+    if (pos === 3) {
+      // Usa alocação FIFA para este jogo específico
+      const alocado = alocacao[fase];
+      if (!alocado) return { pendente: true, codigo };
+      return { time: alocado.time, stats: alocado.stats, grupo: alocado.grupo, pos: 3, codigo };
+    } else {
+      if (!lookup[resto]) return { pendente: true, codigo };
+      const entry = lookup[resto][pos];
+      if (!entry) return { pendente: true, codigo };
+      return { time: entry[0], stats: entry[1], grupo: resto, pos, codigo };
+    }
+  }
+
+  // Filtra só jogos da SF
+  const jogosSF = (DADOS.jogos_mata || [])
+    .filter(j => j.Fase && j.Fase.startsWith('SF'))
+    .sort((a, b) => new Date(a.DataHora) - new Date(b.DataHora));
+
+  const rows = jogosSF.map(j => {
+    const r1 = resolverCodigo(j.Time1, j.Fase);
+    const r2 = resolverCodigo(j.Time2, j.Fase);
+
+    const _card = (r, codigo) => {
+      if (!r || r.pendente) {
+        return `
+          <div class="sf-time sf-pendente">
+            <div class="sf-codigo">${codigo}</div>
+            <div class="sf-nome">A definir</div>
+          </div>`;
+      }
+      const s   = _getSel(r.time);
+      const nome = s?.Selecao || r.time;
+      const src  = s?.asset_bandeira || flagUrl(s?.iso2);
+      const flag = src
+        ? `<img class="sf-flag" src="${src}" alt="${nome}" onerror="this.style.display='none'">`
+        : `<span style="font-size:22px">${flagEmoji(s?.iso2)}</span>`;
+      const posLabel = r.pos === 3
+        ? `3º Gr.${r.grupo}`
+        : `${r.pos}º Gr.${r.grupo}`;
+      return `
+        <div class="sf-time">
+          ${flag}
+          <div class="sf-time-info">
+            <div class="sf-nome">${nome}</div>
+            <div class="sf-pos">${posLabel}</div>
+          </div>
+        </div>`;
+    };
+
+    const hora = j.DataHora?.includes('T')
+      ? j.DataHora.split('T')[1].slice(0,5) : '';
+    const data = j.DataHora
+      ? new Date(j.DataHora + (j.DataHora.includes('T') ? '' : 'T12:00'))
+          .toLocaleDateString('pt-BR', { day:'2-digit', month:'short' })
+      : '';
+
+    const temPendente = (!r1 || r1.pendente) || (!r2 || r2.pendente);
+
+    return `
+      <div class="sf-jogo ${temPendente ? 'sf-jogo-pendente' : ''}">
+        <div class="sf-jogo-meta">
+          <span class="sf-fase">${j.Fase}</span>
+          <span class="sf-data">${data} ${hora}</span>
+          <span class="sf-local">📍 ${j.Local || '—'}</span>
+        </div>
+        <div class="sf-jogo-confronto">
+          ${_card(r1, j.Time1)}
+          <div class="sf-vs">VS</div>
+          ${_card(r2, j.Time2)}
+        </div>
+      </div>`;
+  }).join('');
+
+  return `
+    <div class="classif-section" style="margin-top:28px">
+      <div class="classif-title">
+        ⚔️ Prováveis Confrontos — Segunda Fase
+        <span class="classif-sub">baseado nos classificados mais prováveis</span>
+      </div>
+      <div class="sf-grid">${rows}</div>
+      <div class="classif-aviso" style="margin-top:12px">
+        ⚠️ Times marcados como "A definir" pertencem a grupos com repescagem pendente.
+      </div>
+    </div>`;
+}
