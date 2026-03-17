@@ -11,7 +11,7 @@ Dashboard interativo e motor de simulação Monte Carlo para a Copa do Mundo 202
 ```
 copa_2026/
 ├── data/
-│   ├── raw/                        ← Dados_Selecoes.xlsx (não versionado)
+│   ├── raw/                        ← Dados_Selecoes.xlsx
 │   └── processed/                  ← CSVs gerados automaticamente
 │       ├── annual_balance.csv
 │       ├── record_against.csv
@@ -33,7 +33,7 @@ copa_2026/
 │   ├── style.css
 │   ├── app.js
 │   ├── dados.js                    ← gerado por gerar_html.py
-│   └── assets/                     ← bandeiras e logos locais (não versionado)
+│   └── assets/                     ← bandeiras e logos locais
 │
 ├── notebooks/
 │   └── exploracao.ipynb
