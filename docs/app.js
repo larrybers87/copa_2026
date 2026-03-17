@@ -1190,12 +1190,9 @@ function _htmlGrupoSim(r) {
 // ── Tabela de classificação ───────────────────────────────────────────────────
 
 function _htmlTabelaClassif(r) {
+  // Ordena por P1 desc, tiebreaker P2
   const times = Object.entries(r.stats_times)
-    .sort((a, b) => {
-      const medA = a[1].Pts_Medio, medB = b[1].Pts_Medio;
-      if (Math.abs(medB - medA) > 0.05) return medB - medA;  // ordena por média
-      return b[1].P1 - a[1].P1;                               // tiebreaker: % 1º lugar
-    });
+    .sort((a, b) => b[1].P1 - a[1].P1 || b[1].P2 - a[1].P2);
 
   const rows = times.map(([time, s], i) => {
     const s2  = _getSel(time);
@@ -1219,9 +1216,9 @@ function _htmlTabelaClassif(r) {
         <td class="sim-td-num">${s.P2.toFixed(1)}%</td>
         <td class="sim-td-num">${s.P3.toFixed(1)}%</td>
         <td class="sim-td-num">${s.P4.toFixed(1)}%</td>
-        <td class="sim-td-pts" title="Média">${s.Pts_Medio.toFixed(1)}</td>
-        <td class="sim-td-num" title="Mediana" style="color:var(--accent2)">${s.Pts_Mediana != null ? s.Pts_Mediana.toFixed(1) : '—'}</td>
-        <td class="sim-td-num" title="Desvio Padrão" style="color:var(--muted)">${s.Pts_DP != null ? '±'+s.Pts_DP.toFixed(2) : '—'}</td>
+        <td class="sim-td-pts sim-col-hidden" title="Média">${s.Pts_Medio.toFixed(1)}</td>
+        <td class="sim-td-num sim-col-hidden" title="Mediana" style="color:var(--accent2)">${s.Pts_Mediana != null ? s.Pts_Mediana.toFixed(1) : '—'}</td>
+        <td class="sim-td-num sim-col-hidden" title="Desvio Padrão" style="color:var(--muted)">${s.Pts_DP != null ? '±'+s.Pts_DP.toFixed(2) : '—'}</td>
         <td class="sim-td-classif">
           <div class="sim-classif-wrap">
             <span style="color:${classColor};font-weight:800;min-width:42px">
@@ -1244,9 +1241,9 @@ function _htmlTabelaClassif(r) {
             <th>#</th>
             <th>Seleção</th>
             <th>1º%</th><th>2º%</th><th>3º%</th><th>4º%</th>
-            <th title="Média">Med</th>
-            <th title="Mediana">Mdn</th>
-            <th title="Desvio Padrão">DP</th>
+            <th class="sim-col-hidden" title="Média">Med</th>
+            <th class="sim-col-hidden" title="Mediana">Mdn</th>
+            <th class="sim-col-hidden" title="Desvio Padrão">DP</th>
             <th>Classif%</th>
           </tr>
         </thead>
@@ -1313,11 +1310,8 @@ function _htmlTabelaJogos(r) {
 
 function _svgHeatmap(r) {
   const times = Object.keys(r.stats_times)
-    .sort((a, b) => {
-      const medA = r.stats_times[a].Pts_Medio, medB = r.stats_times[b].Pts_Medio;
-      if (Math.abs(medB - medA) > 0.05) return medB - medA;
-      return r.stats_times[b].P1 - r.stats_times[a].P1;
-    });
+    .sort((a, b) => r.stats_times[b].P1 - r.stats_times[a].P1
+                 || r.stats_times[b].P2 - r.stats_times[a].P2);
 
   const posCols   = ['P1', 'P2', 'P3', 'P4'];
   const posLabels = ['1º Lugar', '2º Lugar', '3º Lugar', '4º Lugar'];
@@ -1478,63 +1472,30 @@ function renderClassificados() {
     return;
   }
 
-  // Monta mapa grupo → stats dos times
-  const porGrupo = {};
-  sim.forEach(r => { porGrupo[r.grupo] = r.stats_times; });
-
-  // ── 1ºs e 2ºs colocados ───────────────────────────────────────────────────
+  // 1º=maior P1 | 2º=maior P2 excluindo 1º | 3º=maior P3 excluindo 1º e 2º
   const primeiros = [];
   const segundos  = [];
-  const terceiros = []; // todos os 3ºs com probabilidade
 
   sim.forEach(r => {
-    const times = Object.entries(r.stats_times)
-      .sort((a, b) => {
-        const ma = a[1].Pts_Medio, mb = b[1].Pts_Medio;
-        if (Math.abs(mb - ma) > 0.05) return mb - ma;
-        return b[1].P1 - a[1].P1;
-      });
+    const p1 = Object.entries(r.stats_times).sort((a,b) => b[1].P1 - a[1].P1)[0];
+    const p2 = Object.entries(r.stats_times)
+      .filter(([t]) => t !== p1[0]).sort((a,b) => b[1].P2 - a[1].P2)[0];
 
-    // Mais provável 1º
-    primeiros.push({
-      grupo:    r.grupo,
-      time:     times[0][0],
-      stats:    times[0][1],
-      pct:      times[0][1].P1,
-    });
-
-    // Mais provável 2º
-    segundos.push({
-      grupo:    r.grupo,
-      time:     times[1][0],
-      stats:    times[1][1],
-      pct:      times[1][1].P2,
-    });
-
-    // Todos os 3ºs (para ranking)
-    times.forEach(([time, stats]) => {
-      terceiros.push({
-        grupo:   r.grupo,
-        time,
-        stats,
-        pct3:    stats.P3,
-        ptsMed:  stats.Pts_Medio,
-      });
-    });
+    primeiros.push({ grupo: r.grupo, time: p1[0], stats: p1[1], pct: p1[1].P1 });
+    segundos.push({  grupo: r.grupo, time: p2[0], stats: p2[1], pct: p2[1].P2 });
   });
 
-  // ── Top 8 terceiros — 3º de cada grupo por PtsMed, top 8 por PtsMed
+  // ── Top 8 terceiros — exclui 1º(P1) e 2º(P2), pega 3º por P3, ordena por PtsMed
   const terceirosProvaveisTop = sim.map(r => {
-    const sorted = Object.entries(r.stats_times)
-      .sort((a, b) => b[1].Pts_Medio - a[1].Pts_Medio);
-    const p3 = sorted[2];
+    const p1 = Object.entries(r.stats_times).sort((a,b) => b[1].P1 - a[1].P1)[0];
+    const p2 = Object.entries(r.stats_times)
+      .filter(([t]) => t !== p1[0]).sort((a,b) => b[1].P2 - a[1].P2)[0];
+    const p3 = Object.entries(r.stats_times)
+      .filter(([t]) => t !== p1[0] && t !== p2[0]).sort((a,b) => b[1].P3 - a[1].P3)[0];
     if (!p3) return null;
     return { grupo: r.grupo, time: p3[0], stats: p3[1], pct3: p3[1].P3, ptsMed: p3[1].Pts_Medio };
   }).filter(Boolean);
-
-  const top8Terceiros = terceirosProvaveisTop
-    .sort((a, b) => b.ptsMed - a.ptsMed)
-    .slice(0, 8);
+  const top8Terceiros = [...terceirosProvaveisTop].sort((a,b) => b.ptsMed - a.ptsMed).slice(0,8);
 
   // ── Renderiza ──────────────────────────────────────────────────────────────
   el.innerHTML = `
@@ -1685,15 +1646,18 @@ function alocarTerceiros(terceirosOrdenados) {
 // ══════════════════════════════════════════════════════════════════════════════
 
 function renderSegundaFase(sim) {
-  // Lookup: ordena por PtsMed → posição 0=1º, 1=2º, 2=3º
+  // Lookup: 1º=maior P1, 2º=maior P2 excl. 1º, 3º=maior P3 excl. 1º e 2º
   const lookup = {};
   sim.forEach(r => {
-    const sorted = Object.entries(r.stats_times)
-      .sort((a, b) => b[1].Pts_Medio - a[1].Pts_Medio);
-    lookup[r.grupo] = { 1: sorted[0], 2: sorted[1], 3: sorted[2] };
+    const p1 = Object.entries(r.stats_times).sort((a,b) => b[1].P1 - a[1].P1)[0];
+    const p2 = Object.entries(r.stats_times)
+      .filter(([t]) => t !== p1[0]).sort((a,b) => b[1].P2 - a[1].P2)[0];
+    const p3 = Object.entries(r.stats_times)
+      .filter(([t]) => t !== p1[0] && t !== p2[0]).sort((a,b) => b[1].P3 - a[1].P3)[0];
+    lookup[r.grupo] = { 1: p1, 2: p2, 3: p3 };
   });
 
-  // Terceiros prováveis: 3º de cada grupo por PtsMed
+  // Terceiros prováveis: 3º de cada grupo (por P3 excl. 1º e 2º), ordena por PtsMed
   const todosOsTerceiros = [];
   sim.forEach(r => {
     const pos3 = lookup[r.grupo][3];

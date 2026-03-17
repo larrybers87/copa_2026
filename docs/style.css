@@ -2633,3 +2633,6 @@ html { scroll-behavior: smooth; }
   letter-spacing: 1px;
   text-align: center;
 }
+
+/* Colunas ocultas na tabela de simulação (dados mantidos, só escondidos) */
+.sim-col-hidden { display: none; }
