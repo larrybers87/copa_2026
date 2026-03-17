@@ -1,0 +1,12 @@
+# Copa do Mundo 2026 — dependências diretas
+# Instalar: pip install -r requirements.txt
+
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+plotly
+requests
+beautifulsoup4
+openpyxl
