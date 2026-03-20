@@ -10,3 +10,7 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Claude
+.claude/settings.local.json
+.claude/
