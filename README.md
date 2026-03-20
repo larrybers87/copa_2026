@@ -2,7 +2,7 @@
 
 Dashboard interativo e motor de simulação Monte Carlo para a Copa do Mundo 2026.
 
-**[Ver Dashboard ao vivo](https://larrybers87.github.io/copa_2026/dashboard.html)**
+**[Ver Dashboard](https://larrybers87.github.io/copa_2026/dashboard.html)**
 
 ---
 
@@ -10,7 +10,7 @@ Dashboard interativo e motor de simulação Monte Carlo para a Copa do Mundo 202
 
 Esse projeto nasceu de uma vontade de aprender na prática. Queria entender como coletar dados reais via Python (scraping, leitura de planilhas, manipulação com pandas), processar essas informações e exibi-las de forma visual e interativa com JavaScript puro — sem frameworks, sem biblioteca de UI.
 
-Não tenho formação em desenvolvimento web. Fui aprendendo conforme a necessidade: Python para os dados, HTML/CSS/JS para o dashboard, e GitHub Pages para publicar. Em boa parte do caminho contei com a ajuda do Claude (Claude Code da Anthropic), que me auxiliou tanto na estrutura do código quanto na resolução de problemas que eu não sabia nem como nomear.
+Não tenho formação em desenvolvimento web, mas sim em matemática aplicada. Fui aprendendo HTML/CSS/JS conforme a necessidade. Em boa parte do caminho contei com a ajuda do Claude.
 
 O resultado é este dashboard: dados reais de seleções, ranking FIFA, confrontos históricos, simulação Monte Carlo da fase de grupos e um modo "meu cenário" para montar e simular o mata-mata do jeito que você quiser.
 
