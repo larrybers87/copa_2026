@@ -139,7 +139,6 @@ function _mcRender() {
   if      (_mc.step === 1) _mcRenderStep1();
   else if (_mc.step === 2) _mcRenderStep2();
   else if (_mc.step === 3) _mcRenderStep3();
-  else if (_mc.step === 4) _mcRenderStep4();
 }
 
 // ── Barra de progresso ────────────────────────────────────────────────────────
@@ -147,7 +146,7 @@ function _mcRender() {
 function _mcRenderStepBar() {
   const labels = [
     'Classificação dos Grupos', 'Selecionar 8 Terceiros',
-    'Chaveamento', 'Mata-Mata',
+    'Chaveamento',
   ];
   document.getElementById('mcStepBar').innerHTML = labels.map((l, i) => {
     const n    = i + 1;
@@ -310,10 +309,11 @@ function _mcToggleT(grupo) {
 
 function _mcGoStep3() {
   if (_mc.terceiros.length !== 8) return;
-  _mc.step     = 3;
-  _mc.sfGames  = _mcBuildSFGames();
-  _mc.picks    = {};
-  _mc.simProbs = null;
+  _mc.step          = 3;
+  _mc.sfGames       = _mcBuildSFGames();
+  _mc.picks         = {};
+  _mc.activeMCRound = 'SF';
+  _mc.simProbs      = null;
   _mcRender();
 }
 
@@ -360,7 +360,7 @@ function _mcBuildSFGames() {
 }
 
 // ══════════════════════════════════════════════════════════════════════════════
-// PASSO 3 — Chaveamento da Segunda Fase
+// PASSO 3 — Chaveamento + Mata-Mata
 // ══════════════════════════════════════════════════════════════════════════════
 
 function _mcRenderStep3() {
@@ -404,36 +404,18 @@ function _mcRenderStep3() {
       ${nPendentes ? `<span class="mc-aviso">⚠ ${nPendentes} jogo(s) com time indefinido</span>` : ''}
     </div>
     <div class="mc-sf-grid">${cards}</div>
-    <div class="mc-footer">
+    <div class="mc-footer" style="margin-bottom:24px">
       <button class="mc-btn-secondary"
               onclick="_mc.step=2;_mc.sfGames=null;_mc.picks={};_mc.simProbs=null;_mcRender()">
         ← Voltar
       </button>
-      <button class="mc-btn-primary" onclick="_mcGoStep4()">
-        ⚽ Montar o Mata-Mata →
-      </button>
-    </div>`;
-}
-
-// ══════════════════════════════════════════════════════════════════════════════
-// PASSO 4 — Bracket interativo com probabilidades
-// ══════════════════════════════════════════════════════════════════════════════
-
-function _mcGoStep4() {
-  _mc.step          = 4;
-  _mc.picks         = {};
-  _mc.activeMCRound = 'SF';
-  _mc.simProbs      = null;
-  _mcRenderStep4();
-}
-
-function _mcRenderStep4() {
-  document.getElementById('mcBody').innerHTML = `
+    </div>
     <div class="mc-bracket-wrap">
       <div class="mc-round-tabs" id="mcRoundTabs"></div>
       <div id="mcBracketContent"></div>
       <div id="mcBracketFooter"></div>
     </div>`;
+
   _mcRenderRoundTabs();
   _mcRenderCurrentRound();
 }
@@ -627,10 +609,6 @@ function _mcRenderBracketFooter(round, done) {
   document.getElementById('mcBracketFooter').innerHTML = `
     <div class="mc-footer">
       <div style="display:flex;gap:8px">
-        <button class="mc-btn-secondary"
-                onclick="_mc.step=3;_mc.picks={};_mc.simProbs=null;_mcRender()">
-          ← Chaveamento
-        </button>
         ${prevR ? `
           <button class="mc-btn-secondary" onclick="_mcSwitchRound('${prevR}')">
             ← ${MC_ROUND_NAME[prevR]}
