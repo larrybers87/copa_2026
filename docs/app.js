@@ -67,7 +67,6 @@ function popularSelect() {
   selectEl.replaceWith(wrapper);
 
   // Popula lista de opções
-  const lista = document.getElementById('csOptionsList');
   _gruposData = grupos;
   renderOpcoes('');
 
@@ -99,7 +98,7 @@ function renderOpcoes(filtro) {
   if (!lista) return;
   lista.innerHTML = '';
 
-  const q = filtro.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const q = filtro.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   let totalVisiveis = 0;
 
   Object.keys(_gruposData).sort().forEach(g => {
@@ -454,13 +453,13 @@ function renderH2H(s, oponente) {
   document.getElementById('bodyH2H').innerHTML = `
     <div class="fade-in">
       <div class="h2h-selector">
-        <select onchange="renderH2H(
-          DADOS.selecoes.find(x => x.Club === '${s.Club}'),
-          this.value
-        )">${opts}</select>
+        <select id="h2hOponenteSelect">${opts}</select>
       </div>
       ${conteudo}
     </div>`;
+
+  document.getElementById('h2hOponenteSelect')
+    .addEventListener('change', e => renderH2H(s, e.target.value));
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
@@ -508,6 +507,7 @@ function mudarAba(tab) {
   if (tab === 'ranking')    renderRanking();
   if (tab === 'calendario') renderCalendario();
   if (tab === 'simulacao')  renderSimulacao();
+  if (tab === 'cenario')    renderCenario();
 }
 
 // ══════════════════════════════════════════════════════════════════════════════
@@ -588,11 +588,11 @@ function renderH2HFull() {
 
   // Busca
   searchEl.value = '';
-  searchEl.oninput = () => renderCardsH2H(s, todos, searchEl.value.trim());
-  renderCardsH2H(s, todos, '');
+  searchEl.oninput = () => renderCardsH2H(todos, searchEl.value.trim());
+  renderCardsH2H(todos, '');
 }
 
-function renderCardsH2H(s, todos, filtro) {
+function renderCardsH2H(todos, filtro) {
   const cardsDiv = document.getElementById('h2hCards');
   const q = filtro.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
@@ -780,7 +780,7 @@ function renderLinhasRanking() {
   }
 
   const tbody = document.getElementById('rankingBody');
-  tbody.innerHTML = lista.map((s, i) => {
+  tbody.innerHTML = lista.map(s => {
     const pos     = s.Ranking_FIFA;
     const posClass = pos <= 3 ? 'rank-pos top3' : 'rank-pos';
     const bandSrc = s.asset_bandeira || flagUrl(s.iso2);
@@ -902,7 +902,7 @@ function _popularFiltrosCalendario() {
     btn.className = 'cal-btn';
     btn.dataset.grupo = g;
     btn.textContent = g;
-    btn.addEventListener('click', () => _toggleCalFiltro('grupo', g, btn));
+    btn.addEventListener('click', () => _toggleCalFiltro('grupo', g));
     grupoWrap.appendChild(btn);
   });
   grupoWrap.querySelector('[data-grupo=""]')
@@ -920,18 +920,15 @@ function _popularFiltrosCalendario() {
     btn.className = 'cal-btn';
     btn.dataset.cidade = c;
     btn.textContent = c;
-    btn.addEventListener('click', () => _toggleCalFiltro('cidade', c, btn));
+    btn.addEventListener('click', () => _toggleCalFiltro('cidade', c));
     cidadeWrap.appendChild(btn);
   });
   cidadeWrap.querySelector('[data-cidade=""]')
     .addEventListener('click', () => _limparCalFiltro('cidade'));
 }
 
-function _toggleCalFiltro(tipo, valor, btn) {
+function _toggleCalFiltro(tipo, valor) {
   const set = tipo === 'grupo' ? _calGrupos : _calCidades;
-  const allBtn = document.querySelector(
-    tipo === 'grupo' ? '[data-grupo=""]' : '[data-cidade=""]'
-  );
   set.has(valor) ? set.delete(valor) : set.add(valor);
   document.querySelectorAll(
     tipo === 'grupo' ? '[data-grupo]' : '[data-cidade]'
@@ -1565,7 +1562,7 @@ function _htmlClassifCard3(c, rank) {
 
   // Quais vagas este grupo pode preencher
   const vagasCompativeis = Object.entries(VAGAS_TERCEIROS)
-    .filter(([vaga, grupos]) => grupos.includes(c.grupo))
+    .filter(([, grupos]) => grupos.includes(c.grupo))
     .map(([vaga]) => vaga);
 
   const cor = rank <= 3 ? 'var(--green)' : rank <= 6 ? 'var(--accent)' : 'var(--label)';

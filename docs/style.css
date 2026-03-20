@@ -2379,7 +2379,7 @@ html { scroll-behavior: smooth; }
 
 .classif-wrap { display: flex; flex-direction: column; gap: 28px; }
 
-.classif-section {}
+.classif-section { display: block; }
 
 .classif-title {
   font-family: var(--font-head);
@@ -2636,3 +2636,1068 @@ html { scroll-behavior: smooth; }
 
 /* Colunas ocultas na tabela de simulação (dados mantidos, só escondidos) */
 .sim-col-hidden { display: none; }
+
+/* ══════════════════════════════════════════════════
+   MEU CENÁRIO
+   ══════════════════════════════════════════════════ */
+
+.mc-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
+
+/* ── Barra de passos ─────────────────────────────── */
+.mc-step-bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 28px;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.mc-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: .35;
+  transition: opacity .2s;
+}
+
+.mc-step.active { opacity: 1; }
+.mc-step.done   { opacity: .7; }
+
+.mc-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: background .2s, color .2s;
+}
+
+.mc-step.active .mc-step-num {
+  background: var(--accent);
+  color: #000;
+}
+
+.mc-step.done .mc-step-num {
+  background: var(--green);
+  color: #000;
+}
+
+.mc-step-label {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--label);
+  white-space: nowrap;
+}
+
+.mc-step.active .mc-step-label { color: var(--text); }
+
+.mc-step-sep {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  min-width: 16px;
+  max-width: 48px;
+  margin: 0 8px;
+}
+
+/* ── Botões ──────────────────────────────────────── */
+.mc-btn-primary {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 22px;
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.mc-btn-primary:hover:not(:disabled) { opacity: .85; }
+.mc-btn-primary:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+.mc-btn-secondary {
+  background: transparent;
+  color: var(--label);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+
+.mc-btn-secondary:hover { border-color: var(--label); color: var(--text); }
+
+.mc-btn-link {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-family: var(--font-head);
+  font-size: 12px;
+  letter-spacing: .5px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  transition: color .2s;
+}
+
+.mc-btn-link:hover { color: var(--label); }
+
+/* ── Intro / header ──────────────────────────────── */
+.mc-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0 16px;
+  font-size: 13px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.mc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── PASSO 1 — Grid de grupos ────────────────────── */
+.mc-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.mc-group-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mc-group-title {
+  padding: 8px 12px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.mc-g-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--border);
+  transition: background .15s;
+}
+
+.mc-g-row:last-child { border-bottom: none; }
+.mc-g-row:hover { background: var(--surface); }
+
+.mc-g-pos {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  min-width: 20px;
+  letter-spacing: .5px;
+}
+
+.mc-g-flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.mc-g-nome {
+  flex: 1;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mc-rep-badge {
+  font-size: 11px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.mc-g-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.mc-g-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--label);
+  border-radius: 3px;
+  width: 22px;
+  height: 18px;
+  font-size: 10px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s, color .15s;
+}
+
+.mc-g-btn:hover:not(:disabled) {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+}
+
+.mc-g-btn:disabled {
+  opacity: .2;
+  cursor: default;
+}
+
+/* ── PASSO 2 — Grid de terceiros ─────────────────── */
+.mc-t-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0 16px;
+  font-size: 13px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.mc-t-counter {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.mc-t-counter.partial { color: var(--accent); }
+.mc-t-counter.ok      { color: var(--green);  }
+
+.mc-terceiros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.mc-t-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 10px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color .2s, background .2s, transform .1s;
+  position: relative;
+  user-select: none;
+}
+
+.mc-t-card:hover:not(.disabled) {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.mc-t-card.selected {
+  border-color: var(--green);
+  background: color-mix(in srgb, var(--green) 8%, var(--card));
+}
+
+.mc-t-card.disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+.mc-t-check-wrap {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.mc-t-check {
+  width: 18px;
+  height: 18px;
+  background: var(--green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 800;
+  color: #000;
+}
+
+.mc-t-grupo {
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.mc-t-flag-wrap { margin-bottom: 8px; }
+
+.mc-t-flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.mc-t-nome {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.mc-t-rank {
+  font-family: var(--font-head);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: .5px;
+}
+
+.mc-aviso {
+  font-family: var(--font-head);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: .5px;
+}
+
+/* ── PASSO 3 — Chaveamento SF ────────────────────── */
+.mc-sf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 10px;
+}
+
+.mc-sf-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: border-color .2s;
+}
+
+.mc-sf-card:hover { border-color: var(--accent2); }
+.mc-sf-card.pendente { border-color: var(--border); opacity: .7; }
+
+.mc-sf-id {
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.mc-sf-confronto {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.mc-sf-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mc-sf-time.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.mc-sf-flag {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.mc-sf-nome {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.mc-sf-pending {
+  font-family: var(--font-head);
+  font-size: 11px;
+  color: var(--border);
+  letter-spacing: 1px;
+}
+
+.mc-sf-vs {
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.mc-sf-local {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 6px;
+  letter-spacing: .3px;
+}
+
+/* ── PASSO 4 — Simulação ─────────────────────────── */
+.mc-sim-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 60px 0;
+  font-family: var(--font-head);
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.mc-sim-spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: mc-spin .8s linear infinite;
+}
+
+@keyframes mc-spin { to { transform: rotate(360deg); } }
+
+/* Pódio */
+.mc-podio {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.mc-podio-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px 18px;
+  text-align: center;
+  min-width: 160px;
+  max-width: 200px;
+}
+
+.mc-podio-medal {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.mc-podio-flag {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mc-podio-nome {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 6px;
+  letter-spacing: .5px;
+}
+
+.mc-podio-pct {
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.mc-podio-lbl {
+  font-family: var(--font-head);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Tabela de resultados */
+.mc-res-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mc-res-title {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mc-res-subtitle {
+  font-size: 10px;
+  letter-spacing: .5px;
+  font-weight: 400;
+  color: var(--border);
+}
+
+.mc-res-table-wrap {
+  overflow-x: auto;
+}
+
+.mc-res-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mc-res-table th {
+  padding: 8px 12px;
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.mc-res-table th:first-child { text-align: left; }
+
+.mc-res-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+  font-family: var(--font-head);
+  font-size: 13px;
+}
+
+.mc-res-table tr:last-child td { border-bottom: none; }
+
+.mc-res-table tbody tr:hover { background: var(--surface); }
+
+.mc-res-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.mc-res-flag {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.mc-res-pct {
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ── PASSO 4 — Bracket interativo ────────────────── */
+.mc-bracket-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Tabs de rodada */
+.mc-round-tabs {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.mc-round-tab {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+
+.mc-round-tab:hover:not(:disabled):not(.active) {
+  border-color: var(--label);
+  color: var(--text);
+}
+
+.mc-round-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+}
+
+.mc-round-tab.done {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.mc-round-tab.done.active {
+  background: var(--green);
+  color: #000;
+}
+
+.mc-round-tab:disabled {
+  opacity: .3;
+  cursor: not-allowed;
+}
+
+/* Cabeçalho da rodada */
+.mc-round-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mc-round-title {
+  font-family: var(--font-head);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-right: 10px;
+}
+
+.mc-round-progress {
+  font-family: var(--font-head);
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: .5px;
+}
+
+/* Grid de confrontos */
+.mc-matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+/* Card de confronto */
+.mc-match-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  transition: border-color .15s;
+}
+
+.mc-match-card:hover { border-color: var(--accent2); }
+
+.mc-match-card.picked {
+  border-color: var(--accent);
+}
+
+.mc-match-card.mc-match-pending {
+  opacity: .65;
+}
+
+.mc-match-id {
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.mc-match-sep {
+  height: 1px;
+  background: var(--border);
+  margin: 4px 0;
+}
+
+/* Linha de time */
+.mc-m-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 4px;
+  border-radius: 6px;
+  transition: background .12s;
+}
+
+.mc-m-team[onclick] {
+  cursor: pointer;
+}
+
+.mc-m-team[onclick]:hover {
+  background: var(--surface);
+}
+
+.mc-m-team.winner {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.mc-m-team.loser {
+  opacity: .45;
+}
+
+.mc-m-team.pending {
+  opacity: .55;
+}
+
+.mc-m-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.mc-m-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.mc-m-flag {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.mc-m-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mc-m-nome {
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mc-m-fav {
+  font-family: var(--font-head);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.mc-m-bar-track {
+  width: 60px;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.mc-m-bar {
+  height: 100%;
+  border-radius: 2px;
+  transition: width .3s;
+}
+
+.mc-m-pct {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 30px;
+  text-align: right;
+}
+
+.mc-m-win-badge {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.mc-m-hint {
+  font-family: var(--font-head);
+  font-size: 9px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Tela do campeão ─────────────────────────────── */
+.mc-champion-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px 32px;
+  gap: 10px;
+}
+
+.mc-champion-trophy {
+  font-size: 56px;
+  line-height: 1;
+  filter: drop-shadow(0 0 16px var(--accent));
+  animation: mc-trophy-pulse 2s ease-in-out infinite;
+}
+
+@keyframes mc-trophy-pulse {
+  0%, 100% { transform: scale(1);   filter: drop-shadow(0 0 16px var(--accent)); }
+  50%       { transform: scale(1.06); filter: drop-shadow(0 0 28px var(--accent)); }
+}
+
+.mc-champion-label {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.mc-champion-flag {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.mc-champion-nome {
+  font-family: var(--font-head);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Caminho ao título */
+.mc-path-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 8px;
+}
+
+.mc-path-title {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.mc-path-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mc-path-item:last-child { border-bottom: none; }
+
+.mc-path-round {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 110px;
+}
+
+.mc-path-vs {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+}
+
+.mc-path-prob {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.mc-path-prob.zebra {
+  color: var(--red);
+}
+
+.mc-sim-btn-wrap {
+  margin-top: 12px;
+}
+
+/* Linha do campeão na tabela de simulação */
+.mc-res-champ-row {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.mc-res-champ-row td { border-color: color-mix(in srgb, var(--accent) 20%, transparent) !important; }
+
+.mc-res-champ-badge {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: var(--accent);
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+/* ── Responsivo ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .mc-wrap { padding: 12px 12px 32px; }
+
+  .mc-step-label { display: none; }
+  .mc-step-sep   { min-width: 8px; }
+
+  .mc-groups-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .mc-terceiros-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  .mc-sf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mc-matches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mc-round-tabs {
+    gap: 4px;
+  }
+
+  .mc-round-tab {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .mc-champion-flag {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mc-champion-nome {
+    font-size: 24px;
+  }
+
+  .mc-path-wrap {
+    max-width: 100%;
+  }
+
+  .mc-podio { gap: 10px; }
+  .mc-podio-card { min-width: 130px; padding: 14px 14px 12px; }
+}

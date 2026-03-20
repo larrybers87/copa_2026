@@ -287,10 +287,8 @@ def main():
     # Carrega JSON da simulação se existir
     simulacao = []
     if JSON_SIMULACAO.exists():
-        import json as _json
-
         with open(JSON_SIMULACAO, encoding="utf-8") as f:
-            simulacao = _json.load(f)
+            simulacao = json.load(f)
         print(f"   Simulação      : {len(simulacao)} grupo(s)")
     else:
         print("   Simulação      : não encontrada (rode simulation.py)")

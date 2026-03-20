@@ -2,18 +2,20 @@
 simulation.py — Simulação Monte Carlo da fase de grupos Copa 2026.
 
 Modelo de força:
-    forca(time) = 0.6 * ranking_norm + 0.4 * winrate_norm
+    forca(time) = 0.6 * ranking_norm + 0.4 * ppj_norm
 
-    ranking_norm  : 1 - (ranking_fifa - 1) / 209   → melhor ranking = maior valor
-    winrate_norm  : win_rate dos últimos 5 anos (annual_balance)
+    ranking_norm : 1 - (ranking_fifa - 1) / 209   → melhor ranking = maior valor
+    ppj_norm     : pontos/jogo dos últimos 5 anos ponderado exponencialmente por ano,
+                   normalizado em [0, 1] (max teórico = 3 pts/jogo)
 
-Probabilidades do jogo (home vs away):
-    ratio = forca_home / (forca_home + forca_away)
-    P(V)  = ratio  * alpha
-    P(D)  = (1 - ratio) * alpha
-    P(E)  = 1 - P(V) - P(D)
-
-    alpha cresce com a diferença de força — quanto mais desigual, menos empate.
+Probabilidades do jogo:
+    fa = forca_a ** FORCA_EXP   # amplifica diferenças (exp=3)
+    fb = forca_b ** FORCA_EXP
+    ratio = fa / (fa + fb)
+    diff  = |ratio - 0.5| * 2   # 0 = iguais, 1 = máximo desequilíbrio
+    p_empate  = max(0.27 * exp(-2.5 * diff), 0.04)
+    p_vitoria_a = (1 - p_empate) * ratio
+    p_vitoria_b = (1 - p_empate) * (1 - ratio)
 
 Uso:
     python simulation.py                    # roda com defaults
@@ -23,6 +25,7 @@ Uso:
 
 import argparse
 import json
+import math
 import sys
 from pathlib import Path
 from collections import defaultdict
@@ -168,8 +171,6 @@ def prob_jogo(forca_a, forca_b):
     - Brasil x Marrocos:     35% / 18% / 47%
     - Times iguais:          36% / 27% / 36%
     """
-    import math
-
     # Amplifica diferenças de força
     fa = forca_a**FORCA_EXP
     fb = forca_b**FORCA_EXP
@@ -188,36 +189,6 @@ def prob_jogo(forca_a, forca_b):
     return p_v, p_e, p_d
 
 
-# ─── Simulação de um grupo ────────────────────────────────────────────────────
-
-
-def simular_grupo_uma_vez(times, jogos, forcas, rng):
-    """
-    Simula todos os jogos de um grupo uma vez.
-    Retorna dict {time: {"Pontos": int, "Ranking_FIFA": int}}.
-    """
-    pts = {t: 0 for t in times}
-
-    for _, jogo in jogos.iterrows():
-        t1 = jogo["Time1"]
-        t2 = jogo["Time2"]
-        f1 = forcas.get(t1, 0.5)
-        f2 = forcas.get(t2, 0.5)
-
-        p_v, p_e, p_d = prob_jogo(f1, f2)
-        resultado = rng.choice(["V", "E", "D"], p=[p_v, p_e, p_d])
-
-        if resultado == "V":
-            pts[t1] += PONTOS_VITORIA
-        elif resultado == "E":
-            pts[t1] += PONTOS_EMPATE
-            pts[t2] += PONTOS_EMPATE
-        else:
-            pts[t2] += PONTOS_VITORIA
-
-    return pts
-
-
 def classificar_grupo(pts_dict, rankings):
     """
     Ordena os times por pontos, usando ranking FIFA como tiebreaker.
@@ -231,12 +202,14 @@ def classificar_grupo(pts_dict, rankings):
 # ─── Monte Carlo ─────────────────────────────────────────────────────────────
 
 
-def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim):
+def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
     """
     Roda n_sim simulações para um grupo.
     Retorna dict com estatísticas agregadas.
+
+    O `rng` deve ser criado externamente (uma única instância para toda a execução)
+    para garantir independência estatística entre grupos.
     """
-    rng = np.random.default_rng(RANDOM_SEED)
 
     # Contadores
     posicoes = {t: defaultdict(int) for t in times}  # {time: {pos: count}}
@@ -426,6 +399,10 @@ def main():
     print("🎲 Simulação Monte Carlo — Copa 2026")
     print(f"   Grupos   : {', '.join(grupos)}")
     print(f"   Simulações: {n_sim:,}")
+    print(f"   Semente   : {RANDOM_SEED}")
+
+    # RNG criado uma única vez — garante independência estatística entre grupos
+    rng = np.random.default_rng(RANDOM_SEED)
 
     # Carrega dados
     selecoes_df, ranking_df, jogos_df, annual_df = carregar_dados()
@@ -463,7 +440,7 @@ def main():
             f"\n⏳ Simulando Grupo {grupo} ({len(times)} times, {len(jogos_grupo)} jogos)..."
         )
         resultado = monte_carlo_grupo(
-            grupo, times, jogos_grupo, forcas, rankings, n_sim
+            grupo, times, jogos_grupo, forcas, rankings, n_sim, rng
         )
         todos_resultados.append(resultado)
         imprimir_grupo(resultado)
