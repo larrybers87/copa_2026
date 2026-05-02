@@ -1,4 +1,4 @@
-# Copa do Mundo 2026 — Análise & Simulação
+# Copa do Mundo 2026 - Análise & Simulação
 
 Dashboard interativo e motor de simulação Monte Carlo para a Copa do Mundo 2026.
 
@@ -21,8 +21,8 @@ O resultado é este dashboard: dados reais de seleções, ranking FIFA, confront
 ```
 copa_2026/
 ├── data/
-│   ├── raw/                        ← Dados_Selecoes.xlsx
-│   └── processed/                  ← CSVs gerados automaticamente
+│   ├── raw/                        # Dados_Selecoes.xlsx
+│   └── processed/                  # CSVs gerados automaticamente
 │       ├── annual_balance.csv
 │       ├── record_against.csv
 │       ├── estatisticas_gerais.csv
@@ -31,14 +31,14 @@ copa_2026/
 │       └── simulacao_grupos_jogos.csv
 │
 ├── src/
-│   ├── config.py                   ← paths, constantes, parâmetros globais
-│   ├── data_loader.py              ← carrega e pré-processa o Excel
-│   ├── scraping.py                 ← Transfermarkt (annual balance + record against)
-│   ├── stats.py                    ← análises e resumos estatísticos
-│   ├── plots.py                    ← visualizações matplotlib + plotly
-│   └── simulation.py               ← simulação Monte Carlo fase de grupos
+│   ├── config.py                   # Paths, constantes e parâmetros globais
+│   ├── data_loader.py              # Carregamento e pré-processamento do Excel
+│   ├── scraping.py                 # Coleta de dados (Transfermarkt)
+│   ├── stats.py                    # Análises e resumos estatísticos
+│   ├── plots.py                    # Visualizações (matplotlib + plotly)
+│   └── simulation.py               # Simulação Monte Carlo (fase de grupos)
 │
-├── docs/                           ← dashboard HTML (GitHub Pages)
+├── docs/                           # Dashboard HTML (GitHub Pages)
 │   ├── dashboard.html
 │   ├── style.css
 │   ├── app.js
@@ -49,8 +49,8 @@ copa_2026/
 ├── notebooks/
 │   └── exploracao.ipynb
 │
-├── gerar_html.py                   ← gera dados.js a partir dos CSVs/Excel
-└── main.py                         ← pipeline completo via CLI
+├── gerar_html.py                   # Gera dados.js a partir dos dados processados
+└── main.py                         # Pipeline completo via CLI
 ```
 
 ---
@@ -181,4 +181,16 @@ Os grupos com repescagem serão adicionados após confirmação das vagas.
 
 ## Licença
 
-Veja [LICENSE](LICENSE).
+Este projeto está licenciado sob a licença MIT — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+### Uso e atribuição
+
+Você é livre para usar, modificar e distribuir este projeto para qualquer finalidade, incluindo uso comercial.
+
+Se este projeto te ajudou de alguma forma, peço que dê os devidos créditos. Algumas formas de atribuição incluem:
+
+- Citar este repositório
+- Incluir um link para o projeto
+- Referenciar meu nome ou perfil
+
+Isso não é uma exigência legal da licença, mas é muito apreciado 🙌
