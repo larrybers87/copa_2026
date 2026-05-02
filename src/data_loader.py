@@ -50,7 +50,6 @@ def carregar_dados(path: Path = EXCEL_INPUT) -> tuple[pd.DataFrame, ...]:
 
 def preprocessar_selecoes(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
-    df["is_repescagem"] = df["Obs"].str.strip().str.lower() == "repescagem"
     df["id_transfermarkt"] = pd.to_numeric(df["id_transfermarkt"], errors="coerce")
     return df
 
@@ -128,8 +127,7 @@ def diagnostico(
 ) -> None:
     """Imprime um resumo rápido dos dados carregados."""
 
-    confirmadas   = (~selecoes_df["is_repescagem"]).sum()
-    repescagem    = selecoes_df["is_repescagem"].sum()
+    num_selecoes  = len(selecoes_df)
     num_grupos    = selecoes_df["Grupo"].nunique()
     total_jogos   = len(jogos_grupos_df) + len(jogos_mata_df)
     inicio        = jogos_grupos_df["Data"].min()
@@ -140,8 +138,7 @@ def diagnostico(
 
     print("=" * 70)
     print("🌍  SELEÇÕES")
-    print(f"    Confirmadas : {confirmadas}")
-    print(f"    Repescagem  : {repescagem}")
+    print(f"    Total       : {num_selecoes}")
     print(f"    Grupos      : {num_grupos}")
     print()
     print("⚽  JOGOS")

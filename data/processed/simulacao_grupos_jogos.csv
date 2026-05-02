@@ -1,37 +1,73 @@
 Grupo,Time1,Time2,V_Time1_%,Empate_%,V_Time2_%
-C,Brasil,Marrocos,34.39,18.22,47.39
-C,Haiti,Escócia,33.31,16.27,50.42
-C,Escócia,Marrocos,27.66,10.28,62.06
-C,Brasil,Haiti,64.66,9.27,26.07
-C,Marrocos,Haiti,72.06,6.86,21.09
-C,Escócia,Brasil,32.29,14.72,52.99
-E,Alemanha,Curaçao,66.05,8.78,25.17
-E,Costa do Marfim,Equador,38.49,25.15,36.36
-E,Alemanha,Costa do Marfim,44.27,20.44,35.29
-E,Equador,Curaçao,58.82,11.71,29.47
-E,Equador,Alemanha,34.92,19.16,45.92
-E,Curaçao,Costa do Marfim,28.61,11.03,60.37
-G,Bélgica,Egito,43.2,21.12,35.68
-G,Irã,Nova Zelândia,72.03,6.84,21.13
-G,Bélgica,Irã,36.47,25.57,37.96
-G,Nova Zelândia,Egito,24.8,8.56,66.64
-G,Egito,Irã,35.31,20.16,44.53
-G,Nova Zelândia,Bélgica,21.74,7.11,71.15
-H,Espanha,Cabo Verde,68.77,7.83,23.41
-H,Arábia Saudita,Uruguai,29.83,12.14,58.03
-H,Espanha,Arábia Saudita,70.27,7.38,22.35
-H,Uruguai,Cabo Verde,56.24,12.99,30.77
-H,Cabo Verde,Arábia Saudita,38.82,24.99,36.19
-H,Uruguai,Espanha,32.46,14.92,52.61
-J,Argentina,Argélia,51.53,15.53,32.94
-J,Áustria,Jordânia,55.32,13.45,31.24
-J,Argentina,Áustria,53.56,14.42,32.02
-J,Jordânia,Argélia,30.38,12.59,57.03
-J,Jordânia,Argentina,23.32,7.9,68.79
-J,Argélia,Áustria,38.6,25.07,36.32
-L,Inglaterra,Croácia,42.11,21.98,35.91
-L,Gana,Panamá,30.01,12.31,57.68
-L,Inglaterra,Gana,72.9,6.62,20.48
-L,Panamá,Croácia,32.87,15.5,51.63
-L,Croácia,Gana,69.47,7.62,22.91
-L,Panamá,Inglaterra,30.53,12.76,56.72
+A,México,África do Sul,56.52,12.8,30.68
+A,Coreia do Sul,República Theca,41.92,22.23,35.86
+A,México,Coreia do Sul,38.9,24.83,36.27
+A,República Theca,África do Sul,49.79,16.64,33.57
+A,República Theca,México,35.44,20.55,44.0
+A,África do Sul,Coreia do Sul,31.55,13.83,54.62
+B,Canadá,Bósnia,55.01,13.65,31.34
+B,Catar,Suíça,32.05,14.32,53.62
+B,Suíça,Bósnia,57.6,12.29,30.11
+B,Canadá,Catar,50.7,15.99,33.31
+B,Suíça,Canadá,39.73,24.05,36.22
+B,Bósnia,Catar,35.87,22.87,41.26
+C,Brasil,Marrocos,33.97,17.2,48.83
+C,Haiti,Escócia,34.04,17.5,48.47
+C,Escócia,Marrocos,24.58,8.5,66.92
+C,Brasil,Haiti,66.6,8.61,24.79
+C,Marrocos,Haiti,74.68,6.17,19.16
+C,Escócia,Brasil,30.14,12.63,57.23
+D,Estados Unidos,Paraguai,52.77,14.82,32.41
+D,Austrália,Turquia,37.11,26.43,36.47
+D,Turquia,Paraguai,55.34,13.47,31.19
+D,Estados Unidos,Austrália,36.32,23.79,39.89
+D,Paraguai,Austrália,30.96,13.23,55.81
+D,Turquia,Estados Unidos,39.28,24.37,36.35
+E,Alemanha,Curaçao,71.25,7.09,21.66
+E,Costa do Marfim,Equador,42.43,21.88,35.69
+E,Alemanha,Costa do Marfim,43.43,20.87,35.7
+E,Equador,Curaçao,62.31,10.24,27.45
+E,Equador,Alemanha,33.76,17.04,49.2
+E,Curaçao,Costa do Marfim,24.82,8.59,66.58
+F,Holanda,Japão,36.4,25.47,38.14
+F,Suécia,Tunísia,36.62,26.75,36.63
+F,Holanda,Suécia,52.54,15.06,32.4
+F,Tunísia,Japão,31.61,14.07,54.32
+F,Tunísia,Holanda,32.37,14.83,52.8
+F,Japão,Suécia,53.96,14.19,31.84
+G,Bélgica,Egito,42.6,21.71,35.69
+G,Irã,Nova Zelândia,71.02,7.16,21.82
+G,Bélgica,Irã,36.81,26.74,36.44
+G,Nova Zelândia,Egito,24.51,8.36,67.13
+G,Egito,Irã,35.78,21.76,42.46
+G,Nova Zelândia,Bélgica,21.65,7.05,71.3
+H,Espanha,Cabo Verde,70.83,7.23,21.94
+H,Arábia Saudita,Uruguai,29.51,11.71,58.78
+H,Espanha,Arábia Saudita,71.2,7.11,21.69
+H,Uruguai,Cabo Verde,58.37,11.93,29.7
+H,Cabo Verde,Arábia Saudita,37.31,26.3,36.38
+H,Uruguai,Espanha,32.37,14.68,52.95
+I,França,Senegal,39.15,24.55,36.3
+I,Iraque,Noruega,33.78,17.14,49.08
+I,França,Iraque,61.14,10.79,28.07
+I,Noruega,Senegal,34.27,18.06,47.67
+I,Senegal,Iraque,59.09,11.64,29.28
+I,Noruega,França,33.48,16.41,50.12
+J,Argentina,Argélia,52.0,15.34,32.66
+J,Áustria,Jordânia,57.86,12.18,29.95
+J,Argentina,Áustria,52.13,15.22,32.65
+J,Jordânia,Argélia,30.02,12.21,57.77
+J,Jordânia,Argentina,22.64,7.54,69.82
+J,Argélia,Áustria,36.57,26.77,36.66
+K,Portugal,RD Congo,55.25,13.49,31.26
+K,Uzbequistão,Colômbia,35.8,21.77,42.43
+K,Portugal,Uzbequistão,51.32,15.62,33.06
+K,Colômbia,RD Congo,46.7,18.67,34.63
+K,RD Congo,Uzbequistão,36.03,23.09,40.88
+K,Colômbia,Portugal,35.11,19.23,45.66
+L,Inglaterra,Croácia,40.51,23.42,36.07
+L,Gana,Panamá,27.73,10.45,61.82
+L,Inglaterra,Gana,73.98,6.34,19.68
+L,Panamá,Croácia,33.33,16.25,50.42
+L,Croácia,Gana,71.63,7.03,21.34
+L,Panamá,Inglaterra,31.94,14.24,53.83

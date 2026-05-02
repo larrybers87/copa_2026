@@ -316,18 +316,6 @@ select:focus { outline: none; border-color: var(--accent); }
   transition: width .6s ease;
 }
 
-.repescagem-badge {
-  margin-top: 8px;
-  padding: 6px 12px;
-  background: #1a1200;
-  border: 1px solid #c8a84b44;
-  border-radius: 4px;
-  font-size: 11px;
-  color: var(--accent);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 /* ── Coluna direita ─────────────────────────────── */
 .right-col {
   display: flex;
@@ -3700,4 +3688,166 @@ html { scroll-behavior: smooth; }
 
   .mc-podio { gap: 10px; }
   .mc-podio-card { min-width: 130px; padding: 14px 14px 12px; }
+}
+
+/* ══════════════════════════════════════════════════
+   Aba Neymar — Pong Dramático
+   ══════════════════════════════════════════════════ */
+
+/* Botão especial na nav */
+.nav-btn-neymar {
+  border-color: transparent;
+  color: var(--muted);
+  font-style: italic;
+  opacity: .55;
+  transition: opacity .3s, color .3s;
+}
+.nav-btn-neymar:hover,
+.nav-btn-neymar.active {
+  opacity: 1;
+  color: #f0c040;
+  border-color: #f0c040;
+  background: color-mix(in srgb, #f0c040 10%, transparent);
+}
+
+/* Campo de futebol */
+.ney-field {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 65px);
+  overflow: hidden;
+  cursor: none;
+  background:
+    linear-gradient(
+      to right,
+      transparent calc(50% - 1px),
+      rgba(255,255,255,.18) calc(50% - 1px),
+      rgba(255,255,255,.18) calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      transparent 79px,
+      rgba(255,255,255,.18) 79px,
+      rgba(255,255,255,.18) 81px,
+      transparent 81px
+    ),
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,.45) 4px, transparent 4px),
+    repeating-linear-gradient(
+      to bottom,
+      #1a5c1a 0px, #1a5c1a 70px,
+      #1f6b1f 70px, #1f6b1f 140px
+    );
+  user-select: none;
+}
+
+/* Placar estilo arcade */
+.ney-score {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(255,255,255,.85);
+  text-shadow: 0 0 20px rgba(255,255,255,.3);
+  z-index: 10;
+  pointer-events: none;
+  letter-spacing: 4px;
+}
+.ney-score-sep {
+  font-size: 30px;
+  color: rgba(255,255,255,.4);
+}
+
+/* Paddles (imagens do Neymar) */
+.ney-paddle {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  object-fit: contain;
+  object-position: bottom;
+  pointer-events: none;
+  z-index: 5;
+  transition: transform .75s cubic-bezier(.4,0,.6,1), opacity .6s ease-in;
+}
+.ney-paddle-l { left: 20px; }
+.ney-paddle-r { right: 20px; transform: scaleX(-1); }
+
+/* Animação de queda dramática */
+.ney-paddle-l.diving {
+  transform: rotate(80deg) translateX(80px);
+  opacity: 0;
+}
+.ney-paddle-r.diving {
+  transform: scaleX(-1) rotate(80deg) translateX(80px);
+  opacity: 0;
+}
+
+/* Bola */
+.ney-ball {
+  position: absolute;
+  font-size: 26px;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 6;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.5));
+  transition: opacity .2s;
+}
+
+/* GIF do Neymar rolando (fundo já transparente) */
+.ney-gif {
+  position: absolute;
+  width: 220px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 8;
+  transform: translate(-50%, -50%);
+  transition: opacity .3s;
+}
+
+/* Mensagens de comentarista */
+.ney-msg {
+  position: absolute;
+  background: rgba(0, 0, 0, .90);
+  border: 2px solid var(--red);
+  color: #fff;
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity .2s ease, transform .2s ease;
+  white-space: nowrap;
+  z-index: 20;
+}
+.ney-msg.visible {
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+/* Marca d'água central */
+.ney-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.05);
+  pointer-events: none;
+  white-space: nowrap;
 }

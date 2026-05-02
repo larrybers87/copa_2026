@@ -97,12 +97,11 @@ def resumo_grupos(
         times = merged[merged["Grupo"] == grupo].sort_values("Ranking")
         print(f"\n📌 GRUPO {grupo}:")
         for _, r in times.iterrows():
-            tag = " ⚠️ (Repescagem)" if r["is_repescagem"] else ""
             ranking_str = f"#{int(r['Ranking'])}" if pd.notna(r["Ranking"]) else "#?"
             pontos_str = (
                 f"{r['Total_Pontos']:.2f}" if pd.notna(r["Total_Pontos"]) else "?"
             )
-            print(f"   • {r['Club']:<25s} {ranking_str:>5}  ({pontos_str} pts){tag}")
+            print(f"   • {r['Club']:<25s} {ranking_str:>5}  ({pontos_str} pts)")
 
 
 def resumo_locais(jogos_grupos_df: pd.DataFrame) -> None:
@@ -127,12 +126,10 @@ def top_favoritos(
     ranking_df: pd.DataFrame,
     n: int = 10,
 ) -> pd.DataFrame:
-    """
-    Retorna as n seleções confirmadas (não repescagem) com maior pontuação FIFA.
-    """
-    confirmadas = selecoes_df[~selecoes_df["is_repescagem"]]["Club"].tolist()
+    """Retorna as n seleções com maior pontuação FIFA."""
+    times = selecoes_df["Club"].tolist()
     return (
-        ranking_df[ranking_df["Time"].isin(confirmadas)]
+        ranking_df[ranking_df["Time"].isin(times)]
         .sort_values("Total_Pontos", ascending=False)
         .head(n)
         .reset_index(drop=True)
@@ -156,7 +153,7 @@ def resumo_final(
     print("=" * 70)
     print("📊 COPA 2026 — RESUMO GERAL")
     print("=" * 70)
-    print(f"   Seleções confirmadas : {(~selecoes_df['is_repescagem']).sum()}")
+    print(f"   Seleções             : {len(selecoes_df)}")
     print(f"   Total de jogos       : {len(jogos_grupos_df) + len(jogos_mata_df)}")
     print(f"   Duração              : {duracao} dias")
     print(f"   Grupos               : {selecoes_df['Grupo'].nunique()}")

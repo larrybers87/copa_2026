@@ -50,8 +50,7 @@ PESO_RANKING = 0.60
 PESO_WINRATE = 0.40
 N_DEFAULT = 100_000
 
-# Grupos fechados (sem repescagem pendente)
-GRUPOS_FECHADOS = ["C", "E", "G", "H", "J", "L"]
+GRUPOS_FECHADOS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
 # Critérios de desempate (ordem)
 # 1. Pontos  2. Saldo de gols*  3. Gols marcados*  4. Ranking FIFA
@@ -76,9 +75,6 @@ def carregar_dados():
     )
 
     # Normaliza nomes
-    selecoes_df["is_repescagem"] = (
-        selecoes_df["Obs"].str.strip().str.lower() == "repescagem"
-    )
     selecoes_df["Seleção"] = selecoes_df["Seleção"].str.strip()
     selecoes_df["Club"] = selecoes_df["Club"].str.strip()
 

@@ -261,9 +261,6 @@ function renderIdentidade(s) {
     ? `<img class="fed-logo" src="${s.asset_logo}" alt="Logo ${s.Selecao}">`
     : '';
 
-  const repescagemHtml = s.is_repescagem
-    ? `<div class="repescagem-badge">⚠ Vaga via Repescagem</div>` : '';
-
   const pontosHtml = s.Total_Pontos
     ? `<span style="font-family:var(--font-head);font-size:12px;color:var(--accent)">${Number(s.Total_Pontos).toFixed(1)} pts</span>`
     : '';
@@ -306,7 +303,6 @@ function renderIdentidade(s) {
           </div>
         </div>
 
-        ${repescagemHtml}
       </div>
     </div>`;
 }
@@ -508,6 +504,8 @@ function mudarAba(tab) {
   if (tab === 'calendario') renderCalendario();
   if (tab === 'simulacao')  renderSimulacao();
   if (tab === 'cenario')    renderCenario();
+  if (tab === 'neymar')     ativarNeymar();
+  else                      desativarNeymar();
 }
 
 // ══════════════════════════════════════════════════════════════════════════════
@@ -1520,10 +1518,6 @@ function renderClassificados() {
         <div class="classif-grid classif-grid-3">
           ${top8Terceiros.map((c, i) => _htmlClassifCard3(c, i + 1)).join('')}
         </div>
-        <div class="classif-aviso">
-          ⚠️ Grupos com repescagem pendente (A, B, D, F, I, K) não estão incluídos.
-          Os 8 melhores são calculados entre os ${sim.length} grupos já simulados.
-        </div>
       </div>
 
       ${renderSegundaFase(sim)}
@@ -1755,8 +1749,373 @@ function renderSegundaFase(sim) {
         <span class="classif-sub">baseado nos classificados mais prováveis</span>
       </div>
       <div class="sf-grid">${rows}</div>
-      <div class="classif-aviso" style="margin-top:12px">
-        ⚠️ Times marcados como "A definir" pertencem a grupos com repescagem pendente.
-      </div>
     </div>`;
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// ABA NEYMAR — Pong Dramático
+// ══════════════════════════════════════════════════════════════════════════════
+
+// Estado geral
+let _neyAtivo    = false;
+let _neyRaf      = null;
+let _neyMsgTimer = null;
+let _neyScoreL   = 0;
+let _neyScoreR   = 0;
+
+// State machine: 'pong' | 'diving' | 'rolling'
+let _neyState    = 'pong';
+
+// Dimensões do campo (atualizadas a cada frame)
+let _NEY_FW = 800, _NEY_FH = 500;
+
+// ── Bola ────────────────────────────────────────────────────────────────────
+const _ball = { x: 0, y: 0, vx: 0, vy: 0 };
+const BALL_R    = 14;  // raio de colisão (px)
+const BALL_SPEED = 5;  // velocidade base
+const BALL_MAX   = 9;  // velocidade máxima
+
+// ── Paddles ──────────────────────────────────────────────────────────────────
+const PADDLE_W    = 80;   // largura da imagem
+const PADDLE_H    = 120;  // altura da imagem
+const PADDLE_EDGE = 20;   // distância da borda do campo
+const PADDLE_LERP = 0.07; // fator de rastreio (quanto menor, mais lento)
+
+const _pL = { y: 0 };  // paddle esquerdo
+const _pR = { y: 0 };  // paddle direito
+
+// Volley counter: após N trocas, um lado vai errar
+let _neyVolleys    = 0;
+let _neyMaxVolleys = 3;
+let _neyMissSide   = null; // 'L' | 'R' — lado que vai deixar a bola passar
+
+// ── GIF rolando ──────────────────────────────────────────────────────────────
+const _gifRoll = { x: 0, y: 0, dir: 1 }; // dir: 1=para direita, -1=para esquerda
+
+// ── Mensagens ────────────────────────────────────────────────────────────────
+const _neyMsgsDive = [
+  'CAIU! CAIU! CAIU!',
+  'QUE DOR! QUE DOR!',
+  'VAI PRECISAR DE MACA!',
+  'É O MENINO NEY'
+];
+const _neyMsgsGeral = [
+  'NEYMAAAAAAR!',
+  'VAI SE ROLAR PRA LÁ!',
+  'Oscar indicado ao Oscar!',
+  'CADÊ O VAR?!',
+  'Seis meses de recuperação!',
+  'MERECIA UM AMARELO!',
+  'Olha o choro, olha o choro!',
+  'QUE ESPETÁCULO!',
+];
+
+// ── API pública ───────────────────────────────────────────────────────────────
+
+function ativarNeymar() {
+  if (_neyAtivo) return;
+  _neyAtivo = true;
+
+  const field = document.getElementById('neyField');
+  if (!field) return;
+
+  _NEY_FW = field.offsetWidth;
+  _NEY_FH = field.offsetHeight;
+
+  // Reset completo
+  _neyState     = 'pong';
+  _neyMissSide  = null;
+  _neyVolleys   = 0;
+  _neyMaxVolleys = 2 + Math.floor(Math.random() * 3); // 2–4
+
+  _pL.y = _pR.y = _NEY_FH / 2;
+
+  const gif = document.getElementById('neyGif');
+  if (gif) gif.style.opacity = '0';
+
+  _neyLancarBola(Math.random() < 0.5 ? 1 : -1);
+
+  _neyRaf = requestAnimationFrame(_neyLoop);
+}
+
+function desativarNeymar() {
+  if (!_neyAtivo) return;
+  _neyAtivo = false;
+
+  if (_neyRaf)      { cancelAnimationFrame(_neyRaf); _neyRaf = null; }
+  if (_neyMsgTimer) { clearInterval(_neyMsgTimer);   _neyMsgTimer = null; }
+
+  // Limpa visuais para quando voltar à aba
+  const pL = document.getElementById('neyPaddleL');
+  const pR = document.getElementById('neyPaddleR');
+  const gif = document.getElementById('neyGif');
+  const ball = document.getElementById('neyBall');
+  if (pL)  { pL.classList.remove('diving');  pL.style.opacity  = '1'; }
+  if (pR)  { pR.classList.remove('diving');  pR.style.opacity  = '1'; }
+  if (gif) gif.style.opacity = '0';
+  if (ball) ball.style.opacity = '1';
+}
+
+// ── Loop principal ────────────────────────────────────────────────────────────
+
+function _neyLoop() {
+  if (!_neyAtivo) return;
+
+  const field  = document.getElementById('neyField');
+  const ballEl = document.getElementById('neyBall');
+  const pLEl   = document.getElementById('neyPaddleL');
+  const pREl   = document.getElementById('neyPaddleR');
+  const gifEl  = document.getElementById('neyGif');
+  if (!field || !ballEl || !pLEl || !pREl) return;
+
+  _NEY_FW = field.offsetWidth;
+  _NEY_FH = field.offsetHeight;
+
+  if (_neyState === 'pong') {
+    _neyTickPong(ballEl, pLEl, pREl);
+  } else if (_neyState === 'rolling') {
+    _neyTickRolling(gifEl);
+  }
+  // 'diving': só CSS + timeouts, loop continua mas não move nada
+
+  _neyRaf = requestAnimationFrame(_neyLoop);
+}
+
+// ── Fase PONG ────────────────────────────────────────────────────────────────
+
+function _neyLancarBola(dirX) {
+  _ball.x  = _NEY_FW / 2;
+  _ball.y  = _NEY_FH / 2;
+  const ang = (Math.random() * 40 - 20) * Math.PI / 180;
+  _ball.vx = dirX * BALL_SPEED * Math.cos(ang);
+  _ball.vy = BALL_SPEED * Math.sin(ang);
+}
+
+function _neyTickPong(ballEl, pLEl, pREl) {
+  const PLEFT  = PADDLE_EDGE + PADDLE_W; // borda direita do paddle esquerdo
+  const PRIGHT = _NEY_FW - PADDLE_EDGE - PADDLE_W; // borda esquerda do paddle direito
+
+  // ── Paddles rastreiam a bola (ou não, se for o lado que vai errar) ──
+  if (_neyMissSide !== 'L') {
+    _pL.y += (_ball.y - _pL.y) * PADDLE_LERP;
+  }
+  if (_neyMissSide !== 'R') {
+    _pR.y += (_ball.y - _pR.y) * PADDLE_LERP;
+  }
+  const halfH = PADDLE_H / 2;
+  _pL.y = Math.max(halfH, Math.min(_NEY_FH - halfH, _pL.y));
+  _pR.y = Math.max(halfH, Math.min(_NEY_FH - halfH, _pR.y));
+
+  pLEl.style.top = (_pL.y - halfH) + 'px';
+  pREl.style.top = (_pR.y - halfH) + 'px';
+
+  // ── Move bola ──
+  _ball.x += _ball.vx;
+  _ball.y += _ball.vy;
+
+  // Bounce teto/chão
+  if (_ball.y - BALL_R <= 0) {
+    _ball.y  = BALL_R;
+    _ball.vy = Math.abs(_ball.vy);
+  } else if (_ball.y + BALL_R >= _NEY_FH) {
+    _ball.y  = _NEY_FH - BALL_R;
+    _ball.vy = -Math.abs(_ball.vy);
+  }
+
+  // ── Colisão paddle esquerdo ──
+  if (_ball.vx < 0 && _ball.x - BALL_R <= PLEFT && _ball.x - BALL_R > PLEFT - 12) {
+    if (Math.abs(_ball.y - _pL.y) <= halfH + BALL_R) {
+      _ball.x  = PLEFT + BALL_R;
+      _ball.vx = Math.min(Math.abs(_ball.vx) * 1.07, BALL_MAX);
+      _ball.vy = (_ball.y - _pL.y) * 0.05 + _ball.vy * 0.9;
+      _neyRegistrarVolley();
+    }
+  }
+
+  // ── Colisão paddle direito ──
+  if (_ball.vx > 0 && _ball.x + BALL_R >= PRIGHT && _ball.x + BALL_R < PRIGHT + 12) {
+    if (Math.abs(_ball.y - _pR.y) <= halfH + BALL_R) {
+      _ball.x  = PRIGHT - BALL_R;
+      _ball.vx = -Math.min(Math.abs(_ball.vx) * 1.07, BALL_MAX);
+      _ball.vy = (_ball.y - _pR.y) * 0.05 + _ball.vy * 0.9;
+      _neyRegistrarVolley();
+    }
+  }
+
+  // ── Bola saiu pela esquerda → dive lado esquerdo ──
+  if (_ball.x + BALL_R < 0) {
+    _neyTriggerDive('L');
+    return;
+  }
+
+  // ── Bola saiu pela direita → dive lado direito ──
+  if (_ball.x - BALL_R > _NEY_FW) {
+    _neyTriggerDive('R');
+    return;
+  }
+
+  ballEl.style.left = _ball.x + 'px';
+  ballEl.style.top  = _ball.y + 'px';
+}
+
+function _neyRegistrarVolley() {
+  _neyVolleys++;
+  if (_neyVolleys >= _neyMaxVolleys && !_neyMissSide) {
+    // Define qual lado vai errar no próximo batida que passar por ele
+    _neyMissSide = Math.random() < 0.5 ? 'L' : 'R';
+  }
+}
+
+// ── Fase DIVING ───────────────────────────────────────────────────────────────
+
+function _neyTriggerDive(side) {
+  _neyState = 'diving';
+
+  // Esconde bola
+  const ballEl = document.getElementById('neyBall');
+  if (ballEl) ballEl.style.opacity = '0';
+
+  // Anima queda do Neymar culpado
+  const paddleEl = document.getElementById(side === 'L' ? 'neyPaddleL' : 'neyPaddleR');
+  if (paddleEl) paddleEl.classList.add('diving');
+
+  // Atualiza placar
+  if (side === 'L') {
+    _neyScoreR++;
+    const el = document.getElementById('neyScoreR');
+    if (el) el.textContent = _neyScoreR;
+  } else {
+    _neyScoreL++;
+    const el = document.getElementById('neyScoreL');
+    if (el) el.textContent = _neyScoreL;
+  }
+
+  // Após 1.4s: inicia fase rolling
+  setTimeout(() => {
+    if (!_neyAtivo) return;
+    _neyState = 'rolling';
+
+    // Esconde ambos paddles
+    const pL = document.getElementById('neyPaddleL');
+    const pR = document.getElementById('neyPaddleR');
+    if (pL) pL.style.opacity = '0';
+    if (pR) pR.style.opacity = '0';
+
+    // GIF começa do lado que caiu e rola para o outro
+    const gif = document.getElementById('neyGif');
+    if (gif) {
+      const field = document.getElementById('neyField');
+      _NEY_FW = field ? field.offsetWidth  : _NEY_FW;
+      _NEY_FH = field ? field.offsetHeight : _NEY_FH;
+
+      _gifRoll.dir = side === 'L' ? 1 : -1;
+      _gifRoll.x   = side === 'L' ? -80 : _NEY_FW + 80;
+      _gifRoll.y   = _NEY_FH * 0.45 + (Math.random() - 0.5) * (_NEY_FH * 0.25);
+
+      gif.style.left      = _gifRoll.x + 'px';
+      gif.style.top       = _gifRoll.y + 'px';
+      gif.style.transform = `translate(-50%, -50%) scaleX(${_gifRoll.dir})`;
+      gif.style.opacity   = '1';
+    }
+
+    // Mensagens só durante o rolling — começa com a do dive
+    _neyExibirMsg(_neyMsgsDive);
+    _neyMsgTimer = setInterval(() => _neyExibirMsg(_neyMsgsGeral), 2200);
+  }, 1400);
+
+  // Após 9s: reset completo → volta ao pong
+  setTimeout(() => {
+    if (!_neyAtivo) return;
+    _neyResetPong(side);
+  }, 9000);
+}
+
+// ── Fase ROLLING ─────────────────────────────────────────────────────────────
+
+function _neyTickRolling(gif) {
+  if (!gif || gif.style.opacity === '0') return;
+
+  _gifRoll.x += _gifRoll.dir * 2.2;
+  gif.style.left = _gifRoll.x + 'px';
+
+  const saiu = _gifRoll.dir > 0
+    ? _gifRoll.x > _NEY_FW + 100
+    : _gifRoll.x < -100;
+  if (saiu) gif.style.opacity = '0';
+}
+
+// ── Reset → Pong ─────────────────────────────────────────────────────────────
+
+function _neyResetPong(lastDiveSide) {
+  // Para mensagens do rolling
+  if (_neyMsgTimer) { clearInterval(_neyMsgTimer); _neyMsgTimer = null; }
+
+  // Reseta bola para o centro COM velocidade zero ANTES de mudar o estado.
+  // Sem isso, _neyTickPong veria _ball.x fora dos limites e dispararia
+  // _neyTriggerDive imediatamente no próximo frame.
+  _ball.x  = _NEY_FW / 2;
+  _ball.y  = _NEY_FH / 2;
+  _ball.vx = 0;
+  _ball.vy = 0;
+
+  _neyMissSide   = null;
+  _neyVolleys    = 0;
+  _neyMaxVolleys = 2 + Math.floor(Math.random() * 3);
+  _neyState      = 'pong'; // só muda após bola estar no centro
+
+  const pL   = document.getElementById('neyPaddleL');
+  const pR   = document.getElementById('neyPaddleR');
+  const gif  = document.getElementById('neyGif');
+  const ball = document.getElementById('neyBall');
+
+  // Desabilita transição para remover .diving sem animar a volta
+  [pL, pR].forEach(p => {
+    if (!p) return;
+    p.style.transition = 'none';
+    p.classList.remove('diving');
+    p.style.opacity = '0';
+    void p.offsetWidth;
+    p.style.transition = '';
+  });
+
+  if (gif)  gif.style.opacity = '0';
+  if (ball) ball.style.opacity = '1';
+
+  _pL.y = _pR.y = _NEY_FH / 2;
+  if (pL) pL.style.top = (_NEY_FH / 2 - 60) + 'px';
+  if (pR) pR.style.top = (_NEY_FH / 2 - 60) + 'px';
+
+  setTimeout(() => {
+    if (pL) pL.style.opacity = '1';
+    if (pR) pR.style.opacity = '1';
+  }, 80);
+
+  // Lança bola com velocidade após breve pausa (paddles já visíveis)
+  setTimeout(() => {
+    if (_neyAtivo && _neyState === 'pong') {
+      _neyLancarBola(lastDiveSide === 'L' ? 1 : -1);
+    }
+  }, 700);
+}
+
+// ── Mensagens ─────────────────────────────────────────────────────────────────
+
+function _neyExibirMsg(pool) {
+  if (!_neyAtivo) return;
+  const msgEl = document.getElementById('neyMsg');
+  if (!msgEl) return;
+
+  const msgs = Array.isArray(pool) ? pool : _neyMsgsGeral;
+  msgEl.textContent = msgs[Math.floor(Math.random() * msgs.length)];
+
+  const field = document.getElementById('neyField');
+  const fw = field ? field.offsetWidth  : 800;
+  const fh = field ? field.offsetHeight : 500;
+
+  // Posição aleatória mas dentro da tela, longe das bordas
+  msgEl.style.left = (60  + Math.random() * (fw - 340)) + 'px';
+  msgEl.style.top  = (60  + Math.random() * (fh - 100)) + 'px';
+
+  msgEl.classList.add('visible');
+  setTimeout(() => msgEl.classList.remove('visible'), 2400);
 }

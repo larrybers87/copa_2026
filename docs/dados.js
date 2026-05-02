@@ -6,45 +6,27 @@ const DADOS = {
       "Selecao": "África do Sul",
       "Grupo": "A",
       "Ranking_FIFA": 60,
-      "Total_Pontos": 1432.76,
+      "Total_Pontos": 1429.73,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/africa_logo.svg",
       "asset_bandeira": "assets/africa_bandeira.svg"
-    },
-    {
-      "Club": "Albania",
-      "Selecao": "Albânia",
-      "Grupo": "F",
-      "Ranking_FIFA": 63,
-      "Total_Pontos": 1401.07,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 1,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "al",
-      "asset_logo": "assets/albania_logo.svg",
-      "asset_bandeira": "assets/albania_bandeira.svg"
     },
     {
       "Club": "Germany",
       "Selecao": "Alemanha",
       "Grupo": "E",
       "Ranking_FIFA": 10,
-      "Total_Pontos": 1724.15,
+      "Total_Pontos": 1730.37,
       "Confederacao": "UEFA",
       "Copas_Titulos": 4,
       "Copas_Participacoes": 21,
       "Segundo_Lugar": 4,
       "Terceiro_Lugar": 4,
-      "is_repescagem": false,
       "iso2": "de",
       "asset_logo": "assets/alemanha_logo.svg",
       "asset_bandeira": "assets/alemanha_bandeira.svg"
@@ -54,13 +36,12 @@ const DADOS = {
       "Selecao": "Arábia Saudita",
       "Grupo": "H",
       "Ranking_FIFA": 61,
-      "Total_Pontos": 1429.48,
+      "Total_Pontos": 1421.43,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "sa",
       "asset_logo": "assets/arabia_logo.svg",
       "asset_bandeira": "assets/arabia_bandeira.svg"
@@ -70,13 +51,12 @@ const DADOS = {
       "Selecao": "Argélia",
       "Grupo": "J",
       "Ranking_FIFA": 28,
-      "Total_Pontos": 1560.91,
+      "Total_Pontos": 1564.26,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 5,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "dz",
       "asset_logo": "assets/argelia_logo.png",
       "asset_bandeira": "assets/argelia_bandeira.svg"
@@ -85,14 +65,13 @@ const DADOS = {
       "Club": "Argentina",
       "Selecao": "Argentina",
       "Grupo": "J",
-      "Ranking_FIFA": 2,
-      "Total_Pontos": 1873.33,
+      "Ranking_FIFA": 3,
+      "Total_Pontos": 1874.81,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 3,
       "Copas_Participacoes": 19,
       "Segundo_Lugar": 3,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "ar",
       "asset_logo": "assets/argentina_logo.svg",
       "asset_bandeira": "assets/argentina_bandeira.svg"
@@ -102,13 +81,12 @@ const DADOS = {
       "Selecao": "Austrália",
       "Grupo": "D",
       "Ranking_FIFA": 27,
-      "Total_Pontos": 1574.01,
+      "Total_Pontos": 1580.67,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "au",
       "asset_logo": "assets/australia_logo.svg",
       "asset_bandeira": "assets/australia_bandeira.svg"
@@ -118,13 +96,12 @@ const DADOS = {
       "Selecao": "Áustria",
       "Grupo": "J",
       "Ranking_FIFA": 24,
-      "Total_Pontos": 1585.51,
+      "Total_Pontos": 1593.45,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 8,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 1,
-      "is_repescagem": false,
       "iso2": "at",
       "asset_logo": "assets/austria_logo.svg",
       "asset_bandeira": "assets/austria_bandeira.svg"
@@ -134,45 +111,27 @@ const DADOS = {
       "Selecao": "Bélgica",
       "Grupo": "G",
       "Ranking_FIFA": 9,
-      "Total_Pontos": 1730.71,
+      "Total_Pontos": 1734.71,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 15,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 1,
-      "is_repescagem": false,
       "iso2": "be",
       "asset_logo": "assets/belgica_logo.svg",
       "asset_bandeira": "assets/belgica_bandeira.svg"
     },
     {
-      "Club": "Bolivia",
-      "Selecao": "Bolívia",
-      "Grupo": "I",
-      "Ranking_FIFA": 76,
-      "Total_Pontos": 1330.52,
-      "Confederacao": "CONMEBOL",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 4,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "bo",
-      "asset_logo": "assets/bolivia_logo.png",
-      "asset_bandeira": "assets/bolivia_bandeira.svg"
-    },
-    {
       "Club": "Bosnia and Herzegovina",
       "Selecao": "Bósnia",
       "Grupo": "B",
-      "Ranking_FIFA": 71,
-      "Total_Pontos": 1362.37,
+      "Ranking_FIFA": 65,
+      "Total_Pontos": 1385.84,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": true,
       "iso2": "ba",
       "asset_logo": "assets/bosnia_logo.png",
       "asset_bandeira": "assets/bosnia_bandeira.svg"
@@ -181,14 +140,13 @@ const DADOS = {
       "Club": "Brazil",
       "Selecao": "Brasil",
       "Grupo": "C",
-      "Ranking_FIFA": 5,
-      "Total_Pontos": 1760.46,
+      "Ranking_FIFA": 6,
+      "Total_Pontos": 1761.16,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 5,
       "Copas_Participacoes": 23,
       "Segundo_Lugar": 2,
       "Terceiro_Lugar": 2,
-      "is_repescagem": false,
       "iso2": "br",
       "asset_logo": "assets/brasil_logo.svg",
       "asset_bandeira": "assets/brasil_bandeira.svg"
@@ -197,14 +155,13 @@ const DADOS = {
       "Club": "Cabo Verde",
       "Selecao": "Cabo Verde",
       "Grupo": "H",
-      "Ranking_FIFA": 67,
-      "Total_Pontos": 1370.49,
+      "Ranking_FIFA": 69,
+      "Total_Pontos": 1366.13,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/cabov_logo.svg",
       "asset_bandeira": "assets/cabov_bandeira.svg"
@@ -213,14 +170,13 @@ const DADOS = {
       "Club": "Canada",
       "Selecao": "Canadá",
       "Grupo": "B",
-      "Ranking_FIFA": 29,
-      "Total_Pontos": 1559.15,
+      "Ranking_FIFA": 30,
+      "Total_Pontos": 1556.48,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "ca",
       "asset_logo": "assets/canada_logo.svg",
       "asset_bandeira": "assets/canada_bandeira.svg"
@@ -229,14 +185,13 @@ const DADOS = {
       "Club": "Qatar",
       "Selecao": "Catar",
       "Grupo": "B",
-      "Ranking_FIFA": 56,
+      "Ranking_FIFA": 55,
       "Total_Pontos": 1454.96,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "qa",
       "asset_logo": "assets/catar_logo.png",
       "asset_bandeira": "assets/catar_bandeira.svg"
@@ -245,14 +200,13 @@ const DADOS = {
       "Club": "Colombia",
       "Selecao": "Colômbia",
       "Grupo": "K",
-      "Ranking_FIFA": 14,
-      "Total_Pontos": 1701.3,
+      "Ranking_FIFA": 13,
+      "Total_Pontos": 1693.09,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "co",
       "asset_logo": "assets/colombia_logo.svg",
       "asset_bandeira": "assets/colombia_bandeira.svg"
@@ -261,14 +215,13 @@ const DADOS = {
       "Club": "Korea Republic",
       "Selecao": "Coreia do Sul",
       "Grupo": "A",
-      "Ranking_FIFA": 22,
-      "Total_Pontos": 1599.45,
+      "Ranking_FIFA": 25,
+      "Total_Pontos": 1588.66,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/coreia_logo.png",
       "asset_bandeira": "assets/coreia_bandeira.svg"
@@ -277,14 +230,13 @@ const DADOS = {
       "Club": "Côte d'Ivoire",
       "Selecao": "Costa do Marfim",
       "Grupo": "E",
-      "Ranking_FIFA": 37,
-      "Total_Pontos": 1522.48,
+      "Ranking_FIFA": 34,
+      "Total_Pontos": 1532.98,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/marfim_logo.png",
       "asset_bandeira": "assets/marfim_bandeira.svg"
@@ -294,13 +246,12 @@ const DADOS = {
       "Selecao": "Croácia",
       "Grupo": "L",
       "Ranking_FIFA": 11,
-      "Total_Pontos": 1716.88,
+      "Total_Pontos": 1717.07,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
       "Segundo_Lugar": 1,
       "Terceiro_Lugar": 2,
-      "is_repescagem": false,
       "iso2": "hr",
       "asset_logo": "assets/croacia_logo.svg",
       "asset_bandeira": "assets/croacia_bandeira.svg"
@@ -309,46 +260,28 @@ const DADOS = {
       "Club": "Curaçao",
       "Selecao": "Curaçao",
       "Grupo": "E",
-      "Ranking_FIFA": 81,
-      "Total_Pontos": 1302.7,
+      "Ranking_FIFA": 82,
+      "Total_Pontos": 1294.65,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/curacao_logo.svg",
       "asset_bandeira": "assets/curacao_bandeira.svg"
     },
     {
-      "Club": "Denmark",
-      "Selecao": "Dinamarca",
-      "Grupo": "A",
-      "Ranking_FIFA": 21,
-      "Total_Pontos": 1616.75,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 7,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "dk",
-      "asset_logo": "assets/dinamarca_logo.svg",
-      "asset_bandeira": "assets/dinamarca_bandeira.svg"
-    },
-    {
       "Club": "Egypt",
       "Selecao": "Egito",
       "Grupo": "G",
-      "Ranking_FIFA": 31,
-      "Total_Pontos": 1556.71,
+      "Ranking_FIFA": 29,
+      "Total_Pontos": 1563.24,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "eg",
       "asset_logo": "assets/egito_logo.svg",
       "asset_bandeira": "assets/egito_bandeira.svg"
@@ -358,13 +291,12 @@ const DADOS = {
       "Selecao": "Equador",
       "Grupo": "E",
       "Ranking_FIFA": 23,
-      "Total_Pontos": 1591.73,
+      "Total_Pontos": 1594.78,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 5,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "ec",
       "asset_logo": "assets/equador_logo.png",
       "asset_bandeira": "assets/equador_bandeira.svg"
@@ -373,46 +305,28 @@ const DADOS = {
       "Club": "Scotland",
       "Selecao": "Escócia",
       "Grupo": "C",
-      "Ranking_FIFA": 38,
-      "Total_Pontos": 1506.77,
+      "Ranking_FIFA": 43,
+      "Total_Pontos": 1498.35,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 9,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "gb-sct",
       "asset_logo": "assets/escocia_logo.svg",
       "asset_bandeira": "assets/escocia_bandeira.svg"
     },
     {
-      "Club": "Slovakia",
-      "Selecao": "Eslováquia",
-      "Grupo": "D",
-      "Ranking_FIFA": 44,
-      "Total_Pontos": 1485.65,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 10,
-      "Segundo_Lugar": 2,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "sk",
-      "asset_logo": "assets/eslovaquia_logo.png",
-      "asset_bandeira": "assets/eslovaquia_bandeira.svg"
-    },
-    {
       "Club": "Spain",
       "Selecao": "Espanha",
       "Grupo": "H",
-      "Ranking_FIFA": 1,
-      "Total_Pontos": 1877.18,
+      "Ranking_FIFA": 2,
+      "Total_Pontos": 1876.4,
       "Confederacao": "UEFA",
       "Copas_Titulos": 1,
       "Copas_Participacoes": 17,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "es",
       "asset_logo": "assets/espanha_logo.png",
       "asset_bandeira": "assets/espanha_bandeira.svg"
@@ -421,14 +335,13 @@ const DADOS = {
       "Club": "USA",
       "Selecao": "Estados Unidos",
       "Grupo": "D",
-      "Ranking_FIFA": 15,
-      "Total_Pontos": 1681.88,
+      "Ranking_FIFA": 16,
+      "Total_Pontos": 1673.13,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 1,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/eua_logo.svg",
       "asset_bandeira": "assets/eua_bandeira.svg"
@@ -437,14 +350,13 @@ const DADOS = {
       "Club": "France",
       "Selecao": "França",
       "Grupo": "I",
-      "Ranking_FIFA": 3,
-      "Total_Pontos": 1870,
+      "Ranking_FIFA": 1,
+      "Total_Pontos": 1877.32,
       "Confederacao": "UEFA",
       "Copas_Titulos": 2,
       "Copas_Participacoes": 17,
       "Segundo_Lugar": 2,
       "Terceiro_Lugar": 2,
-      "is_repescagem": false,
       "iso2": "fr",
       "asset_logo": "assets/franca_logo.svg",
       "asset_bandeira": "assets/franca_bandeira.svg"
@@ -453,14 +365,13 @@ const DADOS = {
       "Club": "Ghana",
       "Selecao": "Gana",
       "Grupo": "L",
-      "Ranking_FIFA": 72,
-      "Total_Pontos": 1351.09,
+      "Ranking_FIFA": 74,
+      "Total_Pontos": 1346.31,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 5,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "gh",
       "asset_logo": "assets/gana_logo.png",
       "asset_bandeira": "assets/gana_bandeira.svg"
@@ -470,13 +381,12 @@ const DADOS = {
       "Selecao": "Haiti",
       "Grupo": "C",
       "Ranking_FIFA": 83,
-      "Total_Pontos": 1294.49,
+      "Total_Pontos": 1291.71,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/haiti_logo.png",
       "asset_bandeira": "assets/haiti_bandeira.svg"
@@ -486,13 +396,12 @@ const DADOS = {
       "Selecao": "Holanda",
       "Grupo": "F",
       "Ranking_FIFA": 7,
-      "Total_Pontos": 1756.27,
+      "Total_Pontos": 1757.87,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
       "Segundo_Lugar": 3,
       "Terceiro_Lugar": 1,
-      "is_repescagem": false,
       "iso2": "nl",
       "asset_logo": "assets/holanda_logo.png",
       "asset_bandeira": "assets/holanda_bandeira.svg"
@@ -502,13 +411,12 @@ const DADOS = {
       "Selecao": "Inglaterra",
       "Grupo": "L",
       "Ranking_FIFA": 4,
-      "Total_Pontos": 1834.12,
+      "Total_Pontos": 1825.97,
       "Confederacao": "UEFA",
       "Copas_Titulos": 1,
       "Copas_Participacoes": 17,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "gb-eng",
       "asset_logo": "assets/inglaterra_logo.svg",
       "asset_bandeira": "assets/inglaterra_bandeira.svg"
@@ -517,14 +425,13 @@ const DADOS = {
       "Club": "IR Iran",
       "Selecao": "Irã",
       "Grupo": "G",
-      "Ranking_FIFA": 20,
-      "Total_Pontos": 1617.02,
+      "Ranking_FIFA": 21,
+      "Total_Pontos": 1615.3,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "ir",
       "asset_logo": "assets/ira_logo.svg",
       "asset_bandeira": "assets/ira_bandeira.svg"
@@ -533,94 +440,28 @@ const DADOS = {
       "Club": "Iraq",
       "Selecao": "Iraque",
       "Grupo": "I",
-      "Ranking_FIFA": 58,
-      "Total_Pontos": 1436.94,
+      "Ranking_FIFA": 57,
+      "Total_Pontos": 1447.14,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": true,
       "iso2": NaN,
       "asset_logo": "assets/iraque_logo.svg",
       "asset_bandeira": "assets/iraque_bandeira.svg"
     },
     {
-      "Club": "Republic of Ireland",
-      "Selecao": "Irlanda",
-      "Grupo": "A",
-      "Ranking_FIFA": 59,
-      "Total_Pontos": 1436.04,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 4,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": NaN,
-      "asset_logo": "assets/irlanda_logo.svg",
-      "asset_bandeira": "assets/irlanda_bandeira.svg"
-    },
-    {
-      "Club": "Northern Ireland",
-      "Selecao": "Irlanda do Norte",
-      "Grupo": "B",
-      "Ranking_FIFA": 69,
-      "Total_Pontos": 1366.02,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 4,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "gb-nir",
-      "asset_logo": "assets/irlandanorte_logo.png",
-      "asset_bandeira": "assets/irlandanorte_bandeira.svg"
-    },
-    {
-      "Club": "Italy",
-      "Selecao": "Itália",
-      "Grupo": "B",
-      "Ranking_FIFA": 13,
-      "Total_Pontos": 1702.06,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 4,
-      "Copas_Participacoes": 19,
-      "Segundo_Lugar": 2,
-      "Terceiro_Lugar": 1,
-      "is_repescagem": true,
-      "iso2": "it",
-      "asset_logo": "assets/italia_logo.svg",
-      "asset_bandeira": "assets/italia_bandeira.svg"
-    },
-    {
-      "Club": "Jamaica",
-      "Selecao": "Jamaica",
-      "Grupo": "K",
-      "Ranking_FIFA": 70,
-      "Total_Pontos": 1362.46,
-      "Confederacao": "CONCACAF",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 2,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "jm",
-      "asset_logo": "assets/jamaica_logo.svg",
-      "asset_bandeira": "assets/jamaica_bandeira.svg"
-    },
-    {
       "Club": "Japan",
       "Selecao": "Japão",
       "Grupo": "F",
-      "Ranking_FIFA": 19,
-      "Total_Pontos": 1650.12,
+      "Ranking_FIFA": 18,
+      "Total_Pontos": 1660.43,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 8,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "jp",
       "asset_logo": "assets/japao_logo.svg",
       "asset_bandeira": "assets/japao_bandeira.svg"
@@ -629,78 +470,43 @@ const DADOS = {
       "Club": "Jordan",
       "Selecao": "Jordânia",
       "Grupo": "J",
-      "Ranking_FIFA": 64,
-      "Total_Pontos": 1388.93,
+      "Ranking_FIFA": 63,
+      "Total_Pontos": 1391.45,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/jordania_logo.svg",
       "asset_bandeira": "assets/jordania_bandeira.svg"
-    },
-    {
-      "Club": "Kosovo",
-      "Selecao": "Kosovo",
-      "Grupo": "D",
-      "Ranking_FIFA": 79,
-      "Total_Pontos": 1308.84,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 1,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": NaN,
-      "asset_logo": "assets/kosovo_logo.png",
-      "asset_bandeira": "assets/kosovo_bandeira.svg"
     },
     {
       "Club": "Morocco",
       "Selecao": "Marrocos",
       "Grupo": "C",
       "Ranking_FIFA": 8,
-      "Total_Pontos": 1736.57,
+      "Total_Pontos": 1755.87,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "ma",
       "asset_logo": "assets/marrocos_logo.png",
       "asset_bandeira": "assets/marrocos_bandeira.svg"
     },
     {
-      "Club": "North Macedonia",
-      "Selecao": "Mecedônia do Norte",
-      "Grupo": "A",
-      "Ranking_FIFA": 66,
-      "Total_Pontos": 1378.57,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 1,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": NaN,
-      "asset_logo": "assets/macedonia_logo.svg",
-      "asset_bandeira": "assets/macedonia_bandeira.svg"
-    },
-    {
       "Club": "Mexico",
       "Selecao": "México",
       "Grupo": "A",
-      "Ranking_FIFA": 16,
-      "Total_Pontos": 1675.75,
+      "Ranking_FIFA": 15,
+      "Total_Pontos": 1681.03,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 18,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "mx",
       "asset_logo": "assets/mexico_logo.svg",
       "asset_bandeira": "assets/mexico_bandeira.svg"
@@ -709,78 +515,43 @@ const DADOS = {
       "Club": "Norway",
       "Selecao": "Noruega",
       "Grupo": "I",
-      "Ranking_FIFA": 32,
-      "Total_Pontos": 1553.14,
+      "Ranking_FIFA": 31,
+      "Total_Pontos": 1550.94,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "no",
       "asset_logo": "assets/noruega_logo.svg",
       "asset_bandeira": "assets/noruega_bandeira.svg"
-    },
-    {
-      "Club": "New Caledonia",
-      "Selecao": "Nova Caledônia",
-      "Grupo": "K",
-      "Ranking_FIFA": 150,
-      "Total_Pontos": 1042.62,
-      "Confederacao": "OFC",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 1,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": NaN,
-      "asset_logo": "assets/caledonia_logo.svg",
-      "asset_bandeira": "assets/caledonia_bandeira.svg"
     },
     {
       "Club": "New Zealand",
       "Selecao": "Nova Zelândia",
       "Grupo": "G",
       "Ranking_FIFA": 85,
-      "Total_Pontos": 1279.25,
+      "Total_Pontos": 1281.57,
       "Confederacao": "OFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "nz",
       "asset_logo": "assets/nzelandia_logo.png",
       "asset_bandeira": "assets/nzelandia_bandeira.svg"
-    },
-    {
-      "Club": "Wales",
-      "Selecao": "País de Gales",
-      "Grupo": "B",
-      "Ranking_FIFA": 35,
-      "Total_Pontos": 1529.71,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 3,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "gb-wls",
-      "asset_logo": "assets/gales_logo.svg",
-      "asset_bandeira": "assets/gales_bandeira.svg"
     },
     {
       "Club": "Panama",
       "Selecao": "Panamá",
       "Grupo": "L",
       "Ranking_FIFA": 33,
-      "Total_Pontos": 1539.47,
+      "Total_Pontos": 1540.64,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "pa",
       "asset_logo": "assets/panama_logo.svg",
       "asset_bandeira": "assets/panama_bandeira.svg"
@@ -790,45 +561,27 @@ const DADOS = {
       "Selecao": "Paraguai",
       "Grupo": "D",
       "Ranking_FIFA": 40,
-      "Total_Pontos": 1501.5,
+      "Total_Pontos": 1503.5,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 9,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "py",
       "asset_logo": "assets/paraguai_logo.svg",
       "asset_bandeira": "assets/paraguai_bandeira.svg"
     },
     {
-      "Club": "Poland",
-      "Selecao": "Polônia",
-      "Grupo": "F",
-      "Ranking_FIFA": 34,
-      "Total_Pontos": 1532.04,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 10,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 2,
-      "is_repescagem": true,
-      "iso2": "pl",
-      "asset_logo": "assets/polonia_logo.svg",
-      "asset_bandeira": "assets/polonia_bandeira.svg"
-    },
-    {
       "Club": "Portugal",
       "Selecao": "Portugal",
       "Grupo": "K",
-      "Ranking_FIFA": 6,
-      "Total_Pontos": 1760.38,
+      "Ranking_FIFA": 5,
+      "Total_Pontos": 1763.83,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 9,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 1,
-      "is_repescagem": false,
       "iso2": "pt",
       "asset_logo": "assets/portugal_logo.png",
       "asset_bandeira": "assets/portugal_bandeira.svg"
@@ -837,14 +590,13 @@ const DADOS = {
       "Club": "Congo DR",
       "Selecao": "RD Congo",
       "Grupo": "K",
-      "Ranking_FIFA": 48,
-      "Total_Pontos": 1468.22,
+      "Ranking_FIFA": 46,
+      "Total_Pontos": 1478.35,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": true,
       "iso2": NaN,
       "asset_logo": "assets/congo_logo.png",
       "asset_bandeira": "assets/congo_bandeira.svg"
@@ -853,46 +605,28 @@ const DADOS = {
       "Club": "Czechia",
       "Selecao": "República Theca",
       "Grupo": "A",
-      "Ranking_FIFA": 43,
-      "Total_Pontos": 1487,
+      "Ranking_FIFA": 41,
+      "Total_Pontos": 1501.38,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 10,
       "Segundo_Lugar": 2,
       "Terceiro_Lugar": 0,
-      "is_repescagem": true,
       "iso2": NaN,
       "asset_logo": "assets/tcheca_logo.png",
       "asset_bandeira": "assets/tcheca_bandeira.svg"
     },
     {
-      "Club": "Romania",
-      "Selecao": "Romênia",
-      "Grupo": "D",
-      "Ranking_FIFA": 49,
-      "Total_Pontos": 1465.78,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 8,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "ro",
-      "asset_logo": "assets/romenia_logo.svg",
-      "asset_bandeira": "assets/romenia_bandeira.svg"
-    },
-    {
       "Club": "Senegal",
       "Selecao": "Senegal",
       "Grupo": "I",
-      "Ranking_FIFA": 12,
-      "Total_Pontos": 1706.83,
+      "Ranking_FIFA": 14,
+      "Total_Pontos": 1688.99,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "sn",
       "asset_logo": "assets/senegal_logo.svg",
       "asset_bandeira": "assets/senegal_bandeira.svg"
@@ -901,14 +635,13 @@ const DADOS = {
       "Club": "Sweden",
       "Selecao": "Suécia",
       "Grupo": "F",
-      "Ranking_FIFA": 42,
-      "Total_Pontos": 1487.13,
+      "Ranking_FIFA": 38,
+      "Total_Pontos": 1514.77,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 13,
       "Segundo_Lugar": 1,
       "Terceiro_Lugar": 2,
-      "is_repescagem": true,
       "iso2": "se",
       "asset_logo": "assets/suecia_logo.svg",
       "asset_bandeira": "assets/suecia_bandeira.svg"
@@ -917,46 +650,28 @@ const DADOS = {
       "Club": "Switzerland",
       "Selecao": "Suíça",
       "Grupo": "B",
-      "Ranking_FIFA": 18,
-      "Total_Pontos": 1654.69,
+      "Ranking_FIFA": 19,
+      "Total_Pontos": 1649.4,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 13,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "ch",
       "asset_logo": "assets/suica_logo.svg",
       "asset_bandeira": "assets/suica_bandeira.svg"
     },
     {
-      "Club": "Suriname",
-      "Selecao": "Suriname",
-      "Grupo": "I",
-      "Ranking_FIFA": 123,
-      "Total_Pontos": 1140.54,
-      "Confederacao": "CONCACAF",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 1,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": NaN,
-      "asset_logo": "assets/suriname_logo.png",
-      "asset_bandeira": "assets/suriname_bandeira.svg"
-    },
-    {
       "Club": "Tunisia",
       "Selecao": "Tunísia",
       "Grupo": "F",
-      "Ranking_FIFA": 47,
-      "Total_Pontos": 1479.04,
+      "Ranking_FIFA": 44,
+      "Total_Pontos": 1483.05,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "tn",
       "asset_logo": "assets/tunisia_logo.png",
       "asset_bandeira": "assets/tunisia_bandeira.svg"
@@ -965,46 +680,28 @@ const DADOS = {
       "Club": "Türkiye",
       "Selecao": "Turquia",
       "Grupo": "D",
-      "Ranking_FIFA": 25,
-      "Total_Pontos": 1582.69,
+      "Ranking_FIFA": 22,
+      "Total_Pontos": 1599.04,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 1,
-      "is_repescagem": true,
       "iso2": NaN,
       "asset_logo": "assets/turquia_logo.png",
       "asset_bandeira": "assets/turquia_bandeira.svg"
-    },
-    {
-      "Club": "Ukraine",
-      "Selecao": "Ucrânia",
-      "Grupo": "F",
-      "Ranking_FIFA": 30,
-      "Total_Pontos": 1557.47,
-      "Confederacao": "UEFA",
-      "Copas_Titulos": 0,
-      "Copas_Participacoes": 2,
-      "Segundo_Lugar": 0,
-      "Terceiro_Lugar": 0,
-      "is_repescagem": true,
-      "iso2": "ua",
-      "asset_logo": "assets/ucrania_logo.svg",
-      "asset_bandeira": "assets/ucrania_bandeira.svg"
     },
     {
       "Club": "Uruguay",
       "Selecao": "Uruguai",
       "Grupo": "H",
       "Ranking_FIFA": 17,
-      "Total_Pontos": 1672.62,
+      "Total_Pontos": 1673.07,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 2,
       "Copas_Participacoes": 15,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": "uy",
       "asset_logo": "assets/uruguai_logo.svg",
       "asset_bandeira": "assets/uruguai_bandeira.svg"
@@ -1013,14 +710,13 @@ const DADOS = {
       "Club": "Uzbekistan",
       "Selecao": "Uzbequistão",
       "Grupo": "K",
-      "Ranking_FIFA": 52,
-      "Total_Pontos": 1462.03,
+      "Ranking_FIFA": 50,
+      "Total_Pontos": 1465.34,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
       "Segundo_Lugar": 0,
       "Terceiro_Lugar": 0,
-      "is_repescagem": false,
       "iso2": NaN,
       "asset_logo": "assets/uzbequistao_logo.png",
       "asset_bandeira": "assets/uzbequistao_bandeira.svg"
@@ -1039,14 +735,14 @@ const DADOS = {
       "Local": "Akron",
       "Grupo": "A",
       "Time1": "Coreia do Sul",
-      "Time2": "Repescagem"
+      "Time2": "República Theca"
     },
     {
       "DataHora": "2026-06-12T16:00",
       "Local": "Toronto Field",
       "Grupo": "B",
       "Time1": "Canadá",
-      "Time2": "Repescagem"
+      "Time2": "Bósnia"
     },
     {
       "DataHora": "2026-06-12T22:00",
@@ -1060,7 +756,7 @@ const DADOS = {
       "Local": "Vancouver Place",
       "Grupo": "D",
       "Time1": "Austrália",
-      "Time2": "Repescagem"
+      "Time2": "Turquia"
     },
     {
       "DataHora": "2026-06-13T16:00",
@@ -1108,7 +804,7 @@ const DADOS = {
       "DataHora": "2026-06-14T23:00",
       "Local": "El Gigante de Acero",
       "Grupo": "F",
-      "Time1": "Repescagem",
+      "Time1": "Suécia",
       "Time2": "Tunísia"
     },
     {
@@ -1150,7 +846,7 @@ const DADOS = {
       "DataHora": "2026-06-16T19:00",
       "Local": "Boston",
       "Grupo": "I",
-      "Time1": "Repescagem",
+      "Time1": "Iraque",
       "Time2": "Noruega"
     },
     {
@@ -1172,7 +868,7 @@ const DADOS = {
       "Local": "Houston",
       "Grupo": "K",
       "Time1": "Portugal",
-      "Time2": "Repescagem"
+      "Time2": "RD Congo"
     },
     {
       "DataHora": "2026-06-17T17:00",
@@ -1196,7 +892,7 @@ const DADOS = {
       "Time2": "Colômbia"
     },
     {
-      "DataHora": "2026-06-18T13:00",
+      "DataHora": "2026-06-18T22:00",
       "Local": "Atlanta",
       "Grupo": "A",
       "Time1": "México",
@@ -1207,7 +903,7 @@ const DADOS = {
       "Local": "Los Angeles",
       "Grupo": "B",
       "Time1": "Suíça",
-      "Time2": "Repescagem"
+      "Time2": "Bósnia"
     },
     {
       "DataHora": "2026-06-18T19:00",
@@ -1217,17 +913,17 @@ const DADOS = {
       "Time2": "Catar"
     },
     {
-      "DataHora": "2026-06-18T22:00",
+      "DataHora": "2026-06-18T13:00",
       "Local": "Akron",
       "Grupo": "A",
-      "Time1": "Repescagem",
+      "Time1": "República Theca",
       "Time2": "África do Sul"
     },
     {
       "DataHora": "2026-06-19T01:00",
       "Local": "Santa Clara",
       "Grupo": "D",
-      "Time1": "Repescagem",
+      "Time1": "Turquia",
       "Time2": "Paraguai"
     },
     {
@@ -1245,7 +941,7 @@ const DADOS = {
       "Time2": "Marrocos"
     },
     {
-      "DataHora": "2026-06-19T22:00",
+      "DataHora": "2026-06-19T21:30",
       "Local": "Filadélfia",
       "Grupo": "C",
       "Time1": "Brasil",
@@ -1256,7 +952,7 @@ const DADOS = {
       "Local": "Houston",
       "Grupo": "F",
       "Time1": "Holanda",
-      "Time2": "Repescagem"
+      "Time2": "Suécia"
     },
     {
       "DataHora": "2026-06-20T17:00",
@@ -1319,7 +1015,7 @@ const DADOS = {
       "Local": "Filadélfia",
       "Grupo": "I",
       "Time1": "França",
-      "Time2": "Repescagem"
+      "Time2": "Iraque"
     },
     {
       "DataHora": "2026-06-22T21:00",
@@ -1361,7 +1057,7 @@ const DADOS = {
       "Local": "Akron",
       "Grupo": "K",
       "Time1": "Colômbia",
-      "Time2": "Repescagem"
+      "Time2": "RD Congo"
     },
     {
       "DataHora": "2026-06-24T16:00",
@@ -1374,7 +1070,7 @@ const DADOS = {
       "DataHora": "2026-06-24T16:00",
       "Local": "Seattle Field",
       "Grupo": "B",
-      "Time1": "Repescagem",
+      "Time1": "Bósnia",
       "Time2": "Catar"
     },
     {
@@ -1395,7 +1091,7 @@ const DADOS = {
       "DataHora": "2026-06-24T22:00",
       "Local": "Azteca",
       "Grupo": "A",
-      "Time1": "Repescagem",
+      "Time1": "República Theca",
       "Time2": "México"
     },
     {
@@ -1431,7 +1127,7 @@ const DADOS = {
       "Local": "Dallas",
       "Grupo": "F",
       "Time1": "Japão",
-      "Time2": "Repescagem"
+      "Time2": "Suécia"
     },
     {
       "DataHora": "2026-06-25T23:00",
@@ -1444,7 +1140,7 @@ const DADOS = {
       "DataHora": "2026-06-25T23:00",
       "Local": "Los Angeles",
       "Grupo": "D",
-      "Time1": "Repescagem",
+      "Time1": "Turquia",
       "Time2": "Estados Unidos"
     },
     {
@@ -1452,7 +1148,7 @@ const DADOS = {
       "Local": "Toronto Field",
       "Grupo": "I",
       "Time1": "Senegal",
-      "Time2": "Repescagem"
+      "Time2": "Iraque"
     },
     {
       "DataHora": "2026-06-26T16:00",
@@ -1507,7 +1203,7 @@ const DADOS = {
       "DataHora": "2026-06-27T20:30",
       "Local": "Atlanta",
       "Grupo": "K",
-      "Time1": "Repescagem",
+      "Time1": "RD Congo",
       "Time2": "Uzbequistão"
     },
     {
@@ -1762,10 +1458,10 @@ const DADOS = {
     {
       "Team": "South Africa",
       "Year": 2026,
-      "Matches": 1,
+      "Matches": 3,
       "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
+      "Draws": 1,
+      "Losses": 2
     },
     {
       "Team": "South Africa",
@@ -1808,44 +1504,12 @@ const DADOS = {
       "Losses": 2
     },
     {
-      "Team": "Albania",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Year": 2024,
-      "Matches": 13,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 7
-    },
-    {
-      "Team": "Albania",
-      "Year": 2023,
-      "Matches": 9,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Year": 2022,
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 4,
-      "Losses": 5
-    },
-    {
-      "Team": "Albania",
-      "Year": 2021,
-      "Matches": 12,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 5
+      "Team": "Germany",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "Germany",
@@ -1886,6 +1550,14 @@ const DADOS = {
       "Wins": 11,
       "Draws": 2,
       "Losses": 3
+    },
+    {
+      "Team": "Saudi Arabia",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 2
     },
     {
       "Team": "Saudi Arabia",
@@ -1930,9 +1602,9 @@ const DADOS = {
     {
       "Team": "Algeria",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
+      "Matches": 4,
+      "Wins": 2,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -1977,6 +1649,14 @@ const DADOS = {
     },
     {
       "Team": "Argentina",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Argentina",
       "Year": 2025,
       "Matches": 9,
       "Wins": 7,
@@ -2013,6 +1693,14 @@ const DADOS = {
       "Matches": 16,
       "Wins": 11,
       "Draws": 5,
+      "Losses": 0
+    },
+    {
+      "Team": "Australia",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
       "Losses": 0
     },
     {
@@ -2057,6 +1745,14 @@ const DADOS = {
     },
     {
       "Team": "Austria",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Austria",
       "Year": 2025,
       "Matches": 10,
       "Wins": 6,
@@ -2094,6 +1790,14 @@ const DADOS = {
       "Wins": 7,
       "Draws": 2,
       "Losses": 7
+    },
+    {
+      "Team": "Belgium",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Belgium",
@@ -2136,52 +1840,12 @@ const DADOS = {
       "Losses": 3
     },
     {
-      "Team": "Bolivia",
+      "Team": "Bosnia and Herzegovina",
       "Year": 2026,
       "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Year": 2025,
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 7
-    },
-    {
-      "Team": "Bolivia",
-      "Year": 2024,
-      "Matches": 14,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 9
-    },
-    {
-      "Team": "Bolivia",
-      "Year": 2023,
-      "Matches": 11,
       "Wins": 2,
-      "Draws": 1,
-      "Losses": 8
-    },
-    {
-      "Team": "Bolivia",
-      "Year": 2022,
-      "Matches": 7,
-      "Wins": 1,
       "Draws": 0,
-      "Losses": 6
-    },
-    {
-      "Team": "Bolivia",
-      "Year": 2021,
-      "Matches": 17,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 10
+      "Losses": 0
     },
     {
       "Team": "Bosnia and Herzegovina",
@@ -2225,6 +1889,14 @@ const DADOS = {
     },
     {
       "Team": "Brazil",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Brazil",
       "Year": 2025,
       "Matches": 10,
       "Wins": 5,
@@ -2261,6 +1933,14 @@ const DADOS = {
       "Matches": 16,
       "Wins": 12,
       "Draws": 3,
+      "Losses": 1
+    },
+    {
+      "Team": "Cabo Verde",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -2306,9 +1986,9 @@ const DADOS = {
     {
       "Team": "Canada",
       "Year": 2026,
-      "Matches": 1,
+      "Matches": 3,
       "Wins": 1,
-      "Draws": 0,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -2393,6 +2073,14 @@ const DADOS = {
     },
     {
       "Team": "Colombia",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 2
+    },
+    {
+      "Team": "Colombia",
       "Year": 2025,
       "Matches": 10,
       "Wins": 5,
@@ -2430,6 +2118,14 @@ const DADOS = {
       "Wins": 5,
       "Draws": 8,
       "Losses": 4
+    },
+    {
+      "Team": "Korea Republic",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 2
     },
     {
       "Team": "Korea Republic",
@@ -2474,8 +2170,8 @@ const DADOS = {
     {
       "Team": "Côte d'Ivoire",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 1
     },
@@ -2521,6 +2217,14 @@ const DADOS = {
     },
     {
       "Team": "Croatia",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Croatia",
       "Year": 2025,
       "Matches": 10,
       "Wins": 8,
@@ -2558,6 +2262,14 @@ const DADOS = {
       "Wins": 8,
       "Draws": 4,
       "Losses": 4
+    },
+    {
+      "Team": "Curaçao",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 2
     },
     {
       "Team": "Curaçao",
@@ -2600,51 +2312,11 @@ const DADOS = {
       "Losses": 3
     },
     {
-      "Team": "Denmark",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Year": 2024,
-      "Matches": 14,
-      "Wins": 5,
-      "Draws": 6,
-      "Losses": 3
-    },
-    {
-      "Team": "Denmark",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Year": 2022,
-      "Matches": 11,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Denmark",
-      "Year": 2021,
-      "Matches": 18,
-      "Wins": 13,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
       "Team": "Egypt",
       "Year": 2026,
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
+      "Matches": 6,
+      "Wins": 3,
+      "Draws": 1,
       "Losses": 2
     },
     {
@@ -2686,6 +2358,14 @@ const DADOS = {
       "Wins": 9,
       "Draws": 4,
       "Losses": 2
+    },
+    {
+      "Team": "Ecuador",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 2,
+      "Losses": 0
     },
     {
       "Team": "Ecuador",
@@ -2729,6 +2409,14 @@ const DADOS = {
     },
     {
       "Team": "Scotland",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 2
+    },
+    {
+      "Team": "Scotland",
       "Year": 2025,
       "Matches": 10,
       "Wins": 6,
@@ -2768,44 +2456,12 @@ const DADOS = {
       "Losses": 3
     },
     {
-      "Team": "Slovakia",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 4,
+      "Team": "Spain",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
       "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Slovakia",
-      "Year": 2024,
-      "Matches": 14,
-      "Wins": 7,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Slovakia",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Year": 2022,
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Slovakia",
-      "Year": 2021,
-      "Matches": 15,
-      "Wins": 4,
-      "Draws": 7,
-      "Losses": 4
+      "Losses": 0
     },
     {
       "Team": "Spain",
@@ -2849,6 +2505,14 @@ const DADOS = {
     },
     {
       "Team": "USA",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 2
+    },
+    {
+      "Team": "USA",
       "Year": 2025,
       "Matches": 18,
       "Wins": 11,
@@ -2886,6 +2550,14 @@ const DADOS = {
       "Wins": 17,
       "Draws": 3,
       "Losses": 2
+    },
+    {
+      "Team": "France",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "France",
@@ -2929,6 +2601,14 @@ const DADOS = {
     },
     {
       "Team": "Ghana",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 2
+    },
+    {
+      "Team": "Ghana",
       "Year": 2025,
       "Matches": 10,
       "Wins": 6,
@@ -2966,6 +2646,14 @@ const DADOS = {
       "Wins": 5,
       "Draws": 3,
       "Losses": 2
+    },
+    {
+      "Team": "Haiti",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 1
     },
     {
       "Team": "Haiti",
@@ -3009,6 +2697,14 @@ const DADOS = {
     },
     {
       "Team": "Netherlands",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Netherlands",
       "Year": 2025,
       "Matches": 10,
       "Wins": 6,
@@ -3046,6 +2742,14 @@ const DADOS = {
       "Wins": 11,
       "Draws": 3,
       "Losses": 2
+    },
+    {
+      "Team": "England",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 1
     },
     {
       "Team": "England",
@@ -3089,6 +2793,14 @@ const DADOS = {
     },
     {
       "Team": "IR Iran",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "IR Iran",
       "Year": 2025,
       "Matches": 12,
       "Wins": 6,
@@ -3125,6 +2837,14 @@ const DADOS = {
       "Matches": 11,
       "Wins": 10,
       "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Iraq",
+      "Year": 2026,
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
       "Losses": 0
     },
     {
@@ -3168,172 +2888,12 @@ const DADOS = {
       "Losses": 4
     },
     {
-      "Team": "Republic of Ireland",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Year": 2024,
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Year": 2022,
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Year": 2021,
-      "Matches": 12,
-      "Wins": 4,
-      "Draws": 5,
-      "Losses": 3
-    },
-    {
-      "Team": "Northern Ireland",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Northern Ireland",
-      "Year": 2024,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 7
-    },
-    {
-      "Team": "Northern Ireland",
-      "Year": 2022,
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Year": 2021,
-      "Matches": 12,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 5
-    },
-    {
-      "Team": "Italy",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Year": 2024,
-      "Matches": 14,
-      "Wins": 8,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Year": 2022,
-      "Matches": 11,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Italy",
-      "Year": 2021,
-      "Matches": 19,
-      "Wins": 14,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
+      "Team": "Japan",
       "Year": 2026,
-      "Matches": 1,
-      "Wins": 1,
+      "Matches": 2,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Year": 2025,
-      "Matches": 17,
-      "Wins": 9,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Jamaica",
-      "Year": 2024,
-      "Matches": 14,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "Jamaica",
-      "Year": 2023,
-      "Matches": 17,
-      "Wins": 7,
-      "Draws": 5,
-      "Losses": 5
-    },
-    {
-      "Team": "Jamaica",
-      "Year": 2022,
-      "Matches": 14,
-      "Wins": 2,
-      "Draws": 5,
-      "Losses": 7
-    },
-    {
-      "Team": "Jamaica",
-      "Year": 2021,
-      "Matches": 14,
-      "Wins": 3,
-      "Draws": 5,
-      "Losses": 6
     },
     {
       "Team": "Japan",
@@ -3377,6 +2937,14 @@ const DADOS = {
     },
     {
       "Team": "Jordan",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 2,
+      "Losses": 0
+    },
+    {
+      "Team": "Jordan",
       "Year": 2025,
       "Matches": 16,
       "Wins": 8,
@@ -3416,52 +2984,12 @@ const DADOS = {
       "Losses": 8
     },
     {
-      "Team": "Kosovo",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Year": 2024,
-      "Matches": 9,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Kosovo",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 2,
-      "Draws": 5,
-      "Losses": 3
-    },
-    {
-      "Team": "Kosovo",
-      "Year": 2022,
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Kosovo",
-      "Year": 2021,
-      "Matches": 14,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 7
-    },
-    {
       "Team": "Morocco",
       "Year": 2026,
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 1
+      "Matches": 6,
+      "Wins": 5,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Morocco",
@@ -3504,51 +3032,11 @@ const DADOS = {
       "Losses": 1
     },
     {
-      "Team": "North Macedonia",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 5,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Year": 2024,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "North Macedonia",
-      "Year": 2022,
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "North Macedonia",
-      "Year": 2021,
-      "Matches": 15,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 5
-    },
-    {
       "Team": "Mexico",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 5,
       "Wins": 3,
-      "Draws": 0,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -3593,6 +3081,14 @@ const DADOS = {
     },
     {
       "Team": "Norway",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 1
+    },
+    {
+      "Team": "Norway",
       "Year": 2025,
       "Matches": 10,
       "Wins": 9,
@@ -3632,36 +3128,12 @@ const DADOS = {
       "Losses": 3
     },
     {
-      "Team": "New Caledonia",
-      "Year": 2025,
-      "Matches": 3,
-      "Wins": 2,
+      "Team": "New Zealand",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
       "Draws": 0,
       "Losses": 1
-    },
-    {
-      "Team": "New Caledonia",
-      "Year": 2024,
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Year": 2023,
-      "Matches": 9,
-      "Wins": 7,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "New Caledonia",
-      "Year": 2022,
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 5
     },
     {
       "Team": "New Zealand",
@@ -3704,51 +3176,11 @@ const DADOS = {
       "Losses": 0
     },
     {
-      "Team": "Wales",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Year": 2024,
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Year": 2022,
-      "Matches": 12,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 7
-    },
-    {
-      "Team": "Wales",
-      "Year": 2021,
-      "Matches": 16,
-      "Wins": 6,
-      "Draws": 6,
-      "Losses": 4
-    },
-    {
       "Team": "Panama",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
+      "Matches": 4,
+      "Wins": 1,
+      "Draws": 2,
       "Losses": 1
     },
     {
@@ -3793,6 +3225,14 @@ const DADOS = {
     },
     {
       "Team": "Paraguay",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Paraguay",
       "Year": 2025,
       "Matches": 10,
       "Wins": 4,
@@ -3832,44 +3272,12 @@ const DADOS = {
       "Losses": 8
     },
     {
-      "Team": "Poland",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Year": 2024,
-      "Matches": 13,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "Poland",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Poland",
-      "Year": 2022,
-      "Matches": 13,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 5
-    },
-    {
-      "Team": "Poland",
-      "Year": 2021,
-      "Matches": 15,
-      "Wins": 6,
-      "Draws": 5,
-      "Losses": 4
+      "Team": "Portugal",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Portugal",
@@ -3914,8 +3322,8 @@ const DADOS = {
     {
       "Team": "Congo DR",
       "Year": 2026,
-      "Matches": 1,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 1
     },
@@ -3961,6 +3369,14 @@ const DADOS = {
     },
     {
       "Team": "Czechia",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Czechia",
       "Year": 2025,
       "Matches": 10,
       "Wins": 6,
@@ -4000,52 +3416,12 @@ const DADOS = {
       "Losses": 5
     },
     {
-      "Team": "Romania",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Romania",
-      "Year": 2024,
-      "Matches": 14,
-      "Wins": 7,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Year": 2023,
-      "Matches": 10,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Year": 2022,
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "Romania",
-      "Year": 2021,
-      "Matches": 12,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
       "Team": "Senegal",
       "Year": 2026,
-      "Matches": 4,
-      "Wins": 4,
+      "Matches": 6,
+      "Wins": 5,
       "Draws": 0,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Senegal",
@@ -4085,6 +3461,14 @@ const DADOS = {
       "Matches": 10,
       "Wins": 7,
       "Draws": 3,
+      "Losses": 0
+    },
+    {
+      "Team": "Sweden",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
       "Losses": 0
     },
     {
@@ -4129,6 +3513,14 @@ const DADOS = {
     },
     {
       "Team": "Switzerland",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 1
+    },
+    {
+      "Team": "Switzerland",
       "Year": 2025,
       "Matches": 10,
       "Wins": 7,
@@ -4168,51 +3560,11 @@ const DADOS = {
       "Losses": 2
     },
     {
-      "Team": "Suriname",
-      "Year": 2025,
-      "Matches": 13,
-      "Wins": 5,
-      "Draws": 5,
-      "Losses": 3
-    },
-    {
-      "Team": "Suriname",
-      "Year": 2024,
-      "Matches": 9,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Suriname",
-      "Year": 2023,
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Suriname",
-      "Year": 2022,
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Suriname",
-      "Year": 2021,
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
       "Team": "Tunisia",
       "Year": 2026,
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
+      "Matches": 3,
+      "Wins": 1,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -4257,6 +3609,14 @@ const DADOS = {
     },
     {
       "Team": "Türkiye",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Türkiye",
       "Year": 2025,
       "Matches": 10,
       "Wins": 7,
@@ -4296,44 +3656,12 @@ const DADOS = {
       "Losses": 4
     },
     {
-      "Team": "Ukraine",
-      "Year": 2025,
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Ukraine",
-      "Year": 2024,
-      "Matches": 14,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Ukraine",
-      "Year": 2023,
-      "Matches": 9,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Year": 2022,
-      "Matches": 8,
-      "Wins": 4,
+      "Team": "Uruguay",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 0,
       "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Year": 2021,
-      "Matches": 18,
-      "Wins": 6,
-      "Draws": 9,
-      "Losses": 3
+      "Losses": 0
     },
     {
       "Team": "Uruguay",
@@ -4374,6 +3702,14 @@ const DADOS = {
       "Wins": 4,
       "Draws": 5,
       "Losses": 6
+    },
+    {
+      "Team": "Uzbekistan",
+      "Year": 2026,
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "Uzbekistan",
@@ -5132,10 +4468,10 @@ const DADOS = {
     {
       "Team": "South Africa",
       "Opponent": "Panama",
-      "Matches": 1,
+      "Matches": 3,
       "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
+      "Draws": 1,
+      "Losses": 2
     },
     {
       "Team": "South Africa",
@@ -5210,586 +4546,10 @@ const DADOS = {
       "Losses": 0
     },
     {
-      "Team": "Albania",
-      "Opponent": "Andorra",
-      "Matches": 9,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Malta",
-      "Matches": 8,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Moldova",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Greece",
-      "Matches": 13,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Turkiye",
-      "Matches": 12,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Georgia",
-      "Matches": 17,
-      "Wins": 4,
-      "Draws": 4,
-      "Losses": 9
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Liechtenstein",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Armenia",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Azerbaijan",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "San Marino",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Bulgaria",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 5
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Romania",
-      "Matches": 17,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 11
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Belarus",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Iceland",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Luxembourg",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Kazakhstan",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Serbia",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Poland",
-      "Matches": 15,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 10
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Finland",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Hungary",
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Cyprus",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Lithuania",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Macedonia",
-      "Matches": 10,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Israel",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "N. Ireland",
-      "Matches": 9,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Montenegro",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Qatar",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "ČSR",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Portugal",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "France",
-      "Matches": 9,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 7
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Belgium",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Denmark",
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Norway",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Czechia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Bosnia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Russia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Latvia",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 6,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Sweden",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Uzbekistan",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Iran",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Slovenia",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Algeria",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Ukraine",
-      "Matches": 8,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Wales",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Estonia",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Vietnam",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Faroe Islands",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Jordan",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Gibraltar",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Kosovo",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Germany",
-      "Matches": 14,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 13
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "England",
-      "Matches": 8,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 8
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Spain",
-      "Matches": 9,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 9
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Italy",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 5
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Netherlands",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Scotland",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Austria",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 7
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Switzerland",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Argentina",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Ireland",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Croatia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Morocco",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Chile",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Cuba",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "China",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Mexico",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Bahrain",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "East Germany",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Yugoslavia",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Algeria U23",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Albania",
-      "Opponent": "Romania B",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
       "Team": "Germany",
       "Opponent": "Switzerland",
-      "Matches": 54,
-      "Wins": 36,
+      "Matches": 55,
+      "Wins": 37,
       "Draws": 9,
       "Losses": 9
     },
@@ -6227,6 +4987,14 @@ const DADOS = {
     },
     {
       "Team": "Germany",
+      "Opponent": "Ghana",
+      "Matches": 4,
+      "Wins": 3,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Germany",
       "Opponent": "Bosnia",
       "Matches": 4,
       "Wins": 3,
@@ -6271,14 +5039,6 @@ const DADOS = {
       "Matches": 3,
       "Wins": 3,
       "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Germany",
-      "Opponent": "Ghana",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
       "Losses": 0
     },
     {
@@ -6828,10 +5588,10 @@ const DADOS = {
     {
       "Team": "Saudi Arabia",
       "Opponent": "Egypt",
-      "Matches": 7,
+      "Matches": 8,
       "Wins": 2,
       "Draws": 1,
-      "Losses": 4
+      "Losses": 5
     },
     {
       "Team": "Saudi Arabia",
@@ -7248,6 +6008,14 @@ const DADOS = {
       "Wins": 0,
       "Draws": 0,
       "Losses": 3
+    },
+    {
+      "Team": "Saudi Arabia",
+      "Opponent": "Serbia",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
     },
     {
       "Team": "Saudi Arabia",
@@ -7876,9 +6644,9 @@ const DADOS = {
     {
       "Team": "Algeria",
       "Opponent": "Uruguay",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 1,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -7999,6 +6767,14 @@ const DADOS = {
       "Matches": 2,
       "Wins": 1,
       "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Algeria",
+      "Opponent": "Guatemala",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
       "Losses": 0
     },
     {
@@ -8811,6 +7587,14 @@ const DADOS = {
     },
     {
       "Team": "Argentina",
+      "Opponent": "Zambia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Argentina",
       "Opponent": "South Africa",
       "Matches": 3,
       "Wins": 1,
@@ -8868,6 +7652,14 @@ const DADOS = {
     {
       "Team": "Argentina",
       "Opponent": "Indonesia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Argentina",
+      "Opponent": "Mauritania",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -9435,6 +8227,14 @@ const DADOS = {
     },
     {
       "Team": "Australia",
+      "Opponent": "Cameroon",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Australia",
       "Opponent": "Argentina",
       "Matches": 9,
       "Wins": 1,
@@ -9651,6 +8451,14 @@ const DADOS = {
     },
     {
       "Team": "Australia",
+      "Opponent": "Curaçao",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Australia",
       "Opponent": "USSR B",
       "Matches": 1,
       "Wins": 1,
@@ -9712,14 +8520,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 2,
       "Losses": 2
-    },
-    {
-      "Team": "Australia",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Australia",
@@ -10259,6 +9059,14 @@ const DADOS = {
     },
     {
       "Team": "Austria",
+      "Opponent": "Ghana",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Austria",
       "Opponent": "Croatia",
       "Matches": 7,
       "Wins": 1,
@@ -10276,6 +9084,14 @@ const DADOS = {
     {
       "Team": "Austria",
       "Opponent": "Iran",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Austria",
+      "Opponent": "South Korea",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -10392,14 +9208,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 3,
       "Losses": 7
-    },
-    {
-      "Team": "Austria",
-      "Opponent": "Ghana",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Austria",
@@ -10603,6 +9411,14 @@ const DADOS = {
     },
     {
       "Team": "Belgium",
+      "Opponent": "USA",
+      "Matches": 7,
+      "Wins": 6,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Belgium",
       "Opponent": "Ireland",
       "Matches": 17,
       "Wins": 6,
@@ -10624,14 +9440,6 @@ const DADOS = {
       "Wins": 5,
       "Draws": 5,
       "Losses": 16
-    },
-    {
-      "Team": "Belgium",
-      "Opponent": "USA",
-      "Matches": 6,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 1
     },
     {
       "Team": "Belgium",
@@ -10868,9 +9676,9 @@ const DADOS = {
     {
       "Team": "Belgium",
       "Opponent": "Mexico",
-      "Matches": 7,
+      "Matches": 8,
       "Wins": 2,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 3
     },
     {
@@ -11106,454 +9914,6 @@ const DADOS = {
       "Losses": 1
     },
     {
-      "Team": "Bolivia",
-      "Opponent": "Venezuela",
-      "Matches": 40,
-      "Wins": 16,
-      "Draws": 9,
-      "Losses": 15
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Peru",
-      "Matches": 43,
-      "Wins": 12,
-      "Draws": 10,
-      "Losses": 21
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Paraguay",
-      "Matches": 41,
-      "Wins": 9,
-      "Draws": 9,
-      "Losses": 23
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Uruguay",
-      "Matches": 42,
-      "Wins": 8,
-      "Draws": 7,
-      "Losses": 27
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Chile",
-      "Matches": 45,
-      "Wins": 8,
-      "Draws": 10,
-      "Losses": 27
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Argentina",
-      "Matches": 42,
-      "Wins": 7,
-      "Draws": 5,
-      "Losses": 30
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Brazil",
-      "Matches": 34,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 24
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Colombia",
-      "Matches": 31,
-      "Wins": 5,
-      "Draws": 10,
-      "Losses": 16
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Ecuador",
-      "Matches": 32,
-      "Wins": 4,
-      "Draws": 8,
-      "Losses": 20
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "USA",
-      "Matches": 9,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Panama",
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "El Salvador",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Haiti",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Nicaragua",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Finland",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Honduras",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Jamaica",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "South Africa",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Saudi Arabia",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Cuba",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Mexico",
-      "Matches": 14,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 11
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Trinidad",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Andorra",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Guatemala",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Guyana",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Jordan",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Myanmar",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Germany",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Portugal",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Spain",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "France",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Greece",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Switzerland",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Bulgaria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Japan",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Serbia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Poland",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Romania",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Russia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Hungary",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Senegal",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Slovakia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Ireland",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Iraq",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Uzbekistan",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Iceland",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Iran",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "South Korea",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Algeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Egypt",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "UAE",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Costa Rica",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Yugoslavia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Curaçao",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Bolivia",
-      "Opponent": "Russia B",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
       "Team": "Bosnia and Herzegovina",
       "Opponent": "Liechtenstein",
       "Matches": 10,
@@ -11659,11 +10019,27 @@ const DADOS = {
     },
     {
       "Team": "Bosnia and Herzegovina",
+      "Opponent": "Wales",
+      "Matches": 5,
+      "Wins": 3,
+      "Draws": 2,
+      "Losses": 0
+    },
+    {
+      "Team": "Bosnia and Herzegovina",
       "Opponent": "Armenia",
       "Matches": 4,
       "Wins": 3,
       "Draws": 0,
       "Losses": 1
+    },
+    {
+      "Team": "Bosnia and Herzegovina",
+      "Opponent": "Italy",
+      "Matches": 7,
+      "Wins": 2,
+      "Draws": 1,
+      "Losses": 4
     },
     {
       "Team": "Bosnia and Herzegovina",
@@ -11715,14 +10091,6 @@ const DADOS = {
     },
     {
       "Team": "Bosnia and Herzegovina",
-      "Opponent": "Wales",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Bosnia and Herzegovina",
       "Opponent": "N. Ireland",
       "Matches": 3,
       "Wins": 2,
@@ -11752,14 +10120,6 @@ const DADOS = {
       "Wins": 2,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Bosnia and Herzegovina",
-      "Opponent": "Italy",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 4
     },
     {
       "Team": "Bosnia and Herzegovina",
@@ -12428,10 +10788,10 @@ const DADOS = {
     {
       "Team": "Brazil",
       "Opponent": "France",
-      "Matches": 15,
+      "Matches": 16,
       "Wins": 6,
       "Draws": 3,
-      "Losses": 6
+      "Losses": 7
     },
     {
       "Team": "Brazil",
@@ -12547,6 +10907,14 @@ const DADOS = {
     },
     {
       "Team": "Brazil",
+      "Opponent": "Croatia",
+      "Matches": 6,
+      "Wins": 4,
+      "Draws": 1,
+      "Losses": 1
+    },
+    {
+      "Team": "Brazil",
       "Opponent": "Panama",
       "Matches": 5,
       "Wins": 4,
@@ -12592,14 +10960,6 @@ const DADOS = {
       "Wins": 3,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Brazil",
-      "Opponent": "Croatia",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
     },
     {
       "Team": "Brazil",
@@ -13347,6 +11707,14 @@ const DADOS = {
     },
     {
       "Team": "Cabo Verde",
+      "Opponent": "Finland",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Cabo Verde",
       "Opponent": "Nigeria",
       "Matches": 3,
       "Wins": 0,
@@ -13399,6 +11767,14 @@ const DADOS = {
       "Matches": 4,
       "Wins": 0,
       "Draws": 3,
+      "Losses": 1
+    },
+    {
+      "Team": "Cabo Verde",
+      "Opponent": "Chile",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
       "Losses": 1
     },
     {
@@ -13468,10 +11844,10 @@ const DADOS = {
     {
       "Team": "Canada",
       "Opponent": "USA",
-      "Matches": 52,
-      "Wins": 18,
-      "Draws": 14,
-      "Losses": 20
+      "Matches": 45,
+      "Wins": 15,
+      "Draws": 11,
+      "Losses": 19
     },
     {
       "Team": "Canada",
@@ -13491,14 +11867,6 @@ const DADOS = {
     },
     {
       "Team": "Canada",
-      "Opponent": "Guatemala",
-      "Matches": 17,
-      "Wins": 11,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Canada",
       "Opponent": "El Salvador",
       "Matches": 21,
       "Wins": 11,
@@ -13515,6 +11883,14 @@ const DADOS = {
     },
     {
       "Team": "Canada",
+      "Opponent": "Guatemala",
+      "Matches": 15,
+      "Wins": 10,
+      "Draws": 2,
+      "Losses": 3
+    },
+    {
+      "Team": "Canada",
       "Opponent": "Haiti",
       "Matches": 11,
       "Wins": 8,
@@ -13528,14 +11904,6 @@ const DADOS = {
       "Wins": 6,
       "Draws": 6,
       "Losses": 2
-    },
-    {
-      "Team": "Canada",
-      "Opponent": "Mexico",
-      "Matches": 43,
-      "Wins": 6,
-      "Draws": 13,
-      "Losses": 24
     },
     {
       "Team": "Canada",
@@ -13560,6 +11928,14 @@ const DADOS = {
       "Wins": 6,
       "Draws": 3,
       "Losses": 0
+    },
+    {
+      "Team": "Canada",
+      "Opponent": "Mexico",
+      "Matches": 37,
+      "Wins": 5,
+      "Draws": 10,
+      "Losses": 22
     },
     {
       "Team": "Canada",
@@ -14100,9 +12476,9 @@ const DADOS = {
     {
       "Team": "Canada",
       "Opponent": "Iceland",
-      "Matches": 4,
+      "Matches": 5,
       "Wins": 0,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 2
     },
     {
@@ -14148,9 +12524,9 @@ const DADOS = {
     {
       "Team": "Canada",
       "Opponent": "Tunisia",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -15140,10 +13516,10 @@ const DADOS = {
     {
       "Team": "Colombia",
       "Opponent": "Uruguay",
-      "Matches": 40,
+      "Matches": 42,
       "Wins": 12,
-      "Draws": 10,
-      "Losses": 18
+      "Draws": 11,
+      "Losses": 19
     },
     {
       "Team": "Colombia",
@@ -15340,10 +13716,10 @@ const DADOS = {
     {
       "Team": "Colombia",
       "Opponent": "France",
-      "Matches": 4,
+      "Matches": 5,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 3
+      "Losses": 4
     },
     {
       "Team": "Colombia",
@@ -15611,6 +13987,14 @@ const DADOS = {
     },
     {
       "Team": "Colombia",
+      "Opponent": "Croatia",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Colombia",
       "Opponent": "Sweden",
       "Matches": 2,
       "Wins": 0,
@@ -15732,10 +14116,10 @@ const DADOS = {
     {
       "Team": "Korea Republic",
       "Opponent": "UAE",
-      "Matches": 19,
+      "Matches": 20,
       "Wins": 13,
       "Draws": 4,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Korea Republic",
@@ -16292,10 +14676,10 @@ const DADOS = {
     {
       "Team": "Korea Republic",
       "Opponent": "Ivory Coast",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Korea Republic",
@@ -16480,6 +14864,14 @@ const DADOS = {
       "Wins": 0,
       "Draws": 1,
       "Losses": 3
+    },
+    {
+      "Team": "Korea Republic",
+      "Opponent": "Austria",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
     },
     {
       "Team": "Korea Republic",
@@ -16971,6 +15363,14 @@ const DADOS = {
     },
     {
       "Team": "Côte d'Ivoire",
+      "Opponent": "Scotland",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Côte d'Ivoire",
       "Opponent": "Austria",
       "Matches": 2,
       "Wins": 1,
@@ -17024,6 +15424,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 0
+    },
+    {
+      "Team": "Côte d'Ivoire",
+      "Opponent": "South Korea",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
     },
     {
       "Team": "Côte d'Ivoire",
@@ -17288,14 +15696,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 1,
       "Losses": 0
-    },
-    {
-      "Team": "Côte d'Ivoire",
-      "Opponent": "South Korea",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
     },
     {
       "Team": "Côte d'Ivoire",
@@ -17796,10 +16196,10 @@ const DADOS = {
     {
       "Team": "Croatia",
       "Opponent": "Brazil",
-      "Matches": 5,
+      "Matches": 6,
       "Wins": 1,
       "Draws": 1,
-      "Losses": 3
+      "Losses": 4
     },
     {
       "Team": "Croatia",
@@ -17876,6 +16276,14 @@ const DADOS = {
     {
       "Team": "Croatia",
       "Opponent": "Saudi Arabia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Croatia",
+      "Opponent": "Colombia",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -17995,6 +16403,14 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
+      "Opponent": "Aruba",
+      "Matches": 6,
+      "Wins": 5,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Curaçao",
       "Opponent": "US Virgin",
       "Matches": 4,
       "Wins": 4,
@@ -18003,10 +16419,18 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
-      "Opponent": "Aruba",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 0,
+      "Opponent": "Honduras",
+      "Matches": 6,
+      "Wins": 3,
+      "Draws": 1,
+      "Losses": 2
+    },
+    {
+      "Team": "Curaçao",
+      "Opponent": "Cuba",
+      "Matches": 6,
+      "Wins": 3,
+      "Draws": 2,
       "Losses": 1
     },
     {
@@ -18019,11 +16443,11 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
-      "Opponent": "Honduras",
-      "Matches": 4,
+      "Opponent": "Panama",
+      "Matches": 8,
       "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
+      "Draws": 3,
+      "Losses": 3
     },
     {
       "Team": "Curaçao",
@@ -18035,11 +16459,19 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
+      "Opponent": "Costa Rica",
+      "Matches": 7,
+      "Wins": 2,
+      "Draws": 1,
+      "Losses": 4
+    },
+    {
+      "Team": "Curaçao",
       "Opponent": "Haiti",
-      "Matches": 5,
+      "Matches": 6,
       "Wins": 2,
       "Draws": 2,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Curaçao",
@@ -18099,14 +16531,6 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
-      "Opponent": "Cuba",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Curaçao",
       "Opponent": "Bolivia",
       "Matches": 2,
       "Wins": 1,
@@ -18123,19 +16547,19 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
-      "Opponent": "Costa Rica",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Curaçao",
       "Opponent": "Vietnam",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
       "Losses": 0
+    },
+    {
+      "Team": "Curaçao",
+      "Opponent": "El Salvador",
+      "Matches": 11,
+      "Wins": 1,
+      "Draws": 4,
+      "Losses": 6
     },
     {
       "Team": "Curaçao",
@@ -18160,6 +16584,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 2
+    },
+    {
+      "Team": "Curaçao",
+      "Opponent": "Nicaragua",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Curaçao",
@@ -18235,6 +16667,14 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
+      "Opponent": "Australia",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Curaçao",
       "Opponent": "Argentina",
       "Matches": 1,
       "Wins": 0,
@@ -18259,15 +16699,15 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
-      "Opponent": "Panama",
-      "Matches": 4,
+      "Opponent": "Colombia",
+      "Matches": 1,
       "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
+      "Draws": 0,
+      "Losses": 1
     },
     {
       "Team": "Curaçao",
-      "Opponent": "Colombia",
+      "Opponent": "China",
       "Matches": 1,
       "Wins": 0,
       "Draws": 0,
@@ -18300,18 +16740,10 @@ const DADOS = {
     {
       "Team": "Curaçao",
       "Opponent": "Guatemala",
-      "Matches": 2,
+      "Matches": 4,
       "Wins": 0,
-      "Draws": 2,
+      "Draws": 4,
       "Losses": 0
-    },
-    {
-      "Team": "Curaçao",
-      "Opponent": "El Salvador",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 4
     },
     {
       "Team": "Curaçao",
@@ -18320,14 +16752,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 0,
       "Losses": 2
-    },
-    {
-      "Team": "Curaçao",
-      "Opponent": "Nicaragua",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Curaçao",
@@ -18344,798 +16768,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 1,
       "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Norway",
-      "Matches": 89,
-      "Wins": 55,
-      "Draws": 14,
-      "Losses": 20
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Sweden",
-      "Matches": 108,
-      "Wins": 42,
-      "Draws": 20,
-      "Losses": 46
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Finland",
-      "Matches": 64,
-      "Wins": 41,
-      "Draws": 11,
-      "Losses": 12
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Iceland",
-      "Matches": 23,
-      "Wins": 20,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Netherlands",
-      "Matches": 33,
-      "Wins": 11,
-      "Draws": 9,
-      "Losses": 13
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Poland",
-      "Matches": 20,
-      "Wins": 11,
-      "Draws": 1,
-      "Losses": 8
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Greece",
-      "Matches": 17,
-      "Wins": 10,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Luxembourg",
-      "Matches": 11,
-      "Wins": 9,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Malta",
-      "Matches": 9,
-      "Wins": 9,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Israel",
-      "Matches": 10,
-      "Wins": 9,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Germany",
-      "Matches": 29,
-      "Wins": 8,
-      "Draws": 5,
-      "Losses": 16
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Austria",
-      "Matches": 13,
-      "Wins": 8,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "France",
-      "Matches": 18,
-      "Wins": 7,
-      "Draws": 2,
-      "Losses": 9
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Scotland",
-      "Matches": 20,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 12
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Wales",
-      "Matches": 11,
-      "Wins": 7,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Faroe Islands",
-      "Matches": 7,
-      "Wins": 7,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Belgium",
-      "Matches": 16,
-      "Wins": 6,
-      "Draws": 3,
-      "Losses": 7
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Albania",
-      "Matches": 10,
-      "Wins": 6,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "N. Ireland",
-      "Matches": 14,
-      "Wins": 6,
-      "Draws": 5,
-      "Losses": 3
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Armenia",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Switzerland",
-      "Matches": 15,
-      "Wins": 5,
-      "Draws": 8,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Slovenia",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Cyprus",
-      "Matches": 6,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Kazakhstan",
-      "Matches": 6,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "England",
-      "Matches": 23,
-      "Wins": 4,
-      "Draws": 6,
-      "Losses": 13
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Portugal",
-      "Matches": 18,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 12
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Bulgaria",
-      "Matches": 16,
-      "Wins": 4,
-      "Draws": 8,
-      "Losses": 4
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Serbia",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Ireland",
-      "Matches": 19,
-      "Wins": 4,
-      "Draws": 10,
-      "Losses": 5
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Mexico",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Italy",
-      "Matches": 13,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 8
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Turkiye",
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 5,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Czechia",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 6,
-      "Losses": 3
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Romania",
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Hungary",
-      "Matches": 15,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 8
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "USA",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Latvia",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Georgia",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Saudi Arabia",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Liechtenstein",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "England Ama.",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Spain",
-      "Matches": 19,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 15
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Australia",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Cameroon",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Bosnia",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Uruguay",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Belarus",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Senegal",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Canada",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Croatia",
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Egypt",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Lithuania",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Moldova",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "San Marino",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Montenegro",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Bermuda",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "East Germany",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Yugoslavia",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 5
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "N. Antilles",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Gibraltar",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Japan",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Argentina",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Brazil",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Ghana",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Nigeria",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Russia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Slovakia",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Panama",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Peru",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "South Korea",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Tunisia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Ukraine",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Togo",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Macedonia",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "The Gambia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Indonesia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Singapore",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "CIS",
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 8
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Scotland B",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Great Britain",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "France B",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Hungary",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "W. Germany (AT)",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Venezuela",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Morocco",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Paraguay",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Iran",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Honduras",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Algeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Chile",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "South Africa",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Dahomey",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "UAE",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Estonia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "El Salvador",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Suriname",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "ČSR",
-      "Matches": 14,
-      "Wins": 0,
-      "Draws": 5,
-      "Losses": 9
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Norway",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Denmark",
-      "Opponent": "Kosovo",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Egypt",
@@ -19291,6 +16923,14 @@ const DADOS = {
     },
     {
       "Team": "Egypt",
+      "Opponent": "Saudi Arabia",
+      "Matches": 8,
+      "Wins": 5,
+      "Draws": 1,
+      "Losses": 2
+    },
+    {
+      "Team": "Egypt",
       "Opponent": "Mozambique",
       "Matches": 6,
       "Wins": 5,
@@ -19336,14 +16976,6 @@ const DADOS = {
       "Wins": 4,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Egypt",
-      "Opponent": "Saudi Arabia",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 2
     },
     {
       "Team": "Egypt",
@@ -19860,9 +17492,9 @@ const DADOS = {
     {
       "Team": "Egypt",
       "Opponent": "Spain",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -20132,10 +17764,10 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Opponent": "Uruguay",
-      "Matches": 44,
+      "Matches": 45,
       "Wins": 8,
       "Draws": 8,
-      "Losses": 28
+      "Losses": 29
     },
     {
       "Team": "Ecuador",
@@ -20444,9 +18076,9 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Opponent": "Netherlands",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 0,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 1
     },
     {
@@ -20500,6 +18132,14 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Opponent": "Iraq",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Ecuador",
+      "Opponent": "Morocco",
       "Matches": 1,
       "Wins": 0,
       "Draws": 1,
@@ -21108,10 +18748,10 @@ const DADOS = {
     {
       "Team": "Scotland",
       "Opponent": "Japan",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 0,
       "Draws": 2,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Scotland",
@@ -21171,6 +18811,14 @@ const DADOS = {
     },
     {
       "Team": "Scotland",
+      "Opponent": "Ivory Coast",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Scotland",
       "Opponent": "Egypt",
       "Matches": 1,
       "Wins": 0,
@@ -21208,638 +18856,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 0,
       "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Azerbaijan",
-      "Matches": 12,
-      "Wins": 10,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Liechtenstein",
-      "Matches": 11,
-      "Wins": 9,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Malta",
-      "Matches": 10,
-      "Wins": 8,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Luxembourg",
-      "Matches": 9,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Macedonia",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Poland",
-      "Matches": 9,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Iceland",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "San Marino",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Germany",
-      "Matches": 13,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 9
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Bulgaria",
-      "Matches": 8,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Russia",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Hungary",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Cyprus",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "N. Ireland",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Estonia",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Finland",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Czechia",
-      "Matches": 14,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 9
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Bosnia",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Belarus",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "UAE",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Israel",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Scotland",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Switzerland",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Denmark",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Latvia",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Croatia",
-      "Matches": 17,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 11
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Ukraine",
-      "Matches": 9,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Lithuania",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Wales",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Bolivia",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Thailand",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Moldova",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Faroe Islands",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Andorra",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Spain",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Italy",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "France",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Greece",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Turkiye",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Belgium",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Austria",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Norway",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Romania",
-      "Matches": 12,
-      "Wins": 1,
-      "Draws": 6,
-      "Losses": 5
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "USA",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Ireland",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Uzbekistan",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Iran",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Slovenia",
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 5,
-      "Losses": 4
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Georgia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Chile",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Costa Rica",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Montenegro",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Guatemala",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Jordan",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "England",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Portugal",
-      "Matches": 6,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Netherlands",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Australia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Japan",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Argentina",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Brazil",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Sweden",
-      "Matches": 9,
-      "Wins": 0,
-      "Draws": 4,
-      "Losses": 5
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Morocco",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Paraguay",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Peru",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Lebanon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "South Korea",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Algeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Egypt",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Saudi Arabia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Colombia",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Armenia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Kazakhstan",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "New Zealand",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Uganda",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Yugoslavia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Serbia-Mont.",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Slovakia",
-      "Opponent": "Gibraltar",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Spain",
@@ -22251,6 +19267,14 @@ const DADOS = {
     },
     {
       "Team": "Spain",
+      "Opponent": "Serbia",
+      "Matches": 4,
+      "Wins": 3,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Spain",
       "Opponent": "Latvia",
       "Matches": 4,
       "Wins": 3,
@@ -22294,14 +19318,6 @@ const DADOS = {
       "Opponent": "Costa Rica",
       "Matches": 4,
       "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Spain",
-      "Opponent": "Serbia",
-      "Matches": 3,
-      "Wins": 2,
       "Draws": 1,
       "Losses": 0
     },
@@ -22484,9 +19500,9 @@ const DADOS = {
     {
       "Team": "Spain",
       "Opponent": "Egypt",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 1,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -22580,18 +19596,10 @@ const DADOS = {
     {
       "Team": "USA",
       "Opponent": "Mexico",
-      "Matches": 85,
-      "Wins": 26,
-      "Draws": 17,
-      "Losses": 42
-    },
-    {
-      "Team": "USA",
-      "Opponent": "Jamaica",
-      "Matches": 37,
-      "Wins": 23,
-      "Draws": 11,
-      "Losses": 3
+      "Matches": 79,
+      "Wins": 25,
+      "Draws": 16,
+      "Losses": 38
     },
     {
       "Team": "USA",
@@ -22603,19 +19611,19 @@ const DADOS = {
     },
     {
       "Team": "USA",
+      "Opponent": "Jamaica",
+      "Matches": 35,
+      "Wins": 22,
+      "Draws": 10,
+      "Losses": 3
+    },
+    {
+      "Team": "USA",
       "Opponent": "Costa Rica",
       "Matches": 44,
       "Wins": 21,
       "Draws": 6,
       "Losses": 17
-    },
-    {
-      "Team": "USA",
-      "Opponent": "Canada",
-      "Matches": 52,
-      "Wins": 20,
-      "Draws": 14,
-      "Losses": 18
     },
     {
       "Team": "USA",
@@ -22632,6 +19640,14 @@ const DADOS = {
       "Wins": 20,
       "Draws": 7,
       "Losses": 1
+    },
+    {
+      "Team": "USA",
+      "Opponent": "Canada",
+      "Matches": 45,
+      "Wins": 19,
+      "Draws": 11,
+      "Losses": 15
     },
     {
       "Team": "USA",
@@ -22836,10 +19852,10 @@ const DADOS = {
     {
       "Team": "USA",
       "Opponent": "Portugal",
-      "Matches": 7,
+      "Matches": 8,
       "Wins": 2,
       "Draws": 3,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "USA",
@@ -22955,14 +19971,6 @@ const DADOS = {
     },
     {
       "Team": "USA",
-      "Opponent": "N. Antilles",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "USA",
       "Opponent": "St. Vincent",
       "Matches": 2,
       "Wins": 2,
@@ -22996,10 +20004,10 @@ const DADOS = {
     {
       "Team": "USA",
       "Opponent": "Belgium",
-      "Matches": 6,
+      "Matches": 7,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 5
+      "Losses": 6
     },
     {
       "Team": "USA",
@@ -23263,6 +20271,14 @@ const DADOS = {
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "USA",
+      "Opponent": "N. Antilles",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -23627,6 +20643,14 @@ const DADOS = {
     },
     {
       "Team": "France",
+      "Opponent": "Brazil",
+      "Matches": 16,
+      "Wins": 7,
+      "Draws": 3,
+      "Losses": 6
+    },
+    {
+      "Team": "France",
       "Opponent": "Norway",
       "Matches": 15,
       "Wins": 7,
@@ -23664,14 +20688,6 @@ const DADOS = {
       "Wins": 7,
       "Draws": 4,
       "Losses": 9
-    },
-    {
-      "Team": "France",
-      "Opponent": "Brazil",
-      "Matches": 15,
-      "Wins": 6,
-      "Draws": 3,
-      "Losses": 6
     },
     {
       "Team": "France",
@@ -23759,6 +20775,14 @@ const DADOS = {
       "Matches": 6,
       "Wins": 4,
       "Draws": 1,
+      "Losses": 1
+    },
+    {
+      "Team": "France",
+      "Opponent": "Colombia",
+      "Matches": 5,
+      "Wins": 4,
+      "Draws": 0,
       "Losses": 1
     },
     {
@@ -23871,14 +20895,6 @@ const DADOS = {
       "Matches": 5,
       "Wins": 3,
       "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "France",
-      "Opponent": "Colombia",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 0,
       "Losses": 1
     },
     {
@@ -24716,10 +21732,10 @@ const DADOS = {
     {
       "Team": "Ghana",
       "Opponent": "Germany",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Ghana",
@@ -24772,10 +21788,10 @@ const DADOS = {
     {
       "Team": "Ghana",
       "Opponent": "Austria",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Ghana",
@@ -24931,6 +21947,14 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
+      "Opponent": "Cuba",
+      "Matches": 25,
+      "Wins": 8,
+      "Draws": 11,
+      "Losses": 6
+    },
+    {
+      "Team": "Haiti",
       "Opponent": "N. Antilles",
       "Matches": 13,
       "Wins": 8,
@@ -24971,19 +21995,11 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
-      "Opponent": "Cuba",
-      "Matches": 23,
-      "Wins": 6,
-      "Draws": 11,
-      "Losses": 6
-    },
-    {
-      "Team": "Haiti",
       "Opponent": "El Salvador",
-      "Matches": 26,
+      "Matches": 27,
       "Wins": 6,
       "Draws": 8,
-      "Losses": 12
+      "Losses": 13
     },
     {
       "Team": "Haiti",
@@ -24995,19 +22011,27 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
-      "Opponent": "Antigua and B.",
-      "Matches": 11,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Haiti",
       "Opponent": "Martinique",
       "Matches": 10,
       "Wins": 6,
       "Draws": 1,
       "Losses": 3
+    },
+    {
+      "Team": "Haiti",
+      "Opponent": "Honduras",
+      "Matches": 17,
+      "Wins": 5,
+      "Draws": 1,
+      "Losses": 11
+    },
+    {
+      "Team": "Haiti",
+      "Opponent": "Antigua and B.",
+      "Matches": 9,
+      "Wins": 5,
+      "Draws": 2,
+      "Losses": 2
     },
     {
       "Team": "Haiti",
@@ -25019,10 +22043,10 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
-      "Opponent": "Honduras",
-      "Matches": 15,
+      "Opponent": "Guatemala",
+      "Matches": 16,
       "Wins": 4,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 10
     },
     {
@@ -25051,11 +22075,11 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
-      "Opponent": "Guatemala",
-      "Matches": 15,
+      "Opponent": "Panama",
+      "Matches": 11,
       "Wins": 3,
-      "Draws": 2,
-      "Losses": 10
+      "Draws": 5,
+      "Losses": 3
     },
     {
       "Team": "Haiti",
@@ -25108,10 +22132,10 @@ const DADOS = {
     {
       "Team": "Haiti",
       "Opponent": "Costa Rica",
-      "Matches": 17,
+      "Matches": 19,
       "Wins": 2,
       "Draws": 7,
-      "Losses": 8
+      "Losses": 10
     },
     {
       "Team": "Haiti",
@@ -25171,6 +22195,14 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
+      "Opponent": "Curaçao",
+      "Matches": 6,
+      "Wins": 2,
+      "Draws": 2,
+      "Losses": 2
+    },
+    {
+      "Team": "Haiti",
       "Opponent": "Saint-Martin",
       "Matches": 2,
       "Wins": 2,
@@ -25200,14 +22232,6 @@ const DADOS = {
       "Wins": 1,
       "Draws": 2,
       "Losses": 8
-    },
-    {
-      "Team": "Haiti",
-      "Opponent": "Panama",
-      "Matches": 9,
-      "Wins": 1,
-      "Draws": 5,
-      "Losses": 3
     },
     {
       "Team": "Haiti",
@@ -25267,14 +22291,6 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
-      "Opponent": "Curaçao",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Haiti",
       "Opponent": "Spain",
       "Matches": 1,
       "Wins": 0,
@@ -25315,6 +22331,14 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
+      "Opponent": "Iceland",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Haiti",
       "Opponent": "Peru",
       "Matches": 3,
       "Wins": 0,
@@ -25324,6 +22348,14 @@ const DADOS = {
     {
       "Team": "Haiti",
       "Opponent": "South Korea",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Haiti",
+      "Opponent": "Tunisia",
       "Matches": 1,
       "Wins": 0,
       "Draws": 0,
@@ -25475,6 +22507,14 @@ const DADOS = {
     },
     {
       "Team": "Netherlands",
+      "Opponent": "Norway",
+      "Matches": 23,
+      "Wins": 11,
+      "Draws": 7,
+      "Losses": 5
+    },
+    {
+      "Team": "Netherlands",
       "Opponent": "Romania",
       "Matches": 15,
       "Wins": 11,
@@ -25496,14 +22536,6 @@ const DADOS = {
       "Wins": 10,
       "Draws": 4,
       "Losses": 7
-    },
-    {
-      "Team": "Netherlands",
-      "Opponent": "Norway",
-      "Matches": 22,
-      "Wins": 10,
-      "Draws": 7,
-      "Losses": 5
     },
     {
       "Team": "Netherlands",
@@ -26020,9 +23052,9 @@ const DADOS = {
     {
       "Team": "Netherlands",
       "Opponent": "Ecuador",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 1,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 0
     },
     {
@@ -26508,9 +23540,9 @@ const DADOS = {
     {
       "Team": "England",
       "Opponent": "Uruguay",
-      "Matches": 11,
+      "Matches": 12,
       "Wins": 3,
-      "Draws": 3,
+      "Draws": 4,
       "Losses": 5
     },
     {
@@ -26564,10 +23596,10 @@ const DADOS = {
     {
       "Team": "England",
       "Opponent": "Japan",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "England",
@@ -27299,6 +24331,14 @@ const DADOS = {
     },
     {
       "Team": "IR Iran",
+      "Opponent": "Costa Rica",
+      "Matches": 3,
+      "Wins": 2,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "IR Iran",
       "Opponent": "Azerbaijan",
       "Matches": 3,
       "Wins": 2,
@@ -27523,14 +24563,6 @@ const DADOS = {
     },
     {
       "Team": "IR Iran",
-      "Opponent": "Costa Rica",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "IR Iran",
       "Opponent": "Vietnam",
       "Matches": 1,
       "Wins": 1,
@@ -27612,10 +24644,10 @@ const DADOS = {
     {
       "Team": "IR Iran",
       "Opponent": "Türkiye U23",
-      "Matches": 1,
+      "Matches": 4,
       "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
+      "Draws": 2,
+      "Losses": 1
     },
     {
       "Team": "IR Iran",
@@ -27692,10 +24724,10 @@ const DADOS = {
     {
       "Team": "IR Iran",
       "Opponent": "Turkiye",
-      "Matches": 10,
+      "Matches": 7,
       "Wins": 0,
-      "Draws": 4,
-      "Losses": 6
+      "Draws": 2,
+      "Losses": 5
     },
     {
       "Team": "IR Iran",
@@ -27732,10 +24764,10 @@ const DADOS = {
     {
       "Team": "IR Iran",
       "Opponent": "Nigeria",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "IR Iran",
@@ -28259,6 +25291,14 @@ const DADOS = {
     },
     {
       "Team": "Iraq",
+      "Opponent": "Bolivia",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Iraq",
       "Opponent": "Moldova",
       "Matches": 1,
       "Wins": 1,
@@ -28491,14 +25531,6 @@ const DADOS = {
     },
     {
       "Team": "Iraq",
-      "Opponent": "Bolivia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Iraq",
       "Opponent": "Ecuador",
       "Matches": 1,
       "Wins": 0,
@@ -28552,2638 +25584,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 1,
       "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Wales",
-      "Matches": 56,
-      "Wins": 19,
-      "Draws": 12,
-      "Losses": 25
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Georgia",
-      "Matches": 11,
-      "Wins": 9,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Switzerland",
-      "Matches": 19,
-      "Wins": 8,
-      "Draws": 4,
-      "Losses": 7
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Malta",
-      "Matches": 8,
-      "Wins": 8,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Cyprus",
-      "Matches": 10,
-      "Wins": 8,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Netherlands",
-      "Matches": 24,
-      "Wins": 7,
-      "Draws": 4,
-      "Losses": 13
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Scotland",
-      "Matches": 47,
-      "Wins": 7,
-      "Draws": 6,
-      "Losses": 34
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Norway",
-      "Matches": 19,
-      "Wins": 7,
-      "Draws": 8,
-      "Losses": 4
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Germany",
-      "Matches": 20,
-      "Wins": 6,
-      "Draws": 5,
-      "Losses": 9
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Bulgaria",
-      "Matches": 15,
-      "Wins": 6,
-      "Draws": 6,
-      "Losses": 3
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Poland",
-      "Matches": 28,
-      "Wins": 6,
-      "Draws": 11,
-      "Losses": 11
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "USA",
-      "Matches": 10,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Latvia",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Luxembourg",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Gibraltar",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "England",
-      "Matches": 54,
-      "Wins": 5,
-      "Draws": 12,
-      "Losses": 37
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Portugal",
-      "Matches": 18,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 10
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Turkiye",
-      "Matches": 14,
-      "Wins": 5,
-      "Draws": 6,
-      "Losses": 3
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Denmark",
-      "Matches": 19,
-      "Wins": 5,
-      "Draws": 10,
-      "Losses": 4
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Finland",
-      "Matches": 9,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Iceland",
-      "Matches": 8,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Andorra",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Spain",
-      "Matches": 26,
-      "Wins": 4,
-      "Draws": 6,
-      "Losses": 16
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "France",
-      "Matches": 19,
-      "Wins": 4,
-      "Draws": 5,
-      "Losses": 10
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Belgium",
-      "Matches": 17,
-      "Wins": 4,
-      "Draws": 7,
-      "Losses": 6
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Hungary",
-      "Matches": 16,
-      "Wins": 4,
-      "Draws": 7,
-      "Losses": 5
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Lithuania",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Macedonia",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "N. Ireland",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 5,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Estonia",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Armenia",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Faroe Islands",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "ČSR",
-      "Matches": 12,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 7
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Italy",
-      "Matches": 14,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 8
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Austria",
-      "Matches": 16,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 9
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Romania",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Sweden",
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 5
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Albania",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Liechtenstein",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Oman",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "USSR",
-      "Matches": 8,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Czechia",
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Bosnia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Croatia",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Paraguay",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Iran",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Chile",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "South Africa",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Bolivia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "China",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Moldova",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Kazakhstan",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "San Marino",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Yugoslavia",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Australia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Brazil",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Russia",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Uruguay",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Slovakia",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Canada",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Morocco",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Algeria",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Tunisia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Jamaica",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Saudi Arabia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Colombia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Israel",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Ecuador",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Azerbaijan",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "New Zealand",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Qatar",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Greece",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Argentina",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Serbia",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Nigeria",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Belarus",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Senegal",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Egypt",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Ukraine",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Mexico",
-      "Matches": 6,
-      "Wins": 0,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Trinidad",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Costa Rica",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Montenegro",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Italy B",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Republic of Ireland",
-      "Opponent": "Germany B",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Scotland",
-      "Matches": 62,
-      "Wins": 14,
-      "Draws": 14,
-      "Losses": 34
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Wales",
-      "Matches": 59,
-      "Wins": 14,
-      "Draws": 17,
-      "Losses": 28
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Luxembourg",
-      "Matches": 9,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Malta",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "San Marino",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "England",
-      "Matches": 63,
-      "Wins": 5,
-      "Draws": 12,
-      "Losses": 46
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Turkiye",
-      "Matches": 12,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Latvia",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Albania",
-      "Matches": 9,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Estonia",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Austria",
-      "Matches": 13,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Poland",
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Finland",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Belarus",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Israel",
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 5,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Liechtenstein",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Faroe Islands",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Greece",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 6
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Bulgaria",
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Denmark",
-      "Matches": 14,
-      "Wins": 3,
-      "Draws": 5,
-      "Losses": 6
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Romania",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Sweden",
-      "Matches": 8,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Iceland",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Slovenia",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Cyprus",
-      "Matches": 8,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Lithuania",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Azerbaijan",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Germany",
-      "Matches": 21,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 15
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Portugal",
-      "Matches": 13,
-      "Wins": 2,
-      "Draws": 7,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Spain",
-      "Matches": 19,
-      "Wins": 2,
-      "Draws": 5,
-      "Losses": 12
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Belgium",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Switzerland",
-      "Matches": 9,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Australia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Norway",
-      "Matches": 11,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 9
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Czechia",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Uruguay",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Slovakia",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Ireland",
-      "Matches": 11,
-      "Wins": 2,
-      "Draws": 5,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "ČSR",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Italy",
-      "Matches": 11,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 7
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Netherlands",
-      "Matches": 8,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Bosnia",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Russia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Hungary",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Morocco",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "South Korea",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Georgia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Ukraine",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Mexico",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Trinidad",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "New Zealand",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Andorra",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Yugoslavia",
-      "Matches": 8,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "St. Kitts/Nevis",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Kosovo",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "France",
-      "Matches": 8,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 5
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Argentina",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Serbia",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Brazil",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "USA",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Canada",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Croatia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Panama",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Honduras",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Algeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Chile",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Colombia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Thailand",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Moldova",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Armenia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Costa Rica",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Kazakhstan",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Montenegro",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "El Salvador",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Qatar",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Barbados",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "USSR",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Northern Ireland",
-      "Opponent": "Serbia-Mont.",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Switzerland",
-      "Matches": 62,
-      "Wins": 29,
-      "Draws": 24,
-      "Losses": 9
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "France",
-      "Matches": 41,
-      "Wins": 20,
-      "Draws": 8,
-      "Losses": 13
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Portugal",
-      "Matches": 27,
-      "Wins": 18,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Hungary",
-      "Matches": 35,
-      "Wins": 18,
-      "Draws": 9,
-      "Losses": 8
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Belgium",
-      "Matches": 26,
-      "Wins": 17,
-      "Draws": 5,
-      "Losses": 4
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Austria",
-      "Matches": 38,
-      "Wins": 17,
-      "Draws": 8,
-      "Losses": 13
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Germany",
-      "Matches": 39,
-      "Wins": 15,
-      "Draws": 13,
-      "Losses": 11
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "England",
-      "Matches": 32,
-      "Wins": 13,
-      "Draws": 9,
-      "Losses": 10
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Finland",
-      "Matches": 15,
-      "Wins": 13,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Spain",
-      "Matches": 41,
-      "Wins": 12,
-      "Draws": 13,
-      "Losses": 16
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Netherlands",
-      "Matches": 24,
-      "Wins": 12,
-      "Draws": 9,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Bulgaria",
-      "Matches": 21,
-      "Wins": 11,
-      "Draws": 8,
-      "Losses": 2
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Sweden",
-      "Matches": 25,
-      "Wins": 11,
-      "Draws": 7,
-      "Losses": 7
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Norway",
-      "Matches": 19,
-      "Wins": 10,
-      "Draws": 4,
-      "Losses": 5
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Romania",
-      "Matches": 17,
-      "Wins": 10,
-      "Draws": 5,
-      "Losses": 2
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Malta",
-      "Matches": 10,
-      "Wins": 10,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Turkiye",
-      "Matches": 13,
-      "Wins": 9,
-      "Draws": 4,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Estonia",
-      "Matches": 9,
-      "Wins": 9,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "ČSR",
-      "Matches": 26,
-      "Wins": 9,
-      "Draws": 8,
-      "Losses": 9
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Scotland",
-      "Matches": 11,
-      "Wins": 8,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Denmark",
-      "Matches": 13,
-      "Wins": 8,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Ireland",
-      "Matches": 14,
-      "Wins": 8,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Luxembourg",
-      "Matches": 9,
-      "Wins": 8,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Wales",
-      "Matches": 10,
-      "Wins": 8,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Israel",
-      "Matches": 9,
-      "Wins": 8,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Yugoslavia",
-      "Matches": 17,
-      "Wins": 8,
-      "Draws": 5,
-      "Losses": 4
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Greece",
-      "Matches": 11,
-      "Wins": 7,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Poland",
-      "Matches": 18,
-      "Wins": 7,
-      "Draws": 8,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "USA",
-      "Matches": 11,
-      "Wins": 7,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Cyprus",
-      "Matches": 8,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Georgia",
-      "Matches": 8,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Ukraine",
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "N. Ireland",
-      "Matches": 11,
-      "Wins": 7,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Moldova",
-      "Matches": 7,
-      "Wins": 7,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Mexico",
-      "Matches": 12,
-      "Wins": 7,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Argentina",
-      "Matches": 16,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 6
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Lithuania",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Brazil",
-      "Matches": 16,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 9
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Albania",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Bosnia",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Uruguay",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Slovenia",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Egypt",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Liechtenstein",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Azerbaijan",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Faroe Islands",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Czechia",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Russia",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Armenia",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "San Marino",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "USSR",
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Japan",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Belarus",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Paraguay",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "South Africa",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "North Macedonia",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Ecuador",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Montenegro",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Australia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Cameroon",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Serbia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Ghana",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Nigeria",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Slovakia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Venezuela",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Canada",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Croatia",
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 6,
-      "Losses": 3
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Morocco",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "South Korea",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Algeria",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Tunisia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Chile",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Saudi Arabia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "China",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Costa Rica",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "New Zealand",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Haiti",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "East Germany",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "All-Star-Team",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Team America",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Austria",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Iceland",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Peru",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Ivory Coast",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "North Korea",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Italy",
-      "Opponent": "Serbia-Mont.",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Trinidad",
-      "Matches": 44,
-      "Wins": 21,
-      "Draws": 13,
-      "Losses": 10
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Honduras",
-      "Matches": 28,
-      "Wins": 12,
-      "Draws": 6,
-      "Losses": 10
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Guatemala",
-      "Matches": 19,
-      "Wins": 12,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Barbados",
-      "Matches": 16,
-      "Wins": 11,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "El Salvador",
-      "Matches": 22,
-      "Wins": 10,
-      "Draws": 8,
-      "Losses": 4
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Haiti",
-      "Matches": 15,
-      "Wins": 10,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Grenada",
-      "Matches": 14,
-      "Wins": 10,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Antigua and B.",
-      "Matches": 13,
-      "Wins": 10,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Cayman Islands",
-      "Matches": 10,
-      "Wins": 9,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Cuba",
-      "Matches": 25,
-      "Wins": 8,
-      "Draws": 8,
-      "Losses": 9
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Canada",
-      "Matches": 25,
-      "Wins": 7,
-      "Draws": 5,
-      "Losses": 13
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Puerto Rico",
-      "Matches": 7,
-      "Wins": 7,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "St. Kitts/Nevis",
-      "Matches": 9,
-      "Wins": 7,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Saint Lucia",
-      "Matches": 9,
-      "Wins": 7,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "St. Vincent",
-      "Matches": 9,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Guadeloupe",
-      "Matches": 9,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Suriname",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Bermuda",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Guyana",
-      "Matches": 6,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Panama",
-      "Matches": 20,
-      "Wins": 4,
-      "Draws": 7,
-      "Losses": 9
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Costa Rica",
-      "Matches": 31,
-      "Wins": 4,
-      "Draws": 12,
-      "Losses": 15
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "USA",
-      "Matches": 37,
-      "Wins": 3,
-      "Draws": 11,
-      "Losses": 23
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Mexico",
-      "Matches": 29,
-      "Wins": 3,
-      "Draws": 5,
-      "Losses": 21
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Aruba",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Venezuela",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Paraguay",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Saudi Arabia",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "New Zealand",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Nicaragua",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Bahamas",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "B. Virgin",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "N. Antilles",
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "French Guiana",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Martinique",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Sint Maarten",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Saint-Martin",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Japan",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Nigeria",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Uruguay",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Chile",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Zambia",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Colombia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Bolivia",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "India",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Dominican Rep.",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Malaysia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Dominica",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "US Virgin",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Curaçao",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Bonaire",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "England",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "France",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Switzerland",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Bulgaria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Australia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Argentina",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Serbia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Brazil",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Norway",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Ghana",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Ireland",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Croatia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Sweden",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Morocco",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Iran",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Peru",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "South Korea",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Egypt",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "South Africa",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Wales",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Macedonia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "China",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Ecuador",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Vietnam",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Indonesia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Qatar",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Jordan",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Jamaica",
-      "Opponent": "Morocco B",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
     },
     {
       "Team": "Japan",
@@ -31531,6 +25931,14 @@ const DADOS = {
     },
     {
       "Team": "Japan",
+      "Opponent": "Scotland",
+      "Matches": 4,
+      "Wins": 2,
+      "Draws": 2,
+      "Losses": 0
+    },
+    {
+      "Team": "Japan",
       "Opponent": "Turkiye",
       "Matches": 3,
       "Wins": 2,
@@ -31699,6 +26107,14 @@ const DADOS = {
     },
     {
       "Team": "Japan",
+      "Opponent": "England",
+      "Matches": 4,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 2
+    },
+    {
+      "Team": "Japan",
       "Opponent": "Spain",
       "Matches": 2,
       "Wins": 1,
@@ -31719,14 +26135,6 @@ const DADOS = {
       "Matches": 2,
       "Wins": 1,
       "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Japan",
-      "Opponent": "Scotland",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 2,
       "Losses": 0
     },
     {
@@ -32008,14 +26416,6 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Japan",
-      "Opponent": "England",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
     },
     {
       "Team": "Japan",
@@ -32420,9 +26820,9 @@ const DADOS = {
     {
       "Team": "Jordan",
       "Opponent": "Nigeria",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 1,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -32803,6 +27203,14 @@ const DADOS = {
     },
     {
       "Team": "Jordan",
+      "Opponent": "Costa Rica",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Jordan",
       "Opponent": "Azerbaijan",
       "Matches": 3,
       "Wins": 0,
@@ -32850,334 +27258,6 @@ const DADOS = {
       "Losses": 1
     },
     {
-      "Team": "Kosovo",
-      "Opponent": "Cyprus",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Malta",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Lithuania",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Sweden",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Iceland",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Burkina Faso",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Armenia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Faroe Islands",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Bulgaria",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Czechia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Latvia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Albania",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Slovenia",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Georgia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Israel",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "N. Ireland",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Moldova",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "The Gambia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Azerbaijan",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "San Marino",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Andorra",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Montenegro",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Madagascar",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Comoros",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Gibraltar",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "England",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Spain",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Greece",
-      "Matches": 6,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Turkiye",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Switzerland",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Denmark",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Norway",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Finland",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Romania",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Belarus",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Hungary",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Croatia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Ukraine",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Guinea",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "North Macedonia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Kosovo",
-      "Opponent": "Jordan",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
       "Team": "Morocco",
       "Opponent": "Zambia",
       "Matches": 17,
@@ -33189,9 +27269,9 @@ const DADOS = {
       "Team": "Morocco",
       "Opponent": "Senegal",
       "Matches": 20,
-      "Wins": 11,
+      "Wins": 12,
       "Draws": 5,
-      "Losses": 4
+      "Losses": 3
     },
     {
       "Team": "Morocco",
@@ -33731,6 +27811,14 @@ const DADOS = {
     },
     {
       "Team": "Morocco",
+      "Opponent": "Paraguay",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Morocco",
       "Opponent": "South Korea",
       "Matches": 3,
       "Wins": 1,
@@ -33939,14 +28027,6 @@ const DADOS = {
     },
     {
       "Team": "Morocco",
-      "Opponent": "Paraguay",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Morocco",
       "Opponent": "Iran",
       "Matches": 2,
       "Wins": 0,
@@ -33984,6 +28064,14 @@ const DADOS = {
       "Wins": 0,
       "Draws": 1,
       "Losses": 1
+    },
+    {
+      "Team": "Morocco",
+      "Opponent": "Ecuador",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Morocco",
@@ -34034,570 +28122,18 @@ const DADOS = {
       "Losses": 1
     },
     {
-      "Team": "North Macedonia",
-      "Opponent": "Liechtenstein",
-      "Matches": 13,
-      "Wins": 12,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Armenia",
-      "Matches": 15,
-      "Wins": 8,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Malta",
-      "Matches": 8,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Latvia",
-      "Matches": 6,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Azerbaijan",
-      "Matches": 8,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Albania",
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Slovenia",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Estonia",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Andorra",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Gibraltar",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Iceland",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Bulgaria",
-      "Matches": 9,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Luxembourg",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Israel",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Kazakhstan",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Faroe Islands",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Montenegro",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Germany",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Italy",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Scotland",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Turkiye",
-      "Matches": 8,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Denmark",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Serbia",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Norway",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Finland",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Bosnia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Romania",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Belarus",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Ireland",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Canada",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Croatia",
-      "Matches": 9,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Iran",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Cyprus",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Georgia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Jamaica",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Ukraine",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Lithuania",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Wales",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Ecuador",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Qatar",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Kosovo",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "England",
-      "Matches": 6,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Portugal",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Spain",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 7
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Netherlands",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Belgium",
-      "Matches": 6,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Austria",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Australia",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Cameroon",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Poland",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Nigeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Czechia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Russia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Hungary",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Slovakia",
-      "Matches": 8,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "USA",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Sweden",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Paraguay",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Angola",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Lebanon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "South Korea",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Egypt",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Saudi Arabia",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "China",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Moldova",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 4,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Bahrain",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Oman",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Macedonia U21",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "North Macedonia",
-      "Opponent": "Yugoslavia",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
       "Team": "Mexico",
       "Opponent": "USA",
-      "Matches": 85,
-      "Wins": 42,
-      "Draws": 17,
-      "Losses": 26
+      "Matches": 79,
+      "Wins": 38,
+      "Draws": 16,
+      "Losses": 25
     },
     {
       "Team": "Mexico",
       "Opponent": "El Salvador",
-      "Matches": 39,
-      "Wins": 33,
+      "Matches": 40,
+      "Wins": 34,
       "Draws": 2,
       "Losses": 4
     },
@@ -34620,10 +28156,10 @@ const DADOS = {
     {
       "Team": "Mexico",
       "Opponent": "Canada",
-      "Matches": 43,
-      "Wins": 24,
-      "Draws": 13,
-      "Losses": 6
+      "Matches": 37,
+      "Wins": 22,
+      "Draws": 10,
+      "Losses": 5
     },
     {
       "Team": "Mexico",
@@ -34644,9 +28180,9 @@ const DADOS = {
     {
       "Team": "Mexico",
       "Opponent": "Guatemala",
-      "Matches": 27,
-      "Wins": 17,
-      "Draws": 5,
+      "Matches": 29,
+      "Wins": 18,
+      "Draws": 6,
       "Losses": 5
     },
     {
@@ -34852,9 +28388,9 @@ const DADOS = {
     {
       "Team": "Mexico",
       "Opponent": "Belgium",
-      "Matches": 7,
+      "Matches": 8,
       "Wins": 3,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 2
     },
     {
@@ -35324,9 +28860,9 @@ const DADOS = {
     {
       "Team": "Mexico",
       "Opponent": "Portugal",
-      "Matches": 5,
+      "Matches": 6,
       "Wins": 0,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 3
     },
     {
@@ -35492,9 +29028,9 @@ const DADOS = {
     {
       "Team": "Norway",
       "Opponent": "Switzerland",
-      "Matches": 19,
+      "Matches": 20,
       "Wins": 8,
-      "Draws": 5,
+      "Draws": 6,
       "Losses": 6
     },
     {
@@ -35532,10 +29068,10 @@ const DADOS = {
     {
       "Team": "Norway",
       "Opponent": "Netherlands",
-      "Matches": 22,
+      "Matches": 23,
       "Wins": 5,
       "Draws": 7,
-      "Losses": 10
+      "Losses": 11
     },
     {
       "Team": "Norway",
@@ -36338,182 +29874,6 @@ const DADOS = {
       "Losses": 1
     },
     {
-      "Team": "New Caledonia",
-      "Opponent": "Vanuatu",
-      "Matches": 16,
-      "Wins": 10,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Solomons",
-      "Matches": 17,
-      "Wins": 10,
-      "Draws": 0,
-      "Losses": 7
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Tahiti",
-      "Matches": 19,
-      "Wins": 10,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Fiji",
-      "Matches": 18,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 8
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Papua N. Guinea",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Tonga",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Cook Islands",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Tuvalu",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Samoa",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "A. Samoa",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "New Zealand",
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 8
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Guam",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Guadeloupe",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Micronesia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Gibraltar",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Wallis & Futuna",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Australia",
-      "Matches": 6,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 6
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Estonia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Mauritius",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Martinique",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "New Zealand U23",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "New Caledonia",
-      "Opponent": "Australia B",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
       "Team": "New Zealand",
       "Opponent": "Fiji",
       "Matches": 17,
@@ -36672,6 +30032,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 0
+    },
+    {
+      "Team": "New Zealand",
+      "Opponent": "Chile",
+      "Matches": 5,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 3
     },
     {
       "Team": "New Zealand",
@@ -36851,6 +30219,14 @@ const DADOS = {
     },
     {
       "Team": "New Zealand",
+      "Opponent": "Finland",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "New Zealand",
       "Opponent": "Russia",
       "Matches": 1,
       "Wins": 0,
@@ -37000,14 +30376,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 0,
       "Losses": 1
-    },
-    {
-      "Team": "New Zealand",
-      "Opponent": "Chile",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 3
     },
     {
       "Team": "New Zealand",
@@ -37194,684 +30562,52 @@ const DADOS = {
       "Losses": 1
     },
     {
-      "Team": "Wales",
-      "Opponent": "N. Ireland",
-      "Matches": 59,
-      "Wins": 28,
-      "Draws": 17,
-      "Losses": 14
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Ireland",
-      "Matches": 56,
-      "Wins": 25,
-      "Draws": 12,
-      "Losses": 19
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Scotland",
-      "Matches": 107,
-      "Wins": 23,
-      "Draws": 23,
-      "Losses": 61
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "England",
-      "Matches": 105,
-      "Wins": 14,
-      "Draws": 21,
-      "Losses": 70
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Finland",
-      "Matches": 16,
-      "Wins": 7,
-      "Draws": 5,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Azerbaijan",
-      "Matches": 8,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Belarus",
-      "Matches": 7,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Hungary",
-      "Matches": 12,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Iceland",
-      "Matches": 9,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Luxembourg",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Belgium",
-      "Matches": 19,
-      "Wins": 5,
-      "Draws": 5,
-      "Losses": 9
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Bulgaria",
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Cyprus",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Liechtenstein",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Turkiye",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Austria",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Denmark",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 7
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Malta",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "San Marino",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Norway",
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Slovakia",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Latvia",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Israel",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Moldova",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Estonia",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Montenegro",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "ČSR",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Germany",
-      "Matches": 17,
-      "Wins": 2,
-      "Draws": 6,
-      "Losses": 9
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Italy",
-      "Matches": 10,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 8
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Switzerland",
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Canada",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "North Macedonia",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Trinidad",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Kazakhstan",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Faroe Islands",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Andorra",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Portugal",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Spain",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "France",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Greece",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Japan",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Brazil",
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 8
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Poland",
-      "Matches": 11,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 8
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Czechia",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 4,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Romania",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Russia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Croatia",
-      "Matches": 8,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Albania",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Iran",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Georgia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Ukraine",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Saudi Arabia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "China",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Mexico",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Costa Rica",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Qatar",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "East Germany",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "USSR",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Gibraltar",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Netherlands",
-      "Matches": 10,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 10
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Kuwait",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Australia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Argentina",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Serbia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Bosnia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Uruguay",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "USA",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Sweden",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Panama",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Paraguay",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Slovenia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "South Korea",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Tunisia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Jamaica",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Chile",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Armenia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "New Zealand",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Yugoslavia",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Serbia-Mont.",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Wales",
-      "Opponent": "Great Britain",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
       "Team": "Panama",
       "Opponent": "Guatemala",
-      "Matches": 37,
-      "Wins": 18,
-      "Draws": 9,
-      "Losses": 10
-    },
-    {
-      "Team": "Panama",
-      "Opponent": "Costa Rica",
-      "Matches": 50,
-      "Wins": 17,
-      "Draws": 10,
-      "Losses": 23
+      "Matches": 42,
+      "Wins": 19,
+      "Draws": 11,
+      "Losses": 12
     },
     {
       "Team": "Panama",
       "Opponent": "El Salvador",
-      "Matches": 42,
-      "Wins": 17,
+      "Matches": 47,
+      "Wins": 19,
       "Draws": 11,
-      "Losses": 14
+      "Losses": 17
+    },
+    {
+      "Team": "Panama",
+      "Opponent": "Costa Rica",
+      "Matches": 56,
+      "Wins": 18,
+      "Draws": 10,
+      "Losses": 28
     },
     {
       "Team": "Panama",
       "Opponent": "Nicaragua",
-      "Matches": 19,
-      "Wins": 15,
+      "Matches": 24,
+      "Wins": 18,
       "Draws": 1,
-      "Losses": 3
+      "Losses": 5
     },
     {
       "Team": "Panama",
       "Opponent": "Honduras",
-      "Matches": 42,
-      "Wins": 10,
+      "Matches": 43,
+      "Wins": 11,
       "Draws": 10,
       "Losses": 22
+    },
+    {
+      "Team": "Panama",
+      "Opponent": "Cuba",
+      "Matches": 19,
+      "Wins": 11,
+      "Draws": 4,
+      "Losses": 4
     },
     {
       "Team": "Panama",
@@ -37879,14 +30615,6 @@ const DADOS = {
       "Matches": 20,
       "Wins": 9,
       "Draws": 7,
-      "Losses": 4
-    },
-    {
-      "Team": "Panama",
-      "Opponent": "Cuba",
-      "Matches": 17,
-      "Wins": 9,
-      "Draws": 4,
       "Losses": 4
     },
     {
@@ -37940,10 +30668,10 @@ const DADOS = {
     {
       "Team": "Panama",
       "Opponent": "Haiti",
-      "Matches": 9,
+      "Matches": 11,
       "Wins": 3,
       "Draws": 5,
-      "Losses": 1
+      "Losses": 3
     },
     {
       "Team": "Panama",
@@ -37963,6 +30691,14 @@ const DADOS = {
     },
     {
       "Team": "Panama",
+      "Opponent": "Curaçao",
+      "Matches": 8,
+      "Wins": 3,
+      "Draws": 3,
+      "Losses": 2
+    },
+    {
+      "Team": "Panama",
       "Opponent": "Canada",
       "Matches": 14,
       "Wins": 2,
@@ -37976,6 +30712,14 @@ const DADOS = {
       "Wins": 2,
       "Draws": 1,
       "Losses": 5
+    },
+    {
+      "Team": "Panama",
+      "Opponent": "South Africa",
+      "Matches": 3,
+      "Wins": 2,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Panama",
@@ -38024,22 +30768,6 @@ const DADOS = {
       "Wins": 2,
       "Draws": 0,
       "Losses": 1
-    },
-    {
-      "Team": "Panama",
-      "Opponent": "Curaçao",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Panama",
-      "Opponent": "South Africa",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
     },
     {
       "Team": "Panama",
@@ -38298,6 +31026,14 @@ const DADOS = {
       "Losses": 1
     },
     {
+      "Team": "Panama",
+      "Opponent": "N. Antilles",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
       "Team": "Paraguay",
       "Opponent": "Chile",
       "Matches": 57,
@@ -38427,19 +31163,19 @@ const DADOS = {
     },
     {
       "Team": "Paraguay",
+      "Opponent": "Greece",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Paraguay",
       "Opponent": "USA",
       "Matches": 9,
       "Wins": 2,
       "Draws": 2,
       "Losses": 5
-    },
-    {
-      "Team": "Paraguay",
-      "Opponent": "Greece",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
     },
     {
       "Team": "Paraguay",
@@ -38788,10 +31524,10 @@ const DADOS = {
     {
       "Team": "Paraguay",
       "Opponent": "Morocco",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Paraguay",
@@ -38839,814 +31575,6 @@ const DADOS = {
       "Matches": 2,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Finland",
-      "Matches": 33,
-      "Wins": 21,
-      "Draws": 8,
-      "Losses": 4
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Turkiye",
-      "Matches": 18,
-      "Wins": 12,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Norway",
-      "Matches": 19,
-      "Wins": 12,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Latvia",
-      "Matches": 16,
-      "Wins": 12,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Bulgaria",
-      "Matches": 23,
-      "Wins": 11,
-      "Draws": 8,
-      "Losses": 4
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Ireland",
-      "Matches": 28,
-      "Wins": 11,
-      "Draws": 11,
-      "Losses": 6
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Greece",
-      "Matches": 17,
-      "Wins": 10,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Albania",
-      "Matches": 15,
-      "Wins": 10,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "San Marino",
-      "Matches": 10,
-      "Wins": 10,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Sweden",
-      "Matches": 28,
-      "Wins": 9,
-      "Draws": 4,
-      "Losses": 15
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Denmark",
-      "Matches": 20,
-      "Wins": 8,
-      "Draws": 1,
-      "Losses": 11
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Hungary",
-      "Matches": 34,
-      "Wins": 8,
-      "Draws": 5,
-      "Losses": 21
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Wales",
-      "Matches": 11,
-      "Wins": 8,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Estonia",
-      "Matches": 10,
-      "Wins": 8,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "East Germany",
-      "Matches": 17,
-      "Wins": 8,
-      "Draws": 4,
-      "Losses": 5
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Belgium",
-      "Matches": 21,
-      "Wins": 7,
-      "Draws": 6,
-      "Losses": 8
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "USA",
-      "Matches": 17,
-      "Wins": 7,
-      "Draws": 3,
-      "Losses": 7
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Lithuania",
-      "Matches": 13,
-      "Wins": 7,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Israel",
-      "Matches": 13,
-      "Wins": 7,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Romania",
-      "Matches": 35,
-      "Wins": 6,
-      "Draws": 15,
-      "Losses": 14
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Canada",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Luxembourg",
-      "Matches": 7,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Malta",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Moldova",
-      "Matches": 9,
-      "Wins": 6,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Yugoslavia",
-      "Matches": 19,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 9
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Austria",
-      "Matches": 11,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Switzerland",
-      "Matches": 11,
-      "Wins": 5,
-      "Draws": 5,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Japan",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Iceland",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Ukraine",
-      "Matches": 10,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Armenia",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Azerbaijan",
-      "Matches": 6,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Faroe Islands",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Scotland",
-      "Matches": 13,
-      "Wins": 4,
-      "Draws": 6,
-      "Losses": 3
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Czechia",
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Cyprus",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Georgia",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Saudi Arabia",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Macedonia",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "N. Ireland",
-      "Matches": 10,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Kazakhstan",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "ČSR",
-      "Matches": 19,
-      "Wins": 4,
-      "Draws": 5,
-      "Losses": 10
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Portugal",
-      "Matches": 15,
-      "Wins": 3,
-      "Draws": 4,
-      "Losses": 8
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Italy",
-      "Matches": 18,
-      "Wins": 3,
-      "Draws": 8,
-      "Losses": 7
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "France",
-      "Matches": 18,
-      "Wins": 3,
-      "Draws": 6,
-      "Losses": 9
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Netherlands",
-      "Matches": 22,
-      "Wins": 3,
-      "Draws": 9,
-      "Losses": 10
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Argentina",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 7
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Slovakia",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Peru",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Slovenia",
-      "Matches": 8,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Mexico",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Costa Rica",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Andorra",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "USSR",
-      "Matches": 15,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 9
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Germany",
-      "Matches": 22,
-      "Wins": 2,
-      "Draws": 7,
-      "Losses": 13
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Serbia",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Bosnia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Belarus",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Iraq",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Iran",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Algeria",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Tunisia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Colombia",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "UAE",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Bolivia",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "China",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "New Zealand",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Montenegro",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Haiti",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Serbia-Mont.",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Gibraltar",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "England",
-      "Matches": 21,
-      "Wins": 1,
-      "Draws": 8,
-      "Losses": 12
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Spain",
-      "Matches": 11,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 8
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Kuwait",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Brazil",
-      "Matches": 12,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 9
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Russia",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Uruguay",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Croatia",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Morocco",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "South Korea",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Ivory Coast",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Chile",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "South Africa",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Liechtenstein",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Thailand",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Ecuador",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Libya",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Guatemala",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "India",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Singapore",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Romania B",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Great Britain",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Australia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Cameroon",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Nigeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Senegal",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Paraguay",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Egypt",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "North Korea",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "USSR",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Poland",
-      "Opponent": "Austria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
       "Losses": 1
     },
     {
@@ -39979,6 +31907,14 @@ const DADOS = {
     },
     {
       "Team": "Portugal",
+      "Opponent": "USA",
+      "Matches": 8,
+      "Wins": 3,
+      "Draws": 3,
+      "Losses": 2
+    },
+    {
+      "Team": "Portugal",
       "Opponent": "Angola",
       "Matches": 3,
       "Wins": 3,
@@ -40004,9 +31940,9 @@ const DADOS = {
     {
       "Team": "Portugal",
       "Opponent": "Mexico",
-      "Matches": 5,
+      "Matches": 6,
       "Wins": 3,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 0
     },
     {
@@ -40088,14 +32024,6 @@ const DADOS = {
       "Wins": 2,
       "Draws": 1,
       "Losses": 1
-    },
-    {
-      "Team": "Portugal",
-      "Opponent": "USA",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 2
     },
     {
       "Team": "Portugal",
@@ -40635,6 +32563,14 @@ const DADOS = {
     },
     {
       "Team": "Congo DR",
+      "Opponent": "Jamaica",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Congo DR",
       "Opponent": "Egypt",
       "Matches": 9,
       "Wins": 1,
@@ -40695,6 +32631,14 @@ const DADOS = {
       "Matches": 2,
       "Wins": 1,
       "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Congo DR",
+      "Opponent": "Bermuda",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
       "Losses": 0
     },
     {
@@ -40891,6 +32835,14 @@ const DADOS = {
     },
     {
       "Team": "Czechia",
+      "Opponent": "Ireland",
+      "Matches": 9,
+      "Wins": 5,
+      "Draws": 2,
+      "Losses": 2
+    },
+    {
+      "Team": "Czechia",
       "Opponent": "Estonia",
       "Matches": 5,
       "Wins": 5,
@@ -40915,11 +32867,11 @@ const DADOS = {
     },
     {
       "Team": "Czechia",
-      "Opponent": "Ireland",
-      "Matches": 8,
+      "Opponent": "Denmark",
+      "Matches": 13,
       "Wins": 4,
-      "Draws": 2,
-      "Losses": 2
+      "Draws": 6,
+      "Losses": 3
     },
     {
       "Team": "Czechia",
@@ -40952,14 +32904,6 @@ const DADOS = {
       "Wins": 3,
       "Draws": 2,
       "Losses": 4
-    },
-    {
-      "Team": "Czechia",
-      "Opponent": "Denmark",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 6,
-      "Losses": 3
     },
     {
       "Team": "Czechia",
@@ -41394,758 +33338,6 @@ const DADOS = {
       "Losses": 0
     },
     {
-      "Team": "Romania",
-      "Opponent": "Greece",
-      "Matches": 35,
-      "Wins": 18,
-      "Draws": 10,
-      "Losses": 7
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Bulgaria",
-      "Matches": 33,
-      "Wins": 17,
-      "Draws": 7,
-      "Losses": 9
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Yugoslavia",
-      "Matches": 39,
-      "Wins": 16,
-      "Draws": 5,
-      "Losses": 18
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Turkiye",
-      "Matches": 26,
-      "Wins": 14,
-      "Draws": 7,
-      "Losses": 5
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Poland",
-      "Matches": 35,
-      "Wins": 14,
-      "Draws": 15,
-      "Losses": 6
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Lithuania",
-      "Matches": 15,
-      "Wins": 14,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Cyprus",
-      "Matches": 17,
-      "Wins": 13,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Israel",
-      "Matches": 24,
-      "Wins": 12,
-      "Draws": 7,
-      "Losses": 5
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Albania",
-      "Matches": 17,
-      "Wins": 11,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Finland",
-      "Matches": 13,
-      "Wins": 9,
-      "Draws": 4,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Faroe Islands",
-      "Matches": 8,
-      "Wins": 8,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Switzerland",
-      "Matches": 15,
-      "Wins": 6,
-      "Draws": 5,
-      "Losses": 4
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Luxembourg",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Georgia",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Liechtenstein",
-      "Matches": 7,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Moldova",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Andorra",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Spain",
-      "Matches": 18,
-      "Wins": 5,
-      "Draws": 6,
-      "Losses": 7
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Belgium",
-      "Matches": 13,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Norway",
-      "Matches": 15,
-      "Wins": 5,
-      "Draws": 7,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Hungary",
-      "Matches": 22,
-      "Wins": 5,
-      "Draws": 8,
-      "Losses": 9
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Slovakia",
-      "Matches": 12,
-      "Wins": 5,
-      "Draws": 6,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "North Macedonia",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Armenia",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "San Marino",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "East Germany",
-      "Matches": 16,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 8
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "ČSR",
-      "Matches": 29,
-      "Wins": 5,
-      "Draws": 7,
-      "Losses": 17
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Portugal",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Denmark",
-      "Matches": 11,
-      "Wins": 4,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Bosnia",
-      "Matches": 8,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Belarus",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Latvia",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Ukraine",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Azerbaijan",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "England",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 6,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "France",
-      "Matches": 16,
-      "Wins": 3,
-      "Draws": 5,
-      "Losses": 8
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Austria",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 5,
-      "Losses": 4
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Japan",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Sweden",
-      "Matches": 11,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 6
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Iceland",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Slovenia",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Egypt",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Chile",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Wales",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Estonia",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "USSR",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Kosovo",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Germany",
-      "Matches": 15,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 10
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Italy",
-      "Matches": 17,
-      "Wins": 2,
-      "Draws": 5,
-      "Losses": 10
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Scotland",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Nigeria",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "USA",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Morocco",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Peru",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Malta",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Colombia",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "China",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "N. Ireland",
-      "Matches": 9,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Montenegro",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "El Salvador",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Austria Amat.",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Netherlands",
-      "Matches": 15,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 11
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Australia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Argentina",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Czechia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Russia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Uruguay",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Ireland",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Paraguay",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "South Korea",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Honduras",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Algeria",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Bolivia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Mexico",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Trinidad",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Kazakhstan",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Turkmenistan",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "ČSSR U23",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Hungary B",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "CSSR B",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Serbia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Brazil",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Canada",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Croatia",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 3
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Iraq",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Iran",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Ivory Coast",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Tunisia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Congo-Brazzav.",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Cuba",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "DR Congo",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "UAE",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Romania",
-      "Opponent": "Ecuador",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
       "Team": "Senegal",
       "Opponent": "Cape Verde",
       "Matches": 9,
@@ -42227,6 +33419,14 @@ const DADOS = {
     },
     {
       "Team": "Senegal",
+      "Opponent": "The Gambia",
+      "Matches": 10,
+      "Wins": 5,
+      "Draws": 5,
+      "Losses": 0
+    },
+    {
+      "Team": "Senegal",
       "Opponent": "Liberia",
       "Matches": 6,
       "Wins": 5,
@@ -42256,14 +33456,6 @@ const DADOS = {
       "Wins": 4,
       "Draws": 2,
       "Losses": 4
-    },
-    {
-      "Team": "Senegal",
-      "Opponent": "Morocco",
-      "Matches": 20,
-      "Wins": 4,
-      "Draws": 5,
-      "Losses": 11
     },
     {
       "Team": "Senegal",
@@ -42299,14 +33491,6 @@ const DADOS = {
     },
     {
       "Team": "Senegal",
-      "Opponent": "The Gambia",
-      "Matches": 9,
-      "Wins": 4,
-      "Draws": 5,
-      "Losses": 0
-    },
-    {
-      "Team": "Senegal",
       "Opponent": "Kenya",
       "Matches": 5,
       "Wins": 4,
@@ -42336,6 +33520,14 @@ const DADOS = {
       "Wins": 3,
       "Draws": 2,
       "Losses": 4
+    },
+    {
+      "Team": "Senegal",
+      "Opponent": "Morocco",
+      "Matches": 20,
+      "Wins": 3,
+      "Draws": 5,
+      "Losses": 12
     },
     {
       "Team": "Senegal",
@@ -42555,6 +33747,14 @@ const DADOS = {
     },
     {
       "Team": "Senegal",
+      "Opponent": "Peru",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Senegal",
       "Opponent": "Angola",
       "Matches": 5,
       "Wins": 1,
@@ -42707,14 +33907,6 @@ const DADOS = {
     },
     {
       "Team": "Senegal",
-      "Opponent": "Peru",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Senegal",
       "Opponent": "Chile",
       "Matches": 1,
       "Wins": 0,
@@ -42804,8 +33996,8 @@ const DADOS = {
     {
       "Team": "Sweden",
       "Opponent": "Poland",
-      "Matches": 28,
-      "Wins": 15,
+      "Matches": 29,
+      "Wins": 16,
       "Draws": 4,
       "Losses": 9
     },
@@ -43235,6 +34427,14 @@ const DADOS = {
     },
     {
       "Team": "Sweden",
+      "Opponent": "Ukraine",
+      "Matches": 6,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 4
+    },
+    {
+      "Team": "Sweden",
       "Opponent": "Saudi Arabia",
       "Matches": 3,
       "Wins": 2,
@@ -43360,14 +34560,6 @@ const DADOS = {
       "Wins": 1,
       "Draws": 1,
       "Losses": 0
-    },
-    {
-      "Team": "Sweden",
-      "Opponent": "Ukraine",
-      "Matches": 5,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 4
     },
     {
       "Team": "Sweden",
@@ -43676,10 +34868,10 @@ const DADOS = {
     {
       "Team": "Switzerland",
       "Opponent": "Germany",
-      "Matches": 54,
+      "Matches": 55,
       "Wins": 9,
       "Draws": 9,
-      "Losses": 36
+      "Losses": 37
     },
     {
       "Team": "Switzerland",
@@ -43756,9 +34948,9 @@ const DADOS = {
     {
       "Team": "Switzerland",
       "Opponent": "Norway",
-      "Matches": 19,
+      "Matches": 20,
       "Wins": 6,
-      "Draws": 5,
+      "Draws": 6,
       "Losses": 8
     },
     {
@@ -44354,310 +35546,6 @@ const DADOS = {
       "Losses": 3
     },
     {
-      "Team": "Suriname",
-      "Opponent": "Guyana",
-      "Matches": 29,
-      "Wins": 19,
-      "Draws": 5,
-      "Losses": 5
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Aruba",
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "N. Antilles",
-      "Matches": 12,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 2
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "French Guiana",
-      "Matches": 14,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Trinidad",
-      "Matches": 15,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 8
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Dominica",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Cayman Islands",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "El Salvador",
-      "Matches": 12,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 8
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Grenada",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Nicaragua",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "St. Vincent",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Guadeloupe",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 3
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Curaçao",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Bonaire",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Antigua and B.",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "B. Virgin",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Montserrat",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Saint Lucia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Martinique",
-      "Matches": 10,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 4
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Denmark",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Jamaica",
-      "Matches": 8,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Bermuda",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Barbados",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Anguilla",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Puerto Rico",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "St. Kitts/Nevis",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Netherlands",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Nigeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Canada",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Panama",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Honduras",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Cuba",
-      "Matches": 11,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 8
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Thailand",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Mexico",
-      "Matches": 4,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Costa Rica",
-      "Matches": 7,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 6
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Guatemala",
-      "Matches": 5,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 3
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Haiti",
-      "Matches": 8,
-      "Wins": 0,
-      "Draws": 6,
-      "Losses": 2
-    },
-    {
-      "Team": "Suriname",
-      "Opponent": "Dominican Rep.",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
       "Team": "Tunisia",
       "Opponent": "Egypt",
       "Matches": 26,
@@ -45084,9 +35972,9 @@ const DADOS = {
     {
       "Team": "Tunisia",
       "Opponent": "Canada",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 1,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -45240,6 +36128,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 1,
       "Losses": 2
+    },
+    {
+      "Team": "Tunisia",
+      "Opponent": "Haiti",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "Tunisia",
@@ -45643,6 +36539,14 @@ const DADOS = {
     },
     {
       "Team": "Türkiye",
+      "Opponent": "Romania",
+      "Matches": 27,
+      "Wins": 6,
+      "Draws": 7,
+      "Losses": 14
+    },
+    {
+      "Team": "Türkiye",
       "Opponent": "Hungary",
       "Matches": 19,
       "Wins": 6,
@@ -45656,14 +36560,6 @@ const DADOS = {
       "Wins": 6,
       "Draws": 2,
       "Losses": 4
-    },
-    {
-      "Team": "Türkiye",
-      "Opponent": "Iran",
-      "Matches": 10,
-      "Wins": 6,
-      "Draws": 4,
-      "Losses": 0
     },
     {
       "Team": "Türkiye",
@@ -45707,19 +36603,19 @@ const DADOS = {
     },
     {
       "Team": "Türkiye",
-      "Opponent": "Romania",
-      "Matches": 26,
-      "Wins": 5,
-      "Draws": 7,
-      "Losses": 14
-    },
-    {
-      "Team": "Türkiye",
       "Opponent": "Sweden",
       "Matches": 12,
       "Wins": 5,
       "Draws": 4,
       "Losses": 3
+    },
+    {
+      "Team": "Türkiye",
+      "Opponent": "Iran",
+      "Matches": 7,
+      "Wins": 5,
+      "Draws": 2,
+      "Losses": 0
     },
     {
       "Team": "Türkiye",
@@ -45931,6 +36827,14 @@ const DADOS = {
     },
     {
       "Team": "Türkiye",
+      "Opponent": "Kosovo",
+      "Matches": 3,
+      "Wins": 3,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Türkiye",
       "Opponent": "Portugal",
       "Matches": 10,
       "Wins": 2,
@@ -46036,14 +36940,6 @@ const DADOS = {
     {
       "Team": "Türkiye",
       "Opponent": "Gibraltar",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Türkiye",
-      "Opponent": "Kosovo",
       "Matches": 2,
       "Wins": 2,
       "Draws": 0,
@@ -46354,606 +37250,6 @@ const DADOS = {
       "Losses": 2
     },
     {
-      "Team": "Ukraine",
-      "Opponent": "Georgia",
-      "Matches": 11,
-      "Wins": 7,
-      "Draws": 4,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Lithuania",
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Armenia",
-      "Matches": 10,
-      "Wins": 7,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Albania",
-      "Matches": 8,
-      "Wins": 6,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Belarus",
-      "Matches": 9,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Luxembourg",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "North Macedonia",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Estonia",
-      "Matches": 5,
-      "Wins": 5,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Serbia",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Norway",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Slovakia",
-      "Matches": 9,
-      "Wins": 4,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Sweden",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Iceland",
-      "Matches": 7,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Moldova",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Kazakhstan",
-      "Matches": 6,
-      "Wins": 4,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Andorra",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Bulgaria",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Poland",
-      "Matches": 10,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 5
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Finland",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Romania",
-      "Matches": 7,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 4
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "USA",
-      "Matches": 4,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "N. Ireland",
-      "Matches": 6,
-      "Wins": 3,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Portugal",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Greece",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Scotland",
-      "Matches": 5,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Turkiye",
-      "Matches": 9,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 4
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Switzerland",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Japan",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Czechia",
-      "Matches": 7,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Bosnia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Latvia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Uzbekistan",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Malta",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Cyprus",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Israel",
-      "Matches": 6,
-      "Wins": 2,
-      "Draws": 3,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Azerbaijan",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Faroe Islands",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "San Marino",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Kosovo",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "England",
-      "Matches": 10,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 6
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Spain",
-      "Matches": 7,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 5
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "France",
-      "Matches": 14,
-      "Wins": 1,
-      "Draws": 5,
-      "Losses": 8
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Belgium",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Austria",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Denmark",
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Russia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Ireland",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Croatia",
-      "Matches": 9,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 5
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Slovenia",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Tunisia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Chile",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Saudi Arabia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Wales",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Libya",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Costa Rica",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "New Zealand",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Montenegro",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Niger",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Yugoslavia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Serbia-Mont.",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Germany",
-      "Matches": 10,
-      "Wins": 0,
-      "Draws": 5,
-      "Losses": 5
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Italy",
-      "Matches": 10,
-      "Wins": 0,
-      "Draws": 3,
-      "Losses": 7
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Netherlands",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Cameroon",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Brazil",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Nigeria",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Uruguay",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Hungary",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Canada",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Morocco",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Iran",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "South Korea",
-      "Matches": 2,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "UAE",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Mexico",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Ukraine",
-      "Opponent": "Bahrain",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
       "Team": "Uruguay",
       "Opponent": "Argentina",
       "Matches": 195,
@@ -46972,24 +37268,24 @@ const DADOS = {
     {
       "Team": "Uruguay",
       "Opponent": "Peru",
-      "Matches": 51,
-      "Wins": 29,
+      "Matches": 52,
+      "Wins": 30,
       "Draws": 8,
       "Losses": 14
     },
     {
       "Team": "Uruguay",
       "Opponent": "Ecuador",
-      "Matches": 44,
-      "Wins": 28,
+      "Matches": 45,
+      "Wins": 29,
       "Draws": 8,
       "Losses": 8
     },
     {
       "Team": "Uruguay",
       "Opponent": "Bolivia",
-      "Matches": 42,
-      "Wins": 27,
+      "Matches": 43,
+      "Wins": 28,
       "Draws": 7,
       "Losses": 8
     },
@@ -47020,9 +37316,9 @@ const DADOS = {
     {
       "Team": "Uruguay",
       "Opponent": "Colombia",
-      "Matches": 40,
-      "Wins": 18,
-      "Draws": 10,
+      "Matches": 42,
+      "Wins": 19,
+      "Draws": 11,
       "Losses": 12
     },
     {
@@ -47052,9 +37348,9 @@ const DADOS = {
     {
       "Team": "Uruguay",
       "Opponent": "England",
-      "Matches": 11,
+      "Matches": 12,
       "Wins": 5,
-      "Draws": 3,
+      "Draws": 4,
       "Losses": 3
     },
     {
@@ -47612,9 +37908,9 @@ const DADOS = {
     {
       "Team": "Uruguay",
       "Opponent": "Algeria",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -47915,6 +38211,14 @@ const DADOS = {
     },
     {
       "Team": "Uzbekistan",
+      "Opponent": "Venezuela",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Uzbekistan",
       "Opponent": "Latvia",
       "Matches": 1,
       "Wins": 1,
@@ -47940,6 +38244,14 @@ const DADOS = {
     {
       "Team": "Uzbekistan",
       "Opponent": "Bolivia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Uzbekistan",
+      "Opponent": "Gabon",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -48083,14 +38395,6 @@ const DADOS = {
     },
     {
       "Team": "Uzbekistan",
-      "Opponent": "Venezuela",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Uzbekistan",
       "Opponent": "USA",
       "Matches": 1,
       "Wins": 0,
@@ -48196,370 +38500,830 @@ const DADOS = {
   ],
   "simulacao": [
     {
-      "grupo": "C",
+      "grupo": "A",
       "times": [
-        "Escócia",
-        "Brasil",
-        "Marrocos",
-        "Haiti"
+        "República Theca",
+        "África do Sul",
+        "México",
+        "Coreia do Sul"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Escócia": {
-          "P1": 11.73,
-          "P2": 22.91,
-          "P3": 40.05,
-          "P4": 25.31,
-          "Pts_Medio": 3.72,
-          "Pts_Mediana": 3.0,
+        "República Theca": {
+          "P1": 20.18,
+          "P2": 25.59,
+          "P3": 31.23,
+          "P4": 23.01,
+          "Pts_Medio": 4.23,
+          "Pts_Mediana": 4.0,
           "Pts_DP": 2.33,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 34.64
+          "Classifica": 45.76
         },
-        "Brasil": {
-          "P1": 41.09,
-          "P2": 28.8,
-          "P3": 20.34,
-          "P4": 9.77,
-          "Pts_Medio": 4.98,
-          "Pts_Mediana": 6.0,
+        "África do Sul": {
+          "P1": 10.54,
+          "P2": 17.08,
+          "P3": 24.5,
+          "P4": 47.88,
+          "Pts_Medio": 3.31,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.32,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 27.62
+        },
+        "México": {
+          "P1": 40.48,
+          "P2": 26.49,
+          "P3": 20.16,
+          "P4": 12.87,
+          "Pts_Medio": 4.76,
+          "Pts_Mediana": 4.0,
           "Pts_DP": 2.34,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 69.89
+          "Classifica": 66.98
         },
-        "Marrocos": {
-          "P1": 41.93,
-          "P2": 34.78,
-          "P3": 16.54,
-          "P4": 6.75,
-          "Pts_Medio": 5.8,
+        "Coreia do Sul": {
+          "P1": 28.8,
+          "P2": 30.84,
+          "P3": 24.11,
+          "P4": 16.24,
+          "Pts_Medio": 4.59,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.33,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 59.64
+        }
+      },
+      "stats_jogos": {
+        "México x África do Sul": {
+          "V_pct": 56.52,
+          "E_pct": 12.8,
+          "D_pct": 30.68
+        },
+        "Coreia do Sul x República Theca": {
+          "V_pct": 41.92,
+          "E_pct": 22.23,
+          "D_pct": 35.86
+        },
+        "México x Coreia do Sul": {
+          "V_pct": 38.9,
+          "E_pct": 24.83,
+          "D_pct": 36.27
+        },
+        "República Theca x África do Sul": {
+          "V_pct": 49.79,
+          "E_pct": 16.64,
+          "D_pct": 33.57
+        },
+        "República Theca x México": {
+          "V_pct": 35.44,
+          "E_pct": 20.55,
+          "D_pct": 44.0
+        },
+        "África do Sul x Coreia do Sul": {
+          "V_pct": 31.55,
+          "E_pct": 13.83,
+          "D_pct": 54.62
+        }
+      }
+    },
+    {
+      "grupo": "B",
+      "times": [
+        "Catar",
+        "Suíça",
+        "Bósnia",
+        "Canadá"
+      ],
+      "n_sim": 500000,
+      "stats_times": {
+        "Catar": {
+          "P1": 14.88,
+          "P2": 22.84,
+          "P3": 33.39,
+          "P4": 28.89,
+          "Pts_Medio": 3.73,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.33,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 37.71
+        },
+        "Suíça": {
+          "P1": 44.91,
+          "P2": 25.65,
+          "P3": 18.55,
+          "P4": 10.89,
+          "Pts_Medio": 5.03,
           "Pts_Mediana": 6.0,
+          "Pts_DP": 2.35,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 70.56
+        },
+        "Bósnia": {
+          "P1": 10.51,
+          "P2": 18.13,
+          "P3": 25.68,
+          "P4": 45.68,
+          "Pts_Medio": 3.41,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.31,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 28.64
+        },
+        "Canadá": {
+          "P1": 29.71,
+          "P2": 33.38,
+          "P3": 22.38,
+          "P4": 14.53,
+          "Pts_Medio": 4.8,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.35,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 63.09
+        }
+      },
+      "stats_jogos": {
+        "Canadá x Bósnia": {
+          "V_pct": 55.01,
+          "E_pct": 13.65,
+          "D_pct": 31.34
+        },
+        "Catar x Suíça": {
+          "V_pct": 32.05,
+          "E_pct": 14.32,
+          "D_pct": 53.62
+        },
+        "Suíça x Bósnia": {
+          "V_pct": 57.6,
+          "E_pct": 12.29,
+          "D_pct": 30.11
+        },
+        "Canadá x Catar": {
+          "V_pct": 50.7,
+          "E_pct": 15.99,
+          "D_pct": 33.31
+        },
+        "Suíça x Canadá": {
+          "V_pct": 39.73,
+          "E_pct": 24.05,
+          "D_pct": 36.22
+        },
+        "Bósnia x Catar": {
+          "V_pct": 35.87,
+          "E_pct": 22.87,
+          "D_pct": 41.26
+        }
+      }
+    },
+    {
+      "grupo": "C",
+      "times": [
+        "Brasil",
+        "Escócia",
+        "Haiti",
+        "Marrocos"
+      ],
+      "n_sim": 500000,
+      "stats_times": {
+        "Brasil": {
+          "P1": 42.25,
+          "P2": 29.82,
+          "P3": 19.32,
+          "P4": 8.62,
+          "Pts_Medio": 5.12,
+          "Pts_Mediana": 6.0,
+          "Pts_DP": 2.33,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 72.07
+        },
+        "Escócia": {
+          "P1": 9.35,
+          "P2": 21.1,
+          "P3": 42.42,
+          "P4": 27.13,
+          "Pts_Medio": 3.48,
+          "Pts_Mediana": 3.0,
           "Pts_DP": 2.3,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 76.71
+          "Classifica": 30.45
         },
         "Haiti": {
-          "P1": 5.25,
-          "P2": 13.52,
-          "P3": 23.07,
-          "P4": 58.17,
-          "Pts_Medio": 2.74,
+          "P1": 4.52,
+          "P2": 12.94,
+          "P3": 23.7,
+          "P4": 58.85,
+          "Pts_Medio": 2.66,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.23,
+          "Pts_DP": 2.19,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 18.76
+          "Classifica": 17.46
+        },
+        "Marrocos": {
+          "P1": 43.89,
+          "P2": 36.14,
+          "P3": 14.56,
+          "P4": 5.4,
+          "Pts_Medio": 6.03,
+          "Pts_Mediana": 6.0,
+          "Pts_DP": 2.26,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 80.03
         }
       },
       "stats_jogos": {
         "Brasil x Marrocos": {
-          "V_pct": 34.39,
-          "E_pct": 18.22,
-          "D_pct": 47.39
+          "V_pct": 33.97,
+          "E_pct": 17.2,
+          "D_pct": 48.83
         },
         "Haiti x Escócia": {
-          "V_pct": 33.31,
-          "E_pct": 16.27,
-          "D_pct": 50.42
+          "V_pct": 34.04,
+          "E_pct": 17.5,
+          "D_pct": 48.47
         },
         "Escócia x Marrocos": {
-          "V_pct": 27.66,
-          "E_pct": 10.28,
-          "D_pct": 62.06
+          "V_pct": 24.58,
+          "E_pct": 8.5,
+          "D_pct": 66.92
         },
         "Brasil x Haiti": {
-          "V_pct": 64.66,
-          "E_pct": 9.27,
-          "D_pct": 26.07
+          "V_pct": 66.6,
+          "E_pct": 8.61,
+          "D_pct": 24.79
         },
         "Marrocos x Haiti": {
-          "V_pct": 72.06,
-          "E_pct": 6.86,
-          "D_pct": 21.09
+          "V_pct": 74.68,
+          "E_pct": 6.17,
+          "D_pct": 19.16
         },
         "Escócia x Brasil": {
-          "V_pct": 32.29,
-          "E_pct": 14.72,
-          "D_pct": 52.99
+          "V_pct": 30.14,
+          "E_pct": 12.63,
+          "D_pct": 57.23
+        }
+      }
+    },
+    {
+      "grupo": "D",
+      "times": [
+        "Paraguai",
+        "Turquia",
+        "Estados Unidos",
+        "Austrália"
+      ],
+      "n_sim": 500000,
+      "stats_times": {
+        "Paraguai": {
+          "P1": 10.6,
+          "P2": 16.35,
+          "P3": 24.36,
+          "P4": 48.69,
+          "Pts_Medio": 3.25,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.32,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 26.95
+        },
+        "Turquia": {
+          "P1": 30.03,
+          "P2": 29.11,
+          "P3": 24.3,
+          "P4": 16.56,
+          "Pts_Medio": 4.58,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.31,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 59.14
+        },
+        "Estados Unidos": {
+          "P1": 34.34,
+          "P2": 26.9,
+          "P3": 22.77,
+          "P4": 15.99,
+          "Pts_Medio": 4.39,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.32,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 61.24
+        },
+        "Austrália": {
+          "P1": 25.03,
+          "P2": 27.64,
+          "P3": 28.56,
+          "P4": 18.77,
+          "Pts_Medio": 4.62,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.32,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 52.67
+        }
+      },
+      "stats_jogos": {
+        "Estados Unidos x Paraguai": {
+          "V_pct": 52.77,
+          "E_pct": 14.82,
+          "D_pct": 32.41
+        },
+        "Austrália x Turquia": {
+          "V_pct": 37.11,
+          "E_pct": 26.43,
+          "D_pct": 36.47
+        },
+        "Turquia x Paraguai": {
+          "V_pct": 55.34,
+          "E_pct": 13.47,
+          "D_pct": 31.19
+        },
+        "Estados Unidos x Austrália": {
+          "V_pct": 36.32,
+          "E_pct": 23.79,
+          "D_pct": 39.89
+        },
+        "Paraguai x Austrália": {
+          "V_pct": 30.96,
+          "E_pct": 13.23,
+          "D_pct": 55.81
+        },
+        "Turquia x Estados Unidos": {
+          "V_pct": 39.28,
+          "E_pct": 24.37,
+          "D_pct": 36.35
         }
       }
     },
     {
       "grupo": "E",
       "times": [
-        "Curaçao",
+        "Alemanha",
         "Equador",
         "Costa do Marfim",
-        "Alemanha"
+        "Curaçao"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Curaçao": {
-          "P1": 6.89,
-          "P2": 13.63,
-          "P3": 22.42,
-          "P4": 57.06,
-          "Pts_Medio": 2.81,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.27,
+        "Alemanha": {
+          "P1": 48.37,
+          "P2": 26.15,
+          "P3": 17.96,
+          "P4": 7.53,
+          "Pts_Medio": 5.37,
+          "Pts_Mediana": 6.0,
+          "Pts_DP": 2.31,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 20.53
+          "Classifica": 74.51
         },
         "Equador": {
-          "P1": 25.1,
-          "P2": 32.25,
-          "P3": 26.52,
-          "P4": 16.13,
-          "Pts_Medio": 4.46,
+          "P1": 23.27,
+          "P2": 32.79,
+          "P3": 28.69,
+          "P4": 15.25,
+          "Pts_Medio": 4.44,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.32,
+          "Pts_DP": 2.33,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 57.35
+          "Classifica": 56.06
         },
         "Costa do Marfim": {
-          "P1": 21.93,
-          "P2": 28.19,
-          "P3": 32.42,
-          "P4": 17.45,
-          "Pts_Medio": 4.59,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.32,
+          "P1": 23.52,
+          "P2": 29.81,
+          "P3": 32.62,
+          "P4": 14.05,
+          "Pts_Medio": 4.85,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.31,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 50.12
+          "Classifica": 53.33
         },
-        "Alemanha": {
-          "P1": 46.08,
-          "P2": 25.92,
-          "P3": 18.64,
-          "P4": 9.36,
-          "Pts_Medio": 5.17,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.34,
+        "Curaçao": {
+          "P1": 4.84,
+          "P2": 11.25,
+          "P3": 20.74,
+          "P4": 63.17,
+          "Pts_Medio": 2.48,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.2,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 72.0
+          "Classifica": 16.09
         }
       },
       "stats_jogos": {
         "Alemanha x Curaçao": {
-          "V_pct": 66.05,
-          "E_pct": 8.78,
-          "D_pct": 25.17
+          "V_pct": 71.25,
+          "E_pct": 7.09,
+          "D_pct": 21.66
         },
         "Costa do Marfim x Equador": {
-          "V_pct": 38.49,
-          "E_pct": 25.15,
-          "D_pct": 36.36
+          "V_pct": 42.43,
+          "E_pct": 21.88,
+          "D_pct": 35.69
         },
         "Alemanha x Costa do Marfim": {
-          "V_pct": 44.27,
-          "E_pct": 20.44,
-          "D_pct": 35.29
+          "V_pct": 43.43,
+          "E_pct": 20.87,
+          "D_pct": 35.7
         },
         "Equador x Curaçao": {
-          "V_pct": 58.82,
-          "E_pct": 11.71,
-          "D_pct": 29.47
+          "V_pct": 62.31,
+          "E_pct": 10.24,
+          "D_pct": 27.45
         },
         "Equador x Alemanha": {
-          "V_pct": 34.92,
-          "E_pct": 19.16,
-          "D_pct": 45.92
+          "V_pct": 33.76,
+          "E_pct": 17.04,
+          "D_pct": 49.2
         },
         "Curaçao x Costa do Marfim": {
-          "V_pct": 28.61,
-          "E_pct": 11.03,
-          "D_pct": 60.37
+          "V_pct": 24.82,
+          "E_pct": 8.59,
+          "D_pct": 66.58
+        }
+      }
+    },
+    {
+      "grupo": "F",
+      "times": [
+        "Japão",
+        "Tunísia",
+        "Holanda",
+        "Suécia"
+      ],
+      "n_sim": 500000,
+      "stats_times": {
+        "Japão": {
+          "P1": 32.57,
+          "P2": 32.38,
+          "P3": 21.13,
+          "P4": 13.92,
+          "Pts_Medio": 4.93,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.35,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 64.95
+        },
+        "Tunísia": {
+          "P1": 12.07,
+          "P2": 19.32,
+          "P3": 26.5,
+          "P4": 42.11,
+          "Pts_Medio": 3.57,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.31,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 31.39
+        },
+        "Holanda": {
+          "P1": 41.08,
+          "P2": 26.51,
+          "P3": 19.78,
+          "P4": 12.64,
+          "Pts_Medio": 4.81,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.35,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 67.58
+        },
+        "Suécia": {
+          "P1": 14.28,
+          "P2": 21.79,
+          "P3": 32.59,
+          "P4": 31.34,
+          "Pts_Medio": 3.59,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.31,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 36.07
+        }
+      },
+      "stats_jogos": {
+        "Holanda x Japão": {
+          "V_pct": 36.4,
+          "E_pct": 25.47,
+          "D_pct": 38.14
+        },
+        "Suécia x Tunísia": {
+          "V_pct": 36.62,
+          "E_pct": 26.75,
+          "D_pct": 36.63
+        },
+        "Holanda x Suécia": {
+          "V_pct": 52.54,
+          "E_pct": 15.06,
+          "D_pct": 32.4
+        },
+        "Tunísia x Japão": {
+          "V_pct": 31.61,
+          "E_pct": 14.07,
+          "D_pct": 54.32
+        },
+        "Tunísia x Holanda": {
+          "V_pct": 32.37,
+          "E_pct": 14.83,
+          "D_pct": 52.8
+        },
+        "Japão x Suécia": {
+          "V_pct": 53.96,
+          "E_pct": 14.19,
+          "D_pct": 31.84
         }
       }
     },
     {
       "grupo": "G",
       "times": [
+        "Bélgica",
         "Egito",
         "Nova Zelândia",
-        "Irã",
-        "Bélgica"
+        "Irã"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Egito": {
-          "P1": 20.69,
-          "P2": 27.36,
-          "P3": 37.14,
-          "P4": 14.82,
-          "Pts_Medio": 4.63,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.3,
+        "Bélgica": {
+          "P1": 42.92,
+          "P2": 28.3,
+          "P3": 19.94,
+          "P4": 8.84,
+          "Pts_Medio": 5.08,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.26,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 48.04
+          "Classifica": 71.22
+        },
+        "Egito": {
+          "P1": 21.54,
+          "P2": 27.54,
+          "P3": 36.51,
+          "P4": 14.42,
+          "Pts_Medio": 4.68,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.29,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 49.08
         },
         "Nova Zelândia": {
-          "P1": 4.21,
-          "P2": 9.52,
-          "P3": 19.28,
-          "P4": 67.0,
-          "Pts_Medio": 2.26,
+          "P1": 4.35,
+          "P2": 9.55,
+          "P3": 19.52,
+          "P4": 66.58,
+          "Pts_Medio": 2.27,
           "Pts_Mediana": 3.0,
           "Pts_DP": 2.15,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 13.73
+          "Classifica": 13.9
         },
         "Irã": {
-          "P1": 32.56,
-          "P2": 34.76,
-          "P3": 23.31,
-          "P4": 9.36,
-          "Pts_Medio": 5.16,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.27,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 67.32
-        },
-        "Bélgica": {
-          "P1": 42.54,
-          "P2": 28.37,
-          "P3": 20.27,
-          "P4": 8.82,
-          "Pts_Medio": 5.06,
+          "P1": 31.18,
+          "P2": 34.62,
+          "P3": 24.03,
+          "P4": 10.17,
+          "Pts_Medio": 5.05,
           "Pts_Mediana": 5.0,
           "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 70.91
+          "Classifica": 65.8
         }
       },
       "stats_jogos": {
         "Bélgica x Egito": {
-          "V_pct": 43.2,
-          "E_pct": 21.12,
-          "D_pct": 35.68
+          "V_pct": 42.6,
+          "E_pct": 21.71,
+          "D_pct": 35.69
         },
         "Irã x Nova Zelândia": {
-          "V_pct": 72.03,
-          "E_pct": 6.84,
-          "D_pct": 21.13
+          "V_pct": 71.02,
+          "E_pct": 7.16,
+          "D_pct": 21.82
         },
         "Bélgica x Irã": {
-          "V_pct": 36.47,
-          "E_pct": 25.57,
-          "D_pct": 37.96
+          "V_pct": 36.81,
+          "E_pct": 26.74,
+          "D_pct": 36.44
         },
         "Nova Zelândia x Egito": {
-          "V_pct": 24.8,
-          "E_pct": 8.56,
-          "D_pct": 66.64
+          "V_pct": 24.51,
+          "E_pct": 8.36,
+          "D_pct": 67.13
         },
         "Egito x Irã": {
-          "V_pct": 35.31,
-          "E_pct": 20.16,
-          "D_pct": 44.53
+          "V_pct": 35.78,
+          "E_pct": 21.76,
+          "D_pct": 42.46
         },
         "Nova Zelândia x Bélgica": {
-          "V_pct": 21.74,
-          "E_pct": 7.11,
-          "D_pct": 71.15
+          "V_pct": 21.65,
+          "E_pct": 7.05,
+          "D_pct": 71.3
         }
       }
     },
     {
       "grupo": "H",
       "times": [
-        "Espanha",
+        "Cabo Verde",
         "Arábia Saudita",
-        "Uruguai",
-        "Cabo Verde"
+        "Espanha",
+        "Uruguai"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Espanha": {
-          "P1": 60.5,
-          "P2": 21.82,
-          "P3": 12.76,
-          "P4": 4.93,
-          "Pts_Medio": 6.05,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.28,
+        "Cabo Verde": {
+          "P1": 6.76,
+          "P2": 16.89,
+          "P3": 27.32,
+          "P4": 49.03,
+          "Pts_Medio": 3.12,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.23,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 82.32
+          "Classifica": 23.65
         },
         "Arábia Saudita": {
-          "P1": 7.93,
-          "P2": 19.47,
-          "P3": 37.33,
-          "P4": 35.27,
-          "Pts_Medio": 3.1,
+          "P1": 7.55,
+          "P2": 19.39,
+          "P3": 38.68,
+          "P4": 34.38,
+          "Pts_Medio": 3.08,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.24,
+          "Pts_DP": 2.23,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 27.4
+          "Classifica": 26.94
+        },
+        "Espanha": {
+          "P1": 61.79,
+          "P2": 21.64,
+          "P3": 12.0,
+          "P4": 4.57,
+          "Pts_Medio": 6.14,
+          "Pts_Mediana": 6.0,
+          "Pts_DP": 2.27,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 83.43
         },
         "Uruguai": {
-          "P1": 23.98,
-          "P2": 40.86,
-          "P3": 22.42,
-          "P4": 12.74,
-          "Pts_Medio": 4.8,
+          "P1": 23.91,
+          "P2": 42.08,
+          "P3": 22.0,
+          "P4": 12.01,
+          "Pts_Medio": 4.87,
           "Pts_Mediana": 5.0,
-          "Pts_DP": 2.36,
+          "Pts_DP": 2.35,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 64.83
-        },
-        "Cabo Verde": {
-          "P1": 7.59,
-          "P2": 17.85,
-          "P3": 27.49,
-          "P4": 47.06,
-          "Pts_Medio": 3.25,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.26,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 25.45
+          "Classifica": 65.99
         }
       },
       "stats_jogos": {
         "Espanha x Cabo Verde": {
-          "V_pct": 68.77,
-          "E_pct": 7.83,
-          "D_pct": 23.41
+          "V_pct": 70.83,
+          "E_pct": 7.23,
+          "D_pct": 21.94
         },
         "Arábia Saudita x Uruguai": {
-          "V_pct": 29.83,
-          "E_pct": 12.14,
-          "D_pct": 58.03
+          "V_pct": 29.51,
+          "E_pct": 11.71,
+          "D_pct": 58.78
         },
         "Espanha x Arábia Saudita": {
-          "V_pct": 70.27,
-          "E_pct": 7.38,
-          "D_pct": 22.35
+          "V_pct": 71.2,
+          "E_pct": 7.11,
+          "D_pct": 21.69
         },
         "Uruguai x Cabo Verde": {
-          "V_pct": 56.24,
-          "E_pct": 12.99,
-          "D_pct": 30.77
+          "V_pct": 58.37,
+          "E_pct": 11.93,
+          "D_pct": 29.7
         },
         "Cabo Verde x Arábia Saudita": {
-          "V_pct": 38.82,
-          "E_pct": 24.99,
-          "D_pct": 36.19
+          "V_pct": 37.31,
+          "E_pct": 26.3,
+          "D_pct": 36.38
         },
         "Uruguai x Espanha": {
-          "V_pct": 32.46,
-          "E_pct": 14.92,
-          "D_pct": 52.61
+          "V_pct": 32.37,
+          "E_pct": 14.68,
+          "D_pct": 52.95
+        }
+      }
+    },
+    {
+      "grupo": "I",
+      "times": [
+        "Noruega",
+        "Iraque",
+        "França",
+        "Senegal"
+      ],
+      "n_sim": 500000,
+      "stats_times": {
+        "Noruega": {
+          "P1": 16.89,
+          "P2": 24.38,
+          "P3": 34.32,
+          "P4": 24.4,
+          "Pts_Medio": 4.02,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.34,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 41.28
+        },
+        "Iraque": {
+          "P1": 8.69,
+          "P2": 16.0,
+          "P3": 23.93,
+          "P4": 51.38,
+          "Pts_Medio": 3.13,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.3,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 24.69
+        },
+        "França": {
+          "P1": 44.33,
+          "P2": 26.26,
+          "P3": 18.87,
+          "P4": 10.55,
+          "Pts_Medio": 5.03,
+          "Pts_Mediana": 6.0,
+          "Pts_DP": 2.34,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 70.59
+        },
+        "Senegal": {
+          "P1": 30.08,
+          "P2": 33.36,
+          "P3": 22.88,
+          "P4": 13.67,
+          "Pts_Medio": 4.83,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.34,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 63.45
+        }
+      },
+      "stats_jogos": {
+        "França x Senegal": {
+          "V_pct": 39.15,
+          "E_pct": 24.55,
+          "D_pct": 36.3
+        },
+        "Iraque x Noruega": {
+          "V_pct": 33.78,
+          "E_pct": 17.14,
+          "D_pct": 49.08
+        },
+        "França x Iraque": {
+          "V_pct": 61.14,
+          "E_pct": 10.79,
+          "D_pct": 28.07
+        },
+        "Noruega x Senegal": {
+          "V_pct": 34.27,
+          "E_pct": 18.06,
+          "D_pct": 47.67
+        },
+        "Senegal x Iraque": {
+          "V_pct": 59.09,
+          "E_pct": 11.64,
+          "D_pct": 29.28
+        },
+        "Noruega x França": {
+          "V_pct": 33.48,
+          "E_pct": 16.41,
+          "D_pct": 50.12
         }
       }
     },
@@ -48574,176 +39338,268 @@ const DADOS = {
       "n_sim": 500000,
       "stats_times": {
         "Argélia": {
-          "P1": 18.93,
-          "P2": 28.13,
-          "P3": 33.42,
-          "P4": 19.52,
-          "Pts_Medio": 4.39,
+          "P1": 18.36,
+          "P2": 27.75,
+          "P3": 34.45,
+          "P4": 19.44,
+          "Pts_Medio": 4.35,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.33,
+          "Pts_DP": 2.32,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 47.06
+          "Classifica": 46.11
         },
         "Argentina": {
-          "P1": 53.22,
-          "P2": 23.7,
-          "P3": 15.95,
-          "P4": 7.13,
-          "Pts_Medio": 5.59,
+          "P1": 53.03,
+          "P2": 23.91,
+          "P3": 16.05,
+          "P4": 7.01,
+          "Pts_Medio": 5.6,
           "Pts_Mediana": 6.0,
-          "Pts_DP": 2.34,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 76.91
-        },
-        "Jordânia": {
-          "P1": 6.68,
-          "P2": 14.63,
-          "P3": 23.11,
-          "P4": 55.58,
-          "Pts_Medio": 2.89,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.27,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 21.31
-        },
-        "Áustria": {
-          "P1": 21.17,
-          "P2": 33.54,
-          "P3": 27.51,
-          "P4": 17.78,
-          "Pts_Medio": 4.24,
-          "Pts_Mediana": 4.0,
           "Pts_DP": 2.33,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 54.71
+          "Classifica": 76.94
+        },
+        "Jordânia": {
+          "P1": 6.23,
+          "P2": 13.94,
+          "P3": 22.71,
+          "P4": 57.12,
+          "Pts_Medio": 2.8,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.26,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 20.17
+        },
+        "Áustria": {
+          "P1": 22.38,
+          "P2": 34.4,
+          "P3": 26.8,
+          "P4": 16.42,
+          "Pts_Medio": 4.36,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.32,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 56.78
         }
       },
       "stats_jogos": {
         "Argentina x Argélia": {
-          "V_pct": 51.53,
-          "E_pct": 15.53,
-          "D_pct": 32.94
+          "V_pct": 52.0,
+          "E_pct": 15.34,
+          "D_pct": 32.66
         },
         "Áustria x Jordânia": {
-          "V_pct": 55.32,
-          "E_pct": 13.45,
-          "D_pct": 31.24
+          "V_pct": 57.86,
+          "E_pct": 12.18,
+          "D_pct": 29.95
         },
         "Argentina x Áustria": {
-          "V_pct": 53.56,
-          "E_pct": 14.42,
-          "D_pct": 32.02
+          "V_pct": 52.13,
+          "E_pct": 15.22,
+          "D_pct": 32.65
         },
         "Jordânia x Argélia": {
-          "V_pct": 30.38,
-          "E_pct": 12.59,
-          "D_pct": 57.03
+          "V_pct": 30.02,
+          "E_pct": 12.21,
+          "D_pct": 57.77
         },
         "Jordânia x Argentina": {
-          "V_pct": 23.32,
-          "E_pct": 7.9,
-          "D_pct": 68.79
+          "V_pct": 22.64,
+          "E_pct": 7.54,
+          "D_pct": 69.82
         },
         "Argélia x Áustria": {
-          "V_pct": 38.6,
-          "E_pct": 25.07,
-          "D_pct": 36.32
+          "V_pct": 36.57,
+          "E_pct": 26.77,
+          "D_pct": 36.66
+        }
+      }
+    },
+    {
+      "grupo": "K",
+      "times": [
+        "RD Congo",
+        "Colômbia",
+        "Portugal",
+        "Uzbequistão"
+      ],
+      "n_sim": 500000,
+      "stats_times": {
+        "RD Congo": {
+          "P1": 14.69,
+          "P2": 22.19,
+          "P3": 29.99,
+          "P4": 33.13,
+          "Pts_Medio": 3.61,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.31,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 36.88
+        },
+        "Colômbia": {
+          "P1": 24.93,
+          "P2": 31.26,
+          "P3": 24.68,
+          "P4": 19.13,
+          "Pts_Medio": 4.32,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.34,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 56.19
+        },
+        "Portugal": {
+          "P1": 45.62,
+          "P2": 24.59,
+          "P3": 18.4,
+          "P4": 11.38,
+          "Pts_Medio": 5.05,
+          "Pts_Mediana": 6.0,
+          "Pts_DP": 2.38,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 70.21
+        },
+        "Uzbequistão": {
+          "P1": 14.75,
+          "P2": 21.96,
+          "P3": 26.93,
+          "P4": 36.36,
+          "Pts_Medio": 3.9,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.32,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 36.71
+        }
+      },
+      "stats_jogos": {
+        "Portugal x RD Congo": {
+          "V_pct": 55.25,
+          "E_pct": 13.49,
+          "D_pct": 31.26
+        },
+        "Uzbequistão x Colômbia": {
+          "V_pct": 35.8,
+          "E_pct": 21.77,
+          "D_pct": 42.43
+        },
+        "Portugal x Uzbequistão": {
+          "V_pct": 51.32,
+          "E_pct": 15.62,
+          "D_pct": 33.06
+        },
+        "Colômbia x RD Congo": {
+          "V_pct": 46.7,
+          "E_pct": 18.67,
+          "D_pct": 34.63
+        },
+        "RD Congo x Uzbequistão": {
+          "V_pct": 36.03,
+          "E_pct": 23.09,
+          "D_pct": 40.88
+        },
+        "Colômbia x Portugal": {
+          "V_pct": 35.11,
+          "E_pct": 19.23,
+          "D_pct": 45.66
         }
       }
     },
     {
       "grupo": "L",
       "times": [
+        "Croácia",
         "Panamá",
         "Inglaterra",
-        "Croácia",
         "Gana"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Panamá": {
-          "P1": 14.12,
-          "P2": 24.21,
-          "P3": 40.76,
-          "P4": 20.91,
-          "Pts_Medio": 4.04,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.34,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 38.33
-        },
-        "Inglaterra": {
-          "P1": 51.57,
-          "P2": 25.79,
-          "P3": 16.32,
-          "P4": 6.33,
-          "Pts_Medio": 5.57,
+        "Croácia": {
+          "P1": 30.73,
+          "P2": 38.31,
+          "P3": 22.12,
+          "P4": 8.84,
+          "Pts_Medio": 5.21,
           "Pts_Mediana": 6.0,
           "Pts_DP": 2.29,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 77.35
+          "Classifica": 69.04
         },
-        "Croácia": {
-          "P1": 29.97,
-          "P2": 38.7,
-          "P3": 21.87,
-          "P4": 9.46,
-          "Pts_Medio": 5.16,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.31,
+        "Panamá": {
+          "P1": 15.43,
+          "P2": 25.33,
+          "P3": 40.98,
+          "P4": 18.26,
+          "Pts_Medio": 4.22,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.33,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 68.67
+          "Classifica": 40.76
+        },
+        "Inglaterra": {
+          "P1": 49.98,
+          "P2": 26.41,
+          "P3": 17.13,
+          "P4": 6.47,
+          "Pts_Medio": 5.49,
+          "Pts_Mediana": 6.0,
+          "Pts_DP": 2.28,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Classifica": 76.4
         },
         "Gana": {
-          "P1": 4.34,
-          "P2": 11.31,
-          "P3": 21.05,
-          "P4": 63.3,
-          "Pts_Medio": 2.47,
+          "P1": 3.85,
+          "P2": 9.95,
+          "P3": 19.77,
+          "P4": 66.42,
+          "Pts_Medio": 2.3,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.19,
+          "Pts_DP": 2.15,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 15.65
+          "Classifica": 13.8
         }
       },
       "stats_jogos": {
         "Inglaterra x Croácia": {
-          "V_pct": 42.11,
-          "E_pct": 21.98,
-          "D_pct": 35.91
+          "V_pct": 40.51,
+          "E_pct": 23.42,
+          "D_pct": 36.07
         },
         "Gana x Panamá": {
-          "V_pct": 30.01,
-          "E_pct": 12.31,
-          "D_pct": 57.68
+          "V_pct": 27.73,
+          "E_pct": 10.45,
+          "D_pct": 61.82
         },
         "Inglaterra x Gana": {
-          "V_pct": 72.9,
-          "E_pct": 6.62,
-          "D_pct": 20.48
+          "V_pct": 73.98,
+          "E_pct": 6.34,
+          "D_pct": 19.68
         },
         "Panamá x Croácia": {
-          "V_pct": 32.87,
-          "E_pct": 15.5,
-          "D_pct": 51.63
+          "V_pct": 33.33,
+          "E_pct": 16.25,
+          "D_pct": 50.42
         },
         "Croácia x Gana": {
-          "V_pct": 69.47,
-          "E_pct": 7.62,
-          "D_pct": 22.91
+          "V_pct": 71.63,
+          "E_pct": 7.03,
+          "D_pct": 21.34
         },
         "Panamá x Inglaterra": {
-          "V_pct": 30.53,
-          "E_pct": 12.76,
-          "D_pct": 56.72
+          "V_pct": 31.94,
+          "E_pct": 14.24,
+          "D_pct": 53.83
         }
       }
     }

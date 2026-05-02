@@ -167,9 +167,6 @@ def montar_selecoes(selecoes_df, ranking_df, info_df):
         merged["Copas_Participacoes"].fillna(0).astype(int) + 1
     )
 
-    # Flag de repescagem
-    merged["is_repescagem"] = merged["Obs"].str.strip().str.lower() == "repescagem"
-
     # Código ISO2 para bandeira (fallback quando não há asset local)
     merged["iso2"] = merged["Club"].map(ISO2_MAP)
 
@@ -214,7 +211,6 @@ def montar_selecoes(selecoes_df, ranking_df, info_df):
         "Copas_Participacoes",
         "Segundo_Lugar",
         "Terceiro_Lugar",
-        "is_repescagem",
         "iso2",
         "asset_logo",
         "asset_bandeira",

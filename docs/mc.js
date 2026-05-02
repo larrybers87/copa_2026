@@ -177,14 +177,11 @@ function _mcRenderStep1() {
       const flag = src
         ? `<img class="mc-g-flag" src="${src}" alt="${nome}" onerror="this.style.display='none'">`
         : `<span style="font-size:16px">${flagEmoji(s?.iso2)}</span>`;
-      const repTag = s?.is_repescagem ? `<span class="mc-rep-badge">⚠</span>` : '';
-
       return `
         <div class="mc-g-row">
           <span class="mc-g-pos">${i + 1}º</span>
           ${flag}
           <span class="mc-g-nome">${nome}</span>
-          ${repTag}
           <div class="mc-g-btns">
             <button class="mc-g-btn" onclick="_mcMove('${g}',${i},-1)"
                     ${i === 0 ? 'disabled' : ''}>↑</button>
@@ -203,7 +200,7 @@ function _mcRenderStep1() {
 
   document.getElementById('mcBody').innerHTML = `
     <div class="mc-intro">
-      <span>Use ↑↓ para reordenar. Grupos ⚠ têm vaga de repescagem.</span>
+      <span>Use ↑↓ para reordenar os classificados dentro de cada grupo.</span>
       <button class="mc-btn-link" onclick="_mcReset()">↺ Resetar para ranking FIFA</button>
     </div>
     <div class="mc-groups-grid">${cards}</div>

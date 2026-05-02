@@ -54,16 +54,13 @@ def plot_visao_geral(
     grupos_df = forca_grupos(selecoes_df, ranking_df).sort_values("Pontos_Media")
     locais_top = jogos_grupos_df["Local"].value_counts().sort_values().tail(10)
 
-    confirmadas = selecoes_df[~selecoes_df["is_repescagem"]]["Club"].tolist()
+    times = selecoes_df["Club"].tolist()
     top10_fifa = (
-        ranking_df[ranking_df["Time"].isin(confirmadas)]
+        ranking_df[ranking_df["Time"].isin(times)]
         .sort_values("Total_Pontos")
         .tail(10)
     )
-    colors_top10 = [
-        CORES["destaque"] if t in confirmadas else CORES["neutro"]
-        for t in top10_fifa["Time"]
-    ]
+    colors_top10 = [CORES["destaque"] for _ in top10_fifa["Time"]]
 
     fig = plt.figure(figsize=(20, 12))
     gs = gridspec.GridSpec(3, 3, figure=fig, hspace=0.35, wspace=0.32)
