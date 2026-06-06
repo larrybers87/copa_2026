@@ -7,8 +7,9 @@
 
 // ── Constantes ────────────────────────────────────────────────────────────────
 
-const MC_N_SIM     = 20_000;
-const MC_FORCA_EXP = 3.0;
+const MC_N_SIM      = 20_000;
+const MC_FORCA_EXP  = 3.0;
+const MC_DECAY_LAMBDA = 0.30; // deve coincidir com DECAY_LAMBDA em simulation.py
 
 // Pares do chaveamento: ordem importa (O antes de Q antes de S antes de F)
 const MC_BRACKET_PAIRS = {
@@ -70,7 +71,7 @@ function _mcGetForcas() {
     if (hist.length && anoMax) {
       let totPts = 0, totJ = 0;
       for (const r of hist) {
-        const peso = Math.exp(-0.5 * (anoMax - r.Year));
+        const peso = Math.exp(-MC_DECAY_LAMBDA * (anoMax - r.Year));
         totPts += ((r.Wins || 0) * 3 + (r.Draws || 0)) * peso;
         totJ   += (r.Matches || 0) * peso;
       }
@@ -329,8 +330,8 @@ function _mcBuildSFGames() {
     return {
       grupo:  g,
       time:   club,
-      ptsMed: forcas[club ?? ''] ?? 0.1,
-      stats:  { Pts_Medio: forcas[club ?? ''] ?? 0.1 },
+      ptsMed: (forcas[club ?? ''] ?? 0.1) * 9,
+      stats:  { Pts_Medio: (forcas[club ?? ''] ?? 0.1) * 9 },
       pct3:   33,
     };
   }).sort((a, b) => b.ptsMed - a.ptsMed);

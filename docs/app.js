@@ -986,7 +986,7 @@ function _renderCalLista() {
 
   const todos = _jogosComFase().filter(j => {
     if (_calGrupos.size > 0 && j.fase === 'grupos' && !_calGrupos.has(j.Grupo)) return false;
-    if (_calGrupos.size > 0 && j.fase === 'mata') return false; // mata-mata não tem grupo
+    // mata-mata sempre visível — filtro de grupo aplica-se apenas à fase de grupos
     if (_calCidades.size > 0 && !_calCidades.has(j.Local)) return false;
     if (q) {
       const t1 = _nomeSel(j.Time1).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
@@ -1445,18 +1445,6 @@ function mudarSubAba(subtab, btn) {
 // CLASSIFICADOS PROVÁVEIS
 // ══════════════════════════════════════════════════════════════════════════════
 
-// Mapa de vagas de terceiro: qual vaga aceita quais grupos
-const VAGAS_TERCEIROS = {
-  'SF1':  'ABCDF',
-  'SF2':  'CDFGH',
-  'SF7':  'BEFIJ',
-  'SF8':  'AEHIJ',
-  'SF11': 'CEFHI',
-  'SF12': 'EHIJK',
-  'SF15': 'EFGIJ',
-  'SF16': 'DEIJL',
-};
-
 function renderClassificados() {
   const sim = DADOS.simulacao;
   const el  = document.getElementById('simClassificados');
@@ -1488,7 +1476,7 @@ function renderClassificados() {
     const p3 = Object.entries(r.stats_times)
       .filter(([t]) => t !== p1[0] && t !== p2[0]).sort((a,b) => b[1].P3 - a[1].P3)[0];
     if (!p3) return null;
-    return { grupo: r.grupo, time: p3[0], stats: p3[1], pct3: p3[1].P3, ptsMed: p3[1].Pts_Medio };
+    return { grupo: r.grupo, time: p3[0], stats: p3[1], pct3: p3[1].P3, ptsMed: p3[1].Pts_Medio_3lugar ?? p3[1].Pts_Medio };
   }).filter(Boolean);
   const top8Terceiros = [...terceirosProvaveisTop].sort((a,b) => b.ptsMed - a.ptsMed).slice(0,8);
 
@@ -1513,7 +1501,7 @@ function renderClassificados() {
       <div class="classif-section">
         <div class="classif-title">
           🥉 Top 8 Prováveis Terceiros Colocados
-          <span class="classif-sub">dos grupos simulados — ordenado por pontos médios (critério FIFA)</span>
+          <span class="classif-sub">dos grupos simulados — ordenado por pts médios quando 3º colocado (proxy)</span>
         </div>
         <div class="classif-grid classif-grid-3">
           ${top8Terceiros.map((c, i) => _htmlClassifCard3(c, i + 1)).join('')}
@@ -1555,7 +1543,7 @@ function _htmlClassifCard3(c, rank) {
     : `<span style="font-size:28px">${flagEmoji(s?.iso2)}</span>`;
 
   // Quais vagas este grupo pode preencher
-  const vagasCompativeis = Object.entries(VAGAS_TERCEIROS)
+  const vagasCompativeis = Object.entries(ELEGIBILIDADE_3)
     .filter(([, grupos]) => grupos.includes(c.grupo))
     .map(([vaga]) => vaga);
 

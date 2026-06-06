@@ -12,9 +12,7 @@ Esse projeto nasceu de uma vontade de aprender na prática. Queria entender como
 
 Não tenho formação em desenvolvimento web. Fui aprendendo conforme a necessidade: Python para os dados, HTML/CSS/JS para o dashboard, GitHub Pages para publicar. Em boa parte do caminho contei com a ajuda do Claude Code, que me auxiliou tanto na estrutura do código quanto na resolução de problemas que eu não sabia nem como nomear.
 
-O resultado é um sistema completo: coleta dados reais do Transfermarkt e do site da FIFA, aplica um modelo de força baseado em ranking e histórico recente, simula a fase de grupos com Monte Carlo (500k iterações), e publica tudo em um dashboard interativo com 6 abas, filtros avançados e simulador manual do mata-mata.
-
-O projeto está **finalizado** na sua forma principal. O próximo passo é o **acompanhamento em tempo real** — descrito na seção abaixo.
+O resultado é um sistema completo: coleta dados reais do Transfermarkt e do site da FIFA, aplica um modelo de força baseado em ranking e histórico recente, simula a fase de grupos com Monte Carlo (100k iterações), e publica tudo em um dashboard interativo com 7 abas. Com a Copa em andamento, a aba **Resultados Reais** permite registrar os placares e acompanhar quanto o modelo acertou.
 
 ---
 
@@ -45,9 +43,11 @@ copa_2026/
 ├── docs/                                # GitHub Pages
 │   ├── dashboard.html                   # frontend principal
 │   ├── style.css
-│   ├── app.js                           # lógica do dashboard
+│   ├── app.js                           # lógica principal do dashboard
 │   ├── mc.js                            # "Meu Cenário": simulação manual do mata-mata
+│   ├── res.js                           # aba Resultados Reais (placares + comparação)
 │   ├── dados.js                         # gerado por gerar_html.py (~500 KB)
+│   ├── resultados_reais.js              # store de placares reais (preenchido via UI)
 │   └── assets/                          # bandeiras e logos locais (300+ SVG/PNG)
 │
 ├── notebooks/
@@ -75,7 +75,7 @@ O arquivo `Dados_Selecoes.xlsx` deve estar em `data/raw/` com as abas:
 |---|---|
 | `Selecoes` | 48 seleções, grupos A–L, id Transfermarkt, ranking FIFA |
 | `Ranking_FIFA` | Ranking e pontuação FIFA de cada seleção |
-| `Jogos_Grupos` | Calendário completo da fase de grupos (64 jogos) |
+| `Jogos_Grupos` | Calendário completo da fase de grupos (72 jogos) |
 | `Jogos_MataMata` | Calendário do mata-mata com códigos de classificação |
 | `Info_Selecoes` | Títulos, participações e confederação de cada seleção |
 
@@ -142,41 +142,52 @@ O scraper tem retry automático com backoff exponencial (3 tentativas, 5–20s d
 Simula a fase de grupos com um modelo de força combinando dois sinais:
 
 - **60%** — Ranking FIFA normalizado (posição atual no ranking mundial)
-- **40%** — Pontos/jogo histórico ponderado por ano (mais recente = maior peso)
+- **40%** — Pontos/jogo histórico com decaimento exponencial temporal (λ = 0,3)
 
 **Cálculo de força (0–1):**
 ```
 forca = 0.6 × ranking_norm + 0.4 × ppj_norm
 
 ranking_norm = 1 - (ranking_fifa - 1) / 209
-ppj_norm     = min(pontos_por_jogo_exponencialmente_ponderado / 3, 1.0)
+ppj_norm     = min(média_ponderada_por_exp(-λ × Δano) / 3, 1.0)
 ```
+
+O decaimento com λ = 0,3 faz com que um resultado de 3 anos atrás tenha peso ~40% menor que um resultado recente. Isso evita que times com histórico antigo forte sejam superestimados caso estejam em declínio.
 
 **Probabilidades de resultado:**
 ```
-fa = forca_a ^ 3   # expoente 3 amplifica diferenças de nível
-fb = forca_b ^ 3
+fa = (forca_a × home_factor_a) ^ 3   # expoente 3 amplifica diferenças de nível
+fb = (forca_b × home_factor_b) ^ 3
 ratio    = fa / (fa + fb)
-diff     = |ratio - 0.5| × 2   # 0 = equilíbrio, 1 = desequilíbrio máximo
+diff     = |ratio - 0.5| × 2
 
 p_empate    = max(0.27 × exp(-2.5 × diff), 0.04)
 p_vitoria_a = (1 - p_empate) × ratio
 p_vitoria_b = (1 - p_empate) × (1 - ratio)
 ```
 
-Exemplos:
-- Argentina × Jordânia: **69% / 8% / 23%**
-- Brasil × Marrocos: **35% / 18% / 47%**
-- Times iguais: **36% / 27% / 36%**
+**Vantagem de sede (hosts da Copa 2026):**
 
-A cada simulação, o grupo é resolvido do zero (6 jogos), com classificação por pontos e ranking FIFA como tiebreaker. Rodando 500k vezes, obtemos distribuições estáveis de probabilidade de classificação.
+| Seleção | Fator |
+|---|---|
+| México | × 1,12 |
+| Estados Unidos | × 1,06 |
+| Canadá | × 1,05 |
+
+**Classificação e desempate:**
+
+Ao final de cada grupo simulado, os times são classificados por: pontos → ranking FIFA → ruído estocástico (evita desempates determinísticos que distorceriam a distribuição em 100k iterações).
+
+**Critério de avanço:**
+- Os 2 primeiros de cada grupo classificam diretamente (24 vagas).
+- Os 12 terceiros colocados competem por 8 vagas adicionais. O modelo aproxima isso como `P(3º colocado classifica) ≈ P(3º) × 8/12`.
 
 ```bash
-# Todos os grupos com 500k iterações
-python src/simulation.py --n 500000
+# Todos os grupos com 100k iterações
+python src/simulation.py --n 100000
 
 # Grupos específicos
-python src/simulation.py --n 500000 --grupos C E G H J L
+python src/simulation.py --n 100000 --grupos C E G H J L
 
 # Um único grupo
 python src/simulation.py --n 100000 --grupos H
@@ -192,15 +203,27 @@ python src/simulation.py --n 100000 --grupos H
 
 ---
 
-## Dashboard
+## Como atualizar os dados e publicar
 
-O dashboard é uma aplicação HTML/CSS/JS estática com os dados embutidos em `dados.js`. Para atualizar após nova simulação ou novos dados:
+Após rodar nova simulação ou atualizar o Excel:
 
 ```bash
+# 1. Regenera docs/dados.js com os dados mais recentes
 python gerar_html.py
+
+# 2. Publica no GitHub Pages
+git add docs/dados.js
+git commit -m "data: atualiza simulação YYYY-MM-DD"
+git push origin main
 ```
 
-Isso gera `docs/dados.js` (~500 KB) consolidando Excel + CSVs + JSON. O dashboard é servido via **GitHub Pages** sem nenhum servidor backend.
+O GitHub Pages serve o conteúdo de `docs/` diretamente. Qualquer push atualiza o site em poucos minutos.
+
+---
+
+## Dashboard
+
+O dashboard é uma aplicação HTML/CSS/JS estática com os dados embutidos em `dados.js`, servida via **GitHub Pages** sem nenhum servidor backend.
 
 ### Abas disponíveis
 
@@ -208,10 +231,33 @@ Isso gera `docs/dados.js` (~500 KB) consolidando Excel + CSVs + JSON. O dashboar
 |---|---|
 | **Seleções** | Perfil completo: bandeira, ranking FIFA, títulos, participações, histórico anual de desempenho, confrontos diretos (H2H) |
 | **Head to Head** | Confrontos ampliados com cards V/E/D contra todos os oponentes históricos |
-| **Calendário** | Todos os 64 jogos com filtros por grupo, cidade e seleção |
-| **Simulação** | Resultados Monte Carlo por grupo: probabilidade de 1º/2º/3º/4º lugar, pontos esperados, prováveis confrontos do mata-mata |
-| **Ranking FIFA** | Tabela completa com busca, filtro por confederação e ordenação por coluna |
+| **Calendário** | Todos os 72 jogos da fase de grupos + mata-mata, com filtros por grupo, cidade e seleção |
+| **Simulação** | Resultados Monte Carlo por grupo: probabilidade de 1º/2º/3º/4º lugar, pontos esperados, prováveis classificados |
+| **Ranking FIFA** | Tabela completa das 48 seleções com busca, filtro por confederação e ordenação por coluna |
 | **Meu Cenário** | Simulador manual do mata-mata: você define os classificados e o modelo simula os confrontos |
+| **Resultados Reais** | Registro de placares reais, tabela real vs simulação e acertos do modelo (veja abaixo) |
+
+---
+
+## Resultados Reais
+
+A aba **Resultados Reais** foi adicionada com a Copa já em andamento. Ela permite:
+
+- **Registrar placares** — insira o resultado de cada jogo da fase de grupos conforme são encerrados
+- **Tabela real vs simulação** — para cada grupo com pelo menos um resultado confirmado, compara a tabela real (pts, saldo, gols) com a classificação prevista pelo Monte Carlo
+- **Acertos do modelo** — para grupos com todos os 6 jogos confirmados, mostra se o modelo acertou o 1º e o 2º colocado
+
+Os dados são salvos em **localStorage** no browser — não há backend, não há servidor. Cada usuário mantém seu próprio histórico de placares localmente.
+
+---
+
+## Limitações conhecidas
+
+- **Gols não são simulados**: o modelo decide apenas V/E/D. Desempate por saldo de gols e gols pró não são simulados, o que torna os critérios de classificação dentro do grupo uma aproximação.
+- **Terceiros colocados**: a qualificação dos 8 melhores terceiros é aproximada como probabilidade uniforme (8/12 ≈ 66,7%), sem simular a tabela comparativa entre grupos.
+- **Fase eliminatória fora do escopo**: a aba Resultados Reais cobre apenas a fase de grupos. O mata-mata real não é rastreado automaticamente.
+- **Dados pré-sorteio**: o modelo foi calibrado antes da Copa com dados históricos e ranking FIFA. Não incorpora informações pós-sorteio como escalações, lesões ou forma recente durante o torneio.
+- **Vantagem de sede**: os fatores (×1.12, ×1.06, ×1.05) são estimativas manuais, não calibradas estatisticamente.
 
 ---
 
@@ -226,22 +272,6 @@ python src/plots.py          # gera e salva todos os gráficos
 python src/scraping.py       # teste de scraping (1 seleção)
 python src/simulation.py     # simulação com output no terminal
 ```
-
----
-
-## Próximo passo: Acompanhamento em tempo real
-
-Após o início da Copa, o plano é adicionar uma funcionalidade de **acompanhamento ao vivo** — registrar os placares reais conforme os jogos são encerrados e comparar com o que o modelo previu.
-
-A ideia envolve:
-
-- **Entrada de resultados reais**: registrar o placar de cada jogo encerrado
-- **Comparação com o modelo**: para cada jogo com resultado conhecido, mostrar se o modelo acertou o vencedor (ou empate), e quão confiante estava (ex: "modelo previa 68% de chance para o Brasil — acertou")
-- **Classificação atualizada**: tabela de classificação real de cada grupo, lado a lado com a classificação mais provável pelo modelo
-- **Acurácia acumulada**: percentual de acertos do modelo ao longo da fase de grupos
-- **Atualização do mata-mata**: conforme as equipes classificadas vão sendo conhecidas, atualizar as previsões das fases seguintes com os confrontos reais
-
-Isso vai permitir avaliar o desempenho do modelo na prática — não apenas "o que prevemos antes", mas "o quanto acertamos de fato".
 
 ---
 

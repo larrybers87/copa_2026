@@ -48,6 +48,7 @@ from config import (
 
 PESO_RANKING = 0.60
 PESO_WINRATE = 0.40
+DECAY_LAMBDA = 0.30   # decaimento exponencial do histórico anual; λ=0.3 → peso ano-2: 55%, ano-4: 30%
 N_DEFAULT = 100_000
 
 GRUPOS_FECHADOS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
@@ -114,7 +115,7 @@ def calcular_forcas(selecoes_df, ranking_df, annual_df):
 
         def pts_por_jogo_pond(g):
             g = g.copy()
-            g["peso"] = np.exp(-0.5 * (ano_max - g["Year"]))
+            g["peso"] = np.exp(-DECAY_LAMBDA * (ano_max - g["Year"]))
             g["pts"] = g["Wins"] * 3 + g["Draws"].fillna(0)
             total_jogos = (g["Matches"] * g["peso"]).sum()
             total_pts = (g["pts"] * g["peso"]).sum()
@@ -153,13 +154,22 @@ def calcular_forcas(selecoes_df, ranking_df, annual_df):
 # Isso torna jogos desequilibrados muito mais decididos.
 FORCA_EXP = 3.0
 
+# Multiplicador de força para seleções que jogam em casa na Copa 2026.
+# Chaves em português, pois é o idioma dos Time1/Time2 na planilha Jogos_Grupos.
+HOME_FACTOR = {
+    "México":         1.12,
+    "Estados Unidos": 1.06,
+    "Canadá":         1.05,
+}
 
-def prob_jogo(forca_a, forca_b):
+
+def prob_jogo(forca_a, forca_b, home_factor_a=1.0, home_factor_b=1.0):
     """
     Retorna (p_vitoria_a, p_empate, p_vitoria_b).
 
     Aplica FORCA_EXP antes do cálculo para amplificar diferenças de nível.
     Depois usa decaimento exponencial no empate.
+    home_factor_* multiplica a força antes da exponenciação (padrão 1.0 = sem ajuste).
 
     Exemplos com exp=3:
     - Argentina x Jordânia:  69% / 8% / 23%
@@ -167,9 +177,9 @@ def prob_jogo(forca_a, forca_b):
     - Brasil x Marrocos:     35% / 18% / 47%
     - Times iguais:          36% / 27% / 36%
     """
-    # Amplifica diferenças de força
-    fa = forca_a**FORCA_EXP
-    fb = forca_b**FORCA_EXP
+    # Amplifica diferenças de força (com ajuste de mandante se aplicável)
+    fa = (forca_a * home_factor_a) ** FORCA_EXP
+    fb = (forca_b * home_factor_b) ** FORCA_EXP
 
     total = fa + fb
     ratio = fa / total  # [0,1], >0.5 favorece A
@@ -185,13 +195,15 @@ def prob_jogo(forca_a, forca_b):
     return p_v, p_e, p_d
 
 
-def classificar_grupo(pts_dict, rankings):
+def classificar_grupo(pts_dict, rankings, rng):
     """
     Ordena os times por pontos, usando ranking FIFA como tiebreaker.
+    rng.random() é o terceiro critério para evitar determinismo total em empates de pontos+ranking.
     Retorna lista ordenada [1º, 2º, 3º, 4º].
     """
     times = list(pts_dict.keys())
-    times.sort(key=lambda t: (-pts_dict[t], rankings.get(t, 999)))
+    noise = {t: rng.random() for t in times}
+    times.sort(key=lambda t: (-pts_dict[t], rankings.get(t, 999), noise[t]))
     return times
 
 
@@ -210,6 +222,7 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
     # Contadores
     posicoes = {t: defaultdict(int) for t in times}  # {time: {pos: count}}
     pontos_acc = {t: [] for t in times}
+    pontos_por_pos = {t: defaultdict(list) for t in times}  # {time: {pos: [pts]}}
 
     # Contadores de resultado por jogo
     jogos_list = list(jogos_grupo.iterrows())
@@ -228,7 +241,9 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
             f1 = forcas.get(t1, 0.5)
             f2 = forcas.get(t2, 0.5)
 
-            p_v, p_e, p_d = prob_jogo(f1, f2)
+            hf1 = HOME_FACTOR.get(t1, 1.0)
+            hf2 = HOME_FACTOR.get(t2, 1.0)
+            p_v, p_e, p_d = prob_jogo(f1, f2, hf1, hf2)
             resultado = rng.choice(["V", "E", "D"], p=[p_v, p_e, p_d])
             res_sim[(t1, t2)] = resultado
 
@@ -241,9 +256,10 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
                 pts[t2] += PONTOS_VITORIA
 
         # Registra posições
-        ordem = classificar_grupo(pts, rankings)
+        ordem = classificar_grupo(pts, rankings, rng)
         for pos, time in enumerate(ordem, 1):
             posicoes[time][pos] += 1
+            pontos_por_pos[time][pos].append(pts[time])
 
         # Registra pontos
         for t in times:
@@ -258,6 +274,7 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
     stats_times = {}
     for t in times:
         pts_arr = np.array(pontos_acc[t])
+        pts3 = pontos_por_pos[t][3]
         stats_times[t] = {
             "P1": round(posicoes[t][1] / n_sim * 100, 2),
             "P2": round(posicoes[t][2] / n_sim * 100, 2),
@@ -268,7 +285,10 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
             "Pts_DP": round(float(pts_arr.std()), 2),
             "Pts_Min": int(pts_arr.min()),
             "Pts_Max": int(pts_arr.max()),
-            "Classifica": round((posicoes[t][1] + posicoes[t][2]) / n_sim * 100, 2),
+            "Pts_Medio_3lugar": round(float(np.mean(pts3)), 2) if pts3 else 0,
+            "Classifica": round(
+                (posicoes[t][1] + posicoes[t][2] + posicoes[t][3] * (8 / 12)) / n_sim * 100, 2
+            ),
         }
 
     stats_jogos = {}

@@ -6,7 +6,7 @@ const DADOS = {
       "Selecao": "África do Sul",
       "Grupo": "A",
       "Ranking_FIFA": 60,
-      "Total_Pontos": 1429.73,
+      "Total_Pontos": 1428.38,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -21,7 +21,7 @@ const DADOS = {
       "Selecao": "Alemanha",
       "Grupo": "E",
       "Ranking_FIFA": 10,
-      "Total_Pontos": 1730.37,
+      "Total_Pontos": 1731.3,
       "Confederacao": "UEFA",
       "Copas_Titulos": 4,
       "Copas_Participacoes": 21,
@@ -36,7 +36,7 @@ const DADOS = {
       "Selecao": "Arábia Saudita",
       "Grupo": "H",
       "Ranking_FIFA": 61,
-      "Total_Pontos": 1421.43,
+      "Total_Pontos": 1421.54,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -51,7 +51,7 @@ const DADOS = {
       "Selecao": "Argélia",
       "Grupo": "J",
       "Ranking_FIFA": 28,
-      "Total_Pontos": 1564.26,
+      "Total_Pontos": 1571.03,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 5,
@@ -65,7 +65,7 @@ const DADOS = {
       "Club": "Argentina",
       "Selecao": "Argentina",
       "Grupo": "J",
-      "Ranking_FIFA": 3,
+      "Ranking_FIFA": 1,
       "Total_Pontos": 1874.81,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 3,
@@ -81,7 +81,7 @@ const DADOS = {
       "Selecao": "Austrália",
       "Grupo": "D",
       "Ranking_FIFA": 27,
-      "Total_Pontos": 1580.67,
+      "Total_Pontos": 1578.66,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -95,8 +95,8 @@ const DADOS = {
       "Club": "Austria",
       "Selecao": "Áustria",
       "Grupo": "J",
-      "Ranking_FIFA": 24,
-      "Total_Pontos": 1593.45,
+      "Ranking_FIFA": 23,
+      "Total_Pontos": 1597.4,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 8,
@@ -111,7 +111,7 @@ const DADOS = {
       "Selecao": "Bélgica",
       "Grupo": "G",
       "Ranking_FIFA": 9,
-      "Total_Pontos": 1734.71,
+      "Total_Pontos": 1742.24,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 15,
@@ -125,8 +125,8 @@ const DADOS = {
       "Club": "Bosnia and Herzegovina",
       "Selecao": "Bósnia",
       "Grupo": "B",
-      "Ranking_FIFA": 65,
-      "Total_Pontos": 1385.84,
+      "Ranking_FIFA": 64,
+      "Total_Pontos": 1385.77,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -141,7 +141,7 @@ const DADOS = {
       "Selecao": "Brasil",
       "Grupo": "C",
       "Ranking_FIFA": 6,
-      "Total_Pontos": 1761.16,
+      "Total_Pontos": 1762.66,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 5,
       "Copas_Participacoes": 23,
@@ -155,8 +155,8 @@ const DADOS = {
       "Club": "Cabo Verde",
       "Selecao": "Cabo Verde",
       "Grupo": "H",
-      "Ranking_FIFA": 69,
-      "Total_Pontos": 1366.13,
+      "Ranking_FIFA": 68,
+      "Total_Pontos": 1369.29,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -171,7 +171,7 @@ const DADOS = {
       "Selecao": "Canadá",
       "Grupo": "B",
       "Ranking_FIFA": 30,
-      "Total_Pontos": 1556.48,
+      "Total_Pontos": 1559.48,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
@@ -186,7 +186,7 @@ const DADOS = {
       "Selecao": "Catar",
       "Grupo": "B",
       "Ranking_FIFA": 55,
-      "Total_Pontos": 1454.96,
+      "Total_Pontos": 1452.37,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -201,7 +201,7 @@ const DADOS = {
       "Selecao": "Colômbia",
       "Grupo": "K",
       "Ranking_FIFA": 13,
-      "Total_Pontos": 1693.09,
+      "Total_Pontos": 1695.99,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -216,7 +216,7 @@ const DADOS = {
       "Selecao": "Coreia do Sul",
       "Grupo": "A",
       "Ranking_FIFA": 25,
-      "Total_Pontos": 1588.66,
+      "Total_Pontos": 1591.63,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
@@ -230,8 +230,8 @@ const DADOS = {
       "Club": "Côte d'Ivoire",
       "Selecao": "Costa do Marfim",
       "Grupo": "E",
-      "Ranking_FIFA": 34,
-      "Total_Pontos": 1532.98,
+      "Ranking_FIFA": 33,
+      "Total_Pontos": 1540.87,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -246,7 +246,7 @@ const DADOS = {
       "Selecao": "Croácia",
       "Grupo": "L",
       "Ranking_FIFA": 11,
-      "Total_Pontos": 1717.07,
+      "Total_Pontos": 1712.24,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -260,8 +260,8 @@ const DADOS = {
       "Club": "Curaçao",
       "Selecao": "Curaçao",
       "Grupo": "E",
-      "Ranking_FIFA": 82,
-      "Total_Pontos": 1294.65,
+      "Ranking_FIFA": 83,
+      "Total_Pontos": 1293.08,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -276,7 +276,7 @@ const DADOS = {
       "Selecao": "Egito",
       "Grupo": "G",
       "Ranking_FIFA": 29,
-      "Total_Pontos": 1563.24,
+      "Total_Pontos": 1565.56,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -290,8 +290,8 @@ const DADOS = {
       "Club": "Ecuador",
       "Selecao": "Equador",
       "Grupo": "E",
-      "Ranking_FIFA": 23,
-      "Total_Pontos": 1594.78,
+      "Ranking_FIFA": 24,
+      "Total_Pontos": 1596.48,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 5,
@@ -306,7 +306,7 @@ const DADOS = {
       "Selecao": "Escócia",
       "Grupo": "C",
       "Ranking_FIFA": 43,
-      "Total_Pontos": 1498.35,
+      "Total_Pontos": 1499.92,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 9,
@@ -321,7 +321,7 @@ const DADOS = {
       "Selecao": "Espanha",
       "Grupo": "H",
       "Ranking_FIFA": 2,
-      "Total_Pontos": 1876.4,
+      "Total_Pontos": 1873.01,
       "Confederacao": "UEFA",
       "Copas_Titulos": 1,
       "Copas_Participacoes": 17,
@@ -336,7 +336,7 @@ const DADOS = {
       "Selecao": "Estados Unidos",
       "Grupo": "D",
       "Ranking_FIFA": 16,
-      "Total_Pontos": 1673.13,
+      "Total_Pontos": 1675.7,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
@@ -350,8 +350,8 @@ const DADOS = {
       "Club": "France",
       "Selecao": "França",
       "Grupo": "I",
-      "Ranking_FIFA": 1,
-      "Total_Pontos": 1877.32,
+      "Ranking_FIFA": 3,
+      "Total_Pontos": 1869.43,
       "Confederacao": "UEFA",
       "Copas_Titulos": 2,
       "Copas_Participacoes": 17,
@@ -365,8 +365,8 @@ const DADOS = {
       "Club": "Ghana",
       "Selecao": "Gana",
       "Grupo": "L",
-      "Ranking_FIFA": 74,
-      "Total_Pontos": 1346.31,
+      "Ranking_FIFA": 73,
+      "Total_Pontos": 1346.88,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 5,
@@ -380,8 +380,8 @@ const DADOS = {
       "Club": "Haiti",
       "Selecao": "Haiti",
       "Grupo": "C",
-      "Ranking_FIFA": 83,
-      "Total_Pontos": 1291.71,
+      "Ranking_FIFA": 82,
+      "Total_Pontos": 1293.1,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -395,8 +395,8 @@ const DADOS = {
       "Club": "Netherlands",
       "Selecao": "Holanda",
       "Grupo": "F",
-      "Ranking_FIFA": 7,
-      "Total_Pontos": 1757.87,
+      "Ranking_FIFA": 8,
+      "Total_Pontos": 1751.1,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
@@ -425,8 +425,8 @@ const DADOS = {
       "Club": "IR Iran",
       "Selecao": "Irã",
       "Grupo": "G",
-      "Ranking_FIFA": 21,
-      "Total_Pontos": 1615.3,
+      "Ranking_FIFA": 20,
+      "Total_Pontos": 1619.58,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -440,8 +440,8 @@ const DADOS = {
       "Club": "Iraq",
       "Selecao": "Iraque",
       "Grupo": "I",
-      "Ranking_FIFA": 57,
-      "Total_Pontos": 1447.14,
+      "Ranking_FIFA": 56,
+      "Total_Pontos": 1451.15,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -456,7 +456,7 @@ const DADOS = {
       "Selecao": "Japão",
       "Grupo": "F",
       "Ranking_FIFA": 18,
-      "Total_Pontos": 1660.43,
+      "Total_Pontos": 1661.58,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 8,
@@ -471,7 +471,7 @@ const DADOS = {
       "Selecao": "Jordânia",
       "Grupo": "J",
       "Ranking_FIFA": 63,
-      "Total_Pontos": 1391.45,
+      "Total_Pontos": 1390.1,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -485,8 +485,8 @@ const DADOS = {
       "Club": "Morocco",
       "Selecao": "Marrocos",
       "Grupo": "C",
-      "Ranking_FIFA": 8,
-      "Total_Pontos": 1755.87,
+      "Ranking_FIFA": 7,
+      "Total_Pontos": 1756.94,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -500,8 +500,8 @@ const DADOS = {
       "Club": "Mexico",
       "Selecao": "México",
       "Grupo": "A",
-      "Ranking_FIFA": 15,
-      "Total_Pontos": 1681.03,
+      "Ranking_FIFA": 14,
+      "Total_Pontos": 1687.48,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 18,
@@ -516,7 +516,7 @@ const DADOS = {
       "Selecao": "Noruega",
       "Grupo": "I",
       "Ranking_FIFA": 31,
-      "Total_Pontos": 1550.94,
+      "Total_Pontos": 1555.6,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -531,7 +531,7 @@ const DADOS = {
       "Selecao": "Nova Zelândia",
       "Grupo": "G",
       "Ranking_FIFA": 85,
-      "Total_Pontos": 1281.57,
+      "Total_Pontos": 1276.66,
       "Confederacao": "OFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
@@ -545,8 +545,8 @@ const DADOS = {
       "Club": "Panama",
       "Selecao": "Panamá",
       "Grupo": "L",
-      "Ranking_FIFA": 33,
-      "Total_Pontos": 1540.64,
+      "Ranking_FIFA": 34,
+      "Total_Pontos": 1540.6,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -561,7 +561,7 @@ const DADOS = {
       "Selecao": "Paraguai",
       "Grupo": "D",
       "Ranking_FIFA": 40,
-      "Total_Pontos": 1503.5,
+      "Total_Pontos": 1505.35,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 9,
@@ -590,8 +590,8 @@ const DADOS = {
       "Club": "Congo DR",
       "Selecao": "RD Congo",
       "Grupo": "K",
-      "Ranking_FIFA": 46,
-      "Total_Pontos": 1478.35,
+      "Ranking_FIFA": 45,
+      "Total_Pontos": 1479.68,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -605,8 +605,8 @@ const DADOS = {
       "Club": "Czechia",
       "Selecao": "República Theca",
       "Grupo": "A",
-      "Ranking_FIFA": 41,
-      "Total_Pontos": 1501.38,
+      "Ranking_FIFA": 39,
+      "Total_Pontos": 1505.74,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 10,
@@ -620,8 +620,8 @@ const DADOS = {
       "Club": "Senegal",
       "Selecao": "Senegal",
       "Grupo": "I",
-      "Ranking_FIFA": 14,
-      "Total_Pontos": 1688.99,
+      "Ranking_FIFA": 15,
+      "Total_Pontos": 1686.41,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -636,7 +636,7 @@ const DADOS = {
       "Selecao": "Suécia",
       "Grupo": "F",
       "Ranking_FIFA": 38,
-      "Total_Pontos": 1514.77,
+      "Total_Pontos": 1509.79,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 13,
@@ -651,7 +651,7 @@ const DADOS = {
       "Selecao": "Suíça",
       "Grupo": "B",
       "Ranking_FIFA": 19,
-      "Total_Pontos": 1649.4,
+      "Total_Pontos": 1650.75,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 13,
@@ -665,8 +665,8 @@ const DADOS = {
       "Club": "Tunisia",
       "Selecao": "Tunísia",
       "Grupo": "F",
-      "Ranking_FIFA": 44,
-      "Total_Pontos": 1483.05,
+      "Ranking_FIFA": 46,
+      "Total_Pontos": 1476.41,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -681,7 +681,7 @@ const DADOS = {
       "Selecao": "Turquia",
       "Grupo": "D",
       "Ranking_FIFA": 22,
-      "Total_Pontos": 1599.04,
+      "Total_Pontos": 1601.99,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
@@ -711,7 +711,7 @@ const DADOS = {
       "Selecao": "Uzbequistão",
       "Grupo": "K",
       "Ranking_FIFA": 50,
-      "Total_Pontos": 1465.34,
+      "Total_Pontos": 1461.21,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -752,7 +752,7 @@ const DADOS = {
       "Time2": "Paraguai"
     },
     {
-      "DataHora": "2026-06-13T01:00",
+      "DataHora": "2026-06-14T01:00",
       "Local": "Vancouver Place",
       "Grupo": "D",
       "Time1": "Austrália",
@@ -893,7 +893,7 @@ const DADOS = {
     },
     {
       "DataHora": "2026-06-18T22:00",
-      "Local": "Atlanta",
+      "Local": "Akron",
       "Grupo": "A",
       "Time1": "México",
       "Time2": "Coreia do Sul"
@@ -914,13 +914,13 @@ const DADOS = {
     },
     {
       "DataHora": "2026-06-18T13:00",
-      "Local": "Akron",
+      "Local": "Atlanta",
       "Grupo": "A",
       "Time1": "República Theca",
       "Time2": "África do Sul"
     },
     {
-      "DataHora": "2026-06-19T01:00",
+      "DataHora": "2026-06-20T01:00",
       "Local": "Santa Clara",
       "Grupo": "D",
       "Time1": "Turquia",
@@ -1458,9 +1458,9 @@ const DADOS = {
     {
       "Team": "South Africa",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 0,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 2
     },
     {
@@ -1506,8 +1506,8 @@ const DADOS = {
     {
       "Team": "Germany",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 2,
+      "Matches": 3,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 0
     },
@@ -1554,10 +1554,10 @@ const DADOS = {
     {
       "Team": "Saudi Arabia",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 4,
+      "Wins": 1,
       "Draws": 0,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Saudi Arabia",
@@ -1602,16 +1602,16 @@ const DADOS = {
     {
       "Team": "Algeria",
       "Year": 2026,
-      "Matches": 4,
-      "Wins": 2,
+      "Matches": 5,
+      "Wins": 3,
       "Draws": 1,
       "Losses": 1
     },
     {
       "Team": "Algeria",
       "Year": 2025,
-      "Matches": 22,
-      "Wins": 14,
+      "Matches": 23,
+      "Wins": 15,
       "Draws": 5,
       "Losses": 3
     },
@@ -1698,10 +1698,10 @@ const DADOS = {
     {
       "Team": "Australia",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 2,
       "Draws": 0,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Australia",
@@ -1746,8 +1746,8 @@ const DADOS = {
     {
       "Team": "Austria",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 2,
+      "Matches": 3,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 0
     },
@@ -1794,8 +1794,8 @@ const DADOS = {
     {
       "Team": "Belgium",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 3,
       "Draws": 1,
       "Losses": 0
     },
@@ -1842,9 +1842,9 @@ const DADOS = {
     {
       "Team": "Bosnia and Herzegovina",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 2,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -1890,8 +1890,8 @@ const DADOS = {
     {
       "Team": "Brazil",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 1,
+      "Matches": 3,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 1
     },
@@ -1938,8 +1938,8 @@ const DADOS = {
     {
       "Team": "Cabo Verde",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 1,
       "Draws": 1,
       "Losses": 1
     },
@@ -1986,9 +1986,9 @@ const DADOS = {
     {
       "Team": "Canada",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
-      "Draws": 2,
+      "Matches": 5,
+      "Wins": 2,
+      "Draws": 3,
       "Losses": 0
     },
     {
@@ -2033,6 +2033,14 @@ const DADOS = {
     },
     {
       "Team": "Qatar",
+      "Year": 2026,
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Qatar",
       "Year": 2025,
       "Matches": 12,
       "Wins": 3,
@@ -2074,8 +2082,8 @@ const DADOS = {
     {
       "Team": "Colombia",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 1,
       "Draws": 0,
       "Losses": 2
     },
@@ -2122,8 +2130,8 @@ const DADOS = {
     {
       "Team": "Korea Republic",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 2
     },
@@ -2170,8 +2178,8 @@ const DADOS = {
     {
       "Team": "Côte d'Ivoire",
       "Year": 2026,
-      "Matches": 4,
-      "Wins": 3,
+      "Matches": 5,
+      "Wins": 4,
       "Draws": 0,
       "Losses": 1
     },
@@ -2218,10 +2226,10 @@ const DADOS = {
     {
       "Team": "Croatia",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Croatia",
@@ -2266,10 +2274,10 @@ const DADOS = {
     {
       "Team": "Curaçao",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
       "Draws": 0,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Curaçao",
@@ -2314,8 +2322,8 @@ const DADOS = {
     {
       "Team": "Egypt",
       "Year": 2026,
-      "Matches": 6,
-      "Wins": 3,
+      "Matches": 7,
+      "Wins": 4,
       "Draws": 1,
       "Losses": 2
     },
@@ -2362,8 +2370,8 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 1,
       "Draws": 2,
       "Losses": 0
     },
@@ -2410,8 +2418,8 @@ const DADOS = {
     {
       "Team": "Scotland",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 1,
       "Draws": 0,
       "Losses": 2
     },
@@ -2458,9 +2466,9 @@ const DADOS = {
     {
       "Team": "Spain",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 1,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -2506,8 +2514,8 @@ const DADOS = {
     {
       "Team": "USA",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 1,
       "Draws": 0,
       "Losses": 2
     },
@@ -2554,10 +2562,10 @@ const DADOS = {
     {
       "Team": "France",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 2,
       "Draws": 0,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "France",
@@ -2602,10 +2610,10 @@ const DADOS = {
     {
       "Team": "Ghana",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 4,
       "Wins": 0,
-      "Draws": 0,
-      "Losses": 2
+      "Draws": 1,
+      "Losses": 3
     },
     {
       "Team": "Ghana",
@@ -2650,10 +2658,10 @@ const DADOS = {
     {
       "Team": "Haiti",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 4,
+      "Wins": 1,
       "Draws": 1,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Haiti",
@@ -2698,10 +2706,10 @@ const DADOS = {
     {
       "Team": "Netherlands",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 1,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Netherlands",
@@ -2794,8 +2802,8 @@ const DADOS = {
     {
       "Team": "IR Iran",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 1
     },
@@ -2842,9 +2850,9 @@ const DADOS = {
     {
       "Team": "Iraq",
       "Year": 2026,
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
+      "Matches": 3,
+      "Wins": 2,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -2890,8 +2898,8 @@ const DADOS = {
     {
       "Team": "Japan",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 2,
+      "Matches": 3,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 0
     },
@@ -2938,10 +2946,10 @@ const DADOS = {
     {
       "Team": "Jordan",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
       "Draws": 2,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Jordan",
@@ -2986,8 +2994,8 @@ const DADOS = {
     {
       "Team": "Morocco",
       "Year": 2026,
-      "Matches": 6,
-      "Wins": 5,
+      "Matches": 8,
+      "Wins": 7,
       "Draws": 1,
       "Losses": 0
     },
@@ -3034,8 +3042,8 @@ const DADOS = {
     {
       "Team": "Mexico",
       "Year": 2026,
-      "Matches": 5,
-      "Wins": 3,
+      "Matches": 8,
+      "Wins": 6,
       "Draws": 2,
       "Losses": 0
     },
@@ -3082,8 +3090,8 @@ const DADOS = {
     {
       "Team": "Norway",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 1,
       "Draws": 1,
       "Losses": 1
     },
@@ -3130,10 +3138,10 @@ const DADOS = {
     {
       "Team": "New Zealand",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "New Zealand",
@@ -3178,10 +3186,10 @@ const DADOS = {
     {
       "Team": "Panama",
       "Year": 2026,
-      "Matches": 4,
-      "Wins": 1,
+      "Matches": 6,
+      "Wins": 2,
       "Draws": 2,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Panama",
@@ -3226,8 +3234,8 @@ const DADOS = {
     {
       "Team": "Paraguay",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 1,
+      "Matches": 3,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 1
     },
@@ -3322,9 +3330,9 @@ const DADOS = {
     {
       "Team": "Congo DR",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -3370,8 +3378,8 @@ const DADOS = {
     {
       "Team": "Czechia",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 2,
+      "Matches": 4,
+      "Wins": 4,
       "Draws": 0,
       "Losses": 0
     },
@@ -3418,10 +3426,10 @@ const DADOS = {
     {
       "Team": "Senegal",
       "Year": 2026,
-      "Matches": 6,
+      "Matches": 7,
       "Wins": 5,
       "Draws": 0,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Senegal",
@@ -3466,10 +3474,10 @@ const DADOS = {
     {
       "Team": "Sweden",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 4,
       "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
+      "Draws": 1,
+      "Losses": 1
     },
     {
       "Team": "Sweden",
@@ -3482,8 +3490,8 @@ const DADOS = {
     {
       "Team": "Sweden",
       "Year": 2024,
-      "Matches": 10,
-      "Wins": 6,
+      "Matches": 11,
+      "Wins": 7,
       "Draws": 1,
       "Losses": 3
     },
@@ -3514,8 +3522,8 @@ const DADOS = {
     {
       "Team": "Switzerland",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 3,
+      "Wins": 1,
       "Draws": 1,
       "Losses": 1
     },
@@ -3562,10 +3570,10 @@ const DADOS = {
     {
       "Team": "Tunisia",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 5,
       "Wins": 1,
       "Draws": 1,
-      "Losses": 1
+      "Losses": 3
     },
     {
       "Team": "Tunisia",
@@ -3610,8 +3618,8 @@ const DADOS = {
     {
       "Team": "Türkiye",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 2,
+      "Matches": 3,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 0
     },
@@ -3706,10 +3714,10 @@ const DADOS = {
     {
       "Team": "Uzbekistan",
       "Year": 2026,
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 2,
       "Draws": 0,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Uzbekistan",
@@ -4539,6 +4547,14 @@ const DADOS = {
     },
     {
       "Team": "South Africa",
+      "Opponent": "Nicaragua",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "South Africa",
       "Opponent": "North Korea",
       "Matches": 1,
       "Wins": 0,
@@ -4579,6 +4595,14 @@ const DADOS = {
     },
     {
       "Team": "Germany",
+      "Opponent": "Finland",
+      "Matches": 24,
+      "Wins": 17,
+      "Draws": 6,
+      "Losses": 1
+    },
+    {
+      "Team": "Germany",
       "Opponent": "Bulgaria",
       "Matches": 21,
       "Wins": 16,
@@ -4592,14 +4616,6 @@ const DADOS = {
       "Wins": 16,
       "Draws": 5,
       "Losses": 8
-    },
-    {
-      "Team": "Germany",
-      "Opponent": "Finland",
-      "Matches": 23,
-      "Wins": 16,
-      "Draws": 6,
-      "Losses": 1
     },
     {
       "Team": "Germany",
@@ -5292,10 +5308,18 @@ const DADOS = {
     {
       "Team": "Saudi Arabia",
       "Opponent": "UAE",
-      "Matches": 22,
-      "Wins": 13,
+      "Matches": 23,
+      "Wins": 14,
       "Draws": 5,
       "Losses": 4
+    },
+    {
+      "Team": "Saudi Arabia",
+      "Opponent": "Kuwait",
+      "Matches": 31,
+      "Wins": 13,
+      "Draws": 8,
+      "Losses": 10
     },
     {
       "Team": "Saudi Arabia",
@@ -5315,19 +5339,19 @@ const DADOS = {
     },
     {
       "Team": "Saudi Arabia",
-      "Opponent": "Kuwait",
-      "Matches": 29,
-      "Wins": 11,
-      "Draws": 8,
-      "Losses": 10
-    },
-    {
-      "Team": "Saudi Arabia",
       "Opponent": "Thailand",
       "Matches": 13,
       "Wins": 11,
       "Draws": 2,
       "Losses": 0
+    },
+    {
+      "Team": "Saudi Arabia",
+      "Opponent": "Oman",
+      "Matches": 17,
+      "Wins": 11,
+      "Draws": 2,
+      "Losses": 4
     },
     {
       "Team": "Saudi Arabia",
@@ -5339,18 +5363,10 @@ const DADOS = {
     },
     {
       "Team": "Saudi Arabia",
-      "Opponent": "Oman",
-      "Matches": 16,
-      "Wins": 10,
-      "Draws": 2,
-      "Losses": 4
-    },
-    {
-      "Team": "Saudi Arabia",
       "Opponent": "Qatar",
-      "Matches": 25,
+      "Matches": 26,
       "Wins": 8,
-      "Draws": 11,
+      "Draws": 12,
       "Losses": 6
     },
     {
@@ -5395,6 +5411,14 @@ const DADOS = {
     },
     {
       "Team": "Saudi Arabia",
+      "Opponent": "South Korea",
+      "Matches": 18,
+      "Wins": 6,
+      "Draws": 5,
+      "Losses": 7
+    },
+    {
+      "Team": "Saudi Arabia",
       "Opponent": "Japan",
       "Matches": 18,
       "Wins": 5,
@@ -5408,14 +5432,6 @@ const DADOS = {
       "Wins": 5,
       "Draws": 1,
       "Losses": 1
-    },
-    {
-      "Team": "Saudi Arabia",
-      "Opponent": "South Korea",
-      "Matches": 17,
-      "Wins": 5,
-      "Draws": 5,
-      "Losses": 7
     },
     {
       "Team": "Saudi Arabia",
@@ -5931,6 +5947,14 @@ const DADOS = {
     },
     {
       "Team": "Saudi Arabia",
+      "Opponent": "Puerto Rico",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Saudi Arabia",
       "Opponent": "Germany",
       "Matches": 3,
       "Wins": 0,
@@ -6220,10 +6244,10 @@ const DADOS = {
     {
       "Team": "Saudi Arabia",
       "Opponent": "Ecuador",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Saudi Arabia",
@@ -6622,6 +6646,14 @@ const DADOS = {
       "Opponent": "Djibouti",
       "Matches": 2,
       "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Algeria",
+      "Opponent": "Netherlands",
+      "Matches": 1,
+      "Wins": 1,
       "Draws": 0,
       "Losses": 0
     },
@@ -7092,8 +7124,8 @@ const DADOS = {
     {
       "Team": "Argentina",
       "Opponent": "Chile",
-      "Matches": 69,
-      "Wins": 47,
+      "Matches": 70,
+      "Wins": 48,
       "Draws": 19,
       "Losses": 3
     },
@@ -8124,10 +8156,10 @@ const DADOS = {
     {
       "Team": "Australia",
       "Opponent": "Mexico",
-      "Matches": 6,
+      "Matches": 7,
       "Wins": 2,
       "Draws": 3,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Australia",
@@ -9027,6 +9059,14 @@ const DADOS = {
     },
     {
       "Team": "Austria",
+      "Opponent": "Tunisia",
+      "Matches": 3,
+      "Wins": 2,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Austria",
       "Opponent": "Ukraine",
       "Matches": 3,
       "Wins": 2,
@@ -9116,14 +9156,6 @@ const DADOS = {
     {
       "Team": "Austria",
       "Opponent": "Georgia",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Austria",
-      "Opponent": "Tunisia",
       "Matches": 2,
       "Wins": 1,
       "Draws": 1,
@@ -9507,6 +9539,14 @@ const DADOS = {
     },
     {
       "Team": "Belgium",
+      "Opponent": "Croatia",
+      "Matches": 10,
+      "Wins": 4,
+      "Draws": 3,
+      "Losses": 3
+    },
+    {
+      "Team": "Belgium",
       "Opponent": "Andorra",
       "Matches": 4,
       "Wins": 4,
@@ -9547,19 +9587,19 @@ const DADOS = {
     },
     {
       "Team": "Belgium",
-      "Opponent": "Croatia",
-      "Matches": 9,
-      "Wins": 3,
-      "Draws": 3,
-      "Losses": 3
-    },
-    {
-      "Team": "Belgium",
       "Opponent": "South Korea",
       "Matches": 4,
       "Wins": 3,
       "Draws": 1,
       "Losses": 0
+    },
+    {
+      "Team": "Belgium",
+      "Opponent": "Tunisia",
+      "Matches": 5,
+      "Wins": 3,
+      "Draws": 1,
+      "Losses": 1
     },
     {
       "Team": "Belgium",
@@ -9648,14 +9688,6 @@ const DADOS = {
       "Wins": 2,
       "Draws": 1,
       "Losses": 0
-    },
-    {
-      "Team": "Belgium",
-      "Opponent": "Tunisia",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 1,
-      "Losses": 1
     },
     {
       "Team": "Belgium",
@@ -10235,10 +10267,10 @@ const DADOS = {
     },
     {
       "Team": "Bosnia and Herzegovina",
-      "Opponent": "Macedonia",
-      "Matches": 5,
+      "Opponent": "North Macedonia",
+      "Matches": 6,
       "Wins": 1,
-      "Draws": 3,
+      "Draws": 4,
       "Losses": 1
     },
     {
@@ -10843,6 +10875,14 @@ const DADOS = {
     },
     {
       "Team": "Brazil",
+      "Opponent": "Panama",
+      "Matches": 6,
+      "Wins": 5,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Brazil",
       "Opponent": "South Africa",
       "Matches": 5,
       "Wins": 5,
@@ -10912,14 +10952,6 @@ const DADOS = {
       "Wins": 4,
       "Draws": 1,
       "Losses": 1
-    },
-    {
-      "Team": "Brazil",
-      "Opponent": "Panama",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Brazil",
@@ -11547,6 +11579,14 @@ const DADOS = {
     },
     {
       "Team": "Cabo Verde",
+      "Opponent": "Serbia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Cabo Verde",
       "Opponent": "Luxembourg",
       "Matches": 4,
       "Wins": 1,
@@ -12011,6 +12051,14 @@ const DADOS = {
     },
     {
       "Team": "Canada",
+      "Opponent": "Uzbekistan",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Canada",
       "Opponent": "Luxembourg",
       "Matches": 2,
       "Wins": 2,
@@ -12136,14 +12184,6 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 1
-    },
-    {
-      "Team": "Canada",
-      "Opponent": "Uzbekistan",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
     },
     {
       "Team": "Canada",
@@ -12460,9 +12500,9 @@ const DADOS = {
     {
       "Team": "Canada",
       "Opponent": "Ireland",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -12644,17 +12684,17 @@ const DADOS = {
     {
       "Team": "Qatar",
       "Opponent": "Iraq",
-      "Matches": 23,
-      "Wins": 9,
+      "Matches": 24,
+      "Wins": 10,
       "Draws": 2,
       "Losses": 12
     },
     {
       "Team": "Qatar",
       "Opponent": "UAE",
-      "Matches": 22,
+      "Matches": 23,
       "Wins": 9,
-      "Draws": 7,
+      "Draws": 8,
       "Losses": 6
     },
     {
@@ -12708,9 +12748,9 @@ const DADOS = {
     {
       "Team": "Qatar",
       "Opponent": "Saudi Arabia",
-      "Matches": 25,
+      "Matches": 26,
       "Wins": 6,
-      "Draws": 11,
+      "Draws": 12,
       "Losses": 8
     },
     {
@@ -12755,10 +12795,18 @@ const DADOS = {
     },
     {
       "Team": "Qatar",
-      "Opponent": "Bahrain",
-      "Matches": 21,
+      "Opponent": "Thailand",
+      "Matches": 6,
       "Wins": 4,
-      "Draws": 9,
+      "Draws": 1,
+      "Losses": 1
+    },
+    {
+      "Team": "Qatar",
+      "Opponent": "Bahrain",
+      "Matches": 22,
+      "Wins": 4,
+      "Draws": 10,
       "Losses": 8
     },
     {
@@ -12795,6 +12843,14 @@ const DADOS = {
     },
     {
       "Team": "Qatar",
+      "Opponent": "Japan",
+      "Matches": 9,
+      "Wins": 3,
+      "Draws": 4,
+      "Losses": 2
+    },
+    {
+      "Team": "Qatar",
       "Opponent": "South Korea",
       "Matches": 11,
       "Wins": 3,
@@ -12808,14 +12864,6 @@ const DADOS = {
       "Wins": 3,
       "Draws": 1,
       "Losses": 3
-    },
-    {
-      "Team": "Qatar",
-      "Opponent": "Thailand",
-      "Matches": 5,
-      "Wins": 3,
-      "Draws": 1,
-      "Losses": 1
     },
     {
       "Team": "Qatar",
@@ -12848,14 +12896,6 @@ const DADOS = {
       "Wins": 3,
       "Draws": 3,
       "Losses": 3
-    },
-    {
-      "Team": "Qatar",
-      "Opponent": "Japan",
-      "Matches": 8,
-      "Wins": 2,
-      "Draws": 4,
-      "Losses": 2
     },
     {
       "Team": "Qatar",
@@ -13260,10 +13300,10 @@ const DADOS = {
     {
       "Team": "Qatar",
       "Opponent": "Ireland",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Qatar",
@@ -13516,10 +13556,10 @@ const DADOS = {
     {
       "Team": "Colombia",
       "Opponent": "Uruguay",
-      "Matches": 42,
+      "Matches": 43,
       "Wins": 12,
       "Draws": 11,
-      "Losses": 19
+      "Losses": 20
     },
     {
       "Team": "Colombia",
@@ -13528,6 +13568,14 @@ const DADOS = {
       "Wins": 12,
       "Draws": 14,
       "Losses": 14
+    },
+    {
+      "Team": "Colombia",
+      "Opponent": "Costa Rica",
+      "Matches": 13,
+      "Wins": 11,
+      "Draws": 0,
+      "Losses": 2
     },
     {
       "Team": "Colombia",
@@ -13544,14 +13592,6 @@ const DADOS = {
       "Wins": 10,
       "Draws": 7,
       "Losses": 6
-    },
-    {
-      "Team": "Colombia",
-      "Opponent": "Costa Rica",
-      "Matches": 12,
-      "Wins": 10,
-      "Draws": 0,
-      "Losses": 2
     },
     {
       "Team": "Colombia",
@@ -14147,11 +14187,19 @@ const DADOS = {
     },
     {
       "Team": "Korea Republic",
+      "Opponent": "Bahrain",
+      "Matches": 18,
+      "Wins": 12,
+      "Draws": 4,
+      "Losses": 2
+    },
+    {
+      "Team": "Korea Republic",
       "Opponent": "Iraq",
-      "Matches": 22,
+      "Matches": 23,
       "Wins": 11,
       "Draws": 8,
-      "Losses": 3
+      "Losses": 4
     },
     {
       "Team": "Korea Republic",
@@ -14168,14 +14216,6 @@ const DADOS = {
       "Wins": 11,
       "Draws": 8,
       "Losses": 13
-    },
-    {
-      "Team": "Korea Republic",
-      "Opponent": "Bahrain",
-      "Matches": 17,
-      "Wins": 11,
-      "Draws": 4,
-      "Losses": 2
     },
     {
       "Team": "Korea Republic",
@@ -14196,10 +14236,10 @@ const DADOS = {
     {
       "Team": "Korea Republic",
       "Opponent": "Saudi Arabia",
-      "Matches": 17,
+      "Matches": 18,
       "Wins": 7,
       "Draws": 5,
-      "Losses": 5
+      "Losses": 6
     },
     {
       "Team": "Korea Republic",
@@ -14267,6 +14307,14 @@ const DADOS = {
     },
     {
       "Team": "Korea Republic",
+      "Opponent": "New Zealand",
+      "Matches": 6,
+      "Wins": 5,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Korea Republic",
       "Opponent": "Syria",
       "Matches": 9,
       "Wins": 5,
@@ -14320,14 +14368,6 @@ const DADOS = {
       "Wins": 4,
       "Draws": 2,
       "Losses": 3
-    },
-    {
-      "Team": "Korea Republic",
-      "Opponent": "New Zealand",
-      "Matches": 5,
-      "Wins": 4,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Korea Republic",
@@ -14763,6 +14803,14 @@ const DADOS = {
     },
     {
       "Team": "Korea Republic",
+      "Opponent": "Trinidad",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Korea Republic",
       "Opponent": "Kazakhstan",
       "Matches": 2,
       "Wins": 1,
@@ -14776,6 +14824,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 2
+    },
+    {
+      "Team": "Korea Republic",
+      "Opponent": "El Salvador",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Korea Republic",
@@ -15000,22 +15056,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 0,
       "Losses": 1
-    },
-    {
-      "Team": "Korea Republic",
-      "Opponent": "Trinidad",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Korea Republic",
-      "Opponent": "El Salvador",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
     },
     {
       "Team": "Korea Republic",
@@ -15363,6 +15403,14 @@ const DADOS = {
     },
     {
       "Team": "Côte d'Ivoire",
+      "Opponent": "France",
+      "Matches": 4,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 2
+    },
+    {
+      "Team": "Côte d'Ivoire",
       "Opponent": "Scotland",
       "Matches": 1,
       "Wins": 1,
@@ -15592,14 +15640,6 @@ const DADOS = {
       "Wins": 0,
       "Draws": 0,
       "Losses": 1
-    },
-    {
-      "Team": "Côte d'Ivoire",
-      "Opponent": "France",
-      "Matches": 3,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 2
     },
     {
       "Team": "Côte d'Ivoire",
@@ -15924,10 +15964,10 @@ const DADOS = {
     {
       "Team": "Croatia",
       "Opponent": "Belgium",
-      "Matches": 9,
+      "Matches": 10,
       "Wins": 3,
       "Draws": 3,
-      "Losses": 3
+      "Losses": 4
     },
     {
       "Team": "Croatia",
@@ -16667,6 +16707,14 @@ const DADOS = {
     },
     {
       "Team": "Curaçao",
+      "Opponent": "Scotland",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Curaçao",
       "Opponent": "Australia",
       "Matches": 1,
       "Wins": 0,
@@ -17307,6 +17355,14 @@ const DADOS = {
     },
     {
       "Team": "Egypt",
+      "Opponent": "Russia",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Egypt",
       "Opponent": "Belarus",
       "Matches": 1,
       "Wins": 1,
@@ -17555,14 +17611,6 @@ const DADOS = {
     },
     {
       "Team": "Egypt",
-      "Opponent": "Russia",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "Egypt",
       "Opponent": "Uruguay",
       "Matches": 2,
       "Wins": 0,
@@ -17764,9 +17812,9 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Opponent": "Uruguay",
-      "Matches": 45,
+      "Matches": 46,
       "Wins": 8,
-      "Draws": 8,
+      "Draws": 9,
       "Losses": 29
     },
     {
@@ -17979,6 +18027,14 @@ const DADOS = {
     },
     {
       "Team": "Ecuador",
+      "Opponent": "Saudi Arabia",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Ecuador",
       "Opponent": "Cape Verde",
       "Matches": 1,
       "Wins": 1,
@@ -18148,14 +18204,6 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Opponent": "South Africa",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Ecuador",
-      "Opponent": "Saudi Arabia",
       "Matches": 1,
       "Wins": 0,
       "Draws": 1,
@@ -18724,6 +18772,14 @@ const DADOS = {
     {
       "Team": "Scotland",
       "Opponent": "Canada U23",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Scotland",
+      "Opponent": "Curaçao",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -19452,9 +19508,9 @@ const DADOS = {
     {
       "Team": "Spain",
       "Opponent": "Iraq",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 1,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -20080,6 +20136,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 1,
       "Losses": 1
+    },
+    {
+      "Team": "USA",
+      "Opponent": "Senegal",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "USA",
@@ -20948,10 +21012,10 @@ const DADOS = {
     {
       "Team": "France",
       "Opponent": "Ivory Coast",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "France",
@@ -21899,6 +21963,14 @@ const DADOS = {
     },
     {
       "Team": "Ghana",
+      "Opponent": "Wales",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Ghana",
       "Opponent": "China",
       "Matches": 1,
       "Wins": 0,
@@ -21908,10 +21980,10 @@ const DADOS = {
     {
       "Team": "Ghana",
       "Opponent": "Mexico",
-      "Matches": 4,
+      "Matches": 5,
       "Wins": 0,
       "Draws": 0,
-      "Losses": 4
+      "Losses": 5
     },
     {
       "Team": "Ghana",
@@ -22259,6 +22331,14 @@ const DADOS = {
     },
     {
       "Team": "Haiti",
+      "Opponent": "New Zealand",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Haiti",
       "Opponent": "Jordan",
       "Matches": 1,
       "Wins": 1,
@@ -22340,10 +22420,10 @@ const DADOS = {
     {
       "Team": "Haiti",
       "Opponent": "Peru",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Haiti",
@@ -22452,10 +22532,10 @@ const DADOS = {
     {
       "Team": "Netherlands",
       "Opponent": "Denmark",
-      "Matches": 33,
+      "Matches": 32,
       "Wins": 13,
       "Draws": 9,
-      "Losses": 11
+      "Losses": 10
     },
     {
       "Team": "Netherlands",
@@ -23128,6 +23208,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 0
+    },
+    {
+      "Team": "Netherlands",
+      "Opponent": "Algeria",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
     },
     {
       "Team": "Netherlands",
@@ -23955,19 +24043,19 @@ const DADOS = {
     },
     {
       "Team": "IR Iran",
+      "Opponent": "China",
+      "Matches": 26,
+      "Wins": 15,
+      "Draws": 5,
+      "Losses": 6
+    },
+    {
+      "Team": "IR Iran",
       "Opponent": "Pakistan",
       "Matches": 18,
       "Wins": 15,
       "Draws": 1,
       "Losses": 2
-    },
-    {
-      "Team": "IR Iran",
-      "Opponent": "China",
-      "Matches": 25,
-      "Wins": 14,
-      "Draws": 5,
-      "Losses": 6
     },
     {
       "Team": "IR Iran",
@@ -24467,6 +24555,14 @@ const DADOS = {
     },
     {
       "Team": "IR Iran",
+      "Opponent": "Mali",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "IR Iran",
       "Opponent": "Ukraine",
       "Matches": 1,
       "Wins": 1,
@@ -24536,6 +24632,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 2,
       "Losses": 1
+    },
+    {
+      "Team": "IR Iran",
+      "Opponent": "The Gambia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "IR Iran",
@@ -24851,14 +24955,6 @@ const DADOS = {
     },
     {
       "Team": "IR Iran",
-      "Opponent": "Mali",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 0,
-      "Losses": 1
-    },
-    {
-      "Team": "IR Iran",
       "Opponent": "Guinea",
       "Matches": 2,
       "Wins": 0,
@@ -24956,10 +25052,10 @@ const DADOS = {
     {
       "Team": "Iraq",
       "Opponent": "Qatar",
-      "Matches": 23,
+      "Matches": 24,
       "Wins": 12,
       "Draws": 2,
-      "Losses": 9
+      "Losses": 10
     },
     {
       "Team": "Iraq",
@@ -25083,6 +25179,14 @@ const DADOS = {
     },
     {
       "Team": "Iraq",
+      "Opponent": "South Korea",
+      "Matches": 23,
+      "Wins": 4,
+      "Draws": 8,
+      "Losses": 11
+    },
+    {
+      "Team": "Iraq",
       "Opponent": "India",
       "Matches": 4,
       "Wins": 4,
@@ -25107,6 +25211,14 @@ const DADOS = {
     },
     {
       "Team": "Iraq",
+      "Opponent": "Japan",
+      "Matches": 12,
+      "Wins": 3,
+      "Draws": 2,
+      "Losses": 7
+    },
+    {
+      "Team": "Iraq",
       "Opponent": "Uzbekistan",
       "Matches": 11,
       "Wins": 3,
@@ -25115,19 +25227,19 @@ const DADOS = {
     },
     {
       "Team": "Iraq",
-      "Opponent": "South Korea",
-      "Matches": 22,
-      "Wins": 3,
-      "Draws": 8,
-      "Losses": 11
-    },
-    {
-      "Team": "Iraq",
       "Opponent": "Singapore",
       "Matches": 4,
       "Wins": 3,
       "Draws": 0,
       "Losses": 1
+    },
+    {
+      "Team": "Iraq",
+      "Opponent": "Malaysia",
+      "Matches": 5,
+      "Wins": 3,
+      "Draws": 2,
+      "Losses": 0
     },
     {
       "Team": "Iraq",
@@ -25152,14 +25264,6 @@ const DADOS = {
       "Wins": 2,
       "Draws": 2,
       "Losses": 6
-    },
-    {
-      "Team": "Iraq",
-      "Opponent": "Japan",
-      "Matches": 11,
-      "Wins": 2,
-      "Draws": 2,
-      "Losses": 7
     },
     {
       "Team": "Iraq",
@@ -25231,14 +25335,6 @@ const DADOS = {
       "Matches": 2,
       "Wins": 2,
       "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Iraq",
-      "Opponent": "Malaysia",
-      "Matches": 4,
-      "Wins": 2,
-      "Draws": 2,
       "Losses": 0
     },
     {
@@ -25323,6 +25419,14 @@ const DADOS = {
     },
     {
       "Team": "Iraq",
+      "Opponent": "Andorra",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Iraq",
       "Opponent": "Sudan",
       "Matches": 3,
       "Wins": 1,
@@ -25388,9 +25492,9 @@ const DADOS = {
     {
       "Team": "Iraq",
       "Opponent": "Spain",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -25692,10 +25796,10 @@ const DADOS = {
     {
       "Team": "Japan",
       "Opponent": "Iraq",
-      "Matches": 11,
+      "Matches": 12,
       "Wins": 7,
       "Draws": 2,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Japan",
@@ -25795,6 +25899,14 @@ const DADOS = {
     },
     {
       "Team": "Japan",
+      "Opponent": "Iceland",
+      "Matches": 4,
+      "Wins": 4,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Japan",
       "Opponent": "Tajikistan",
       "Matches": 4,
       "Wins": 4,
@@ -25832,14 +25944,6 @@ const DADOS = {
       "Wins": 3,
       "Draws": 0,
       "Losses": 1
-    },
-    {
-      "Team": "Japan",
-      "Opponent": "Iceland",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
     },
     {
       "Team": "Japan",
@@ -26068,10 +26172,10 @@ const DADOS = {
     {
       "Team": "Japan",
       "Opponent": "Qatar",
-      "Matches": 8,
+      "Matches": 9,
       "Wins": 2,
       "Draws": 4,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Japan",
@@ -27003,6 +27107,14 @@ const DADOS = {
     },
     {
       "Team": "Jordan",
+      "Opponent": "Switzerland",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Jordan",
       "Opponent": "Bulgaria",
       "Matches": 1,
       "Wins": 0,
@@ -27547,6 +27659,14 @@ const DADOS = {
     },
     {
       "Team": "Morocco",
+      "Opponent": "Burundi",
+      "Matches": 3,
+      "Wins": 3,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Morocco",
       "Opponent": "Mauritania",
       "Matches": 6,
       "Wins": 3,
@@ -27675,7 +27795,7 @@ const DADOS = {
     },
     {
       "Team": "Morocco",
-      "Opponent": "Burundi",
+      "Opponent": "Lesotho",
       "Matches": 2,
       "Wins": 2,
       "Draws": 0,
@@ -27683,7 +27803,7 @@ const DADOS = {
     },
     {
       "Team": "Morocco",
-      "Opponent": "Lesotho",
+      "Opponent": "Madagascar",
       "Matches": 2,
       "Wins": 2,
       "Draws": 0,
@@ -27884,14 +28004,6 @@ const DADOS = {
     {
       "Team": "Morocco",
       "Opponent": "Ethiopia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Morocco",
-      "Opponent": "Madagascar",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -28323,6 +28435,14 @@ const DADOS = {
     },
     {
       "Team": "Mexico",
+      "Opponent": "Ghana",
+      "Matches": 5,
+      "Wins": 5,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Mexico",
       "Opponent": "Hungary",
       "Matches": 7,
       "Wins": 5,
@@ -28352,14 +28472,6 @@ const DADOS = {
       "Wins": 4,
       "Draws": 5,
       "Losses": 3
-    },
-    {
-      "Team": "Mexico",
-      "Opponent": "Ghana",
-      "Matches": 4,
-      "Wins": 4,
-      "Draws": 0,
-      "Losses": 0
     },
     {
       "Team": "Mexico",
@@ -28475,6 +28587,14 @@ const DADOS = {
     },
     {
       "Team": "Mexico",
+      "Opponent": "Australia",
+      "Matches": 7,
+      "Wins": 2,
+      "Draws": 3,
+      "Losses": 2
+    },
+    {
+      "Team": "Mexico",
       "Opponent": "Cameroon",
       "Matches": 3,
       "Wins": 2,
@@ -28496,6 +28616,14 @@ const DADOS = {
       "Wins": 2,
       "Draws": 10,
       "Losses": 16
+    },
+    {
+      "Team": "Mexico",
+      "Opponent": "Serbia",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "Mexico",
@@ -28536,14 +28664,6 @@ const DADOS = {
       "Wins": 2,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Mexico",
-      "Opponent": "Slovenia",
-      "Matches": 3,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 1
     },
     {
       "Team": "Mexico",
@@ -28667,22 +28787,6 @@ const DADOS = {
     },
     {
       "Team": "Mexico",
-      "Opponent": "Australia",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 3,
-      "Losses": 2
-    },
-    {
-      "Team": "Mexico",
-      "Opponent": "Serbia",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Mexico",
       "Opponent": "Romania",
       "Matches": 2,
       "Wins": 1,
@@ -28712,6 +28816,14 @@ const DADOS = {
       "Wins": 1,
       "Draws": 1,
       "Losses": 0
+    },
+    {
+      "Team": "Mexico",
+      "Opponent": "Slovenia",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 1
     },
     {
       "Team": "Mexico",
@@ -28972,8 +29084,8 @@ const DADOS = {
     {
       "Team": "Norway",
       "Opponent": "Sweden",
-      "Matches": 109,
-      "Wins": 26,
+      "Matches": 110,
+      "Wins": 27,
       "Draws": 25,
       "Losses": 58
     },
@@ -29972,10 +30084,10 @@ const DADOS = {
     {
       "Team": "New Zealand",
       "Opponent": "Bahrain",
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "New Zealand",
@@ -30188,10 +30300,10 @@ const DADOS = {
     {
       "Team": "New Zealand",
       "Opponent": "Kuwait",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "New Zealand",
@@ -30340,10 +30452,10 @@ const DADOS = {
     {
       "Team": "New Zealand",
       "Opponent": "South Korea",
-      "Matches": 5,
+      "Matches": 6,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 4
+      "Losses": 5
     },
     {
       "Team": "New Zealand",
@@ -30499,6 +30611,14 @@ const DADOS = {
     },
     {
       "Team": "New Zealand",
+      "Opponent": "Haiti",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "New Zealand",
       "Opponent": "Tanzania",
       "Matches": 1,
       "Wins": 0,
@@ -30630,8 +30750,8 @@ const DADOS = {
       "Opponent": "USA",
       "Matches": 29,
       "Wins": 6,
-      "Draws": 4,
-      "Losses": 19
+      "Draws": 5,
+      "Losses": 18
     },
     {
       "Team": "Panama",
@@ -30739,6 +30859,14 @@ const DADOS = {
     },
     {
       "Team": "Panama",
+      "Opponent": "Dominican Rep.",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Panama",
       "Opponent": "Bermuda",
       "Matches": 3,
       "Wins": 2,
@@ -30783,14 +30911,6 @@ const DADOS = {
       "Matches": 2,
       "Wins": 1,
       "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Panama",
-      "Opponent": "Dominican Rep.",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
       "Losses": 0
     },
     {
@@ -30908,10 +31028,10 @@ const DADOS = {
     {
       "Team": "Panama",
       "Opponent": "Brazil",
-      "Matches": 5,
+      "Matches": 6,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 4
+      "Losses": 5
     },
     {
       "Team": "Panama",
@@ -31067,19 +31187,19 @@ const DADOS = {
     },
     {
       "Team": "Paraguay",
+      "Opponent": "Uruguay",
+      "Matches": 55,
+      "Wins": 18,
+      "Draws": 11,
+      "Losses": 26
+    },
+    {
+      "Team": "Paraguay",
       "Opponent": "Colombia",
       "Matches": 45,
       "Wins": 17,
       "Draws": 7,
       "Losses": 21
-    },
-    {
-      "Team": "Paraguay",
-      "Opponent": "Uruguay",
-      "Matches": 51,
-      "Wins": 16,
-      "Draws": 10,
-      "Losses": 25
     },
     {
       "Team": "Paraguay",
@@ -31176,6 +31296,14 @@ const DADOS = {
       "Wins": 2,
       "Draws": 2,
       "Losses": 5
+    },
+    {
+      "Team": "Paraguay",
+      "Opponent": "Nicaragua",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
     },
     {
       "Team": "Paraguay",
@@ -31348,14 +31476,6 @@ const DADOS = {
     {
       "Team": "Paraguay",
       "Opponent": "Oman",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Paraguay",
-      "Opponent": "Nicaragua",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -32643,6 +32763,14 @@ const DADOS = {
     },
     {
       "Team": "Congo DR",
+      "Opponent": "Denmark",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Congo DR",
       "Opponent": "Romania",
       "Matches": 1,
       "Wins": 0,
@@ -33083,6 +33211,14 @@ const DADOS = {
     },
     {
       "Team": "Czechia",
+      "Opponent": "Kosovo",
+      "Matches": 3,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Czechia",
       "Opponent": "England",
       "Matches": 6,
       "Wins": 1,
@@ -33235,6 +33371,14 @@ const DADOS = {
     },
     {
       "Team": "Czechia",
+      "Opponent": "Guatemala",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Czechia",
       "Opponent": "Qatar",
       "Matches": 1,
       "Wins": 1,
@@ -33256,14 +33400,6 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Czechia",
-      "Opponent": "Kosovo",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 1
     },
     {
       "Team": "Czechia",
@@ -33867,6 +34003,14 @@ const DADOS = {
     },
     {
       "Team": "Senegal",
+      "Opponent": "USA",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Senegal",
       "Opponent": "Ireland",
       "Matches": 1,
       "Wins": 0,
@@ -33964,10 +34108,10 @@ const DADOS = {
     {
       "Team": "Sweden",
       "Opponent": "Norway",
-      "Matches": 109,
+      "Matches": 110,
       "Wins": 58,
       "Draws": 25,
-      "Losses": 26
+      "Losses": 27
     },
     {
       "Team": "Sweden",
@@ -34300,9 +34444,9 @@ const DADOS = {
     {
       "Team": "Sweden",
       "Opponent": "Greece",
-      "Matches": 9,
+      "Matches": 10,
       "Wins": 3,
-      "Draws": 3,
+      "Draws": 4,
       "Losses": 3
     },
     {
@@ -35387,6 +35531,14 @@ const DADOS = {
     },
     {
       "Team": "Switzerland",
+      "Opponent": "Jordan",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Switzerland",
       "Opponent": "Kosovo",
       "Matches": 5,
       "Wins": 1,
@@ -35900,10 +36052,10 @@ const DADOS = {
     {
       "Team": "Tunisia",
       "Opponent": "Belgium",
-      "Matches": 4,
+      "Matches": 5,
       "Wins": 1,
       "Draws": 1,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Tunisia",
@@ -36260,10 +36412,10 @@ const DADOS = {
     {
       "Team": "Tunisia",
       "Opponent": "Austria",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
       "Draws": 1,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Tunisia",
@@ -36571,6 +36723,14 @@ const DADOS = {
     },
     {
       "Team": "Türkiye",
+      "Opponent": "North Macedonia",
+      "Matches": 9,
+      "Wins": 6,
+      "Draws": 2,
+      "Losses": 1
+    },
+    {
+      "Team": "Türkiye",
       "Opponent": "Azerbaijan",
       "Matches": 8,
       "Wins": 6,
@@ -36624,14 +36784,6 @@ const DADOS = {
       "Wins": 5,
       "Draws": 1,
       "Losses": 0
-    },
-    {
-      "Team": "Türkiye",
-      "Opponent": "Macedonia",
-      "Matches": 8,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 1
     },
     {
       "Team": "Türkiye",
@@ -37260,25 +37412,25 @@ const DADOS = {
     {
       "Team": "Uruguay",
       "Opponent": "Chile",
-      "Matches": 63,
-      "Wins": 36,
-      "Draws": 12,
-      "Losses": 15
+      "Matches": 67,
+      "Wins": 38,
+      "Draws": 13,
+      "Losses": 16
     },
     {
       "Team": "Uruguay",
       "Opponent": "Peru",
-      "Matches": 52,
-      "Wins": 30,
-      "Draws": 8,
+      "Matches": 55,
+      "Wins": 31,
+      "Draws": 10,
       "Losses": 14
     },
     {
       "Team": "Uruguay",
       "Opponent": "Ecuador",
-      "Matches": 45,
+      "Matches": 46,
       "Wins": 29,
-      "Draws": 8,
+      "Draws": 9,
       "Losses": 8
     },
     {
@@ -37292,10 +37444,10 @@ const DADOS = {
     {
       "Team": "Uruguay",
       "Opponent": "Paraguay",
-      "Matches": 51,
-      "Wins": 25,
-      "Draws": 10,
-      "Losses": 16
+      "Matches": 55,
+      "Wins": 26,
+      "Draws": 11,
+      "Losses": 18
     },
     {
       "Team": "Uruguay",
@@ -37316,8 +37468,8 @@ const DADOS = {
     {
       "Team": "Uruguay",
       "Opponent": "Colombia",
-      "Matches": 42,
-      "Wins": 19,
+      "Matches": 43,
+      "Wins": 20,
       "Draws": 11,
       "Losses": 12
     },
@@ -38404,10 +38556,10 @@ const DADOS = {
     {
       "Team": "Uzbekistan",
       "Opponent": "Canada",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
       "Draws": 0,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Uzbekistan",
