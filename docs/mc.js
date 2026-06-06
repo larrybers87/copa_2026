@@ -7,9 +7,10 @@
 
 // ── Constantes ────────────────────────────────────────────────────────────────
 
-const MC_N_SIM      = 20_000;
-const MC_FORCA_EXP  = 3.0;
-const MC_DECAY_LAMBDA = 0.30; // deve coincidir com DECAY_LAMBDA em simulation.py
+const MC_N_SIM        = 20_000;
+const MC_FORCA_EXP    = 3.0;
+const MC_DECAY_LAMBDA = 0.30;   // deve coincidir com DECAY_LAMBDA em simulation.py
+const MC_BASE_GOLS    = 2.70;   // deve coincidir com BASE_GOLS em simulation.py (calibrado)
 
 // Pares do chaveamento: ordem importa (O antes de Q antes de S antes de F)
 const MC_BRACKET_PAIRS = {
@@ -90,23 +91,51 @@ function _mcGetForcas() {
   return _mcForcas;
 }
 
-// Probabilidade knockout — empate → prorrogação/pênaltis → 50/50
-function _mcProbKO(clubA, clubB) {
-  const f  = _mcGetForcas();
-  const fa = Math.pow(f[clubA] ?? 0.5, MC_FORCA_EXP);
-  const fb = Math.pow(f[clubB] ?? 0.5, MC_FORCA_EXP);
-  const ratio = fa / (fa + fb);
-  const diff  = Math.abs(ratio - 0.5) * 2;
-  const pE    = Math.max(0.27 * Math.exp(-2.5 * diff), 0.04);
-  const pV    = (1 - pE) * ratio;
-  const pD    = (1 - pE) * (1 - ratio);
-  return { pA: pV + pE / 2, pB: pD + pE / 2 };
+// PMF da distribuição Poisson: P(X = k) para parâmetro lambda
+function _mcPoissonProb(k, lambda) {
+  if (lambda <= 0) return k === 0 ? 1 : 0;
+  let logP = -lambda + k * Math.log(lambda);
+  for (let i = 1; i <= k; i++) logP -= Math.log(i);
+  return Math.exp(logP);
 }
+
+// Probabilidade knockout via modelo Poisson — empate em 90min → pênaltis 50/50.
+// Usa as forças amplificadas (MC_FORCA_EXP) para calcular lambdas relativos,
+// depois integra a PMF conjunta para obter P(vitória) e P(empate).
+// Resultados cacheados por par de times para eficiência nos 20k cenários.
+function _mcProbKO(clubA, clubB) {
+  const key = `${clubA}|${clubB}`;
+  if (_mcProbKO._cache[key]) return _mcProbKO._cache[key];
+
+  const f      = _mcGetForcas();
+  const fa     = Math.pow(f[clubA] ?? 0.5, MC_FORCA_EXP);
+  const fb     = Math.pow(f[clubB] ?? 0.5, MC_FORCA_EXP);
+  const total  = fa + fb;
+  const lambdaA = MC_BASE_GOLS * (fa / total);
+  const lambdaB = MC_BASE_GOLS * (fb / total);
+
+  const MAX_G = 10;  // P(X > 10) desprezível para lambdas típicos (<5)
+  let pWin = 0, pDraw = 0;
+  for (let g1 = 0; g1 <= MAX_G; g1++) {
+    const pA = _mcPoissonProb(g1, lambdaA);
+    for (let g2 = 0; g2 <= MAX_G; g2++) {
+      const pB = _mcPoissonProb(g2, lambdaB);
+      if (g1 > g2)        pWin  += pA * pB;
+      else if (g1 === g2) pDraw += pA * pB;
+    }
+  }
+
+  const result = { pA: pWin + pDraw / 2, pB: (1 - pWin - pDraw) + pDraw / 2 };
+  _mcProbKO._cache[key] = result;
+  return result;
+}
+_mcProbKO._cache = {};
 
 // ── Inicialização ─────────────────────────────────────────────────────────────
 
 function _mcInit() {
   _mcForcas = null;
+  _mcProbKO._cache = {};
 
   const grupos = {};
   DADOS.selecoes.forEach(s => {

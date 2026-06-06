@@ -53,10 +53,10 @@ N_DEFAULT = 100_000
 
 GRUPOS_FECHADOS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
-# Critérios de desempate (ordem)
-# 1. Pontos  2. Saldo de gols*  3. Gols marcados*  4. Ranking FIFA
-# *gols não simulados explicitamente — usamos ranking como tiebreaker final
-DESEMPATE_COLS = ["Pontos", "Ranking_FIFA"]
+# Critérios de desempate implementados (ordem regulamento Copa 2026):
+# 1. Pontos  2. Saldo de gols  3. Gols marcados  4. Ranking FIFA  5. ruído
+# Confronto direto (critério real entre pts e SG total) não implementado —
+# complexidade alta para ganho marginal em 100k iterações.
 
 OUTPUT_CSV = DATA_PROCESSED_DIR / "simulacao_grupos.csv"
 OUTPUT_JSON = DATA_PROCESSED_DIR / "simulacao_grupos.json"
@@ -154,6 +154,10 @@ def calcular_forcas(selecoes_df, ranking_df, annual_df):
 # Isso torna jogos desequilibrados muito mais decididos.
 FORCA_EXP = 3.0
 
+# Gols esperados por jogo (ambas as equipes combinadas) — calibrado contra
+# média histórica de Copas (2.5–3.0 gols/jogo). Ver simular_placar().
+BASE_GOLS = 2.70
+
 # Multiplicador de força para seleções que jogam em casa na Copa 2026.
 # Chaves em português, pois é o idioma dos Time1/Time2 na planilha Jogos_Grupos.
 HOME_FACTOR = {
@@ -195,15 +199,42 @@ def prob_jogo(forca_a, forca_b, home_factor_a=1.0, home_factor_b=1.0):
     return p_v, p_e, p_d
 
 
-def classificar_grupo(pts_dict, rankings, rng):
+def simular_placar(forca_a, forca_b, hf_a, hf_b, rng):
     """
-    Ordena os times por pontos, usando ranking FIFA como tiebreaker.
-    rng.random() é o terceiro critério para evitar determinismo total em empates de pontos+ranking.
+    Retorna (gols_a, gols_b) via distribuições Poisson independentes.
+
+    λ_a = BASE_GOLS × (forca_a / (forca_a + forca_b)) × hf_a
+    λ_b = BASE_GOLS × (forca_b / (forca_a + forca_b)) × hf_b
+
+    Usa forças brutas (sem FORCA_EXP) — a Poisson já produz desequilíbrio
+    proporcional sem amplificação extra.
+    """
+    total = forca_a + forca_b
+    fa_rel = forca_a / total
+    fb_rel = forca_b / total
+
+    lambda_a = BASE_GOLS * fa_rel * hf_a
+    lambda_b = BASE_GOLS * fb_rel * hf_b
+
+    return int(rng.poisson(lambda_a)), int(rng.poisson(lambda_b))
+
+
+def classificar_grupo(pts_dict, saldo_dict, gols_pro_dict, rankings, rng):
+    """
+    Ordena os times por: pts → saldo de gols → gols marcados → ranking FIFA → ruído.
+    O confronto direto entre empatados (critério real entre pts e SG total)
+    não está implementado — limitação conhecida, impacto marginal em 100k iterações.
     Retorna lista ordenada [1º, 2º, 3º, 4º].
     """
     times = list(pts_dict.keys())
     noise = {t: rng.random() for t in times}
-    times.sort(key=lambda t: (-pts_dict[t], rankings.get(t, 999), noise[t]))
+    times.sort(key=lambda t: (
+        -pts_dict[t],
+        -saldo_dict[t],
+        -gols_pro_dict[t],
+        rankings.get(t, 999),
+        noise[t],
+    ))
     return times
 
 
@@ -223,6 +254,9 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
     posicoes = {t: defaultdict(int) for t in times}  # {time: {pos: count}}
     pontos_acc = {t: [] for t in times}
     pontos_por_pos = {t: defaultdict(list) for t in times}  # {time: {pos: [pts]}}
+    gols_pro_total = {t: 0 for t in times}
+    gols_contra_total = {t: 0 for t in times}
+    saldo_total = {t: 0 for t in times}
 
     # Contadores de resultado por jogo
     jogos_list = list(jogos_grupo.iterrows())
@@ -233,6 +267,9 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
 
     for _ in range(n_sim):
         pts = {t: 0 for t in times}
+        gols_pro_sim = {t: 0 for t in times}
+        gols_contra_sim = {t: 0 for t in times}
+        saldo_sim = {t: 0 for t in times}
         res_sim = {}
 
         for _, jogo in jogos_grupo.iterrows():
@@ -243,27 +280,38 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
 
             hf1 = HOME_FACTOR.get(t1, 1.0)
             hf2 = HOME_FACTOR.get(t2, 1.0)
-            p_v, p_e, p_d = prob_jogo(f1, f2, hf1, hf2)
-            resultado = rng.choice(["V", "E", "D"], p=[p_v, p_e, p_d])
-            res_sim[(t1, t2)] = resultado
+            g1, g2 = simular_placar(f1, f2, hf1, hf2, rng)
 
-            if resultado == "V":
+            if g1 > g2:
+                res_sim[(t1, t2)] = "V"
                 pts[t1] += PONTOS_VITORIA
-            elif resultado == "E":
+            elif g1 == g2:
+                res_sim[(t1, t2)] = "E"
                 pts[t1] += PONTOS_EMPATE
                 pts[t2] += PONTOS_EMPATE
             else:
+                res_sim[(t1, t2)] = "D"
                 pts[t2] += PONTOS_VITORIA
 
+            gols_pro_sim[t1] += g1
+            gols_pro_sim[t2] += g2
+            gols_contra_sim[t1] += g2
+            gols_contra_sim[t2] += g1
+            saldo_sim[t1] += g1 - g2
+            saldo_sim[t2] += g2 - g1
+
         # Registra posições
-        ordem = classificar_grupo(pts, rankings, rng)
+        ordem = classificar_grupo(pts, saldo_sim, gols_pro_sim, rankings, rng)
         for pos, time in enumerate(ordem, 1):
             posicoes[time][pos] += 1
             pontos_por_pos[time][pos].append(pts[time])
 
-        # Registra pontos
+        # Registra pontos e gols
         for t in times:
             pontos_acc[t].append(pts[t])
+            gols_pro_total[t] += gols_pro_sim[t]
+            gols_contra_total[t] += gols_contra_sim[t]
+            saldo_total[t] += saldo_sim[t]
 
         # Registra resultados dos jogos
         for key, res in res_sim.items():
@@ -289,6 +337,9 @@ def monte_carlo_grupo(grupo, times, jogos_grupo, forcas, rankings, n_sim, rng):
             "Classifica": round(
                 (posicoes[t][1] + posicoes[t][2] + posicoes[t][3] * (8 / 12)) / n_sim * 100, 2
             ),
+            "Gols_Pro_Medio":    round(gols_pro_total[t] / n_sim, 2),
+            "Gols_Contra_Medio": round(gols_contra_total[t] / n_sim, 2),
+            "Saldo_Medio":       round(saldo_total[t] / n_sim, 2),
         }
 
     stats_jogos = {}
@@ -334,6 +385,9 @@ def resultado_para_df(resultado):
                 "Pts_DP": s["Pts_DP"],
                 "Pts_Min": s["Pts_Min"],
                 "Pts_Max": s["Pts_Max"],
+                "Gols_Pro_Medio": s["Gols_Pro_Medio"],
+                "Gols_Contra_Medio": s["Gols_Contra_Medio"],
+                "Saldo_Medio": s["Saldo_Medio"],
             }
         )
 
@@ -373,17 +427,18 @@ def imprimir_grupo(resultado):
     times_ord = sorted(resultado["stats_times"].items(), key=lambda x: -x[1]["P1"])
 
     print(
-        f"  {'Time':<25} {'1º%':>6} {'2º%':>6} {'3º%':>6} {'4º%':>6}  {'Med':>5}  {'Mdn':>5}  {'DP':>5}  {'Classif%':>8}"
+        f"  {'Time':<25} {'1º%':>6} {'2º%':>6} {'3º%':>6} {'4º%':>6}  {'Med':>5}  {'Mdn':>5}  {'DP':>5}  {'Classif%':>8}  {'GP':>5}  {'GC':>5}  {'SG':>5}"
     )
     print(
-        f"  {'-' * 25} {'-' * 6} {'-' * 6} {'-' * 6} {'-' * 6}  {'-' * 5}  {'-' * 5}  {'-' * 5}  {'-' * 8}"
+        f"  {'-' * 25} {'-' * 6} {'-' * 6} {'-' * 6} {'-' * 6}  {'-' * 5}  {'-' * 5}  {'-' * 5}  {'-' * 8}  {'-' * 5}  {'-' * 5}  {'-' * 5}"
     )
     for time, s in times_ord:
         print(
             f"  {time:<25} {s['P1']:>5.1f}% {s['P2']:>5.1f}% "
             f"{s['P3']:>5.1f}% {s['P4']:>5.1f}%  "
             f"{s['Pts_Medio']:>4.1f}  {s['Pts_Mediana']:>4.1f}  {s['Pts_DP']:>4.2f}  "
-            f"{s['Classifica']:>7.1f}%"
+            f"{s['Classifica']:>7.1f}%  "
+            f"{s['Gols_Pro_Medio']:>4.1f}  {s['Gols_Contra_Medio']:>4.1f}  {s['Saldo_Medio']:>+5.2f}"
         )
 
     print("\n  Resultados dos jogos:")
@@ -484,6 +539,21 @@ def main():
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(todos_resultados, f, ensure_ascii=False, indent=2)
     print(f"   {OUTPUT_JSON}")
+
+    # Calibração: média de gols por jogo (soma de gols_pro de todos os times / jogos)
+    if todos_resultados:
+        total_gols = sum(
+            s["Gols_Pro_Medio"]
+            for res in todos_resultados
+            for s in res["stats_times"].values()
+        )
+        n_grupos = len(todos_resultados)
+        media_gols_jogo = total_gols / (n_grupos * 6)  # 6 jogos por grupo, gols_pro soma ambos
+        print(f"\n📊 Calibração: {media_gols_jogo:.2f} gols/jogo em média (BASE_GOLS={BASE_GOLS})")
+        if not 2.5 <= media_gols_jogo <= 3.0:
+            gols_alvo = 2.7
+            novo_base = round(BASE_GOLS * gols_alvo / media_gols_jogo, 2)
+            print(f"   ⚠️  Fora de 2.5–3.0. Sugestão: ajustar BASE_GOLS para {novo_base:.2f}")
 
     print(f"\n✅ Simulação concluída — {len(todos_resultados)} grupo(s)")
 
