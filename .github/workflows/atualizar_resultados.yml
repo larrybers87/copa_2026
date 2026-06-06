@@ -1,0 +1,55 @@
+name: Atualizar Resultados Reais
+
+on:
+  schedule:
+    # A cada 30 minutos durante a Copa (11 jun–18 jul 2026)
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: "Forçar commit mesmo sem mudanças"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install requests
+
+      - name: Buscar resultados da API
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: python scripts/atualizar_resultados.py
+
+      - name: Verificar se houve mudança
+        id: check_diff
+        run: |
+          if git diff --quiet docs/resultados_reais.js; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit e push (se houve mudança)
+        if: steps.check_diff.outputs.changed == 'true' || github.event.inputs.force_update == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/resultados_reais.js
+          git commit -m "chore: atualizar resultados $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push

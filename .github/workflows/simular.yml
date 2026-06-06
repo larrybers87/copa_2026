@@ -1,0 +1,64 @@
+name: Rodar Simulação
+
+on:
+  workflow_dispatch:
+    inputs:
+      n_simulacoes:
+        description: "Número de iterações Monte Carlo"
+        required: false
+        default: "100000"
+      grupos:
+        description: "Grupos específicos (ex: A B C) — vazio = todos"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  simular:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Rodar simulação Monte Carlo
+        run: |
+          N="${{ github.event.inputs.n_simulacoes }}"
+          GRUPOS="${{ github.event.inputs.grupos }}"
+          if [ -n "$GRUPOS" ]; then
+            python src/simulation.py --n "$N" --grupos $GRUPOS
+          else
+            python src/simulation.py --n "$N"
+          fi
+
+      - name: Gerar dados.js
+        run: python gerar_html.py
+
+      - name: Verificar se houve mudança
+        id: check_diff
+        run: |
+          if git diff --quiet docs/dados.js; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit e push (se houve mudança)
+        if: steps.check_diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/dados.js data/processed/
+          git commit -m "chore: atualizar simulacao $(date -u +'%Y-%m-%dT%H:%M:%SZ') [n=${{ github.event.inputs.n_simulacoes }}]"
+          git push
