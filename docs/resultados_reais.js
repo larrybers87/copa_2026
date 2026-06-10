@@ -1,4 +1,4 @@
-// Atualizado automaticamente em 2026-06-10T11:52:43Z UTC
+// Atualizado automaticamente em 2026-06-10T15:36:26Z UTC
 // NÃO edite manualmente — gerado por scripts/atualizar_resultados.py
 const RESULTADOS_REAIS =
 {}
