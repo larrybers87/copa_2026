@@ -4333,3 +4333,261 @@ html { scroll-behavior: smooth; }
   font-size: 12px;
   letter-spacing: 1px;
 }
+
+/* ══════════════════════════════════════════════════
+   FASE ELIMINATÓRIA — Mata-mata
+   ══════════════════════════════════════════════════ */
+
+/* ── Tabs de rodada ── */
+.res-mm-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 14px 18px 0;
+}
+
+.res-mm-tab {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+}
+
+.res-mm-tab:hover { border-color: var(--accent); color: var(--accent); }
+
+.res-mm-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.res-mm-tab.done {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.res-mm-tab.done.active {
+  background: var(--green);
+  color: var(--bg);
+}
+
+/* ── Conteúdo da rodada ── */
+.res-mm-content {
+  padding: 14px 18px;
+}
+
+/* ── Grid de jogos ── */
+.res-mm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+/* single-game rounds (F, 3P) */
+.res-mm-grid-single {
+  display: grid;
+  grid-template-columns: minmax(280px, 480px);
+  gap: 12px;
+}
+
+/* ── Card de jogo ── */
+.res-mm-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color .15s;
+}
+
+.res-mm-card:hover { border-color: var(--muted); }
+
+.res-mm-confirmed {
+  border-color: rgba(62, 207, 110, .35);
+  background: linear-gradient(135deg, var(--card) 0%, rgba(62,207,110,.04) 100%);
+}
+
+.res-mm-tbd {
+  opacity: .65;
+}
+
+/* ── Metadados (ID, hora, local) ── */
+.res-mm-meta {
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Confronto ── */
+.res-mm-confronto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.res-mm-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.res-mm-time-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.res-mm-nome {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+}
+
+.res-mm-tbd-nome { color: var(--muted); font-style: italic; }
+
+/* ── Placar confirmado ── */
+.res-mm-score {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--green);
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* ── VS separador ── */
+.res-mm-vs {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+/* ── Inputs de placar ── */
+.res-mm-inputs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* ── Extras (prorrogação / pênaltis) ── */
+.res-mm-extras {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+}
+
+.res-mm-check-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: var(--label);
+  cursor: pointer;
+  user-select: none;
+}
+
+.res-mm-check-label input[type=checkbox] {
+  accent-color: var(--accent);
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.res-mm-pen-wrap {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 20px;
+}
+
+.res-mm-pen-inputs {
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Flag TBD placeholder ── */
+.res-flag-tbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 16px;
+  background: var(--border);
+  border-radius: 2px;
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ── Acertos mata-mata ── */
+.res-acerto-mata {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.res-acerto-mata-titulo {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.res-campeao-linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.res-campeao-label {
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 80px;
+}
+
+@media (max-width: 600px) {
+  .res-mm-grid { grid-template-columns: 1fr; }
+  .res-mm-confronto { flex-wrap: wrap; }
+}

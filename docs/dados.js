@@ -21,7 +21,7 @@ const DADOS = {
       "Selecao": "Alemanha",
       "Grupo": "E",
       "Ranking_FIFA": 10,
-      "Total_Pontos": 1731.3,
+      "Total_Pontos": 1735.77,
       "Confederacao": "UEFA",
       "Copas_Titulos": 4,
       "Copas_Participacoes": 21,
@@ -36,7 +36,7 @@ const DADOS = {
       "Selecao": "Arábia Saudita",
       "Grupo": "H",
       "Ranking_FIFA": 61,
-      "Total_Pontos": 1421.54,
+      "Total_Pontos": 1423.88,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -66,7 +66,7 @@ const DADOS = {
       "Selecao": "Argentina",
       "Grupo": "J",
       "Ranking_FIFA": 1,
-      "Total_Pontos": 1874.81,
+      "Total_Pontos": 1877.27,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 3,
       "Copas_Participacoes": 19,
@@ -81,7 +81,7 @@ const DADOS = {
       "Selecao": "Austrália",
       "Grupo": "D",
       "Ranking_FIFA": 27,
-      "Total_Pontos": 1578.66,
+      "Total_Pontos": 1579.34,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -95,7 +95,7 @@ const DADOS = {
       "Club": "Austria",
       "Selecao": "Áustria",
       "Grupo": "J",
-      "Ranking_FIFA": 23,
+      "Ranking_FIFA": 24,
       "Total_Pontos": 1597.4,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
@@ -126,7 +126,7 @@ const DADOS = {
       "Selecao": "Bósnia",
       "Grupo": "B",
       "Ranking_FIFA": 64,
-      "Total_Pontos": 1385.77,
+      "Total_Pontos": 1387.22,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -141,7 +141,7 @@ const DADOS = {
       "Selecao": "Brasil",
       "Grupo": "C",
       "Ranking_FIFA": 6,
-      "Total_Pontos": 1762.66,
+      "Total_Pontos": 1765.86,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 5,
       "Copas_Participacoes": 23,
@@ -155,8 +155,8 @@ const DADOS = {
       "Club": "Cabo Verde",
       "Selecao": "Cabo Verde",
       "Grupo": "H",
-      "Ranking_FIFA": 68,
-      "Total_Pontos": 1369.29,
+      "Ranking_FIFA": 67,
+      "Total_Pontos": 1371.11,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -185,8 +185,8 @@ const DADOS = {
       "Club": "Qatar",
       "Selecao": "Catar",
       "Grupo": "B",
-      "Ranking_FIFA": 55,
-      "Total_Pontos": 1452.37,
+      "Ranking_FIFA": 56,
+      "Total_Pontos": 1450.31,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -201,7 +201,7 @@ const DADOS = {
       "Selecao": "Colômbia",
       "Grupo": "K",
       "Ranking_FIFA": 13,
-      "Total_Pontos": 1695.99,
+      "Total_Pontos": 1698.35,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -246,7 +246,7 @@ const DADOS = {
       "Selecao": "Croácia",
       "Grupo": "L",
       "Ranking_FIFA": 11,
-      "Total_Pontos": 1712.24,
+      "Total_Pontos": 1714.87,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -260,8 +260,8 @@ const DADOS = {
       "Club": "Curaçao",
       "Selecao": "Curaçao",
       "Grupo": "E",
-      "Ranking_FIFA": 83,
-      "Total_Pontos": 1293.08,
+      "Ranking_FIFA": 82,
+      "Total_Pontos": 1294.77,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -276,7 +276,7 @@ const DADOS = {
       "Selecao": "Egito",
       "Grupo": "G",
       "Ranking_FIFA": 29,
-      "Total_Pontos": 1565.56,
+      "Total_Pontos": 1562.37,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -290,8 +290,8 @@ const DADOS = {
       "Club": "Ecuador",
       "Selecao": "Equador",
       "Grupo": "E",
-      "Ranking_FIFA": 24,
-      "Total_Pontos": 1596.48,
+      "Ranking_FIFA": 23,
+      "Total_Pontos": 1598.52,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 5,
@@ -305,8 +305,8 @@ const DADOS = {
       "Club": "Scotland",
       "Selecao": "Escócia",
       "Grupo": "C",
-      "Ranking_FIFA": 43,
-      "Total_Pontos": 1499.92,
+      "Ranking_FIFA": 42,
+      "Total_Pontos": 1503.34,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 9,
@@ -321,7 +321,7 @@ const DADOS = {
       "Selecao": "Espanha",
       "Grupo": "H",
       "Ranking_FIFA": 2,
-      "Total_Pontos": 1873.01,
+      "Total_Pontos": 1874.71,
       "Confederacao": "UEFA",
       "Copas_Titulos": 1,
       "Copas_Participacoes": 17,
@@ -335,8 +335,8 @@ const DADOS = {
       "Club": "USA",
       "Selecao": "Estados Unidos",
       "Grupo": "D",
-      "Ranking_FIFA": 16,
-      "Total_Pontos": 1675.7,
+      "Ranking_FIFA": 17,
+      "Total_Pontos": 1671.23,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
@@ -351,7 +351,7 @@ const DADOS = {
       "Selecao": "França",
       "Grupo": "I",
       "Ranking_FIFA": 3,
-      "Total_Pontos": 1869.43,
+      "Total_Pontos": 1870.7,
       "Confederacao": "UEFA",
       "Copas_Titulos": 2,
       "Copas_Participacoes": 17,
@@ -380,7 +380,7 @@ const DADOS = {
       "Club": "Haiti",
       "Selecao": "Haiti",
       "Grupo": "C",
-      "Ranking_FIFA": 82,
+      "Ranking_FIFA": 83,
       "Total_Pontos": 1293.1,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
@@ -396,7 +396,7 @@ const DADOS = {
       "Selecao": "Holanda",
       "Grupo": "F",
       "Ranking_FIFA": 8,
-      "Total_Pontos": 1751.1,
+      "Total_Pontos": 1753.57,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 12,
@@ -411,7 +411,7 @@ const DADOS = {
       "Selecao": "Inglaterra",
       "Grupo": "L",
       "Ranking_FIFA": 4,
-      "Total_Pontos": 1825.97,
+      "Total_Pontos": 1828.02,
       "Confederacao": "UEFA",
       "Copas_Titulos": 1,
       "Copas_Participacoes": 17,
@@ -440,8 +440,8 @@ const DADOS = {
       "Club": "Iraq",
       "Selecao": "Iraque",
       "Grupo": "I",
-      "Ranking_FIFA": 56,
-      "Total_Pontos": 1451.15,
+      "Ranking_FIFA": 57,
+      "Total_Pontos": 1446.28,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -471,7 +471,7 @@ const DADOS = {
       "Selecao": "Jordânia",
       "Grupo": "J",
       "Ranking_FIFA": 63,
-      "Total_Pontos": 1390.1,
+      "Total_Pontos": 1387.74,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -486,7 +486,7 @@ const DADOS = {
       "Selecao": "Marrocos",
       "Grupo": "C",
       "Ranking_FIFA": 7,
-      "Total_Pontos": 1756.94,
+      "Total_Pontos": 1755.1,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 7,
@@ -516,7 +516,7 @@ const DADOS = {
       "Selecao": "Noruega",
       "Grupo": "I",
       "Ranking_FIFA": 31,
-      "Total_Pontos": 1555.6,
+      "Total_Pontos": 1557.44,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -531,7 +531,7 @@ const DADOS = {
       "Selecao": "Nova Zelândia",
       "Grupo": "G",
       "Ranking_FIFA": 85,
-      "Total_Pontos": 1276.66,
+      "Total_Pontos": 1275.58,
       "Confederacao": "OFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
@@ -546,7 +546,7 @@ const DADOS = {
       "Selecao": "Panamá",
       "Grupo": "L",
       "Ranking_FIFA": 34,
-      "Total_Pontos": 1540.6,
+      "Total_Pontos": 1539.16,
       "Confederacao": "CONCACAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -560,7 +560,7 @@ const DADOS = {
       "Club": "Paraguay",
       "Selecao": "Paraguai",
       "Grupo": "D",
-      "Ranking_FIFA": 40,
+      "Ranking_FIFA": 41,
       "Total_Pontos": 1505.35,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 0,
@@ -576,7 +576,7 @@ const DADOS = {
       "Selecao": "Portugal",
       "Grupo": "K",
       "Ranking_FIFA": 5,
-      "Total_Pontos": 1763.83,
+      "Total_Pontos": 1767.85,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 9,
@@ -590,8 +590,8 @@ const DADOS = {
       "Club": "Congo DR",
       "Selecao": "RD Congo",
       "Grupo": "K",
-      "Ranking_FIFA": 45,
-      "Total_Pontos": 1479.68,
+      "Ranking_FIFA": 46,
+      "Total_Pontos": 1474.43,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 2,
@@ -605,7 +605,7 @@ const DADOS = {
       "Club": "Czechia",
       "Selecao": "República Theca",
       "Grupo": "A",
-      "Ranking_FIFA": 39,
+      "Ranking_FIFA": 40,
       "Total_Pontos": 1505.74,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
@@ -621,7 +621,7 @@ const DADOS = {
       "Selecao": "Senegal",
       "Grupo": "I",
       "Ranking_FIFA": 15,
-      "Total_Pontos": 1686.41,
+      "Total_Pontos": 1684.07,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 4,
@@ -651,7 +651,7 @@ const DADOS = {
       "Selecao": "Suíça",
       "Grupo": "B",
       "Ranking_FIFA": 19,
-      "Total_Pontos": 1650.75,
+      "Total_Pontos": 1650.06,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 13,
@@ -665,7 +665,7 @@ const DADOS = {
       "Club": "Tunisia",
       "Selecao": "Tunísia",
       "Grupo": "F",
-      "Ranking_FIFA": 46,
+      "Ranking_FIFA": 45,
       "Total_Pontos": 1476.41,
       "Confederacao": "CAF",
       "Copas_Titulos": 0,
@@ -681,7 +681,7 @@ const DADOS = {
       "Selecao": "Turquia",
       "Grupo": "D",
       "Ranking_FIFA": 22,
-      "Total_Pontos": 1601.99,
+      "Total_Pontos": 1605.73,
       "Confederacao": "UEFA",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 3,
@@ -695,7 +695,7 @@ const DADOS = {
       "Club": "Uruguay",
       "Selecao": "Uruguai",
       "Grupo": "H",
-      "Ranking_FIFA": 17,
+      "Ranking_FIFA": 16,
       "Total_Pontos": 1673.07,
       "Confederacao": "CONMEBOL",
       "Copas_Titulos": 2,
@@ -711,7 +711,7 @@ const DADOS = {
       "Selecao": "Uzbequistão",
       "Grupo": "K",
       "Ranking_FIFA": 50,
-      "Total_Pontos": 1461.21,
+      "Total_Pontos": 1458.73,
       "Confederacao": "AFC",
       "Copas_Titulos": 0,
       "Copas_Participacoes": 1,
@@ -1506,8 +1506,8 @@ const DADOS = {
     {
       "Team": "Germany",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 3,
+      "Matches": 4,
+      "Wins": 4,
       "Draws": 0,
       "Losses": 0
     },
@@ -1554,9 +1554,9 @@ const DADOS = {
     {
       "Team": "Saudi Arabia",
       "Year": 2026,
-      "Matches": 4,
+      "Matches": 5,
       "Wins": 1,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 3
     },
     {
@@ -1650,8 +1650,8 @@ const DADOS = {
     {
       "Team": "Argentina",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 2,
+      "Matches": 4,
+      "Wins": 4,
       "Draws": 0,
       "Losses": 0
     },
@@ -1698,9 +1698,9 @@ const DADOS = {
     {
       "Team": "Australia",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -1842,9 +1842,9 @@ const DADOS = {
     {
       "Team": "Bosnia and Herzegovina",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -1890,8 +1890,8 @@ const DADOS = {
     {
       "Team": "Brazil",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 2,
+      "Matches": 4,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 1
     },
@@ -1938,8 +1938,8 @@ const DADOS = {
     {
       "Team": "Cabo Verde",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 1,
       "Losses": 1
     },
@@ -2034,9 +2034,9 @@ const DADOS = {
     {
       "Team": "Qatar",
       "Year": 2026,
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 1
     },
     {
@@ -2082,8 +2082,8 @@ const DADOS = {
     {
       "Team": "Colombia",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 2
     },
@@ -2226,8 +2226,8 @@ const DADOS = {
     {
       "Team": "Croatia",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 2
     },
@@ -2274,8 +2274,8 @@ const DADOS = {
     {
       "Team": "Curaçao",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 0,
+      "Matches": 4,
+      "Wins": 1,
       "Draws": 0,
       "Losses": 3
     },
@@ -2322,10 +2322,10 @@ const DADOS = {
     {
       "Team": "Egypt",
       "Year": 2026,
-      "Matches": 7,
+      "Matches": 8,
       "Wins": 4,
       "Draws": 1,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "Egypt",
@@ -2370,8 +2370,8 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 2,
       "Losses": 0
     },
@@ -2418,8 +2418,8 @@ const DADOS = {
     {
       "Team": "Scotland",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 0,
       "Losses": 2
     },
@@ -2466,8 +2466,8 @@ const DADOS = {
     {
       "Team": "Spain",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 2,
       "Losses": 0
     },
@@ -2514,10 +2514,10 @@ const DADOS = {
     {
       "Team": "USA",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "USA",
@@ -2562,8 +2562,8 @@ const DADOS = {
     {
       "Team": "France",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 2,
+      "Matches": 4,
+      "Wins": 3,
       "Draws": 0,
       "Losses": 1
     },
@@ -2706,8 +2706,8 @@ const DADOS = {
     {
       "Team": "Netherlands",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 1,
       "Losses": 1
     },
@@ -2754,8 +2754,8 @@ const DADOS = {
     {
       "Team": "England",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 0,
+      "Matches": 4,
+      "Wins": 2,
       "Draws": 1,
       "Losses": 1
     },
@@ -2850,10 +2850,10 @@ const DADOS = {
     {
       "Team": "Iraq",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
       "Draws": 1,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Iraq",
@@ -2946,10 +2946,10 @@ const DADOS = {
     {
       "Team": "Jordan",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 0,
       "Draws": 2,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Jordan",
@@ -2994,9 +2994,9 @@ const DADOS = {
     {
       "Team": "Morocco",
       "Year": 2026,
-      "Matches": 8,
+      "Matches": 9,
       "Wins": 7,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -3090,9 +3090,9 @@ const DADOS = {
     {
       "Team": "Norway",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 1,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 1
     },
     {
@@ -3138,10 +3138,10 @@ const DADOS = {
     {
       "Team": "New Zealand",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "New Zealand",
@@ -3186,9 +3186,9 @@ const DADOS = {
     {
       "Team": "Panama",
       "Year": 2026,
-      "Matches": 6,
+      "Matches": 7,
       "Wins": 2,
-      "Draws": 2,
+      "Draws": 3,
       "Losses": 2
     },
     {
@@ -3282,8 +3282,8 @@ const DADOS = {
     {
       "Team": "Portugal",
       "Year": 2026,
-      "Matches": 2,
-      "Wins": 1,
+      "Matches": 4,
+      "Wins": 3,
       "Draws": 1,
       "Losses": 0
     },
@@ -3330,10 +3330,10 @@ const DADOS = {
     {
       "Team": "Congo DR",
       "Year": 2026,
-      "Matches": 4,
+      "Matches": 5,
       "Wins": 2,
       "Draws": 1,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Congo DR",
@@ -3426,9 +3426,9 @@ const DADOS = {
     {
       "Team": "Senegal",
       "Year": 2026,
-      "Matches": 7,
+      "Matches": 8,
       "Wins": 5,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 2
     },
     {
@@ -3522,9 +3522,9 @@ const DADOS = {
     {
       "Team": "Switzerland",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 1,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 1
     },
     {
@@ -3618,8 +3618,8 @@ const DADOS = {
     {
       "Team": "Türkiye",
       "Year": 2026,
-      "Matches": 3,
-      "Wins": 3,
+      "Matches": 4,
+      "Wins": 4,
       "Draws": 0,
       "Losses": 0
     },
@@ -3714,10 +3714,10 @@ const DADOS = {
     {
       "Team": "Uzbekistan",
       "Year": 2026,
-      "Matches": 3,
+      "Matches": 4,
       "Wins": 2,
       "Draws": 0,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Uzbekistan",
@@ -4220,9 +4220,9 @@ const DADOS = {
     {
       "Team": "South Africa",
       "Opponent": "Jamaica",
-      "Matches": 5,
+      "Matches": 6,
       "Wins": 1,
-      "Draws": 4,
+      "Draws": 5,
       "Losses": 0
     },
     {
@@ -4763,6 +4763,14 @@ const DADOS = {
     },
     {
       "Team": "Germany",
+      "Opponent": "USA",
+      "Matches": 13,
+      "Wins": 9,
+      "Draws": 0,
+      "Losses": 4
+    },
+    {
+      "Team": "Germany",
       "Opponent": "Ireland",
       "Matches": 20,
       "Wins": 9,
@@ -4800,14 +4808,6 @@ const DADOS = {
       "Wins": 8,
       "Draws": 2,
       "Losses": 1
-    },
-    {
-      "Team": "Germany",
-      "Opponent": "USA",
-      "Matches": 12,
-      "Wins": 8,
-      "Draws": 0,
-      "Losses": 4
     },
     {
       "Team": "Germany",
@@ -5331,7 +5331,7 @@ const DADOS = {
     },
     {
       "Team": "Saudi Arabia",
-      "Opponent": "Indonesia",
+      "Opponent": "Thailand",
       "Matches": 15,
       "Wins": 12,
       "Draws": 2,
@@ -5339,11 +5339,11 @@ const DADOS = {
     },
     {
       "Team": "Saudi Arabia",
-      "Opponent": "Thailand",
-      "Matches": 13,
-      "Wins": 11,
+      "Opponent": "Indonesia",
+      "Matches": 15,
+      "Wins": 12,
       "Draws": 2,
-      "Losses": 0
+      "Losses": 1
     },
     {
       "Team": "Saudi Arabia",
@@ -5556,9 +5556,9 @@ const DADOS = {
     {
       "Team": "Saudi Arabia",
       "Opponent": "Senegal",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 2,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -6595,6 +6595,14 @@ const DADOS = {
     },
     {
       "Team": "Algeria",
+      "Opponent": "Bolivia",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Algeria",
       "Opponent": "Sierra Leone",
       "Matches": 4,
       "Wins": 2,
@@ -6656,14 +6664,6 @@ const DADOS = {
       "Wins": 1,
       "Draws": 0,
       "Losses": 0
-    },
-    {
-      "Team": "Algeria",
-      "Opponent": "Bulgaria",
-      "Matches": 6,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 3
     },
     {
       "Team": "Algeria",
@@ -7347,6 +7347,14 @@ const DADOS = {
     },
     {
       "Team": "Argentina",
+      "Opponent": "Honduras",
+      "Matches": 4,
+      "Wins": 4,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Argentina",
       "Opponent": "Jamaica",
       "Matches": 4,
       "Wins": 4,
@@ -7404,14 +7412,6 @@ const DADOS = {
     {
       "Team": "Argentina",
       "Opponent": "South Korea",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Argentina",
-      "Opponent": "Honduras",
       "Matches": 3,
       "Wins": 3,
       "Draws": 0,
@@ -7591,6 +7591,14 @@ const DADOS = {
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Argentina",
+      "Opponent": "Iceland",
+      "Matches": 2,
+      "Wins": 1,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -7788,14 +7796,6 @@ const DADOS = {
     {
       "Team": "Argentina",
       "Opponent": "Belarus",
-      "Matches": 1,
-      "Wins": 0,
-      "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Argentina",
-      "Opponent": "Iceland",
       "Matches": 1,
       "Wins": 0,
       "Draws": 1,
@@ -8540,9 +8540,9 @@ const DADOS = {
     {
       "Team": "Australia",
       "Opponent": "Switzerland",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -10523,6 +10523,14 @@ const DADOS = {
     },
     {
       "Team": "Bosnia and Herzegovina",
+      "Opponent": "Panama",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "Bosnia and Herzegovina",
       "Opponent": "Zimbabwe",
       "Matches": 1,
       "Wins": 0,
@@ -10819,6 +10827,14 @@ const DADOS = {
     },
     {
       "Team": "Brazil",
+      "Opponent": "Egypt",
+      "Matches": 7,
+      "Wins": 7,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Brazil",
       "Opponent": "France",
       "Matches": 16,
       "Wins": 6,
@@ -10840,14 +10856,6 @@ const DADOS = {
       "Wins": 6,
       "Draws": 1,
       "Losses": 1
-    },
-    {
-      "Team": "Brazil",
-      "Opponent": "Egypt",
-      "Matches": 6,
-      "Wins": 6,
-      "Draws": 0,
-      "Losses": 0
     },
     {
       "Team": "Brazil",
@@ -11716,6 +11724,14 @@ const DADOS = {
     {
       "Team": "Cabo Verde",
       "Opponent": "Ethiopia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Cabo Verde",
+      "Opponent": "Bermuda",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -12948,9 +12964,9 @@ const DADOS = {
     {
       "Team": "Qatar",
       "Opponent": "El Salvador",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 2,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 0
     },
     {
@@ -13739,6 +13755,14 @@ const DADOS = {
     },
     {
       "Team": "Colombia",
+      "Opponent": "Jordan",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Colombia",
       "Opponent": "Germany",
       "Matches": 5,
       "Wins": 1,
@@ -13932,14 +13956,6 @@ const DADOS = {
     {
       "Team": "Colombia",
       "Opponent": "Qatar",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Colombia",
-      "Opponent": "Jordan",
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
@@ -15795,19 +15811,19 @@ const DADOS = {
     },
     {
       "Team": "Croatia",
+      "Opponent": "Slovenia",
+      "Matches": 13,
+      "Wins": 8,
+      "Draws": 4,
+      "Losses": 1
+    },
+    {
+      "Team": "Croatia",
       "Opponent": "Israel",
       "Matches": 9,
       "Wins": 8,
       "Draws": 1,
       "Losses": 0
-    },
-    {
-      "Team": "Croatia",
-      "Opponent": "Slovenia",
-      "Matches": 12,
-      "Wins": 7,
-      "Draws": 4,
-      "Losses": 1
     },
     {
       "Team": "Croatia",
@@ -16444,8 +16460,8 @@ const DADOS = {
     {
       "Team": "Curaçao",
       "Opponent": "Aruba",
-      "Matches": 6,
-      "Wins": 5,
+      "Matches": 7,
+      "Wins": 6,
       "Draws": 0,
       "Losses": 1
     },
@@ -17596,10 +17612,10 @@ const DADOS = {
     {
       "Team": "Egypt",
       "Opponent": "Brazil",
-      "Matches": 6,
+      "Matches": 7,
       "Wins": 0,
       "Draws": 0,
-      "Losses": 6
+      "Losses": 7
     },
     {
       "Team": "Egypt",
@@ -17843,6 +17859,14 @@ const DADOS = {
     },
     {
       "Team": "Ecuador",
+      "Opponent": "Guatemala",
+      "Matches": 8,
+      "Wins": 6,
+      "Draws": 2,
+      "Losses": 0
+    },
+    {
+      "Team": "Ecuador",
       "Opponent": "El Salvador",
       "Matches": 9,
       "Wins": 6,
@@ -17860,14 +17884,6 @@ const DADOS = {
     {
       "Team": "Ecuador",
       "Opponent": "Panama",
-      "Matches": 7,
-      "Wins": 5,
-      "Draws": 2,
-      "Losses": 0
-    },
-    {
-      "Team": "Ecuador",
-      "Opponent": "Guatemala",
       "Matches": 7,
       "Wins": 5,
       "Draws": 2,
@@ -18707,6 +18723,14 @@ const DADOS = {
     },
     {
       "Team": "Scotland",
+      "Opponent": "Bolivia",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Scotland",
       "Opponent": "Ecuador",
       "Matches": 1,
       "Wins": 1,
@@ -19291,6 +19315,14 @@ const DADOS = {
     },
     {
       "Team": "Spain",
+      "Opponent": "Peru",
+      "Matches": 4,
+      "Wins": 4,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Spain",
       "Opponent": "South Korea",
       "Matches": 6,
       "Wins": 4,
@@ -19335,14 +19367,6 @@ const DADOS = {
       "Matches": 4,
       "Wins": 3,
       "Draws": 1,
-      "Losses": 0
-    },
-    {
-      "Team": "Spain",
-      "Opponent": "Peru",
-      "Matches": 3,
-      "Wins": 3,
-      "Draws": 0,
       "Losses": 0
     },
     {
@@ -19788,10 +19812,10 @@ const DADOS = {
     {
       "Team": "USA",
       "Opponent": "Germany",
-      "Matches": 12,
+      "Matches": 13,
       "Wins": 4,
       "Draws": 0,
-      "Losses": 8
+      "Losses": 9
     },
     {
       "Team": "USA",
@@ -20755,6 +20779,14 @@ const DADOS = {
     },
     {
       "Team": "France",
+      "Opponent": "N. Ireland",
+      "Matches": 9,
+      "Wins": 6,
+      "Draws": 3,
+      "Losses": 0
+    },
+    {
+      "Team": "France",
       "Opponent": "Faroe Islands",
       "Matches": 6,
       "Wins": 6,
@@ -20776,14 +20808,6 @@ const DADOS = {
       "Wins": 5,
       "Draws": 5,
       "Losses": 1
-    },
-    {
-      "Team": "France",
-      "Opponent": "N. Ireland",
-      "Matches": 8,
-      "Wins": 5,
-      "Draws": 3,
-      "Losses": 0
     },
     {
       "Team": "France",
@@ -23067,6 +23091,14 @@ const DADOS = {
     },
     {
       "Team": "Netherlands",
+      "Opponent": "Uzbekistan",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Netherlands",
       "Opponent": "Paraguay",
       "Matches": 2,
       "Wins": 1,
@@ -23667,6 +23699,14 @@ const DADOS = {
     },
     {
       "Team": "England",
+      "Opponent": "New Zealand",
+      "Matches": 3,
+      "Wins": 3,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "England",
       "Opponent": "Montenegro",
       "Matches": 6,
       "Wins": 3,
@@ -23787,6 +23827,14 @@ const DADOS = {
     },
     {
       "Team": "England",
+      "Opponent": "Costa Rica",
+      "Matches": 3,
+      "Wins": 2,
+      "Draws": 1,
+      "Losses": 0
+    },
+    {
+      "Team": "England",
       "Opponent": "Azerbaijan",
       "Matches": 2,
       "Wins": 2,
@@ -23796,14 +23844,6 @@ const DADOS = {
     {
       "Team": "England",
       "Opponent": "Kazakhstan",
-      "Matches": 2,
-      "Wins": 2,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "England",
-      "Opponent": "New Zealand",
       "Matches": 2,
       "Wins": 2,
       "Draws": 0,
@@ -23919,14 +23959,6 @@ const DADOS = {
       "Matches": 1,
       "Wins": 1,
       "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "England",
-      "Opponent": "Costa Rica",
-      "Matches": 2,
-      "Wins": 1,
-      "Draws": 1,
       "Losses": 0
     },
     {
@@ -25556,6 +25588,14 @@ const DADOS = {
     {
       "Team": "Iraq",
       "Opponent": "Uruguay",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Iraq",
+      "Opponent": "Venezuela",
       "Matches": 1,
       "Wins": 0,
       "Draws": 0,
@@ -27268,10 +27308,10 @@ const DADOS = {
     {
       "Team": "Jordan",
       "Opponent": "Colombia",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
       "Draws": 0,
-      "Losses": 1
+      "Losses": 2
     },
     {
       "Team": "Jordan",
@@ -28076,9 +28116,9 @@ const DADOS = {
     {
       "Team": "Morocco",
       "Opponent": "Norway",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -29820,9 +29860,9 @@ const DADOS = {
     {
       "Team": "Norway",
       "Opponent": "Morocco",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -30236,10 +30276,10 @@ const DADOS = {
     {
       "Team": "New Zealand",
       "Opponent": "England",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
       "Draws": 0,
-      "Losses": 2
+      "Losses": 3
     },
     {
       "Team": "New Zealand",
@@ -31040,6 +31080,14 @@ const DADOS = {
       "Wins": 0,
       "Draws": 0,
       "Losses": 1
+    },
+    {
+      "Team": "Panama",
+      "Opponent": "Bosnia",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 1,
+      "Losses": 0
     },
     {
       "Team": "Panama",
@@ -32139,6 +32187,14 @@ const DADOS = {
     },
     {
       "Team": "Portugal",
+      "Opponent": "Nigeria",
+      "Matches": 2,
+      "Wins": 2,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Portugal",
       "Opponent": "Uruguay",
       "Matches": 4,
       "Wins": 2,
@@ -32152,6 +32208,14 @@ const DADOS = {
       "Wins": 2,
       "Draws": 1,
       "Losses": 0
+    },
+    {
+      "Team": "Portugal",
+      "Opponent": "Chile",
+      "Matches": 5,
+      "Wins": 2,
+      "Draws": 2,
+      "Losses": 1
     },
     {
       "Team": "Portugal",
@@ -32235,14 +32299,6 @@ const DADOS = {
     },
     {
       "Team": "Portugal",
-      "Opponent": "Nigeria",
-      "Matches": 1,
-      "Wins": 1,
-      "Draws": 0,
-      "Losses": 0
-    },
-    {
-      "Team": "Portugal",
       "Opponent": "Canada",
       "Matches": 2,
       "Wins": 1,
@@ -32296,14 +32352,6 @@ const DADOS = {
       "Wins": 1,
       "Draws": 1,
       "Losses": 2
-    },
-    {
-      "Team": "Portugal",
-      "Opponent": "Chile",
-      "Matches": 4,
-      "Wins": 1,
-      "Draws": 2,
-      "Losses": 1
     },
     {
       "Team": "Portugal",
@@ -32800,6 +32848,14 @@ const DADOS = {
       "Wins": 0,
       "Draws": 3,
       "Losses": 6
+    },
+    {
+      "Team": "Congo DR",
+      "Opponent": "Chile",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
     },
     {
       "Team": "Congo DR",
@@ -34060,9 +34116,9 @@ const DADOS = {
     {
       "Team": "Senegal",
       "Opponent": "Saudi Arabia",
-      "Matches": 2,
+      "Matches": 3,
       "Wins": 0,
-      "Draws": 0,
+      "Draws": 1,
       "Losses": 2
     },
     {
@@ -35548,9 +35604,9 @@ const DADOS = {
     {
       "Team": "Switzerland",
       "Opponent": "Australia",
-      "Matches": 1,
+      "Matches": 2,
       "Wins": 0,
-      "Draws": 1,
+      "Draws": 2,
       "Losses": 0
     },
     {
@@ -37139,6 +37195,14 @@ const DADOS = {
     },
     {
       "Team": "Türkiye",
+      "Opponent": "Venezuela",
+      "Matches": 1,
+      "Wins": 1,
+      "Draws": 0,
+      "Losses": 0
+    },
+    {
+      "Team": "Türkiye",
       "Opponent": "Uzbekistan",
       "Matches": 1,
       "Wins": 1,
@@ -38475,6 +38539,14 @@ const DADOS = {
     },
     {
       "Team": "Uzbekistan",
+      "Opponent": "Netherlands",
+      "Matches": 1,
+      "Wins": 0,
+      "Draws": 0,
+      "Losses": 1
+    },
+    {
+      "Team": "Uzbekistan",
       "Opponent": "Turkiye",
       "Matches": 1,
       "Wins": 0,
@@ -38654,828 +38726,972 @@ const DADOS = {
     {
       "grupo": "A",
       "times": [
-        "República Theca",
         "África do Sul",
+        "Coreia do Sul",
         "México",
-        "Coreia do Sul"
+        "República Theca"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "República Theca": {
-          "P1": 20.18,
-          "P2": 25.59,
-          "P3": 31.23,
-          "P4": 23.01,
-          "Pts_Medio": 4.23,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.33,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 45.76
-        },
         "África do Sul": {
-          "P1": 10.54,
-          "P2": 17.08,
-          "P3": 24.5,
-          "P4": 47.88,
-          "Pts_Medio": 3.31,
+          "P1": 16.55,
+          "P2": 21.76,
+          "P3": 27.14,
+          "P4": 34.55,
+          "Pts_Medio": 3.51,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.32,
+          "Pts_DP": 2.22,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 27.62
-        },
-        "México": {
-          "P1": 40.48,
-          "P2": 26.49,
-          "P3": 20.16,
-          "P4": 12.87,
-          "Pts_Medio": 4.76,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.34,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 66.98
+          "Pts_Medio_3lugar": 3.25,
+          "Classifica": 56.4,
+          "Gols_Pro_Medio": 3.69,
+          "Gols_Contra_Medio": 4.59,
+          "Saldo_Medio": -0.9
         },
         "Coreia do Sul": {
-          "P1": 28.8,
-          "P2": 30.84,
-          "P3": 24.11,
-          "P4": 16.24,
-          "Pts_Medio": 4.59,
+          "P1": 26.17,
+          "P2": 26.48,
+          "P3": 24.99,
+          "P4": 22.37,
+          "Pts_Medio": 4.25,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.33,
+          "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 59.64
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 69.3,
+          "Gols_Pro_Medio": 4.23,
+          "Gols_Contra_Medio": 4.04,
+          "Saldo_Medio": 0.19
+        },
+        "México": {
+          "P1": 35.22,
+          "P2": 26.84,
+          "P3": 21.38,
+          "P4": 16.55,
+          "Pts_Medio": 4.76,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.29,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.3,
+          "Classifica": 76.32,
+          "Gols_Pro_Medio": 4.77,
+          "Gols_Contra_Medio": 3.84,
+          "Saldo_Medio": 0.93
+        },
+        "República Theca": {
+          "P1": 22.06,
+          "P2": 24.93,
+          "P3": 26.49,
+          "P4": 26.53,
+          "Pts_Medio": 3.97,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.26,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 64.64,
+          "Gols_Pro_Medio": 4.02,
+          "Gols_Contra_Medio": 4.25,
+          "Saldo_Medio": -0.22
         }
       },
       "stats_jogos": {
         "México x África do Sul": {
-          "V_pct": 56.52,
-          "E_pct": 12.8,
-          "D_pct": 30.68
+          "V_pct": 48.25,
+          "E_pct": 24.03,
+          "D_pct": 27.72
         },
         "Coreia do Sul x República Theca": {
-          "V_pct": 41.92,
-          "E_pct": 22.23,
-          "D_pct": 35.86
+          "V_pct": 39.44,
+          "E_pct": 25.73,
+          "D_pct": 34.82
         },
         "México x Coreia do Sul": {
-          "V_pct": 38.9,
-          "E_pct": 24.83,
-          "D_pct": 36.27
+          "V_pct": 41.69,
+          "E_pct": 24.81,
+          "D_pct": 33.5
         },
         "República Theca x África do Sul": {
-          "V_pct": 49.79,
-          "E_pct": 16.64,
-          "D_pct": 33.57
+          "V_pct": 40.96,
+          "E_pct": 25.78,
+          "D_pct": 33.26
         },
         "República Theca x México": {
-          "V_pct": 35.44,
-          "E_pct": 20.55,
-          "D_pct": 44.0
+          "V_pct": 31.22,
+          "E_pct": 24.62,
+          "D_pct": 44.16
         },
         "África do Sul x Coreia do Sul": {
-          "V_pct": 31.55,
-          "E_pct": 13.83,
-          "D_pct": 54.62
+          "V_pct": 31.05,
+          "E_pct": 25.51,
+          "D_pct": 43.44
         }
       }
     },
     {
       "grupo": "B",
       "times": [
-        "Catar",
         "Suíça",
         "Bósnia",
+        "Catar",
         "Canadá"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Catar": {
-          "P1": 14.88,
-          "P2": 22.84,
-          "P3": 33.39,
-          "P4": 28.89,
-          "Pts_Medio": 3.73,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.33,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 37.71
-        },
         "Suíça": {
-          "P1": 44.91,
-          "P2": 25.65,
-          "P3": 18.55,
-          "P4": 10.89,
-          "Pts_Medio": 5.03,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.35,
+          "P1": 30.59,
+          "P2": 27.01,
+          "P3": 23.32,
+          "P4": 19.07,
+          "Pts_Medio": 4.51,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.28,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 70.56
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 73.15,
+          "Gols_Pro_Medio": 4.36,
+          "Gols_Contra_Medio": 3.8,
+          "Saldo_Medio": 0.56
         },
         "Bósnia": {
-          "P1": 10.51,
-          "P2": 18.13,
-          "P3": 25.68,
-          "P4": 45.68,
-          "Pts_Medio": 3.41,
+          "P1": 17.16,
+          "P2": 21.99,
+          "P3": 27.17,
+          "P4": 33.68,
+          "Pts_Medio": 3.56,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.31,
+          "Pts_DP": 2.22,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 28.64
+          "Pts_Medio_3lugar": 3.25,
+          "Classifica": 57.26,
+          "Gols_Pro_Medio": 3.68,
+          "Gols_Contra_Medio": 4.5,
+          "Saldo_Medio": -0.82
+        },
+        "Catar": {
+          "P1": 20.35,
+          "P2": 23.96,
+          "P3": 26.83,
+          "P4": 28.85,
+          "Pts_Medio": 3.82,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.24,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.25,
+          "Classifica": 62.2,
+          "Gols_Pro_Medio": 3.87,
+          "Gols_Contra_Medio": 4.3,
+          "Saldo_Medio": -0.43
         },
         "Canadá": {
-          "P1": 29.71,
-          "P2": 33.38,
-          "P3": 22.38,
-          "P4": 14.53,
-          "Pts_Medio": 4.8,
-          "Pts_Mediana": 5.0,
-          "Pts_DP": 2.35,
+          "P1": 31.89,
+          "P2": 27.04,
+          "P3": 22.68,
+          "P4": 18.39,
+          "Pts_Medio": 4.59,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.28,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 63.09
+          "Pts_Medio_3lugar": 3.3,
+          "Classifica": 74.05,
+          "Gols_Pro_Medio": 4.5,
+          "Gols_Contra_Medio": 3.81,
+          "Saldo_Medio": 0.69
         }
       },
       "stats_jogos": {
         "Canadá x Bósnia": {
-          "V_pct": 55.01,
-          "E_pct": 13.65,
-          "D_pct": 31.34
+          "V_pct": 46.14,
+          "E_pct": 24.85,
+          "D_pct": 29.01
         },
         "Catar x Suíça": {
-          "V_pct": 32.05,
-          "E_pct": 14.32,
-          "D_pct": 53.62
+          "V_pct": 31.51,
+          "E_pct": 25.59,
+          "D_pct": 42.89
         },
         "Suíça x Bósnia": {
-          "V_pct": 57.6,
-          "E_pct": 12.29,
-          "D_pct": 30.11
+          "V_pct": 45.22,
+          "E_pct": 25.32,
+          "D_pct": 29.47
         },
         "Canadá x Catar": {
-          "V_pct": 50.7,
-          "E_pct": 15.99,
-          "D_pct": 33.31
+          "V_pct": 43.81,
+          "E_pct": 25.08,
+          "D_pct": 31.11
         },
         "Suíça x Canadá": {
-          "V_pct": 39.73,
-          "E_pct": 24.05,
-          "D_pct": 36.22
+          "V_pct": 36.65,
+          "E_pct": 25.41,
+          "D_pct": 37.94
         },
         "Bósnia x Catar": {
-          "V_pct": 35.87,
-          "E_pct": 22.87,
-          "D_pct": 41.26
+          "V_pct": 34.88,
+          "E_pct": 25.79,
+          "D_pct": 39.34
         }
       }
     },
     {
       "grupo": "C",
       "times": [
-        "Brasil",
-        "Escócia",
+        "Marrocos",
         "Haiti",
-        "Marrocos"
+        "Escócia",
+        "Brasil"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Brasil": {
-          "P1": 42.25,
-          "P2": 29.82,
-          "P3": 19.32,
-          "P4": 8.62,
-          "Pts_Medio": 5.12,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.33,
+        "Marrocos": {
+          "P1": 36.16,
+          "P2": 27.82,
+          "P3": 21.11,
+          "P4": 14.91,
+          "Pts_Medio": 4.88,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 72.07
-        },
-        "Escócia": {
-          "P1": 9.35,
-          "P2": 21.1,
-          "P3": 42.42,
-          "P4": 27.13,
-          "Pts_Medio": 3.48,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.3,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 30.45
+          "Pts_Medio_3lugar": 3.33,
+          "Classifica": 78.05,
+          "Gols_Pro_Medio": 4.6,
+          "Gols_Contra_Medio": 3.5,
+          "Saldo_Medio": 1.1
         },
         "Haiti": {
-          "P1": 4.52,
-          "P2": 12.94,
-          "P3": 23.7,
-          "P4": 58.85,
-          "Pts_Medio": 2.66,
+          "P1": 13.86,
+          "P2": 20.22,
+          "P3": 27.68,
+          "P4": 38.25,
+          "Pts_Medio": 3.28,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.19,
+          "Pts_DP": 2.17,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 17.46
+          "Pts_Medio_3lugar": 3.22,
+          "Classifica": 52.53,
+          "Gols_Pro_Medio": 3.43,
+          "Gols_Contra_Medio": 4.66,
+          "Saldo_Medio": -1.23
         },
-        "Marrocos": {
-          "P1": 43.89,
-          "P2": 36.14,
-          "P3": 14.56,
-          "P4": 5.4,
-          "Pts_Medio": 6.03,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.26,
+        "Escócia": {
+          "P1": 19.5,
+          "P2": 24.23,
+          "P3": 27.78,
+          "P4": 28.49,
+          "Pts_Medio": 3.8,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.23,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 80.03
+          "Pts_Medio_3lugar": 3.24,
+          "Classifica": 62.25,
+          "Gols_Pro_Medio": 3.82,
+          "Gols_Contra_Medio": 4.28,
+          "Saldo_Medio": -0.46
+        },
+        "Brasil": {
+          "P1": 30.48,
+          "P2": 27.72,
+          "P3": 23.44,
+          "P4": 18.35,
+          "Pts_Medio": 4.53,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.27,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 73.84,
+          "Gols_Pro_Medio": 4.34,
+          "Gols_Contra_Medio": 3.75,
+          "Saldo_Medio": 0.59
         }
       },
       "stats_jogos": {
         "Brasil x Marrocos": {
-          "V_pct": 33.97,
-          "E_pct": 17.2,
-          "D_pct": 48.83
+          "V_pct": 34.18,
+          "E_pct": 25.79,
+          "D_pct": 40.03
         },
         "Haiti x Escócia": {
-          "V_pct": 34.04,
-          "E_pct": 17.5,
-          "D_pct": 48.47
+          "V_pct": 32.67,
+          "E_pct": 25.65,
+          "D_pct": 41.67
         },
         "Escócia x Marrocos": {
-          "V_pct": 24.58,
-          "E_pct": 8.5,
-          "D_pct": 66.92
+          "V_pct": 28.4,
+          "E_pct": 25.24,
+          "D_pct": 46.36
         },
         "Brasil x Haiti": {
-          "V_pct": 66.6,
-          "E_pct": 8.61,
-          "D_pct": 24.79
+          "V_pct": 47.79,
+          "E_pct": 25.14,
+          "D_pct": 27.07
         },
         "Marrocos x Haiti": {
-          "V_pct": 74.68,
-          "E_pct": 6.17,
-          "D_pct": 19.16
+          "V_pct": 50.95,
+          "E_pct": 24.52,
+          "D_pct": 24.53
         },
         "Escócia x Brasil": {
-          "V_pct": 30.14,
-          "E_pct": 12.63,
-          "D_pct": 57.23
+          "V_pct": 31.08,
+          "E_pct": 25.51,
+          "D_pct": 43.4
         }
       }
     },
     {
       "grupo": "D",
       "times": [
+        "Estados Unidos",
         "Paraguai",
         "Turquia",
-        "Estados Unidos",
         "Austrália"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Paraguai": {
-          "P1": 10.6,
-          "P2": 16.35,
-          "P3": 24.36,
-          "P4": 48.69,
-          "Pts_Medio": 3.25,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.32,
+        "Estados Unidos": {
+          "P1": 29.82,
+          "P2": 26.37,
+          "P3": 23.48,
+          "P4": 20.33,
+          "Pts_Medio": 4.42,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.28,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 26.95
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 71.85,
+          "Gols_Pro_Medio": 4.4,
+          "Gols_Contra_Medio": 3.95,
+          "Saldo_Medio": 0.45
+        },
+        "Paraguai": {
+          "P1": 17.19,
+          "P2": 21.89,
+          "P3": 26.89,
+          "P4": 34.02,
+          "Pts_Medio": 3.56,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.22,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.26,
+          "Classifica": 57.01,
+          "Gols_Pro_Medio": 3.68,
+          "Gols_Contra_Medio": 4.51,
+          "Saldo_Medio": -0.83
         },
         "Turquia": {
-          "P1": 30.03,
-          "P2": 29.11,
-          "P3": 24.3,
-          "P4": 16.56,
-          "Pts_Medio": 4.58,
+          "P1": 27.22,
+          "P2": 26.1,
+          "P3": 24.59,
+          "P4": 22.08,
+          "Pts_Medio": 4.29,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.31,
+          "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 59.14
-        },
-        "Estados Unidos": {
-          "P1": 34.34,
-          "P2": 26.9,
-          "P3": 22.77,
-          "P4": 15.99,
-          "Pts_Medio": 4.39,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.32,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 61.24
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 69.72,
+          "Gols_Pro_Medio": 4.22,
+          "Gols_Contra_Medio": 3.97,
+          "Saldo_Medio": 0.25
         },
         "Austrália": {
-          "P1": 25.03,
-          "P2": 27.64,
-          "P3": 28.56,
-          "P4": 18.77,
-          "Pts_Medio": 4.62,
+          "P1": 25.76,
+          "P2": 25.63,
+          "P3": 25.03,
+          "P4": 23.57,
+          "Pts_Medio": 4.2,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.32,
+          "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 52.67
+          "Pts_Medio_3lugar": 3.29,
+          "Classifica": 68.09,
+          "Gols_Pro_Medio": 4.15,
+          "Gols_Contra_Medio": 4.03,
+          "Saldo_Medio": 0.13
         }
       },
       "stats_jogos": {
         "Estados Unidos x Paraguai": {
-          "V_pct": 52.77,
-          "E_pct": 14.82,
-          "D_pct": 32.41
+          "V_pct": 44.76,
+          "E_pct": 24.93,
+          "D_pct": 30.31
         },
         "Austrália x Turquia": {
-          "V_pct": 37.11,
-          "E_pct": 26.43,
-          "D_pct": 36.47
+          "V_pct": 36.43,
+          "E_pct": 25.73,
+          "D_pct": 37.84
         },
         "Turquia x Paraguai": {
-          "V_pct": 55.34,
-          "E_pct": 13.47,
-          "D_pct": 31.19
+          "V_pct": 43.45,
+          "E_pct": 25.5,
+          "D_pct": 31.05
         },
         "Estados Unidos x Austrália": {
-          "V_pct": 36.32,
-          "E_pct": 23.79,
-          "D_pct": 39.89
+          "V_pct": 39.1,
+          "E_pct": 25.37,
+          "D_pct": 35.54
         },
         "Paraguai x Austrália": {
-          "V_pct": 30.96,
-          "E_pct": 13.23,
-          "D_pct": 55.81
+          "V_pct": 31.82,
+          "E_pct": 25.6,
+          "D_pct": 42.57
         },
         "Turquia x Estados Unidos": {
-          "V_pct": 39.28,
-          "E_pct": 24.37,
-          "D_pct": 36.35
+          "V_pct": 36.25,
+          "E_pct": 25.34,
+          "D_pct": 38.4
         }
       }
     },
     {
       "grupo": "E",
       "times": [
-        "Alemanha",
-        "Equador",
+        "Curaçao",
         "Costa do Marfim",
-        "Curaçao"
+        "Alemanha",
+        "Equador"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Alemanha": {
-          "P1": 48.37,
-          "P2": 26.15,
-          "P3": 17.96,
-          "P4": 7.53,
-          "Pts_Medio": 5.37,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.31,
+        "Curaçao": {
+          "P1": 13.25,
+          "P2": 19.36,
+          "P3": 27.13,
+          "P4": 40.26,
+          "Pts_Medio": 3.2,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.16,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 74.51
-        },
-        "Equador": {
-          "P1": 23.27,
-          "P2": 32.79,
-          "P3": 28.69,
-          "P4": 15.25,
-          "Pts_Medio": 4.44,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.33,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 56.06
+          "Pts_Medio_3lugar": 3.22,
+          "Classifica": 50.7,
+          "Gols_Pro_Medio": 3.37,
+          "Gols_Contra_Medio": 4.73,
+          "Saldo_Medio": -1.36
         },
         "Costa do Marfim": {
-          "P1": 23.52,
-          "P2": 29.81,
-          "P3": 32.62,
-          "P4": 14.05,
-          "Pts_Medio": 4.85,
-          "Pts_Mediana": 5.0,
-          "Pts_DP": 2.31,
+          "P1": 27.98,
+          "P2": 26.83,
+          "P3": 24.83,
+          "P4": 20.36,
+          "Pts_Medio": 4.39,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.26,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 53.33
+          "Pts_Medio_3lugar": 3.3,
+          "Classifica": 71.36,
+          "Gols_Pro_Medio": 4.25,
+          "Gols_Contra_Medio": 3.85,
+          "Saldo_Medio": 0.4
         },
-        "Curaçao": {
-          "P1": 4.84,
-          "P2": 11.25,
-          "P3": 20.74,
-          "P4": 63.17,
-          "Pts_Medio": 2.48,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.2,
+        "Alemanha": {
+          "P1": 32.81,
+          "P2": 27.41,
+          "P3": 22.58,
+          "P4": 17.21,
+          "Pts_Medio": 4.64,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 16.09
+          "Pts_Medio_3lugar": 3.29,
+          "Classifica": 75.27,
+          "Gols_Pro_Medio": 4.43,
+          "Gols_Contra_Medio": 3.66,
+          "Saldo_Medio": 0.77
+        },
+        "Equador": {
+          "P1": 25.96,
+          "P2": 26.4,
+          "P3": 25.46,
+          "P4": 22.17,
+          "Pts_Medio": 4.24,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.26,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 69.34,
+          "Gols_Pro_Medio": 4.14,
+          "Gols_Contra_Medio": 3.96,
+          "Saldo_Medio": 0.18
         }
       },
       "stats_jogos": {
         "Alemanha x Curaçao": {
-          "V_pct": 71.25,
-          "E_pct": 7.09,
-          "D_pct": 21.66
+          "V_pct": 49.59,
+          "E_pct": 24.81,
+          "D_pct": 25.59
         },
         "Costa do Marfim x Equador": {
-          "V_pct": 42.43,
-          "E_pct": 21.88,
-          "D_pct": 35.69
+          "V_pct": 38.33,
+          "E_pct": 25.87,
+          "D_pct": 35.8
         },
         "Alemanha x Costa do Marfim": {
-          "V_pct": 43.43,
-          "E_pct": 20.87,
-          "D_pct": 35.7
+          "V_pct": 39.23,
+          "E_pct": 25.8,
+          "D_pct": 34.97
         },
         "Equador x Curaçao": {
-          "V_pct": 62.31,
-          "E_pct": 10.24,
-          "D_pct": 27.45
+          "V_pct": 46.24,
+          "E_pct": 25.15,
+          "D_pct": 28.6
         },
         "Equador x Alemanha": {
-          "V_pct": 33.76,
-          "E_pct": 17.04,
-          "D_pct": 49.2
+          "V_pct": 33.8,
+          "E_pct": 25.61,
+          "D_pct": 40.59
         },
         "Curaçao x Costa do Marfim": {
-          "V_pct": 24.82,
-          "E_pct": 8.59,
-          "D_pct": 66.58
+          "V_pct": 27.3,
+          "E_pct": 25.16,
+          "D_pct": 47.55
         }
       }
     },
     {
       "grupo": "F",
       "times": [
-        "Japão",
-        "Tunísia",
+        "Suécia",
         "Holanda",
-        "Suécia"
+        "Japão",
+        "Tunísia"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Japão": {
-          "P1": 32.57,
-          "P2": 32.38,
-          "P3": 21.13,
-          "P4": 13.92,
-          "Pts_Medio": 4.93,
-          "Pts_Mediana": 5.0,
-          "Pts_DP": 2.35,
+        "Suécia": {
+          "P1": 20.34,
+          "P2": 23.61,
+          "P3": 26.55,
+          "P4": 29.5,
+          "Pts_Medio": 3.8,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.24,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 64.95
-        },
-        "Tunísia": {
-          "P1": 12.07,
-          "P2": 19.32,
-          "P3": 26.5,
-          "P4": 42.11,
-          "Pts_Medio": 3.57,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.31,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 31.39
+          "Pts_Medio_3lugar": 3.26,
+          "Classifica": 61.65,
+          "Gols_Pro_Medio": 3.82,
+          "Gols_Contra_Medio": 4.28,
+          "Saldo_Medio": -0.46
         },
         "Holanda": {
-          "P1": 41.08,
-          "P2": 26.51,
-          "P3": 19.78,
-          "P4": 12.64,
-          "Pts_Medio": 4.81,
-          "Pts_Mediana": 5.0,
-          "Pts_DP": 2.35,
+          "P1": 29.55,
+          "P2": 26.41,
+          "P3": 23.52,
+          "P4": 20.52,
+          "Pts_Medio": 4.4,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.28,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 67.58
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 71.64,
+          "Gols_Pro_Medio": 4.26,
+          "Gols_Contra_Medio": 3.84,
+          "Saldo_Medio": 0.42
         },
-        "Suécia": {
-          "P1": 14.28,
-          "P2": 21.79,
-          "P3": 32.59,
-          "P4": 31.34,
-          "Pts_Medio": 3.59,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.31,
+        "Japão": {
+          "P1": 30.5,
+          "P2": 26.71,
+          "P3": 23.21,
+          "P4": 19.57,
+          "Pts_Medio": 4.5,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.28,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 36.07
+          "Pts_Medio_3lugar": 3.3,
+          "Classifica": 72.69,
+          "Gols_Pro_Medio": 4.33,
+          "Gols_Contra_Medio": 3.78,
+          "Saldo_Medio": 0.55
+        },
+        "Tunísia": {
+          "P1": 19.61,
+          "P2": 23.27,
+          "P3": 26.72,
+          "P4": 30.4,
+          "Pts_Medio": 3.76,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.24,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 60.69,
+          "Gols_Pro_Medio": 3.79,
+          "Gols_Contra_Medio": 4.3,
+          "Saldo_Medio": -0.51
         }
       },
       "stats_jogos": {
         "Holanda x Japão": {
-          "V_pct": 36.4,
-          "E_pct": 25.47,
-          "D_pct": 38.14
+          "V_pct": 36.22,
+          "E_pct": 25.86,
+          "D_pct": 37.92
         },
         "Suécia x Tunísia": {
-          "V_pct": 36.62,
-          "E_pct": 26.75,
-          "D_pct": 36.63
+          "V_pct": 37.52,
+          "E_pct": 25.76,
+          "D_pct": 36.72
         },
         "Holanda x Suécia": {
-          "V_pct": 52.54,
-          "E_pct": 15.06,
-          "D_pct": 32.4
+          "V_pct": 42.31,
+          "E_pct": 25.56,
+          "D_pct": 32.13
         },
         "Tunísia x Japão": {
-          "V_pct": 31.61,
-          "E_pct": 14.07,
-          "D_pct": 54.32
+          "V_pct": 31.22,
+          "E_pct": 25.45,
+          "D_pct": 43.33
         },
         "Tunísia x Holanda": {
-          "V_pct": 32.37,
-          "E_pct": 14.83,
-          "D_pct": 52.8
+          "V_pct": 31.81,
+          "E_pct": 25.58,
+          "D_pct": 42.61
         },
         "Japão x Suécia": {
-          "V_pct": 53.96,
-          "E_pct": 14.19,
-          "D_pct": 31.84
+          "V_pct": 42.97,
+          "E_pct": 25.66,
+          "D_pct": 31.37
         }
       }
     },
     {
       "grupo": "G",
       "times": [
-        "Bélgica",
-        "Egito",
+        "Irã",
         "Nova Zelândia",
-        "Irã"
+        "Bélgica",
+        "Egito"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Bélgica": {
-          "P1": 42.92,
-          "P2": 28.3,
-          "P3": 19.94,
-          "P4": 8.84,
-          "Pts_Medio": 5.08,
-          "Pts_Mediana": 5.0,
-          "Pts_DP": 2.26,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 71.22
-        },
-        "Egito": {
-          "P1": 21.54,
-          "P2": 27.54,
-          "P3": 36.51,
-          "P4": 14.42,
-          "Pts_Medio": 4.68,
-          "Pts_Mediana": 4.0,
-          "Pts_DP": 2.29,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 49.08
-        },
-        "Nova Zelândia": {
-          "P1": 4.35,
-          "P2": 9.55,
-          "P3": 19.52,
-          "P4": 66.58,
-          "Pts_Medio": 2.27,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.15,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 13.9
-        },
         "Irã": {
-          "P1": 31.18,
-          "P2": 34.62,
-          "P3": 24.03,
-          "P4": 10.17,
-          "Pts_Medio": 5.05,
-          "Pts_Mediana": 5.0,
+          "P1": 31.33,
+          "P2": 27.58,
+          "P3": 23.57,
+          "P4": 17.52,
+          "Pts_Medio": 4.6,
+          "Pts_Mediana": 4.0,
           "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 65.8
+          "Pts_Medio_3lugar": 3.3,
+          "Classifica": 74.62,
+          "Gols_Pro_Medio": 4.4,
+          "Gols_Contra_Medio": 3.7,
+          "Saldo_Medio": 0.7
+        },
+        "Nova Zelândia": {
+          "P1": 11.39,
+          "P2": 17.99,
+          "P3": 27.01,
+          "P4": 43.6,
+          "Pts_Medio": 3.02,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.13,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.21,
+          "Classifica": 47.39,
+          "Gols_Pro_Medio": 3.24,
+          "Gols_Contra_Medio": 4.86,
+          "Saldo_Medio": -1.63
+        },
+        "Bélgica": {
+          "P1": 31.04,
+          "P2": 27.56,
+          "P3": 23.61,
+          "P4": 17.8,
+          "Pts_Medio": 4.56,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.27,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 74.33,
+          "Gols_Pro_Medio": 4.38,
+          "Gols_Contra_Medio": 3.73,
+          "Saldo_Medio": 0.65
+        },
+        "Egito": {
+          "P1": 26.24,
+          "P2": 26.87,
+          "P3": 25.81,
+          "P4": 21.07,
+          "Pts_Medio": 4.3,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.26,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.29,
+          "Classifica": 70.32,
+          "Gols_Pro_Medio": 4.19,
+          "Gols_Contra_Medio": 3.92,
+          "Saldo_Medio": 0.28
         }
       },
       "stats_jogos": {
         "Bélgica x Egito": {
-          "V_pct": 42.6,
-          "E_pct": 21.71,
-          "D_pct": 35.69
+          "V_pct": 39.25,
+          "E_pct": 25.89,
+          "D_pct": 34.86
         },
         "Irã x Nova Zelândia": {
-          "V_pct": 71.02,
-          "E_pct": 7.16,
-          "D_pct": 21.82
+          "V_pct": 50.86,
+          "E_pct": 24.68,
+          "D_pct": 24.46
         },
         "Bélgica x Irã": {
-          "V_pct": 36.81,
-          "E_pct": 26.74,
-          "D_pct": 36.44
+          "V_pct": 36.89,
+          "E_pct": 25.64,
+          "D_pct": 37.46
         },
         "Nova Zelândia x Egito": {
-          "V_pct": 24.51,
-          "E_pct": 8.36,
-          "D_pct": 67.13
+          "V_pct": 26.59,
+          "E_pct": 24.96,
+          "D_pct": 48.45
         },
         "Egito x Irã": {
-          "V_pct": 35.78,
-          "E_pct": 21.76,
-          "D_pct": 42.46
+          "V_pct": 34.65,
+          "E_pct": 25.7,
+          "D_pct": 39.65
         },
         "Nova Zelândia x Bélgica": {
-          "V_pct": 21.65,
-          "E_pct": 7.05,
-          "D_pct": 71.3
+          "V_pct": 24.74,
+          "E_pct": 24.64,
+          "D_pct": 50.62
         }
       }
     },
     {
       "grupo": "H",
       "times": [
-        "Cabo Verde",
+        "Uruguai",
         "Arábia Saudita",
-        "Espanha",
-        "Uruguai"
+        "Cabo Verde",
+        "Espanha"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Cabo Verde": {
-          "P1": 6.76,
-          "P2": 16.89,
-          "P3": 27.32,
-          "P4": 49.03,
-          "Pts_Medio": 3.12,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.23,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 23.65
-        },
-        "Arábia Saudita": {
-          "P1": 7.55,
-          "P2": 19.39,
-          "P3": 38.68,
-          "P4": 34.38,
-          "Pts_Medio": 3.08,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.23,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 26.94
-        },
-        "Espanha": {
-          "P1": 61.79,
-          "P2": 21.64,
-          "P3": 12.0,
-          "P4": 4.57,
-          "Pts_Medio": 6.14,
-          "Pts_Mediana": 6.0,
+        "Uruguai": {
+          "P1": 27.83,
+          "P2": 27.42,
+          "P3": 24.44,
+          "P4": 20.31,
+          "Pts_Medio": 4.38,
+          "Pts_Mediana": 4.0,
           "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 83.43
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 71.55,
+          "Gols_Pro_Medio": 4.24,
+          "Gols_Contra_Medio": 3.86,
+          "Saldo_Medio": 0.38
         },
-        "Uruguai": {
-          "P1": 23.91,
-          "P2": 42.08,
-          "P3": 22.0,
-          "P4": 12.01,
-          "Pts_Medio": 4.87,
-          "Pts_Mediana": 5.0,
-          "Pts_DP": 2.35,
+        "Arábia Saudita": {
+          "P1": 16.4,
+          "P2": 22.27,
+          "P3": 27.76,
+          "P4": 33.57,
+          "Pts_Medio": 3.52,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.2,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 65.99
+          "Pts_Medio_3lugar": 3.22,
+          "Classifica": 57.18,
+          "Gols_Pro_Medio": 3.61,
+          "Gols_Contra_Medio": 4.49,
+          "Saldo_Medio": -0.88
+        },
+        "Cabo Verde": {
+          "P1": 17.85,
+          "P2": 22.89,
+          "P3": 27.5,
+          "P4": 31.77,
+          "Pts_Medio": 3.64,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.22,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.25,
+          "Classifica": 59.07,
+          "Gols_Pro_Medio": 3.7,
+          "Gols_Contra_Medio": 4.4,
+          "Saldo_Medio": -0.69
+        },
+        "Espanha": {
+          "P1": 37.92,
+          "P2": 27.42,
+          "P3": 20.31,
+          "P4": 14.36,
+          "Pts_Medio": 4.93,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.27,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.31,
+          "Classifica": 78.87,
+          "Gols_Pro_Medio": 4.65,
+          "Gols_Contra_Medio": 3.46,
+          "Saldo_Medio": 1.19
         }
       },
       "stats_jogos": {
         "Espanha x Cabo Verde": {
-          "V_pct": 70.83,
-          "E_pct": 7.23,
-          "D_pct": 21.94
+          "V_pct": 48.21,
+          "E_pct": 24.99,
+          "D_pct": 26.79
         },
         "Arábia Saudita x Uruguai": {
-          "V_pct": 29.51,
-          "E_pct": 11.71,
-          "D_pct": 58.78
+          "V_pct": 29.88,
+          "E_pct": 25.52,
+          "D_pct": 44.6
         },
         "Espanha x Arábia Saudita": {
-          "V_pct": 71.2,
-          "E_pct": 7.11,
-          "D_pct": 21.69
+          "V_pct": 49.26,
+          "E_pct": 24.83,
+          "D_pct": 25.91
         },
         "Uruguai x Cabo Verde": {
-          "V_pct": 58.37,
-          "E_pct": 11.93,
-          "D_pct": 29.7
+          "V_pct": 43.39,
+          "E_pct": 25.51,
+          "D_pct": 31.1
         },
         "Cabo Verde x Arábia Saudita": {
-          "V_pct": 37.31,
-          "E_pct": 26.3,
-          "D_pct": 36.38
+          "V_pct": 38.06,
+          "E_pct": 25.89,
+          "D_pct": 36.05
         },
         "Uruguai x Espanha": {
-          "V_pct": 32.37,
-          "E_pct": 14.68,
-          "D_pct": 52.95
+          "V_pct": 32.44,
+          "E_pct": 25.78,
+          "D_pct": 41.77
         }
       }
     },
     {
       "grupo": "I",
       "times": [
+        "França",
         "Noruega",
         "Iraque",
-        "França",
         "Senegal"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Noruega": {
-          "P1": 16.89,
-          "P2": 24.38,
-          "P3": 34.32,
-          "P4": 24.4,
-          "Pts_Medio": 4.02,
+        "França": {
+          "P1": 30.85,
+          "P2": 26.67,
+          "P3": 23.07,
+          "P4": 19.41,
+          "Pts_Medio": 4.49,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.34,
+          "Pts_DP": 2.28,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 41.28
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 72.89,
+          "Gols_Pro_Medio": 4.33,
+          "Gols_Contra_Medio": 3.78,
+          "Saldo_Medio": 0.55
+        },
+        "Noruega": {
+          "P1": 23.33,
+          "P2": 25.1,
+          "P3": 25.88,
+          "P4": 25.7,
+          "Pts_Medio": 4.04,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.26,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 65.68,
+          "Gols_Pro_Medio": 4.0,
+          "Gols_Contra_Medio": 4.1,
+          "Saldo_Medio": -0.11
         },
         "Iraque": {
-          "P1": 8.69,
-          "P2": 16.0,
-          "P3": 23.93,
-          "P4": 51.38,
-          "Pts_Medio": 3.13,
+          "P1": 17.05,
+          "P2": 21.77,
+          "P3": 26.95,
+          "P4": 34.23,
+          "Pts_Medio": 3.54,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.3,
+          "Pts_DP": 2.21,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 24.69
-        },
-        "França": {
-          "P1": 44.33,
-          "P2": 26.26,
-          "P3": 18.87,
-          "P4": 10.55,
-          "Pts_Medio": 5.03,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.34,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 70.59
+          "Pts_Medio_3lugar": 3.25,
+          "Classifica": 56.79,
+          "Gols_Pro_Medio": 3.63,
+          "Gols_Contra_Medio": 4.47,
+          "Saldo_Medio": -0.84
         },
         "Senegal": {
-          "P1": 30.08,
-          "P2": 33.36,
-          "P3": 22.88,
-          "P4": 13.67,
-          "Pts_Medio": 4.83,
-          "Pts_Mediana": 5.0,
-          "Pts_DP": 2.34,
+          "P1": 28.78,
+          "P2": 26.47,
+          "P3": 24.1,
+          "P4": 20.66,
+          "Pts_Medio": 4.39,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 63.45
+          "Pts_Medio_3lugar": 3.29,
+          "Classifica": 71.31,
+          "Gols_Pro_Medio": 4.25,
+          "Gols_Contra_Medio": 3.85,
+          "Saldo_Medio": 0.4
         }
       },
       "stats_jogos": {
         "França x Senegal": {
-          "V_pct": 39.15,
-          "E_pct": 24.55,
-          "D_pct": 36.3
+          "V_pct": 37.87,
+          "E_pct": 25.86,
+          "D_pct": 36.27
         },
         "Iraque x Noruega": {
-          "V_pct": 33.78,
-          "E_pct": 17.14,
-          "D_pct": 49.08
+          "V_pct": 32.83,
+          "E_pct": 25.78,
+          "D_pct": 41.39
         },
         "França x Iraque": {
-          "V_pct": 61.14,
-          "E_pct": 10.79,
-          "D_pct": 28.07
+          "V_pct": 45.3,
+          "E_pct": 25.37,
+          "D_pct": 29.33
         },
         "Noruega x Senegal": {
-          "V_pct": 34.27,
-          "E_pct": 18.06,
-          "D_pct": 47.67
+          "V_pct": 34.23,
+          "E_pct": 25.69,
+          "D_pct": 40.08
         },
         "Senegal x Iraque": {
-          "V_pct": 59.09,
-          "E_pct": 11.64,
-          "D_pct": 29.28
+          "V_pct": 44.41,
+          "E_pct": 25.43,
+          "D_pct": 30.15
         },
         "Noruega x França": {
-          "V_pct": 33.48,
-          "E_pct": 16.41,
-          "D_pct": 50.12
+          "V_pct": 33.32,
+          "E_pct": 25.74,
+          "D_pct": 40.94
         }
       }
     },
@@ -39483,275 +39699,323 @@ const DADOS = {
       "grupo": "J",
       "times": [
         "Argélia",
-        "Argentina",
+        "Áustria",
         "Jordânia",
-        "Áustria"
+        "Argentina"
       ],
       "n_sim": 500000,
       "stats_times": {
         "Argélia": {
-          "P1": 18.36,
-          "P2": 27.75,
-          "P3": 34.45,
-          "P4": 19.44,
-          "Pts_Medio": 4.35,
+          "P1": 25.45,
+          "P2": 26.3,
+          "P3": 25.55,
+          "P4": 22.7,
+          "Pts_Medio": 4.22,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.32,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 46.11
-        },
-        "Argentina": {
-          "P1": 53.03,
-          "P2": 23.91,
-          "P3": 16.05,
-          "P4": 7.01,
-          "Pts_Medio": 5.6,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.33,
-          "Pts_Min": 0,
-          "Pts_Max": 9,
-          "Classifica": 76.94
-        },
-        "Jordânia": {
-          "P1": 6.23,
-          "P2": 13.94,
-          "P3": 22.71,
-          "P4": 57.12,
-          "Pts_Medio": 2.8,
-          "Pts_Mediana": 3.0,
           "Pts_DP": 2.26,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 20.17
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 68.79,
+          "Gols_Pro_Medio": 4.12,
+          "Gols_Contra_Medio": 3.97,
+          "Saldo_Medio": 0.15
         },
         "Áustria": {
-          "P1": 22.38,
-          "P2": 34.4,
-          "P3": 26.8,
-          "P4": 16.42,
-          "Pts_Medio": 4.36,
+          "P1": 24.7,
+          "P2": 26.08,
+          "P3": 25.74,
+          "P4": 23.48,
+          "Pts_Medio": 4.15,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.32,
+          "Pts_DP": 2.26,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 56.78
+          "Pts_Medio_3lugar": 3.26,
+          "Classifica": 67.94,
+          "Gols_Pro_Medio": 4.07,
+          "Gols_Contra_Medio": 4.03,
+          "Saldo_Medio": 0.05
+        },
+        "Jordânia": {
+          "P1": 14.42,
+          "P2": 20.33,
+          "P3": 27.24,
+          "P4": 38.01,
+          "Pts_Medio": 3.31,
+          "Pts_Mediana": 3.0,
+          "Pts_DP": 2.18,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.23,
+          "Classifica": 52.91,
+          "Gols_Pro_Medio": 3.46,
+          "Gols_Contra_Medio": 4.64,
+          "Saldo_Medio": -1.18
+        },
+        "Argentina": {
+          "P1": 35.43,
+          "P2": 27.29,
+          "P3": 21.48,
+          "P4": 15.81,
+          "Pts_Medio": 4.79,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.27,
+          "Pts_Min": 0,
+          "Pts_Max": 9,
+          "Pts_Medio_3lugar": 3.3,
+          "Classifica": 77.03,
+          "Gols_Pro_Medio": 4.54,
+          "Gols_Contra_Medio": 3.56,
+          "Saldo_Medio": 0.98
         }
       },
       "stats_jogos": {
         "Argentina x Argélia": {
-          "V_pct": 52.0,
-          "E_pct": 15.34,
-          "D_pct": 32.66
+          "V_pct": 41.95,
+          "E_pct": 25.75,
+          "D_pct": 32.31
         },
         "Áustria x Jordânia": {
-          "V_pct": 57.86,
-          "E_pct": 12.18,
-          "D_pct": 29.95
+          "V_pct": 44.35,
+          "E_pct": 25.47,
+          "D_pct": 30.17
         },
         "Argentina x Áustria": {
-          "V_pct": 52.13,
-          "E_pct": 15.22,
-          "D_pct": 32.65
+          "V_pct": 42.59,
+          "E_pct": 25.54,
+          "D_pct": 31.88
         },
         "Jordânia x Argélia": {
-          "V_pct": 30.02,
-          "E_pct": 12.21,
-          "D_pct": 57.77
+          "V_pct": 29.67,
+          "E_pct": 25.33,
+          "D_pct": 45.01
         },
         "Jordânia x Argentina": {
-          "V_pct": 22.64,
-          "E_pct": 7.54,
-          "D_pct": 69.82
+          "V_pct": 25.45,
+          "E_pct": 24.75,
+          "D_pct": 49.8
         },
         "Argélia x Áustria": {
-          "V_pct": 36.57,
-          "E_pct": 26.77,
-          "D_pct": 36.66
+          "V_pct": 37.69,
+          "E_pct": 25.91,
+          "D_pct": 36.4
         }
       }
     },
     {
       "grupo": "K",
       "times": [
-        "RD Congo",
-        "Colômbia",
         "Portugal",
+        "Colômbia",
+        "RD Congo",
         "Uzbequistão"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "RD Congo": {
-          "P1": 14.69,
-          "P2": 22.19,
-          "P3": 29.99,
-          "P4": 33.13,
-          "Pts_Medio": 3.61,
-          "Pts_Mediana": 3.0,
-          "Pts_DP": 2.31,
+        "Portugal": {
+          "P1": 32.19,
+          "P2": 26.91,
+          "P3": 22.5,
+          "P4": 18.4,
+          "Pts_Medio": 4.58,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.28,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 36.88
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 74.1,
+          "Gols_Pro_Medio": 4.38,
+          "Gols_Contra_Medio": 3.71,
+          "Saldo_Medio": 0.67
         },
         "Colômbia": {
-          "P1": 24.93,
-          "P2": 31.26,
-          "P3": 24.68,
-          "P4": 19.13,
-          "Pts_Medio": 4.32,
+          "P1": 27.22,
+          "P2": 26.17,
+          "P3": 24.43,
+          "P4": 22.18,
+          "Pts_Medio": 4.29,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.34,
+          "Pts_DP": 2.27,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 56.19
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 69.67,
+          "Gols_Pro_Medio": 4.17,
+          "Gols_Contra_Medio": 3.93,
+          "Saldo_Medio": 0.25
         },
-        "Portugal": {
-          "P1": 45.62,
-          "P2": 24.59,
-          "P3": 18.4,
-          "P4": 11.38,
-          "Pts_Medio": 5.05,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.38,
+        "RD Congo": {
+          "P1": 19.53,
+          "P2": 23.06,
+          "P3": 26.76,
+          "P4": 30.66,
+          "Pts_Medio": 3.73,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.24,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 70.21
+          "Pts_Medio_3lugar": 3.25,
+          "Classifica": 60.42,
+          "Gols_Pro_Medio": 3.77,
+          "Gols_Contra_Medio": 4.33,
+          "Saldo_Medio": -0.56
         },
         "Uzbequistão": {
-          "P1": 14.75,
-          "P2": 21.96,
-          "P3": 26.93,
-          "P4": 36.36,
-          "Pts_Medio": 3.9,
+          "P1": 21.06,
+          "P2": 23.86,
+          "P3": 26.32,
+          "P4": 28.76,
+          "Pts_Medio": 3.87,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.32,
+          "Pts_DP": 2.25,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 36.71
+          "Pts_Medio_3lugar": 3.28,
+          "Classifica": 62.47,
+          "Gols_Pro_Medio": 3.87,
+          "Gols_Contra_Medio": 4.23,
+          "Saldo_Medio": -0.35
         }
       },
       "stats_jogos": {
         "Portugal x RD Congo": {
-          "V_pct": 55.25,
-          "E_pct": 13.49,
-          "D_pct": 31.26
+          "V_pct": 44.34,
+          "E_pct": 25.57,
+          "D_pct": 30.09
         },
         "Uzbequistão x Colômbia": {
-          "V_pct": 35.8,
-          "E_pct": 21.77,
-          "D_pct": 42.43
+          "V_pct": 33.71,
+          "E_pct": 25.67,
+          "D_pct": 40.61
         },
         "Portugal x Uzbequistão": {
-          "V_pct": 51.32,
-          "E_pct": 15.62,
-          "D_pct": 33.06
+          "V_pct": 43.1,
+          "E_pct": 25.58,
+          "D_pct": 31.31
         },
         "Colômbia x RD Congo": {
-          "V_pct": 46.7,
-          "E_pct": 18.67,
-          "D_pct": 34.63
+          "V_pct": 41.94,
+          "E_pct": 25.39,
+          "D_pct": 32.67
         },
         "RD Congo x Uzbequistão": {
-          "V_pct": 36.03,
-          "E_pct": 23.09,
-          "D_pct": 40.88
+          "V_pct": 35.91,
+          "E_pct": 25.8,
+          "D_pct": 38.29
         },
         "Colômbia x Portugal": {
-          "V_pct": 35.11,
-          "E_pct": 19.23,
-          "D_pct": 45.66
+          "V_pct": 34.71,
+          "E_pct": 25.84,
+          "D_pct": 39.45
         }
       }
     },
     {
       "grupo": "L",
       "times": [
-        "Croácia",
-        "Panamá",
         "Inglaterra",
+        "Panamá",
+        "Croácia",
         "Gana"
       ],
       "n_sim": 500000,
       "stats_times": {
-        "Croácia": {
-          "P1": 30.73,
-          "P2": 38.31,
-          "P3": 22.12,
-          "P4": 8.84,
-          "Pts_Medio": 5.21,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.29,
+        "Inglaterra": {
+          "P1": 34.66,
+          "P2": 27.75,
+          "P3": 21.97,
+          "P4": 15.62,
+          "Pts_Medio": 4.77,
+          "Pts_Mediana": 5.0,
+          "Pts_DP": 2.26,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 69.04
+          "Pts_Medio_3lugar": 3.3,
+          "Classifica": 77.05,
+          "Gols_Pro_Medio": 4.53,
+          "Gols_Contra_Medio": 3.57,
+          "Saldo_Medio": 0.95
         },
         "Panamá": {
-          "P1": 15.43,
-          "P2": 25.33,
-          "P3": 40.98,
-          "P4": 18.26,
-          "Pts_Medio": 4.22,
+          "P1": 22.77,
+          "P2": 25.59,
+          "P3": 26.94,
+          "P4": 24.7,
+          "Pts_Medio": 4.05,
           "Pts_Mediana": 4.0,
-          "Pts_DP": 2.33,
+          "Pts_DP": 2.25,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 40.76
+          "Pts_Medio_3lugar": 3.27,
+          "Classifica": 66.32,
+          "Gols_Pro_Medio": 4.0,
+          "Gols_Contra_Medio": 4.1,
+          "Saldo_Medio": -0.1
         },
-        "Inglaterra": {
-          "P1": 49.98,
-          "P2": 26.41,
-          "P3": 17.13,
-          "P4": 6.47,
-          "Pts_Medio": 5.49,
-          "Pts_Mediana": 6.0,
-          "Pts_DP": 2.28,
+        "Croácia": {
+          "P1": 30.3,
+          "P2": 27.76,
+          "P3": 23.82,
+          "P4": 18.12,
+          "Pts_Medio": 4.55,
+          "Pts_Mediana": 4.0,
+          "Pts_DP": 2.26,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 76.4
+          "Pts_Medio_3lugar": 3.29,
+          "Classifica": 73.94,
+          "Gols_Pro_Medio": 4.36,
+          "Gols_Contra_Medio": 3.74,
+          "Saldo_Medio": 0.63
         },
         "Gana": {
-          "P1": 3.85,
-          "P2": 9.95,
-          "P3": 19.77,
-          "P4": 66.42,
-          "Pts_Medio": 2.3,
+          "P1": 12.27,
+          "P2": 18.9,
+          "P3": 27.28,
+          "P4": 41.55,
+          "Pts_Medio": 3.11,
           "Pts_Mediana": 3.0,
-          "Pts_DP": 2.15,
+          "Pts_DP": 2.14,
           "Pts_Min": 0,
           "Pts_Max": 9,
-          "Classifica": 13.8
+          "Pts_Medio_3lugar": 3.21,
+          "Classifica": 49.36,
+          "Gols_Pro_Medio": 3.31,
+          "Gols_Contra_Medio": 4.79,
+          "Saldo_Medio": -1.48
         }
       },
       "stats_jogos": {
         "Inglaterra x Croácia": {
-          "V_pct": 40.51,
-          "E_pct": 23.42,
-          "D_pct": 36.07
+          "V_pct": 39.09,
+          "E_pct": 25.79,
+          "D_pct": 35.12
         },
         "Gana x Panamá": {
-          "V_pct": 27.73,
-          "E_pct": 10.45,
-          "D_pct": 61.82
+          "V_pct": 29.33,
+          "E_pct": 25.31,
+          "D_pct": 45.35
         },
         "Inglaterra x Gana": {
-          "V_pct": 73.98,
-          "E_pct": 6.34,
-          "D_pct": 19.68
+          "V_pct": 51.45,
+          "E_pct": 24.57,
+          "D_pct": 23.98
         },
         "Panamá x Croácia": {
-          "V_pct": 33.33,
-          "E_pct": 16.25,
-          "D_pct": 50.42
+          "V_pct": 32.97,
+          "E_pct": 25.58,
+          "D_pct": 41.45
         },
         "Croácia x Gana": {
-          "V_pct": 71.63,
-          "E_pct": 7.03,
-          "D_pct": 21.34
+          "V_pct": 49.59,
+          "E_pct": 24.86,
+          "D_pct": 25.54
         },
         "Panamá x Inglaterra": {
-          "V_pct": 31.94,
-          "E_pct": 14.24,
-          "D_pct": 53.83
+          "V_pct": 31.18,
+          "E_pct": 25.58,
+          "D_pct": 43.24
         }
       }
     }
