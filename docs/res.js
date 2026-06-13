@@ -6,6 +6,9 @@ const _LS_KEY = 'copa2026_resultados_v1';
 const _resEdit = new Set();
 let _resFiltroG = '';
 
+// Chaves que vieram do resultados_reais.js (arquivo) — não podem ser sobrescritas pelo localStorage
+const _LOCKED_KEYS = new Set(Object.keys(RESULTADOS_REAIS));
+
 function _resChave(jogo) {
   return `${jogo.Grupo}|${jogo.Time1}|${jogo.Time2}`;
 }
@@ -13,7 +16,12 @@ function _resChave(jogo) {
 function _resCarregarLS() {
   try {
     const raw = localStorage.getItem(_LS_KEY);
-    if (raw) Object.assign(RESULTADOS_REAIS, JSON.parse(raw));
+    if (raw) {
+      const ls = JSON.parse(raw);
+      for (const [k, v] of Object.entries(ls)) {
+        if (!_LOCKED_KEYS.has(k)) RESULTADOS_REAIS[k] = v;
+      }
+    }
   } catch (_) {}
 }
 
@@ -21,6 +29,28 @@ function _resSalvarLS() {
   try {
     localStorage.setItem(_LS_KEY, JSON.stringify(RESULTADOS_REAIS));
   } catch (_) {}
+}
+
+function _resBaixarArquivo() {
+  // Filtra apenas jogos de grupos (chave tem 2 pipes)
+  const grupos = Object.fromEntries(
+    Object.entries(RESULTADOS_REAIS).filter(([k]) => _resIsGrupoKey(k))
+  );
+  const ts = new Date().toISOString().slice(0, 19) + 'Z';
+  const conteudo = [
+    `// Confirmado manualmente em ${ts}`,
+    `// NÃO edite manualmente — gerado por scripts/atualizar_resultados.py`,
+    `const RESULTADOS_REAIS =`,
+    JSON.stringify(grupos, null, 2),
+    `;`,
+  ].join('\n') + '\n';
+
+  const blob = new Blob([conteudo], { type: 'text/javascript' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'resultados_reais.js';
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 function _resConfirmar(chave, g1, g2) {
@@ -141,6 +171,9 @@ function _htmlResTab() {
         <div class="res-section-header">
           <span class="res-section-title">① Entrada de Resultados</span>
           <span class="res-section-sub">${gruposConf} de 72 confirmados</span>
+          <button class="res-btn-exportar" onclick="_resBaixarArquivo()" title="Gera resultados_reais.js com todos os resultados confirmados">
+            ⬇ Baixar resultados_reais.js
+          </button>
         </div>
         ${filtroHtml}
         <div class="res-grupos-lista">
@@ -198,6 +231,7 @@ function _htmlEntradaResultados(grupos) {
       const flag2  = _resFlagHtml(s2);
 
       if (res?.confirmado && !_resEdit.has(chave)) {
+        const locked = _LOCKED_KEYS.has(chave);
         // Modo confirmado
         return `
           <div class="res-jogo res-jogo-confirmado" data-chave="${chave}">
@@ -205,11 +239,11 @@ function _htmlEntradaResultados(grupos) {
             <div class="res-jogo-time res-time-left">${flag1}<span class="res-jogo-nome">${nome1}</span></div>
             <div class="res-placar-wrap">
               <span class="res-placar">${res.gols_time1}&nbsp;–&nbsp;${res.gols_time2}</span>
-              <span class="res-check">✓</span>
+              <span class="res-check">${locked ? '🔒' : '✓'}</span>
             </div>
             <div class="res-jogo-time res-time-right"><span class="res-jogo-nome">${nome2}</span>${flag2}</div>
             <div class="res-btn-wrap">
-              <button class="res-btn-editar" data-chave="${chave}">Editar</button>
+              ${locked ? '' : `<button class="res-btn-editar" data-chave="${chave}">Editar</button>`}
             </div>
           </div>`;
       }

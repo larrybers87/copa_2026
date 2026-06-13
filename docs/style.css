@@ -1558,6 +1558,41 @@ html { scroll-behavior: smooth; }
   white-space: nowrap;
 }
 
+/* Jogos encerrados — resultado confirmado */
+.cal-jogo-conf {
+  opacity: 0.5;
+  transform: scale(0.975);
+  transform-origin: left center;
+  transition: border-color .2s, background .2s, opacity .2s;
+}
+.cal-jogo-conf:hover { opacity: 0.75; border-color: var(--border); background: var(--card); }
+.cal-jogo-conf .cal-jogo-hora { color: var(--muted); font-size: 13px; font-weight: 600; }
+.cal-jogo-conf .cal-time-nome { font-size: 12px; color: var(--muted); font-weight: 500; }
+.cal-jogo-conf .cal-flag      { width: 18px; height: 18px; }
+.cal-jogo-conf .cal-emoji     { font-size: 14px; }
+
+.cal-placar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 900;
+  color: var(--text);
+  min-width: 54px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cal-placar-sep { color: var(--muted); font-size: 13px; font-weight: 400; }
+.cal-vencedor   { color: var(--text) !important; font-weight: 800 !important; }
+.cal-enc {
+  font-family: var(--font-head);
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 /* Responsive */
 @media (max-width: 700px) {
   .cal-jogo              { grid-template-columns: 44px 1fr; }
@@ -2036,6 +2071,41 @@ html { scroll-behavior: smooth; }
   font-size: 11px;
   color: var(--muted);
   white-space: nowrap;
+}
+
+/* Jogos encerrados — resultado confirmado */
+.cal-jogo-conf {
+  opacity: 0.5;
+  transform: scale(0.975);
+  transform-origin: left center;
+  transition: border-color .2s, background .2s, opacity .2s;
+}
+.cal-jogo-conf:hover { opacity: 0.75; border-color: var(--border); background: var(--card); }
+.cal-jogo-conf .cal-jogo-hora { color: var(--muted); font-size: 13px; font-weight: 600; }
+.cal-jogo-conf .cal-time-nome { font-size: 12px; color: var(--muted); font-weight: 500; }
+.cal-jogo-conf .cal-flag      { width: 18px; height: 18px; }
+.cal-jogo-conf .cal-emoji     { font-size: 14px; }
+
+.cal-placar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-head);
+  font-size: 17px;
+  font-weight: 900;
+  color: var(--text);
+  min-width: 54px;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cal-placar-sep { color: var(--muted); font-size: 13px; font-weight: 400; }
+.cal-vencedor   { color: var(--text) !important; font-weight: 800 !important; }
+.cal-enc {
+  font-family: var(--font-head);
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 /* Responsive */
@@ -3875,11 +3945,29 @@ html { scroll-behavior: smooth; }
 
 .res-section-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 12px;
   padding: 11px 18px;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
+}
+
+.res-btn-exportar {
+  margin-left: auto;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-family: var(--font-head);
+  letter-spacing: 0.5px;
+  background: var(--surface2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.res-btn-exportar:hover {
+  color: var(--text);
+  border-color: var(--accent);
 }
 
 .res-section-title {
